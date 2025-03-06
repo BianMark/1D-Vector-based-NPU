@@ -48,7 +48,7 @@ reg execute = 0;
 reg load = 0;
 reg [3:0] qkmem_add = 0;
 reg [3:0] pmem_add = 0;
-
+wire [bw_psum*col-1:0] pmem_out;
 
 assign inst[16] = ofifo_rd;
 assign inst[15:12] = qkmem_add;
@@ -74,7 +74,8 @@ fullchip #(.bw(bw), .bw_psum(bw_psum), .col(col), .pr(pr)) fullchip_instance (
       .reset(reset),
       .clk(clk), 
       .mem_in(mem_in), 
-      .inst(inst)
+      .inst(inst),
+      .out(pmem_out)
 );
 
 
@@ -360,6 +361,31 @@ $display("##### move ofifo to pmem #####");
 
 ///////////////////////////////////////////
 
+
+
+////////////// output multiplication result from pmem ///////////////////
+
+$display("##### display multiplication result from pmem #####");
+
+#0.5 clk = 1'b0;  
+pmem_rd = 1; 
+#0.5 clk = 1'b1; 
+
+  for (q=0; q<total_cycle; q=q+1) begin
+    #0.5 clk = 1'b0; 
+    #0.5 clk = 1'b1; 
+    $display("prd @PMEM Add%2d: %40h", q, pmem_out);
+    pmem_add = pmem_add + 1;
+    #0.5 clk = 1'b0; 
+    #0.5 clk = 1'b1; 
+ 
+  end
+
+  #0.5 clk = 1'b0;  
+  pmem_rd = 0; pmem_add = 0;
+  #0.5 clk = 1'b1;  
+
+///////////////////////////////////////////
 
 
 
