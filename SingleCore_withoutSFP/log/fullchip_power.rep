@@ -7,7 +7,7 @@ Report : power
         -analysis_effort low
 Design : fullchip
 Version: K-2015.06-SP2
-Date   : Thu Mar  6 12:35:52 2025
+Date   : Thu Mar  6 17:47:44 2025
 ****************************************
 
 
@@ -22,34 +22,34 @@ Wire Load Model Mode: segmented
 Design        Wire Load Model            Library
 ------------------------------------------------
 fullchip               ZeroWireload      tcbn65gplustc
-core_col8_bw8_bw_psum20_pr16
+core_col8_bw8_bw_psum20_pr8
                        ZeroWireload      tcbn65gplustc
-mac_array_col8_bw8_bw_psum20_pr16
+mac_array_col8_bw8_bw_psum20_pr8
                        ZeroWireload      tcbn65gplustc
 ofifo_col8_bw20        ZeroWireload      tcbn65gplustc
-sram_w16_sram_bit128_1 ZeroWireload      tcbn65gplustc
+sram_w16_sram_bit64_1  ZeroWireload      tcbn65gplustc
 sram_w16_sram_bit160   ZeroWireload      tcbn65gplustc
-mac_col_bw8_bw_psum20_pr16_col_id1
+mac_col_bw8_bw_psum20_pr8_col_id1
                        ZeroWireload      tcbn65gplustc
-mac_col_bw8_bw_psum20_pr16_col_id2
+mac_col_bw8_bw_psum20_pr8_col_id2
                        ZeroWireload      tcbn65gplustc
-mac_col_bw8_bw_psum20_pr16_col_id3
+mac_col_bw8_bw_psum20_pr8_col_id3
                        ZeroWireload      tcbn65gplustc
-mac_col_bw8_bw_psum20_pr16_col_id4
+mac_col_bw8_bw_psum20_pr8_col_id4
                        ZeroWireload      tcbn65gplustc
-mac_col_bw8_bw_psum20_pr16_col_id5
+mac_col_bw8_bw_psum20_pr8_col_id5
                        ZeroWireload      tcbn65gplustc
-mac_col_bw8_bw_psum20_pr16_col_id6
+mac_col_bw8_bw_psum20_pr8_col_id6
                        ZeroWireload      tcbn65gplustc
-mac_col_bw8_bw_psum20_pr16_col_id7
+mac_col_bw8_bw_psum20_pr8_col_id7
                        ZeroWireload      tcbn65gplustc
-mac_col_bw8_bw_psum20_pr16_col_id8
+mac_col_bw8_bw_psum20_pr8_col_id8
                        ZeroWireload      tcbn65gplustc
 fifo_depth16_bw20_simd1_7
                        ZeroWireload      tcbn65gplustc
 fifo_depth16_bw20_simd1_6
                        ZeroWireload      tcbn65gplustc
-mac_16in_bw8_bw_psum20_pr16_7
+mac_8in_bw8_bw_psum20_pr8_7
                        ZeroWireload      tcbn65gplustc
 fifo_mux_16_1_bw20_simd1_7
                        ZeroWireload      tcbn65gplustc
@@ -59,7 +59,7 @@ fifo_mux_8_1_bw20_simd1_15
                        ZeroWireload      tcbn65gplustc
 fifo_mux_2_1_bw20_simd1_119
                        ZeroWireload      tcbn65gplustc
-sram_w16_sram_bit128_0 ZeroWireload      tcbn65gplustc
+sram_w16_sram_bit64_0  ZeroWireload      tcbn65gplustc
 fifo_depth16_bw20_simd1_0
                        ZeroWireload      tcbn65gplustc
 fifo_depth16_bw20_simd1_1
@@ -71,6 +71,18 @@ fifo_depth16_bw20_simd1_3
 fifo_depth16_bw20_simd1_4
                        ZeroWireload      tcbn65gplustc
 fifo_depth16_bw20_simd1_5
+                       ZeroWireload      tcbn65gplustc
+fifo_mux_16_1_bw20_simd1_0
+                       ZeroWireload      tcbn65gplustc
+fifo_mux_16_1_bw20_simd1_1
+                       ZeroWireload      tcbn65gplustc
+fifo_mux_16_1_bw20_simd1_2
+                       ZeroWireload      tcbn65gplustc
+fifo_mux_16_1_bw20_simd1_3
+                       ZeroWireload      tcbn65gplustc
+fifo_mux_16_1_bw20_simd1_4
+                       ZeroWireload      tcbn65gplustc
+fifo_mux_16_1_bw20_simd1_5
                        ZeroWireload      tcbn65gplustc
 fifo_mux_8_1_bw20_simd1_0
                        ZeroWireload      tcbn65gplustc
@@ -101,32 +113,6 @@ fifo_mux_8_1_bw20_simd1_12
 fifo_mux_8_1_bw20_simd1_13
                        ZeroWireload      tcbn65gplustc
 fifo_mux_8_1_bw20_simd1_14
-                       ZeroWireload      tcbn65gplustc
-fifo_mux_16_1_bw20_simd1_0
-                       ZeroWireload      tcbn65gplustc
-fifo_mux_16_1_bw20_simd1_1
-                       ZeroWireload      tcbn65gplustc
-fifo_mux_16_1_bw20_simd1_2
-                       ZeroWireload      tcbn65gplustc
-fifo_mux_16_1_bw20_simd1_3
-                       ZeroWireload      tcbn65gplustc
-fifo_mux_16_1_bw20_simd1_4
-                       ZeroWireload      tcbn65gplustc
-fifo_mux_16_1_bw20_simd1_5
-                       ZeroWireload      tcbn65gplustc
-mac_16in_bw8_bw_psum20_pr16_0
-                       ZeroWireload      tcbn65gplustc
-mac_16in_bw8_bw_psum20_pr16_1
-                       ZeroWireload      tcbn65gplustc
-mac_16in_bw8_bw_psum20_pr16_2
-                       ZeroWireload      tcbn65gplustc
-mac_16in_bw8_bw_psum20_pr16_3
-                       ZeroWireload      tcbn65gplustc
-mac_16in_bw8_bw_psum20_pr16_4
-                       ZeroWireload      tcbn65gplustc
-mac_16in_bw8_bw_psum20_pr16_5
-                       ZeroWireload      tcbn65gplustc
-mac_16in_bw8_bw_psum20_pr16_6
                        ZeroWireload      tcbn65gplustc
 fifo_mux_2_1_bw20_simd1_0
                        ZeroWireload      tcbn65gplustc
@@ -366,6 +352,20 @@ fifo_mux_2_1_bw20_simd1_117
                        ZeroWireload      tcbn65gplustc
 fifo_mux_2_1_bw20_simd1_118
                        ZeroWireload      tcbn65gplustc
+mac_8in_bw8_bw_psum20_pr8_0
+                       ZeroWireload      tcbn65gplustc
+mac_8in_bw8_bw_psum20_pr8_1
+                       ZeroWireload      tcbn65gplustc
+mac_8in_bw8_bw_psum20_pr8_2
+                       ZeroWireload      tcbn65gplustc
+mac_8in_bw8_bw_psum20_pr8_3
+                       ZeroWireload      tcbn65gplustc
+mac_8in_bw8_bw_psum20_pr8_4
+                       ZeroWireload      tcbn65gplustc
+mac_8in_bw8_bw_psum20_pr8_5
+                       ZeroWireload      tcbn65gplustc
+mac_8in_bw8_bw_psum20_pr8_6
+                       ZeroWireload      tcbn65gplustc
 
 
 Global Operating Voltage = 1    
@@ -377,12 +377,12 @@ Power-specific unit information :
     Leakage Power Units = 1nW
 
 
-  Cell Internal Power  =  83.5866 mW   (98%)
-  Net Switching Power  =   1.6810 mW    (2%)
+  Cell Internal Power  =  62.6370 mW   (98%)
+  Net Switching Power  =   1.0694 mW    (2%)
                          ---------
-Total Dynamic Power    =  85.2676 mW  (100%)
+Total Dynamic Power    =  63.7064 mW  (100%)
 
-Cell Leakage Power     =   1.2158 mW
+Cell Leakage Power     = 710.7294 uW
 
 
                  Internal         Switching           Leakage            Total
@@ -392,9 +392,9 @@ io_pad             0.0000            0.0000            0.0000            0.0000 
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
-register          81.0268            0.2654        5.0477e+05           81.7968  (  94.58%)
+register          61.2725            0.2041        3.5334e+05           61.8298  (  95.98%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational      2.5601            1.4156        7.1099e+05            4.6867  (   5.42%)
+combinational      1.3646            0.8652        3.5739e+05            2.5872  (   4.02%)
 --------------------------------------------------------------------------------------------------
-Total             83.5869 mW         1.6810 mW     1.2158e+06 nW        86.4836 mW
+Total             62.6371 mW         1.0694 mW     7.1073e+05 nW        64.4170 mW
 1
