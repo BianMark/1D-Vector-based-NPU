@@ -27,7 +27,7 @@ assign fifo_wr = inst_2q[1];
 assign q_out  = query_q;
 assign out = psum;
 
-mac_16in #(.bw(bw), .bw_psum(bw_psum), .pr(pr)) mac_16in_instance (
+mac_8in #(.bw(bw), .bw_psum(bw_psum), .pr(pr)) mac_16in_instance (
         .a(query_q), 
         .b(key_q),
 	.out(psum)

@@ -47,7 +47,7 @@ analyze -format verilog -lib WORK core.v
 analyze -format verilog -lib WORK sync.v
 analyze -format verilog -lib WORK sfp_row.v
 analyze -format verilog -lib WORK mac_col.v
-analyze -format verilog -lib WORK mac_16in.v
+analyze -format verilog -lib WORK mac_8in.v
 analyze -format verilog -lib WORK mac_array.v
 analyze -format verilog -lib WORK sram_w16.v
 analyze -format verilog -lib WORK ofifo.v

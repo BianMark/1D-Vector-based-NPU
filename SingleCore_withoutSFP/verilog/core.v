@@ -5,7 +5,7 @@ module core (clk, sum_out, mem_in, out, inst, reset);
 parameter col = 8;
 parameter bw = 8;
 parameter bw_psum = 2*bw+4;
-parameter pr = 16;
+parameter pr = 8;
 
 output [bw_psum+3:0] sum_out;
 output [bw_psum*col-1:0] out;
@@ -98,11 +98,11 @@ sram_w16 #(.sram_bit(col*bw_psum)) psum_mem_instance (
 
 
   //////////// For printing purpose ////////////
-/*  always @(posedge clk) begin
+  always @(posedge clk) begin
       if(pmem_wr)
          $display("Memory write to PSUM mem add %x %x ", pmem_add, pmem_in); 
   end
-*/
+
 
 
 endmodule
