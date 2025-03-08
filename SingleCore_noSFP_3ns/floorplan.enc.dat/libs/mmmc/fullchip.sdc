@@ -1,0 +1,1 @@
+/home/linux/ieng6/ee260bwi25/zhbian/1D-Vector-based-NPU/SingleCore_noSFP_3ns/constraints/fullchip.sdc
