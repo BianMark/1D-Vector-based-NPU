@@ -1,0 +1,1 @@
+/home/linux/ieng6/ee260bwi25/zhbian/1D-Vector-based-NPU/noFILLER/constraints/fullchip.sdc

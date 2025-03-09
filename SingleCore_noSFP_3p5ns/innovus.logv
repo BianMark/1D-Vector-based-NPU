@@ -1,0 +1,456 @@
+[03/08 21:31:27      0] 
+[03/08 21:31:27      0] Cadence Innovus(TM) Implementation System.
+[03/08 21:31:27      0] Copyright 2015 Cadence Design Systems, Inc. All rights reserved worldwide.
+[03/08 21:31:27      0] 
+[03/08 21:31:27      0] Version:	v15.23-s045_1, built Fri Apr 22 12:32:52 PDT 2016
+[03/08 21:31:27      0] Options:	
+[03/08 21:31:27      0] Date:		Sat Mar  8 21:31:27 2025
+[03/08 21:31:27      0] Host:		ieng6-ece-13.ucsd.edu (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (4cores*8cpus*Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz 25344KB)
+[03/08 21:31:27      0] OS:		CentOS Linux release 7.9.2009 (Core)
+[03/08 21:31:27      0] 
+[03/08 21:31:27      0] License:
+[03/08 21:31:27      0] 		invs	Innovus Implementation System	15.2	checkout succeeded
+[03/08 21:31:27      0] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[03/08 21:31:28      0] **ERROR: (IMPOAX-142):	Could not open shared library libinnovusoax22.so : /acsnfs3/software/cadence-innovus152/tools/lib/64bit/libcdsSkillPcell.so: undefined symbol: _ZTIN12OpenAccess_413oaFSComponentE
+[03/08 21:31:28      0] 
+[03/08 21:31:28      0] **ERROR: (IMPOAX-142):	Could not open shared library libcdsSkillPcell.so : (null)
+[03/08 21:31:28      0] 
+[03/08 21:31:28      0] **ERROR: (IMPOAX-142):	OA features will be disabled in this session.
+[03/08 21:31:28      0] 
+[03/08 21:31:36      7] @(#)CDS: Innovus v15.23-s045_1 (64bit) 04/22/2016 12:32 (Linux 2.6.18-194.el5)
+[03/08 21:31:36      7] @(#)CDS: NanoRoute 15.23-s045_1 NR160414-1105/15_23-UB (database version 2.30, 317.6.1) {superthreading v1.26}
+[03/08 21:31:36      7] @(#)CDS: AAE 15.23-s014 (64bit) 04/22/2016 (Linux 2.6.18-194.el5)
+[03/08 21:31:36      7] @(#)CDS: CTE 15.23-s022_1 () Apr 22 2016 09:38:45 ( )
+[03/08 21:31:36      7] @(#)CDS: SYNTECH 15.23-s008_1 () Apr 12 2016 21:52:59 ( )
+[03/08 21:31:36      7] @(#)CDS: CPE v15.23-s045
+[03/08 21:31:36      7] @(#)CDS: IQRC/TQRC 15.1.4-s213 (64bit) Tue Feb  9 17:31:28 PST 2016 (Linux 2.6.18-194.el5)
+[03/08 21:31:36      7] @(#)CDS: OA 22.50-p036 Tue Nov  3 09:29:52 2015
+[03/08 21:31:36      7] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[03/08 21:31:36      7] @(#)CDS: RCDB 11.7
+[03/08 21:31:36      7] --- Running on ieng6-ece-13.ucsd.edu (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (4cores*8cpus*Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz 25344KB) ---
+[03/08 21:31:36      7] Create and set the environment variable TMPDIR to /tmp/innovus_temp_26731_ieng6-ece-13.ucsd.edu_zhbian_jKYXiy.
+
+[03/08 21:31:37      8] 
+[03/08 21:31:37      8] **INFO:  MMMC transition support version v31-84 
+[03/08 21:31:37      8] 
+[03/08 21:31:37      8] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[03/08 21:31:37      8] <CMD> suppressMessage ENCEXT-2799
+[03/08 21:31:37      8] <CMD> getDrawView
+[03/08 21:31:37      8] <CMD> loadWorkspace -name Physical
+[03/08 21:31:37      8] <CMD> win
+[03/08 21:31:56     11] <CMD> setNanoRouteMode -quiet -drouteAllowMergedWireAtPin false
+[03/08 21:31:56     11] <CMD> setNanoRouteMode -quiet -drouteFixAntenna true
+[03/08 21:31:56     11] <CMD> setNanoRouteMode -quiet -routeWithTimingDriven true
+[03/08 21:31:56     11] <CMD> setNanoRouteMode -quiet -routeWithSiDriven true
+[03/08 21:31:56     11] <CMD> setNanoRouteMode -quiet -routeSiEffort medium
+[03/08 21:31:56     11] <CMD> setNanoRouteMode -quiet -routeWithSiPostRouteFix false
+[03/08 21:31:56     11] <CMD> setNanoRouteMode -quiet -drouteAutoStop true
+[03/08 21:31:56     11] <CMD> setNanoRouteMode -quiet -routeSelectedNetOnly false
+[03/08 21:31:56     11] <CMD> setNanoRouteMode -quiet -drouteStartIteration default
+[03/08 21:31:56     11] **WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+[03/08 21:31:56     11] <CMD> routeDesign
+[03/08 21:31:56     11] #routeDesign: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 338.83 (MB), peak = 338.84 (MB)
+[03/08 21:31:56     11] #**INFO: setDesignMode -flowEffort standard
+[03/08 21:31:56     11] #**INFO: multi-cut via swapping  will be performed after routing.
+[03/08 21:31:56     11] #**INFO: All auto set options tuned by routeDesign will be restored to their original settings on command completion.
+[03/08 21:31:56     11] #**INFO: auto set of routeReserveSpaceForMultiCut to true
+[03/08 21:31:56     11] #**INFO: auto set of routeConcurrentMinimizeViaCountEffort to high
+[03/08 21:31:56     11] **ERROR: Design must be in memory before running "checkPlace"
+[03/08 21:31:56     11] #WARNING (NRIG-77) Found placement violations. Please investigate and correct before routing. Routing with placement violations can cause long runtime and may be irresolvable.
+[03/08 21:31:56     11] #Use routeDesign -placementCheck to stop on violations. Use routeDesign -noPlacementCheck to skip the check.
+[03/08 21:31:56     11] #**INFO: honoring user setting for routeWithTimingDriven set to true
+[03/08 21:31:56     11] #**INFO: honoring user setting for routeWithSiDriven set to true
+[03/08 21:31:56     11] **ERROR: Design must be in memory before running "changeUseClockNetStatus"
+[03/08 21:31:56     11] #routeDesign: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 337.13 (MB), peak = 338.98 (MB)
+[03/08 21:31:56     11] *** Message Summary: 0 warning(s), 0 error(s)
+[03/08 21:31:56     11] 
+[03/08 21:31:56     11] 0
+[03/08 21:34:01     25] <CMD> set init_pwr_net VDD
+[03/08 21:34:01     25] <CMD> set init_gnd_net VSS
+[03/08 21:34:01     25] <CMD> set init_verilog ./netlist/fullchip.v
+[03/08 21:34:01     25] <CMD> set init_design_netlisttype Verilog
+[03/08 21:34:01     25] <CMD> set init_design_settop 1
+[03/08 21:34:01     25] <CMD> set init_top_cell fullchip
+[03/08 21:34:01     25] <CMD> set init_lef_file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef
+[03/08 21:34:01     25] <CMD> create_library_set -name WC_LIB -timing $worst_timing_lib
+[03/08 21:34:01     25] <CMD> create_library_set -name BC_LIB -timing $best_timing_lib
+[03/08 21:34:01     25] <CMD> create_rc_corner -name Cmax -cap_table $worst_captbl -T 125
+[03/08 21:34:01     25] <CMD> create_rc_corner -name Cmin -cap_table $best_captbl -T -40
+[03/08 21:34:01     25] <CMD> create_delay_corner -name WC -library_set WC_LIB -rc_corner Cmax
+[03/08 21:34:01     25] <CMD> create_delay_corner -name BC -library_set BC_LIB -rc_corner Cmin
+[03/08 21:34:01     25] <CMD> create_constraint_mode -name CON -sdc_file [list $sdc]
+[03/08 21:34:01     25] <CMD> create_analysis_view -name WC_VIEW -delay_corner WC -constraint_mode CON
+[03/08 21:34:01     25] <CMD> create_analysis_view -name BC_VIEW -delay_corner BC -constraint_mode CON
+[03/08 21:34:01     25] <CMD> init_design -setup WC_VIEW -hold BC_VIEW
+[03/08 21:34:01     25] **ERROR: (IMPOAX-820):	The OA features are disabled in the current session of Innovus because the oax shared library could not be loaded properly. This could be because your installation was not properly configured. To enable OA features, exit the current session and re-launch Innovus either after fixing your installation by running the Configure Installation phase, or after setting the OA_HOME variable to point to a proper OA installation. Check the "OpenAccess Installation and Configuration Guide" manual for more information.
+[03/08 21:34:01     25] 
+[03/08 21:34:01     25] **ERROR: (IMPOAX-850):	oaxCreateCdsLibArray command cannot be run as OA features are disabled in this session.
+[03/08 21:34:01     25] 
+[03/08 21:34:01     25] Loading LEF file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef ...
+[03/08 21:34:01     25] WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+[03/08 21:34:01     25] The LEF parser will ignore this statement.
+[03/08 21:34:01     25] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 28.
+[03/08 21:34:01     25] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/08 21:34:01     25] The LEF parser will ignore this statement.
+[03/08 21:34:01     25] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 867.
+[03/08 21:34:01     25] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/08 21:34:01     25] The LEF parser will ignore this statement.
+[03/08 21:34:01     25] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 877.
+[03/08 21:34:01     25] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/08 21:34:01     25] The LEF parser will ignore this statement.
+[03/08 21:34:01     25] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1014.
+[03/08 21:34:01     25] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/08 21:34:01     25] The LEF parser will ignore this statement.
+[03/08 21:34:01     25] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1024.
+[03/08 21:34:01     25] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/08 21:34:01     25] The LEF parser will ignore this statement.
+[03/08 21:34:01     25] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1161.
+[03/08 21:34:01     25] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/08 21:34:01     25] The LEF parser will ignore this statement.
+[03/08 21:34:01     25] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1171.
+[03/08 21:34:01     25] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/08 21:34:01     25] The LEF parser will ignore this statement.
+[03/08 21:34:01     25] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1308.
+[03/08 21:34:01     25] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/08 21:34:01     25] The LEF parser will ignore this statement.
+[03/08 21:34:01     25] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1318.
+[03/08 21:34:01     25] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/08 21:34:01     25] The LEF parser will ignore this statement.
+[03/08 21:34:01     25] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1372.
+[03/08 21:34:01     25] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/08 21:34:01     25] The LEF parser will ignore this statement.
+[03/08 21:34:01     25] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1383.
+[03/08 21:34:01     25] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/08 21:34:01     25] The LEF parser will ignore this statement.
+[03/08 21:34:01     25] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1604.
+[03/08 21:34:01     25] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/08 21:34:01     25] The LEF parser will ignore this statement.
+[03/08 21:34:01     25] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1614.
+[03/08 21:34:01     25] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/08 21:34:01     25] The LEF parser will ignore this statement.
+[03/08 21:34:01     25] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1769.
+[03/08 21:34:01     25] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/08 21:34:01     25] The LEF parser will ignore this statement.
+[03/08 21:34:01     25] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1771.
+[03/08 21:34:01     25] WARNING (LEFPARS-2021): turn-via is obsolete in version 5.6 and later.
+[03/08 21:34:01     25] The LEF parser will ignore this statement.
+[03/08 21:34:01     25] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1772.
+[03/08 21:34:01     25] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/08 21:34:01     25] The LEF parser will ignore this statement.
+[03/08 21:34:01     25] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1776.
+[03/08 21:34:01     25] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/08 21:34:01     25] The LEF parser will ignore this statement.
+[03/08 21:34:01     25] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1778.
+[03/08 21:34:01     25] WARNING (LEFPARS-2021): turn-via is obsolete in version 5.6 and later.
+[03/08 21:34:01     25] The LEF parser will ignore this statement.
+[03/08 21:34:01     25] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1779.
+[03/08 21:34:01     25] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/08 21:34:01     25] The LEF parser will ignore this statement.
+[03/08 21:34:01     25] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1783.
+[03/08 21:34:01     25] Set DBUPerIGU to M2 pitch 400.
+[03/08 21:34:01     25] **WARN: (IMPLF-200):	Pin 'I' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/08 21:34:01     25] Type 'man IMPLF-200' for more detail.
+[03/08 21:34:01     25] 
+[03/08 21:34:01     25] viaInitial starts at Sat Mar  8 21:34:01 2025
+viaInitial ends at Sat Mar  8 21:34:01 2025
+Reading WC_LIB timing library '/home/linux/ieng6/ee260bwi25/public/PDKdata/lib/tcbn65gpluswc.lib' ...
+[03/08 21:34:01     25] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D0' is not defined in the library.
+[03/08 21:34:01     25] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D1' is not defined in the library.
+[03/08 21:34:01     25] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D2' is not defined in the library.
+[03/08 21:34:01     25] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D4' is not defined in the library.
+[03/08 21:34:01     25] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D8' is not defined in the library.
+[03/08 21:34:01     25] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2XD1' is not defined in the library.
+[03/08 21:34:01     25] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D0' is not defined in the library.
+[03/08 21:34:01     25] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D1' is not defined in the library.
+[03/08 21:34:01     25] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D2' is not defined in the library.
+[03/08 21:34:01     25] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D4' is not defined in the library.
+[03/08 21:34:01     25] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D8' is not defined in the library.
+[03/08 21:34:01     25] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3XD1' is not defined in the library.
+[03/08 21:34:01     25] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D0' is not defined in the library.
+[03/08 21:34:01     25] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D1' is not defined in the library.
+[03/08 21:34:01     25] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D2' is not defined in the library.
+[03/08 21:34:01     25] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D4' is not defined in the library.
+[03/08 21:34:01     25] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D8' is not defined in the library.
+[03/08 21:34:01     25] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4XD1' is not defined in the library.
+[03/08 21:34:01     25] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D0' is not defined in the library.
+[03/08 21:34:01     25] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D1' is not defined in the library.
+[03/08 21:34:01     25] Message <TECHLIB-436> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this.
+[03/08 21:34:02     26] Read 811 cells in library 'tcbn65gpluswc' 
+[03/08 21:34:02     26] Reading BC_LIB timing library '/home/linux/ieng6/ee260bwi25/public/PDKdata/lib/tcbn65gplusbc.lib' ...
+[03/08 21:34:03     27] Read 811 cells in library 'tcbn65gplusbc' 
+[03/08 21:34:03     27] *** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.47min, fe_real=2.60min, fe_mem=471.6M) ***
+[03/08 21:34:03     27] *** Begin netlist parsing (mem=471.6M) ***
+[03/08 21:34:03     27] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D4' is defined in LEF but not in the timing library.
+[03/08 21:34:03     27] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D4' is defined in LEF but not in the timing library.
+[03/08 21:34:03     27] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D2' is defined in LEF but not in the timing library.
+[03/08 21:34:03     27] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D2' is defined in LEF but not in the timing library.
+[03/08 21:34:03     27] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D1' is defined in LEF but not in the timing library.
+[03/08 21:34:03     27] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D1' is defined in LEF but not in the timing library.
+[03/08 21:34:03     27] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D0' is defined in LEF but not in the timing library.
+[03/08 21:34:03     27] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D0' is defined in LEF but not in the timing library.
+[03/08 21:34:03     27] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D4' is defined in LEF but not in the timing library.
+[03/08 21:34:03     27] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D4' is defined in LEF but not in the timing library.
+[03/08 21:34:03     27] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D2' is defined in LEF but not in the timing library.
+[03/08 21:34:03     27] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D2' is defined in LEF but not in the timing library.
+[03/08 21:34:03     27] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D1' is defined in LEF but not in the timing library.
+[03/08 21:34:03     27] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D1' is defined in LEF but not in the timing library.
+[03/08 21:34:03     27] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D0' is defined in LEF but not in the timing library.
+[03/08 21:34:03     27] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D0' is defined in LEF but not in the timing library.
+[03/08 21:34:03     27] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2D4' is defined in LEF but not in the timing library.
+[03/08 21:34:03     27] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2D4' is defined in LEF but not in the timing library.
+[03/08 21:34:03     27] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2D2' is defined in LEF but not in the timing library.
+[03/08 21:34:03     27] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2D2' is defined in LEF but not in the timing library.
+[03/08 21:34:03     27] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[03/08 21:34:03     27] To increase the message display limit, refer to the product command reference manual.
+[03/08 21:34:03     27] Created 811 new cells from 2 timing libraries.
+[03/08 21:34:03     27] Reading netlist ...
+[03/08 21:34:03     27] Backslashed names will retain backslash and a trailing blank character.
+[03/08 21:34:03     28] Reading verilog netlist './netlist/fullchip.v'
+[03/08 21:34:03     28] 
+[03/08 21:34:03     28] *** Memory Usage v#1 (Current mem = 486.582M, initial mem = 149.258M) ***
+[03/08 21:34:03     28] *** End netlist parsing (cpu=0:00:00.3, real=0:00:00.0, mem=486.6M) ***
+[03/08 21:34:03     28] Set top cell to fullchip.
+[03/08 21:34:04     28] Hooked 1622 DB cells to tlib cells.
+[03/08 21:34:04     28] Starting recursive module instantiation check.
+[03/08 21:34:04     28] No recursion found.
+[03/08 21:34:04     28] Building hierarchical netlist for Cell fullchip ...
+[03/08 21:34:04     28] *** Netlist is unique.
+[03/08 21:34:04     28] ** info: there are 1832 modules.
+[03/08 21:34:04     28] ** info: there are 26560 stdCell insts.
+[03/08 21:34:04     28] 
+[03/08 21:34:04     28] *** Memory Usage v#1 (Current mem = 557.164M, initial mem = 149.258M) ***
+[03/08 21:34:04     28] **WARN: (IMPFP-3961):	The techSite 'dcore' has no related cells in LEF/OA library. Cannot make calculations for this site type unless cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[03/08 21:34:04     28] Type 'man IMPFP-3961' for more detail.
+[03/08 21:34:04     28] **WARN: (IMPFP-3961):	The techSite 'ccore' has no related cells in LEF/OA library. Cannot make calculations for this site type unless cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[03/08 21:34:04     28] Type 'man IMPFP-3961' for more detail.
+[03/08 21:34:04     28] Set Default Net Delay as 1000 ps.
+[03/08 21:34:04     28] Set Default Net Load as 0.5 pF. 
+[03/08 21:34:04     28] Set Default Input Pin Transition as 0.1 ps.
+[03/08 21:34:04     28] Initializing multi-corner RC extraction with 2 active RC Corners ...
+[03/08 21:34:04     28] Reading Capacitance Table File /home/linux/ieng6/ee260bwi25/public/PDKdata/captbl/cln65g+_1p08m+alrdl_top2_cworst.captable ...
+[03/08 21:34:04     28] **WARN: (IMPEXT-2760):	Layer M9 specified in the cap table is ignored because it is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/08 21:34:04     28] **WARN: (IMPEXT-2771):	Via VIA_8 specified in the cap table is ignored because its top layer, M9, is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/08 21:34:04     28] **WARN: (IMPEXT-2801):	Resistance values are not provided in the Cap Table. Sheet resistance defined in the LEF file will be used.
+[03/08 21:34:04     28] **WARN: (IMPEXT-2710):	Basic Cap table for layer M9 is ignored because the layer is not specified in the technology LEF file.
+[03/08 21:34:04     28] Reading Capacitance Table File /home/linux/ieng6/ee260bwi25/public/PDKdata/captbl/cln65g+_1p08m+alrdl_top2_cbest.captable ...
+[03/08 21:34:04     28] **WARN: (IMPEXT-2760):	Layer M9 specified in the cap table is ignored because it is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/08 21:34:04     28] **WARN: (IMPEXT-2771):	Via VIA_8 specified in the cap table is ignored because its top layer, M9, is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/08 21:34:04     28] **WARN: (IMPEXT-2801):	Resistance values are not provided in the Cap Table. Sheet resistance defined in the LEF file will be used.
+[03/08 21:34:04     28] **WARN: (IMPEXT-2710):	Basic Cap table for layer M9 is ignored because the layer is not specified in the technology LEF file.
+[03/08 21:34:04     28] Importing multi-corner RC tables ... 
+[03/08 21:34:04     28] Summary of Active RC-Corners : 
+[03/08 21:34:04     28]  
+[03/08 21:34:04     28]  Analysis View: WC_VIEW
+[03/08 21:34:04     28]     RC-Corner Name        : Cmax
+[03/08 21:34:04     28]     RC-Corner Index       : 0
+[03/08 21:34:04     28]     RC-Corner Temperature : 125 Celsius
+[03/08 21:34:04     28]     RC-Corner Cap Table   : '/home/linux/ieng6/ee260bwi25/public/PDKdata/captbl/cln65g+_1p08m+alrdl_top2_cworst.captable'
+[03/08 21:34:04     28]     RC-Corner PreRoute Res Factor         : 1
+[03/08 21:34:04     28]     RC-Corner PreRoute Cap Factor         : 1
+[03/08 21:34:04     28]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[03/08 21:34:04     28]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[03/08 21:34:04     28]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[03/08 21:34:04     28]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[03/08 21:34:04     28]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[03/08 21:34:04     28]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[03/08 21:34:04     28]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[03/08 21:34:04     28]  
+[03/08 21:34:04     28]  Analysis View: BC_VIEW
+[03/08 21:34:04     28]     RC-Corner Name        : Cmin
+[03/08 21:34:04     28]     RC-Corner Index       : 1
+[03/08 21:34:04     28]     RC-Corner Temperature : -40 Celsius
+[03/08 21:34:04     28]     RC-Corner Cap Table   : '/home/linux/ieng6/ee260bwi25/public/PDKdata/captbl/cln65g+_1p08m+alrdl_top2_cbest.captable'
+[03/08 21:34:04     28]     RC-Corner PreRoute Res Factor         : 1
+[03/08 21:34:04     28]     RC-Corner PreRoute Cap Factor         : 1
+[03/08 21:34:04     28]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[03/08 21:34:04     28]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[03/08 21:34:04     28]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[03/08 21:34:04     28]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[03/08 21:34:04     28]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[03/08 21:34:04     28]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[03/08 21:34:04     28]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[03/08 21:34:04     28] *Info: initialize multi-corner CTS.
+[03/08 21:34:04     29] Reading timing constraints file './constraints/fullchip.sdc' ...
+[03/08 21:34:04     29] Current (total cpu=0:00:29.1, real=0:02:37, peak res=308.0M, current mem=678.2M)
+[03/08 21:34:04     29] **WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File ./constraints/fullchip.sdc, Line 9).
+[03/08 21:34:04     29] 
+[03/08 21:34:04     29] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'out[159]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/fullchip.sdc, Line 9).
+[03/08 21:34:04     29] 
+[03/08 21:34:04     29] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'out[158]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/fullchip.sdc, Line 9).
+[03/08 21:34:04     29] 
+[03/08 21:34:04     29] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'out[157]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/fullchip.sdc, Line 9).
+[03/08 21:34:04     29] 
+[03/08 21:34:04     29] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'out[156]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/fullchip.sdc, Line 9).
+[03/08 21:34:04     29] 
+[03/08 21:34:04     29] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'out[155]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/fullchip.sdc, Line 9).
+[03/08 21:34:04     29] 
+[03/08 21:34:04     29] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'out[154]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/fullchip.sdc, Line 9).
+[03/08 21:34:04     29] 
+[03/08 21:34:04     29] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'out[153]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/fullchip.sdc, Line 9).
+[03/08 21:34:04     29] 
+[03/08 21:34:04     29] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'out[152]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/fullchip.sdc, Line 9).
+[03/08 21:34:04     29] 
+[03/08 21:34:04     29] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'out[151]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/fullchip.sdc, Line 9).
+[03/08 21:34:04     29] 
+[03/08 21:34:04     29] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'out[150]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/fullchip.sdc, Line 9).
+[03/08 21:34:04     29] 
+[03/08 21:34:04     29] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'out[149]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/fullchip.sdc, Line 9).
+[03/08 21:34:04     29] 
+[03/08 21:34:04     29] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'out[148]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/fullchip.sdc, Line 9).
+[03/08 21:34:04     29] 
+[03/08 21:34:04     29] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'out[147]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/fullchip.sdc, Line 9).
+[03/08 21:34:04     29] 
+[03/08 21:34:04     29] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'out[146]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/fullchip.sdc, Line 9).
+[03/08 21:34:04     29] 
+[03/08 21:34:04     29] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'out[145]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/fullchip.sdc, Line 9).
+[03/08 21:34:04     29] 
+[03/08 21:34:04     29] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'out[144]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/fullchip.sdc, Line 9).
+[03/08 21:34:04     29] 
+[03/08 21:34:04     29] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'out[143]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/fullchip.sdc, Line 9).
+[03/08 21:34:04     29] 
+[03/08 21:34:04     29] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'out[142]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/fullchip.sdc, Line 9).
+[03/08 21:34:04     29] 
+[03/08 21:34:04     29] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'out[141]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/fullchip.sdc, Line 9).
+[03/08 21:34:04     29] 
+[03/08 21:34:04     29] **ERROR: (TCLCMD-979):	Cannot apply the 'set_input_delay' command to port 'out[140]' because it is an invalid port for this command. Fix the timing constraint command so that it is applied to the correct type of port. (File ./constraints/fullchip.sdc, Line 9).
+[03/08 21:34:04     29] 
+[03/08 21:34:04     29] Message <TCLCMD-979> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this. (File ./constraints/fullchip.sdc, Line 9).
+[03/08 21:34:04     29] 
+[03/08 21:34:04     29] INFO (CTE): Reading of timing constraints file ./constraints/fullchip.sdc completed, with 1 Warnings and 20 Errors.
+[03/08 21:34:04     29] Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=323.2M, current mem=695.5M)
+[03/08 21:34:04     29] Current (total cpu=0:00:29.2, real=0:02:37, peak res=323.2M, current mem=695.5M)
+[03/08 21:34:04     29] Summary for sequential cells idenfication: 
+[03/08 21:34:04     29] Identified SBFF number: 199
+[03/08 21:34:04     29] Identified MBFF number: 0
+[03/08 21:34:04     29] Not identified SBFF number: 0
+[03/08 21:34:04     29] Not identified MBFF number: 0
+[03/08 21:34:04     29] Number of sequential cells which are not FFs: 104
+[03/08 21:34:04     29] 
+[03/08 21:34:04     29] Total number of combinational cells: 492
+[03/08 21:34:04     29] Total number of sequential cells: 303
+[03/08 21:34:04     29] Total number of tristate cells: 11
+[03/08 21:34:04     29] Total number of level shifter cells: 0
+[03/08 21:34:04     29] Total number of power gating cells: 0
+[03/08 21:34:04     29] Total number of isolation cells: 0
+[03/08 21:34:04     29] Total number of power switch cells: 0
+[03/08 21:34:04     29] Total number of pulse generator cells: 0
+[03/08 21:34:04     29] Total number of always on buffers: 0
+[03/08 21:34:04     29] Total number of retention cells: 0
+[03/08 21:34:04     29] List of usable buffers: BUFFD1 BUFFD0 BUFFD2 BUFFD3 BUFFD4 BUFFD6 BUFFD8 BUFFD12 BUFFD16 CKBD1 CKBD0 CKBD2 CKBD3 CKBD4 CKBD6 CKBD8 CKBD12 CKBD16
+[03/08 21:34:04     29] Total number of usable buffers: 18
+[03/08 21:34:04     29] List of unusable buffers: BUFFD20 BUFFD24 CKBD20 CKBD24 GBUFFD1 GBUFFD3 GBUFFD2 GBUFFD4 GBUFFD8
+[03/08 21:34:04     29] Total number of unusable buffers: 9
+[03/08 21:34:04     29] List of usable inverters: CKND1 CKND0 CKND2 CKND3 CKND4 CKND6 CKND8 CKND12 CKND16 INVD1 INVD0 INVD2 INVD3 INVD4 INVD6 INVD8 INVD12 INVD16
+[03/08 21:34:04     29] Total number of usable inverters: 18
+[03/08 21:34:04     29] List of unusable inverters: CKND20 CKND24 GINVD2 GINVD1 GINVD4 GINVD3 GINVD8 INVD20 INVD24
+[03/08 21:34:04     29] Total number of unusable inverters: 9
+[03/08 21:34:04     29] List of identified usable delay cells:
+[03/08 21:34:04     29] Total number of identified usable delay cells: 0
+[03/08 21:34:04     29] List of identified unusable delay cells: DEL0 DEL005 DEL01 DEL015 DEL02 DEL1 DEL2 DEL3 DEL4
+[03/08 21:34:04     29] Total number of identified unusable delay cells: 9
+[03/08 21:34:04     29] All delay cells are dont_use. Buffers will be used to fix hold violations.
+[03/08 21:34:05     29] 
+[03/08 21:34:05     29] *** Summary of all messages that are not suppressed in this session:
+[03/08 21:34:05     29] Severity  ID               Count  Summary                                  
+[03/08 21:34:05     29] WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[03/08 21:34:05     29] WARNING   IMPFP-3961           2  The techSite '%s' has no related cells i...
+[03/08 21:34:05     29] WARNING   IMPEXT-2710          2  Basic Cap table for layer M%d is ignored...
+[03/08 21:34:05     29] WARNING   IMPEXT-2760          2  Layer M%d specified in the cap table is ...
+[03/08 21:34:05     29] WARNING   IMPEXT-2771          2  Via %s specified in the cap table is ign...
+[03/08 21:34:05     29] WARNING   IMPEXT-2801          2  Resistance values are not provided in th...
+[03/08 21:34:05     29] WARNING   IMPVL-159         1622  Pin '%s' of cell '%s' is defined in LEF ...
+[03/08 21:34:05     29] ERROR     IMPOAX-820           1  The OA features are disabled in the curr...
+[03/08 21:34:05     29] ERROR     IMPOAX-850           1  %s command cannot be run as OA features ...
+[03/08 21:34:05     29] *** Message Summary: 1633 warning(s), 2 error(s)
+[03/08 21:34:05     29] 
+[03/08 21:34:05     29] <CMD> set_interactive_constraint_modes {CON}
+[03/08 21:34:05     29] <CMD> setDesignMode -process 65
+[03/08 21:34:05     29] Applying the recommended capacitance filtering threshold values for 65nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.1.
+[03/08 21:34:05     29] 	These values will be used by all post-route extraction engines, including tQuantus, IQRC and Quantus QRC extraction.
+[03/08 21:34:05     29] 	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
+[03/08 21:34:05     29] 	The accuracy mode for postRoute effortLevel low extraction will be set to 'high'.
+[03/08 21:34:05     29] 	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode will be 'medium' if Quantus QRC technology file is specified else 'low'.
+[03/08 21:34:05     29] Updating process node dependent CCOpt properties for the 65nm process node.
+[03/08 21:34:11     30] <CMD> setNanoRouteMode -quiet -drouteAllowMergedWireAtPin false
+[03/08 21:34:11     30] <CMD> setNanoRouteMode -quiet -drouteFixAntenna true
+[03/08 21:34:11     30] <CMD> setNanoRouteMode -quiet -routeWithTimingDriven true
+[03/08 21:34:11     30] <CMD> setNanoRouteMode -quiet -routeWithSiDriven true
+[03/08 21:34:11     30] <CMD> setNanoRouteMode -quiet -routeSiEffort medium
+[03/08 21:34:11     30] <CMD> setNanoRouteMode -quiet -routeWithSiPostRouteFix false
+[03/08 21:34:11     30] <CMD> setNanoRouteMode -quiet -drouteAutoStop true
+[03/08 21:34:11     30] <CMD> setNanoRouteMode -quiet -routeSelectedNetOnly false
+[03/08 21:34:11     30] <CMD> setNanoRouteMode -quiet -drouteStartIteration default
+[03/08 21:34:11     30] **WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+[03/08 21:34:11     30] <CMD> routeDesign
+[03/08 21:34:11     30] #routeDesign: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 706.23 (MB), peak = 706.23 (MB)
+[03/08 21:34:11     30] #**INFO: setDesignMode -flowEffort standard
+[03/08 21:34:11     30] #**INFO: multi-cut via swapping  will be performed after routing.
+[03/08 21:34:11     30] #**INFO: All auto set options tuned by routeDesign will be restored to their original settings on command completion.
+[03/08 21:34:11     30] #**INFO: auto set of routeReserveSpaceForMultiCut to true
+[03/08 21:34:11     30] #**INFO: auto set of routeConcurrentMinimizeViaCountEffort to high
+[03/08 21:34:11     30] #spOpts: N=65 
+[03/08 21:34:11     30] Core basic site is core
+[03/08 21:34:11     30] Estimated cell power/ground rail width = 0.225 um
+[03/08 21:34:11     30] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[03/08 21:34:11     30] Begin checking placement ... (start mem=836.3M, init mem=847.3M)
+[03/08 21:34:11     30] *info: Placed = 0             
+[03/08 21:34:11     30] *info: Unplaced = 26560       
+[03/08 21:34:12     30] Placement Density:70.01%(134189/191669)
+[03/08 21:34:12     30] Finished checkPlace (cpu: total=0:00:00.2, vio checks=0:00:00.0; mem=847.3M)
+[03/08 21:34:12     30] #**INFO: honoring user setting for routeWithTimingDriven set to true
+[03/08 21:34:12     30] #**INFO: honoring user setting for routeWithSiDriven set to true
+[03/08 21:34:12     30] 
+[03/08 21:34:12     30] changeUseClockNetStatus Option :  -noFixedNetWires 
+[03/08 21:34:12     30] *** Changed status on (0) nets in Clock.
+[03/08 21:34:12     30] *** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=847.3M) ***
+[03/08 21:34:12     30] 
+[03/08 21:34:12     30] globalDetailRoute
+[03/08 21:34:12     30] 
+[03/08 21:34:12     30] #setNanoRouteMode -drouteAutoStop true
+[03/08 21:34:12     30] #setNanoRouteMode -drouteFixAntenna true
+[03/08 21:34:12     30] #setNanoRouteMode -routeConcurrentMinimizeViaCountEffort "high"
+[03/08 21:34:12     30] #setNanoRouteMode -routeReserveSpaceForMultiCut true
+[03/08 21:34:12     30] #setNanoRouteMode -routeSelectedNetOnly false
+[03/08 21:34:12     30] #setNanoRouteMode -routeWithSiDriven true
+[03/08 21:34:12     30] #setNanoRouteMode -routeWithTimingDriven true
+[03/08 21:34:12     30] #Start globalDetailRoute on Sat Mar  8 21:34:12 2025
+[03/08 21:34:12     30] #
+[03/08 21:34:12     30] #Generating timing data, please wait...
+[03/08 21:34:12     30] #29101 total nets, 0 already routed, 0 will ignore in trialRoute
+[03/08 21:34:12     30] **ERROR: Design must be placed before running humRouter
+[03/08 21:34:12     30] #Dump tif for version 2.1
+[03/08 21:34:17     36] End Timing Check Calculation. (CPU Time=0:00:00.3, Real Time=0:00:00.0)
+[03/08 21:34:17     36] End delay calculation. (MEM=1148.57 CPU=0:00:03.7 REAL=0:00:03.0)
+[03/08 21:34:20     39] #Generating timing data took: cpu time = 00:00:09, elapsed time = 00:00:09, memory = 846.42 (MB), peak = 886.64 (MB)
+[03/08 21:34:20     39] #Done generating timing data.
+[03/08 21:34:21     40] #ERROR (NRIG-69) INSTANCE core_instance/mac_array_instance/col_idx_1__mac_col_inst/mac_16in_instance/DP_OP_38J7_122_4029_U180 is unplaced. All instances must be placed before routing. Place the instance before continuing.
+[03/08 21:34:21     40] #Cpu time = 00:00:10
+[03/08 21:34:21     40] #Elapsed time = 00:00:09
+[03/08 21:34:21     40] #Increased memory = 64.22 (MB)
+[03/08 21:34:21     40] #Total memory = 781.85 (MB)
+[03/08 21:34:21     40] #Peak memory = 886.64 (MB)
+[03/08 21:34:21     40] #WARNING (NRIF-19) Failed to complete globalDetailRoute on Sat Mar  8 21:34:21 2025
+[03/08 21:34:21     40] #
+[03/08 21:34:21     40] #routeDesign: cpu time = 00:00:10, elapsed time = 00:00:10, memory = 782.09 (MB), peak = 886.64 (MB)
+[03/08 21:34:21     40] *** Message Summary: 0 warning(s), 0 error(s)
+[03/08 21:34:21     40] 
+[03/08 21:34:21     40] 0
+[03/08 21:34:40     42] 
+[03/08 21:34:40     42] *** Memory Usage v#1 (Current mem = 1027.301M, initial mem = 149.258M) ***
+[03/08 21:34:40     42] 
+[03/08 21:34:40     42] *** Summary of all messages that are not suppressed in this session:
+[03/08 21:34:40     42] Severity  ID               Count  Summary                                  
+[03/08 21:34:40     42] WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[03/08 21:34:40     42] WARNING   IMPFP-3961           2  The techSite '%s' has no related cells i...
+[03/08 21:34:40     42] WARNING   IMPEXT-2710          2  Basic Cap table for layer M%d is ignored...
+[03/08 21:34:40     42] WARNING   IMPEXT-2760          2  Layer M%d specified in the cap table is ...
+[03/08 21:34:40     42] WARNING   IMPEXT-2771          2  Via %s specified in the cap table is ign...
+[03/08 21:34:40     42] WARNING   IMPEXT-2801          2  Resistance values are not provided in th...
+[03/08 21:34:40     42] WARNING   IMPVL-159         1622  Pin '%s' of cell '%s' is defined in LEF ...
+[03/08 21:34:40     42] ERROR     IMPOAX-142           3  %s                                       
+[03/08 21:34:40     42] ERROR     IMPOAX-820           1  The OA features are disabled in the curr...
+[03/08 21:34:40     42] ERROR     IMPOAX-850           1  %s command cannot be run as OA features ...
+[03/08 21:34:40     42] WARNING   IMPTCM-77            2  Option "%s" for command %s is obsolete a...
+[03/08 21:34:40     42] *** Message Summary: 1635 warning(s), 5 error(s)
+[03/08 21:34:40     42] 
+[03/08 21:34:40     42] --- Ending "Innovus" (totcpu=0:00:42.8, real=0:03:13, mem=1027.3M) ---
