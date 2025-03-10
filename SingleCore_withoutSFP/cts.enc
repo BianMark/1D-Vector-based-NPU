@@ -1,1 +1,1 @@
-restoreDesign [file dirname [file normalize [info script]]]/cts.enc.dat fullchip
+restoreDesign [file dirname [file normalize [info script]]]/cts.enc.dat core

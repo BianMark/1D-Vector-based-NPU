@@ -1,4 +1,4 @@
-set top_module fullchip
+set top_module core
 set rtlPath "./verilog"
 
 # Target library
@@ -42,7 +42,7 @@ define_design_lib WORK -path .template
 set verilogout_single_bit false
 
 # read RTL
-analyze -format verilog -lib WORK fullchip.v
+#analyze -format verilog -lib WORK fullchip.v
 analyze -format verilog -lib WORK core.v
 analyze -format verilog -lib WORK sync.v
 analyze -format verilog -lib WORK mac_col.v

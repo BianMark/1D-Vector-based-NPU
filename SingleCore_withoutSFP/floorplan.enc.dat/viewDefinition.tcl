@@ -36,7 +36,7 @@ create_delay_corner -name BC\
    -rc_corner Cmin
 create_constraint_mode -name CON\
    -sdc_files\
-    [list ${::IMEX::libVar}/mmmc/fullchip.sdc]
+    [list ${::IMEX::libVar}/mmmc/core.sdc]
 create_analysis_view -name WC_VIEW -constraint_mode CON -delay_corner WC
 create_analysis_view -name BC_VIEW -constraint_mode CON -delay_corner BC
 set_analysis_view -setup [list WC_VIEW] -hold [list BC_VIEW]
