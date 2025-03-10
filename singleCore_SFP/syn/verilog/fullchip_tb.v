@@ -198,7 +198,7 @@ $display("##### Estimated norm result #####");
     for (q=0; q<col; q=q+1) begin
         temp5b = result[t][q];
         temp5b = temp5b[bw_psum-1] ? (~temp5b + 1) : temp5b;
-        norm5b = result[t][q] / sum[t][23:7];
+        norm5b = temp5b / sum[t][23:6];
         //$display("norm5b[%2d][%2d]: %5h", t, q, norm5b);
         
         norm16b = {norm16b[139:0], norm5b};
@@ -444,17 +444,44 @@ sfp_acc = 1;
 $display("##### realize norm's division in sfp #####");
   #0.5 clk = 1'b0; sfp_div = 1;
   #0.5 clk = 1'b1;
+  #0.5 clk = 1'b0; pmem_rd = 1; sfp_div = 0;
+  #0.5 clk = 1'b1;
   #0.5 clk = 1'b0; 
   #0.5 clk = 1'b1;
-  #0.5 clk = 1'b0; pmem_rd = 1;
+  #0.5 clk = 1'b0;
   #0.5 clk = 1'b1;
-  for (q=0; q<total_cycle; q=q+1) begin
-    #0.5 clk = 1'b0;
+  for (q=0; q<total_cycle+1; q=q+1) begin
+    #0.5 clk = 1'b0; sfp_div = 1; sfp_wr2pmem = 1; pmem_wr = 1;
     #0.5 clk = 1'b1;
-    pmem_add = pmem_add + 1;
+    #0.5 clk = 1'b0; pmem_add = pmem_add + 1; pmem_wr = 0;
+    #0.5 clk = 1'b1;
+    #0.5 clk = 1'b0; sfp_div = 0;
+    #0.5 clk = 1'b1; 
     #0.5 clk = 1'b0;
     #0.5 clk = 1'b1;
   end
+
+
+
+$display("##### display norm results from pmem #####");
+
+#0.5 clk = 1'b0;  
+pmem_rd = 1; pmem_add = 1;
+#0.5 clk = 1'b1; 
+
+  for (q=1; q<total_cycle+1; q=q+1) begin
+    #0.5 clk = 1'b0; 
+    #0.5 clk = 1'b1; 
+    $display("norm @PMEM Add%2d: %40h", q, pmem_out);
+    pmem_add = pmem_add + 1;
+    #0.5 clk = 1'b0; 
+    #0.5 clk = 1'b1; 
+ 
+  end
+
+  #0.5 clk = 1'b0;  
+  pmem_rd = 0; pmem_add = 0;
+  #0.5 clk = 1'b1;  
 
 
 

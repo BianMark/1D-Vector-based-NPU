@@ -58,7 +58,7 @@ module sfp_row (clk, reset, acc, div, fifo_ext_rd, sum_in, sum_out, sfp_in, sfp_
   assign sfp_out[bw_psum*8-1 : bw_psum*7] = sfp_out_sign7;
 
 
-  assign sum_2core = sum_this_core[bw_psum+3:7] + sum_in[bw_psum+3:7];
+  assign sum_2core = sum_this_core[bw_psum+3:6] + sum_in[bw_psum+3:6];
 
   assign abs[bw_psum*1-1 : bw_psum*0] = (sfp_in[bw_psum*1-1]) ?  (~sfp_in[bw_psum*1-1 : bw_psum*0] + 1)  :  sfp_in[bw_psum*1-1 : bw_psum*0];
   assign abs[bw_psum*2-1 : bw_psum*1] = (sfp_in[bw_psum*2-1]) ?  (~sfp_in[bw_psum*2-1 : bw_psum*1] + 1)  :  sfp_in[bw_psum*2-1 : bw_psum*1];

@@ -115,10 +115,10 @@ sfp_row #(.bw(bw), .col(col)) sfp_instance (
 
   //////////// For printing purpose ////////////
   always @(posedge clk) begin
-        if(pmem_wr)
-                $display("Memory write to PSUM mem add %x %x ", pmem_add, pmem_in); 
-        if(sfp_div)
-                $display("SFP div result %x ", sfp_out);
+        //if(pmem_wr)
+        //        $display("Memory write to PSUM mem add %x %x ", pmem_add, pmem_in); 
+        //if(sfp_div)
+        //        $display("SFP div result %x ", sfp_out);
   end
 
 
