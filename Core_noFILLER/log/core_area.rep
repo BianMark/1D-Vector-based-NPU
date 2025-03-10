@@ -1,0 +1,36 @@
+ 
+****************************************
+Report : reference
+Design : core
+Version: K-2015.06-SP2
+Date   : Sun Mar  9 13:49:53 2025
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+INVD0              tcbn65gplustc
+                                  1.080000       3      3.240000  
+MUX2D0             tcbn65gplustc
+                                  3.240000      64    207.360001  
+NR2D0              tcbn65gplustc
+                                  1.440000       3      4.320000  
+mac_array_col8_bw8_bw_psum20_pr8
+                              45818.999831       1  45818.999831  h, n
+ofifo_col8_bw20               33877.439955       1  33877.439955  h, n
+sram_w16_sram_bit64_0         12121.919877       1  12121.919877  h, n
+sram_w16_sram_bit64_1         12125.159877       1  12125.159877  h, n
+sram_w16_sram_bit160          30030.839095       1  30030.839095  h, n
+-----------------------------------------------------------------------------
+Total 8 references                                  134189.278636
+1
