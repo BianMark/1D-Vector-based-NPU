@@ -1,0 +1,46 @@
+ 
+****************************************
+Report : reference
+Design : sram_w16
+Version: K-2015.06-SP2
+Date   : Mon Mar 10 17:14:52 2025
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AN4D0              tcbn65gplustc
+                                  2.880000     256    737.280029  
+AOI22D0            tcbn65gplustc
+                                  2.520000    1024   2580.479980  
+BUFFD0             tcbn65gplustc
+                                  1.440000      65     93.600004  
+BUFFD1             tcbn65gplustc
+                                  1.440000      51     73.440003  
+CKND2D0            tcbn65gplustc
+                                  1.440000     136    195.840008  
+EDFQD1             tcbn65gplustc
+                                  9.360000    2176  20367.359253  n
+INR2XD0            tcbn65gplustc
+                                  2.160000      17     36.720001  
+INVD0              tcbn65gplustc
+                                  1.080000       4      4.320000  
+NR2D0              tcbn65gplustc
+                                  1.440000       8     11.520000  
+NR2XD0             tcbn65gplustc
+                                  1.440000       8     11.520000  
+OR2D0              tcbn65gplustc
+                                  2.160000       1      2.160000  
+-----------------------------------------------------------------------------
+Total 11 references                                 24114.239280
+1
