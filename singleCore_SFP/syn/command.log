@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version K-2015.06-SP2 for linux64 -- Aug 31, 2015
-#@ # Date:   Mon Mar 10 14:34:33 2025
+#@ # Date:   Mon Mar 10 20:13:10 2025
 #@ # Run by: zhbian@ieng6-ece-13.ucsd.edu
 #@ 
 
@@ -3835,13 +3835,12 @@ source run_dc.tcl > out.log
 #@ set verilogout_single_bit false
 #@ 
 #@ # read RTL
-#@ #analyze -format verilog -lib WORK fullchip.v
 #@ analyze -format verilog -lib WORK core.v
 #@ analyze -format verilog -lib WORK sync.v
 #@ analyze -format verilog -lib WORK mac_col.v
 #@ analyze -format verilog -lib WORK mac_8in.v
 #@ analyze -format verilog -lib WORK mac_array.v
-#@ analyze -format verilog -lib WORK sram_w16.v
+#@ # analyze -format verilog -lib WORK sram_w16.v
 #@ analyze -format verilog -lib WORK sfp_row.v
 #@ analyze -format verilog -lib WORK ofifo.v
 #@ analyze -format verilog -lib WORK fifo_depth16.v
@@ -3935,4 +3934,3 @@ source run_dc.tcl > out.log
 #@ 
 #@ # -- End source run_dc.tcl
 
-exit

@@ -42,13 +42,12 @@ define_design_lib WORK -path .template
 set verilogout_single_bit false
 
 # read RTL
-#analyze -format verilog -lib WORK fullchip.v
 analyze -format verilog -lib WORK core.v
 analyze -format verilog -lib WORK sync.v
 analyze -format verilog -lib WORK mac_col.v
 analyze -format verilog -lib WORK mac_8in.v
 analyze -format verilog -lib WORK mac_array.v
-analyze -format verilog -lib WORK sram_w16.v
+# analyze -format verilog -lib WORK sram_w16.v
 analyze -format verilog -lib WORK sfp_row.v
 analyze -format verilog -lib WORK ofifo.v
 analyze -format verilog -lib WORK fifo_depth16.v
