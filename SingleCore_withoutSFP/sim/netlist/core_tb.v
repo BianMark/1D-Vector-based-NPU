@@ -69,7 +69,7 @@ reg [bw_psum+3:0] temp_sum;
 reg [bw_psum*col-1:0] temp16b;
 
 
-
+/*
 core #(.bw(bw), .bw_psum(bw_psum), .col(col), .pr(pr)) core_instance (
       .reset(reset),
       .clk(clk), 
@@ -77,8 +77,19 @@ core #(.bw(bw), .bw_psum(bw_psum), .col(col), .pr(pr)) core_instance (
       .inst(inst),
       .out(pmem_out)
 );
+*/
+
+core  core_instance (
+      .clk(clk),
+      .sum_out(),
+      .out(pmem_out),
+      .mem_in(mem_in),
+      .inst(inst),
+      .reset(reset)
+);
 
 
+initial $sdf_annotate("./constraints/core_WC.sdf", core_instance, , , "MAXIMUM", "1:1:1", "FROM_MTM");
 initial begin 
 
   $dumpfile("core_tb.vcd");

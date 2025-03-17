@@ -1,0 +1,8 @@
+define LIB_MAP ( $LIB_MAP \
+, ../../../../../../../public/PDKdata/verilog/tcbn65gplus.v => tcbn65gplus \
+, ../../../netlist/core.pnr.v => core \
+)
+define LIB_MAP ( $LIB_MAP \
+, ../../../../../../../public/PDKdata/verilog/tcbn65gplus.v => tcbn65gplus \
+, ../../../netlist/core.pnr.v => core \
+)
