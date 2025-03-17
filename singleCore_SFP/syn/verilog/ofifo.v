@@ -1,5 +1,3 @@
-// Created by prof. Mingu Kang @VVIP Lab in UCSD ECE department
-// Please do not spread this code without permission 
 module ofifo (clk, in, out, rd, wr, o_valid, reset, o_full);
 
   parameter col  = 16;

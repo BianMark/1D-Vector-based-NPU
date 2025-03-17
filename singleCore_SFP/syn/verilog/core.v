@@ -1,5 +1,3 @@
-// Created by prof. Mingu Kang @VVIP Lab in UCSD ECE department
-// Please do not spread this code without permission 
 module core (clk, sum_out, mem_in, out, inst, reset);
 
 parameter col = 8;

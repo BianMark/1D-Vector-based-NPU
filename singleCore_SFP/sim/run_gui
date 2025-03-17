@@ -1,13 +1,15 @@
 xrun \
+-define INITIALIZE_MEMORY \
+-xminitialize 0 \
+-nowarn CUVWSP \
 +gui \
 +access+rwc \
 +xm64bit \
 +xmstatus \
 +xmtimescale+1ns/1ps \
 +xmoveride_timescale \
-+xmseq_udp_delay+20ps \
--v ./netlist/add.pnr.v \
+-v ./netlist/core.pnr.v \
 -v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v \
-./netlist/add_tb.v
-
-
+-v ./netlist/core_tb.v \
+./netlist/sram_w16.v
+#+xmseq_udp_delay+20ps \

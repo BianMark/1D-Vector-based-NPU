@@ -1,6 +1,6 @@
 # Synopsis design constraints for sram_in
-set clock_cycle 1
-set io_delay 0.2 
+set clock_cycle 3.5
+set io_delay 0.2
 set clock_port CLK
 
 create_clock -name CLK -period $clock_cycle [get_ports $clock_port]

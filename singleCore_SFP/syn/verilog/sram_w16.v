@@ -1,5 +1,3 @@
-// Created by prof. Mingu Kang @VVIP Lab in UCSD ECE department
-// Please do not spread this code without permission 
 module sram_w16 (CLK, D, Q, CEN, WEN, A);
 
   parameter sram_bit = 128;
