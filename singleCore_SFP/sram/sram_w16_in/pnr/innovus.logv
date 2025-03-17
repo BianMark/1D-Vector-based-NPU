@@ -1,0 +1,49 @@
+[03/17 15:13:56      0] 
+[03/17 15:13:56      0] Cadence Innovus(TM) Implementation System.
+[03/17 15:13:56      0] Copyright 2015 Cadence Design Systems, Inc. All rights reserved worldwide.
+[03/17 15:13:56      0] 
+[03/17 15:13:56      0] Version:	v15.23-s045_1, built Fri Apr 22 12:32:52 PDT 2016
+[03/17 15:13:56      0] Options:	
+[03/17 15:13:56      0] Date:		Mon Mar 17 15:13:56 2025
+[03/17 15:13:56      0] Host:		ieng6-ece-13.ucsd.edu (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (4cores*8cpus*Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz 25344KB)
+[03/17 15:13:56      0] OS:		CentOS Linux release 7.9.2009 (Core)
+[03/17 15:13:56      0] 
+[03/17 15:13:56      0] License:
+[03/17 15:13:56      0] 		invs	Innovus Implementation System	15.2	checkout succeeded
+[03/17 15:13:56      0] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[03/17 15:14:00      0] **ERROR: (IMPOAX-142):	Could not open shared library libinnovusoax22.so : /acsnfs3/software/cadence-innovus152/tools/lib/64bit/libcdsSkillPcell.so: undefined symbol: _ZTIN12OpenAccess_413oaFSComponentE
+[03/17 15:14:00      0] 
+[03/17 15:14:00      0] **ERROR: (IMPOAX-142):	Could not open shared library libcdsSkillPcell.so : (null)
+[03/17 15:14:00      0] 
+[03/17 15:14:00      0] **ERROR: (IMPOAX-142):	OA features will be disabled in this session.
+[03/17 15:14:00      0] 
+[03/17 15:14:13      8] @(#)CDS: Innovus v15.23-s045_1 (64bit) 04/22/2016 12:32 (Linux 2.6.18-194.el5)
+[03/17 15:14:13      8] @(#)CDS: NanoRoute 15.23-s045_1 NR160414-1105/15_23-UB (database version 2.30, 317.6.1) {superthreading v1.26}
+[03/17 15:14:13      8] @(#)CDS: AAE 15.23-s014 (64bit) 04/22/2016 (Linux 2.6.18-194.el5)
+[03/17 15:14:13      8] @(#)CDS: CTE 15.23-s022_1 () Apr 22 2016 09:38:45 ( )
+[03/17 15:14:13      8] @(#)CDS: SYNTECH 15.23-s008_1 () Apr 12 2016 21:52:59 ( )
+[03/17 15:14:13      8] @(#)CDS: CPE v15.23-s045
+[03/17 15:14:13      8] @(#)CDS: IQRC/TQRC 15.1.4-s213 (64bit) Tue Feb  9 17:31:28 PST 2016 (Linux 2.6.18-194.el5)
+[03/17 15:14:13      8] @(#)CDS: OA 22.50-p036 Tue Nov  3 09:29:52 2015
+[03/17 15:14:13      8] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[03/17 15:14:13      8] @(#)CDS: RCDB 11.7
+[03/17 15:14:13      8] --- Running on ieng6-ece-13.ucsd.edu (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (4cores*8cpus*Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz 25344KB) ---
+[03/17 15:14:13      8] Create and set the environment variable TMPDIR to /tmp/innovus_temp_24777_ieng6-ece-13.ucsd.edu_zhbian_OKAPPl.
+
+[03/17 15:14:13      9] 
+[03/17 15:14:13      9] **INFO:  MMMC transition support version v31-84 
+[03/17 15:14:13      9] 
+[03/17 15:14:13      9] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[03/17 15:14:13      9] <CMD> suppressMessage ENCEXT-2799
+[03/17 15:14:14      9] <CMD> getDrawView
+[03/17 15:14:14      9] <CMD> loadWorkspace -name Physical
+[03/17 15:14:14      9] <CMD> win
+[03/17 15:14:19     10] 
+[03/17 15:14:19     10] *** Memory Usage v#1 (Current mem = 422.070M, initial mem = 152.258M) ***
+[03/17 15:14:19     10] 
+[03/17 15:14:19     10] *** Summary of all messages that are not suppressed in this session:
+[03/17 15:14:19     10] Severity  ID               Count  Summary                                  
+[03/17 15:14:19     10] ERROR     IMPOAX-142           3  %s                                       
+[03/17 15:14:19     10] *** Message Summary: 0 warning(s), 3 error(s)
+[03/17 15:14:19     10] 
+[03/17 15:14:19     10] --- Ending "Innovus" (totcpu=0:00:10.3, real=0:00:23.0, mem=422.1M) ---

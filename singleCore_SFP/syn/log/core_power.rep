@@ -1,13 +1,14 @@
 Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
 Warning: Design has unannotated primary inputs. (PWR-414)
 Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
  
 ****************************************
 Report : power
         -analysis_effort low
 Design : core
 Version: K-2015.06-SP2
-Date   : Mon Mar 10 20:28:39 2025
+Date   : Mon Mar 17 15:19:17 2025
 ****************************************
 
 
@@ -25,8 +26,6 @@ core                   ZeroWireload      tcbn65gplustc
 mac_array_col8_bw8_bw_psum20_pr8
                        ZeroWireload      tcbn65gplustc
 ofifo_col8_bw20        ZeroWireload      tcbn65gplustc
-sram_w16_sram_bit64_1  ZeroWireload      tcbn65gplustc
-sram_w16_sram_bit160   ZeroWireload      tcbn65gplustc
 sfp_row_col8_bw8       ZeroWireload      tcbn65gplustc
 mac_col_bw8_bw_psum20_pr8_col_id1
                        ZeroWireload      tcbn65gplustc
@@ -65,7 +64,6 @@ fifo_mux_8_1_bw24_simd1_3
                        ZeroWireload      tcbn65gplustc
 fifo_mux_2_1_bw24_simd1_29
                        ZeroWireload      tcbn65gplustc
-sram_w16_sram_bit64_0  ZeroWireload      tcbn65gplustc
 fifo_depth16_bw20_simd1_0
                        ZeroWireload      tcbn65gplustc
 fifo_depth16_bw20_simd1_1
@@ -413,12 +411,12 @@ Power-specific unit information :
     Leakage Power Units = 1nW
 
 
-  Cell Internal Power  =  21.0697 mW   (98%)
-  Net Switching Power  = 534.6527 uW    (2%)
+  Cell Internal Power  =  11.5255 mW    (5%)
+  Net Switching Power  = 215.6248 mW   (95%)
                          ---------
-Total Dynamic Power    =  21.6044 mW  (100%)
+Total Dynamic Power    = 227.1503 mW  (100%)
 
-Cell Leakage Power     = 850.6641 uW
+Cell Leakage Power     = 596.8655 uW
 
 
                  Internal         Switching           Leakage            Total
@@ -427,10 +425,10 @@ Power Group      Power            Power               Power              Power  
 io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
-clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
-register          20.4512        7.3244e-02        3.6889e+05           20.8934  (  93.05%)
+clock_network      1.2200          215.1931        1.5532e+05          216.5755  (  95.10%)
+register           9.4581        6.1330e-02        1.6395e+05            9.6834  (   4.25%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational      0.6186            0.4614        4.8177e+05            1.5617  (   6.95%)
+combinational      0.8474            0.3579        2.7760e+05            1.4829  (   0.65%)
 --------------------------------------------------------------------------------------------------
-Total             21.0698 mW         0.5347 mW     8.5066e+05 nW        22.4551 mW
+Total             11.5255 mW       215.6123 mW     5.9687e+05 nW       227.7418 mW
 1

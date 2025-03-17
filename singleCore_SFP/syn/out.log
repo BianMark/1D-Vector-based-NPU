@@ -56,80 +56,14 @@ Presto compilation completed successfully.
 Information: Building the design 'ofifo' instantiated from design 'core' with
 	the parameters "bw=20,col=8". (HDL-193)
 Presto compilation completed successfully.
-Information: Building the design 'sram_w16' instantiated from design 'core' with
+Warning: Cannot find the design 'sram_w16_in' in the library 'WORK'. (LBR-1)
+Information: Building the design 'sram_w16_in' instantiated from design 'core' with
 	the parameters "sram_bit=64". (HDL-193)
-
-Statistics for case statements in always block at line 48 in file
-	'./verilog/sram_w16.v'
-===============================================
-|           Line           |  full/ parallel  |
-===============================================
-|            51            |    auto/auto     |
-|            72            |    auto/auto     |
-===============================================
-
-Inferred memory devices in process
-	in routine sram_w16_sram_bit64 line 48 in file
-		'./verilog/sram_w16.v'.
-===============================================================================
-|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
-===============================================================================
-|    memory12_reg     | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
-|    memory10_reg     | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
-|    memory11_reg     | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
-|    memory13_reg     | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
-|    memory14_reg     | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
-|        Q_reg        | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
-|    memory15_reg     | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
-|     memory0_reg     | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
-|     memory1_reg     | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
-|     memory2_reg     | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
-|     memory3_reg     | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
-|     memory4_reg     | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
-|     memory5_reg     | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
-|     memory6_reg     | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
-|     memory7_reg     | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
-|     memory8_reg     | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
-|     memory9_reg     | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
-===============================================================================
-Presto compilation completed successfully.
-Information: Building the design 'sram_w16' instantiated from design 'core' with
+Warning: Cannot find the design 'sram_w16_in' in the library 'WORK'. (LBR-1)
+Warning: Cannot find the design 'sram_w16_out' in the library 'WORK'. (LBR-1)
+Information: Building the design 'sram_w16_out' instantiated from design 'core' with
 	the parameters "sram_bit=160". (HDL-193)
-
-Statistics for case statements in always block at line 48 in file
-	'./verilog/sram_w16.v'
-===============================================
-|           Line           |  full/ parallel  |
-===============================================
-|            51            |    auto/auto     |
-|            72            |    auto/auto     |
-===============================================
-
-Inferred memory devices in process
-	in routine sram_w16_sram_bit160 line 48 in file
-		'./verilog/sram_w16.v'.
-===============================================================================
-|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
-===============================================================================
-|    memory12_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
-|    memory10_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
-|    memory11_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
-|    memory13_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
-|    memory14_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
-|        Q_reg        | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
-|    memory15_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
-|     memory0_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
-|     memory1_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
-|     memory2_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
-|     memory3_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
-|     memory4_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
-|     memory5_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
-|     memory6_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
-|     memory7_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
-|     memory8_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
-|     memory9_reg     | Flip-flop |  160  |  Y  | N  | N  | N  | N  | N  | N  |
-===============================================================================
-Presto compilation completed successfully.
+Warning: Cannot find the design 'sram_w16_out' in the library 'WORK'. (LBR-1)
 Information: Building the design 'sfp_row' instantiated from design 'core' with
 	the parameters "bw=8,col=8". (HDL-193)
 Warning:  ./verilog/sfp_row.v:41: unsigned to signed assignment occurs. (VER-318)
@@ -432,18 +366,33 @@ Presto compilation completed successfully.
 Information: Building the design 'fifo_mux_2_1' instantiated from design 'fifo_mux_16_1_bw24_simd1' with
 	the parameters "bw=24,simd=1". (HDL-193)
 Presto compilation completed successfully.
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
 Current design is 'core'.
 
   Linking design 'core'
   Using the following designs and libraries:
   --------------------------------------------------------------------------
-  * (23 designs)              /home/linux/ieng6/ee260bwi25/zhbian/1D-Vector-based-NPU/singleCore_SFP/syn/core.db, etc
+  * (21 designs)              /home/linux/ieng6/ee260bwi25/zhbian/1D-Vector-based-NPU/singleCore_SFP/syn/core.db, etc
   tcbn65gplustc (library)     /home/linux/ieng6/ee260bwi25/public/PDKdata/db/tcbn65gplustc.db
 
+Information: Building the design 'sram_w16_in' instantiated from design 'core' with
+	the parameters "sram_bit=64". (HDL-193)
+Warning: Cannot find the design 'sram_w16_in' in the library 'WORK'. (LBR-1)
+Information: Building the design 'sram_w16_out' instantiated from design 'core' with
+	the parameters "sram_bit=160". (HDL-193)
+Warning: Cannot find the design 'sram_w16_out' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'sram_w16_in' in 'core'. (LINK-5)
+Warning: Unable to resolve reference 'sram_w16_out' in 'core'. (LINK-5)
 
 Reading SDC version 2.0...
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
 Error: Invalid delay direction for port 'sum_out[23]'. (UID-254)
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
 Error: Invalid delay direction for port 'mem_in[63]'. (UID-254)
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
 
 #   Propagate Constraints from cell sfp_instance/ (sfp_row_col8_bw8) #
 
@@ -522,12 +471,6 @@ Error: Invalid delay direction for port 'mem_in[63]'. (UID-254)
 #   Propagate Constraints from cell sfp_instance/fifo_inst_int/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1b/ (fifo_mux_2_1_bw24_simd1) #
 
 #   Propagate Constraints from cell sfp_instance/fifo_inst_int/fifo_mux_16_1a/mux_8_1a/fifo_mux_2_1a/ (fifo_mux_2_1_bw24_simd1) #
-
-#   Propagate Constraints from cell psum_mem_instance/ (sram_w16_sram_bit160) #
-
-#   Propagate Constraints from cell kmem_instance/ (sram_w16_sram_bit64) #
-
-#   Propagate Constraints from cell qmem_instance/ (sram_w16_sram_bit64) #
 
 #   Propagate Constraints from cell ofifo_inst/ (ofifo_col8_bw20) #
 
@@ -869,6 +812,10 @@ Error: Invalid delay direction for port 'mem_in[63]'. (UID-254)
 
 #   Propagate Constraints from cell mac_array_instance/col_idx[1].mac_col_inst/mac_16in_instance/ (mac_8in_bw8_bw_psum20_pr8) #
 Current design is 'core'.
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
 Warning: Design rule attributes from the driving cell will be
 	set on the port. (UID-401)
 Warning: Design rule attributes from the driving cell will be
@@ -1041,11 +988,10 @@ Warning: Design rule attributes from the driving cell will be
 	set on the port. (UID-401)
 Warning: Design rule attributes from the driving cell will be
 	set on the port. (UID-401)
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
 Current design is 'core'.
 Current design is 'mac_array_col8_bw8_bw_psum20_pr8'.
 Current design is 'ofifo_col8_bw20'.
-Current design is 'sram_w16_sram_bit64'.
-Current design is 'sram_w16_sram_bit160'.
 Current design is 'sfp_row_col8_bw8'.
 Current design is 'mac_col_bw8_bw_psum20_pr8_col_id1'.
 Current design is 'mac_col_bw8_bw_psum20_pr8_col_id2'.
@@ -1065,6 +1011,14 @@ Current design is 'fifo_mux_2_1_bw20_simd1'.
 Current design is 'fifo_mux_8_1_bw24_simd1'.
 Current design is 'fifo_mux_2_1_bw24_simd1'.
 Current design is 'core'.
+Information: Building the design 'sram_w16_in' instantiated from design 'core' with
+	the parameters "sram_bit=64". (HDL-193)
+Warning: Cannot find the design 'sram_w16_in' in the library 'WORK'. (LBR-1)
+Information: Building the design 'sram_w16_out' instantiated from design 'core' with
+	the parameters "sram_bit=160". (HDL-193)
+Warning: Cannot find the design 'sram_w16_out' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'sram_w16_in' in 'core'. (LINK-5)
+Warning: Unable to resolve reference 'sram_w16_out' in 'core'. (LINK-5)
 Warning: The -timing_high_effort_script option is ignored.  (OPT-1342)
 Information: Performing power optimization. (PWR-850)
 Alib files are up-to-date.
@@ -1080,9 +1034,8 @@ Information: Evaluating DesignWare library utilization. (UISN-27)
 ============================================================================
 
 
-Information: There are 168 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+Information: There are 407 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
 
-Information: Uniquified 2 instances of design 'sram_w16_sram_bit64'. (OPT-1056)
 Information: Uniquified 8 instances of design 'fifo_depth16_bw20_simd1'. (OPT-1056)
 Information: Uniquified 2 instances of design 'fifo_depth16_bw24'. (OPT-1056)
 Information: Uniquified 8 instances of design 'mac_8in_bw8_bw_psum20_pr8'. (OPT-1056)
@@ -1094,13 +1047,19 @@ Information: Uniquified 4 instances of design 'fifo_mux_8_1_bw24_simd1'. (OPT-10
 Information: Uniquified 30 instances of design 'fifo_mux_2_1_bw24_simd1'. (OPT-1056)
   Simplifying Design 'core'
 
+Information: Building the design 'sram_w16_in' instantiated from design 'core' with
+	the parameters "sram_bit=64". (HDL-193)
+Warning: Cannot find the design 'sram_w16_in' in the library 'WORK'. (LBR-1)
+Information: Building the design 'sram_w16_out' instantiated from design 'core' with
+	the parameters "sram_bit=160". (HDL-193)
+Warning: Cannot find the design 'sram_w16_out' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'sram_w16_in' in 'core'. (LINK-5)
+Warning: Unable to resolve reference 'sram_w16_out' in 'core'. (LINK-5)
 Loaded alib file './alib-52/tcbn65gplustc.db.alib'
 Information: State dependent leakage is now switched from on to off.
 
   Beginning Pass 1 Mapping
   ------------------------
-  Processing 'sram_w16_sram_bit160'
-  Processing 'sram_w16_sram_bit64_0'
   Processing 'mac_col_bw8_bw_psum20_pr8_col_id8'
 Information: Added key list 'DesignWare' to design 'mac_col_bw8_bw_psum20_pr8_col_id8'. (DDB-72)
   Processing 'mac_col_bw8_bw_psum20_pr8_col_id6'
@@ -1136,20 +1095,28 @@ Information: Added key list 'DesignWare' to design 'mac_col_bw8_bw_psum20_pr8_co
   Processing 'fifo_mux_16_1_bw20_simd1_7'
   Processing 'sfp_row_col8_bw8'
  Implement Synthetic for 'sfp_row_col8_bw8'.
-  Processing 'sfp_row_col8_bw8_DW_div_uns_J9_0'
-  Processing 'sfp_row_col8_bw8_DW_div_uns_J9_1'
-  Processing 'sfp_row_col8_bw8_DW_div_uns_J9_2'
-  Processing 'sfp_row_col8_bw8_DW_div_uns_J9_3'
-  Processing 'sfp_row_col8_bw8_DW_div_uns_J9_4'
-  Processing 'sfp_row_col8_bw8_DW_div_uns_J9_5'
-  Processing 'sfp_row_col8_bw8_DW_div_uns_J9_6'
-  Processing 'sfp_row_col8_bw8_DW_div_uns_J9_7'
+  Processing 'sfp_row_col8_bw8_DW_div_uns_J7_0'
+  Processing 'sfp_row_col8_bw8_DW_div_uns_J7_1'
+  Processing 'sfp_row_col8_bw8_DW_div_uns_J7_2'
+  Processing 'sfp_row_col8_bw8_DW_div_uns_J7_3'
+  Processing 'sfp_row_col8_bw8_DW_div_uns_J7_4'
+  Processing 'sfp_row_col8_bw8_DW_div_uns_J7_5'
+  Processing 'sfp_row_col8_bw8_DW_div_uns_J7_6'
+  Processing 'sfp_row_col8_bw8_DW_div_uns_J7_7'
   Processing 'fifo_mux_16_1_bw24_simd1_1'
   Processing 'fifo_mux_8_1_bw20_simd1_0'
   Processing 'fifo_depth16_bw24_1'
 Information: Added key list 'DesignWare' to design 'fifo_depth16_bw24_1'. (DDB-72)
  Implement Synthetic for 'fifo_depth16_bw24_1'.
   Processing 'fifo_mux_16_1_bw20_simd1_0'
+Information: Building the design 'sram_w16_in' instantiated from design 'core' with
+	the parameters "sram_bit=64". (HDL-193)
+Warning: Cannot find the design 'sram_w16_in' in the library 'WORK'. (LBR-1)
+Information: Building the design 'sram_w16_out' instantiated from design 'core' with
+	the parameters "sram_bit=160". (HDL-193)
+Warning: Cannot find the design 'sram_w16_out' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'sram_w16_in' in 'core'. (LINK-5)
+Warning: Unable to resolve reference 'sram_w16_out' in 'core'. (LINK-5)
 
   Updating timing information
 Information: Updating design information... (UID-85)
@@ -1406,21 +1373,12 @@ Information: Added key list 'DesignWare' to design 'mac_8in_bw8_bw_psum20_pr8_6'
   Structuring 'sfp_row_col8_bw8_DW_div_uns_7'
   Mapping 'sfp_row_col8_bw8_DW_div_uns_7'
   Mapping 'sfp_row_col8_bw8_DW01_add_201'
-  Mapping 'DW01_add'
-  Mapping 'DW01_add'
-  Mapping 'DW01_add'
-  Mapping 'DW01_add'
-  Mapping 'DW01_add'
-  Mapping 'DW01_add'
   Mapping 'sfp_row_col8_bw8_DW01_add_202'
   Mapping 'sfp_row_col8_bw8_DW01_add_203'
+  Mapping 'sfp_row_col8_bw8_DW01_sub_2'
   Mapping 'sfp_row_col8_bw8_DW01_add_204'
   Mapping 'sfp_row_col8_bw8_DW01_add_205'
   Mapping 'sfp_row_col8_bw8_DW01_add_206'
-  Mapping 'sfp_row_col8_bw8_DW01_add_207'
-  Mapping 'sfp_row_col8_bw8_DW01_add_208'
-  Mapping 'sfp_row_col8_bw8_DW01_add_209'
-  Mapping 'sfp_row_col8_bw8_DW01_add_210'
   Mapping 'sfp_row_col8_bw8_DW01_add_211'
   Mapping 'sfp_row_col8_bw8_DW01_add_212'
   Mapping 'sfp_row_col8_bw8_DW01_add_213'
@@ -1433,13 +1391,6 @@ Information: Added key list 'DesignWare' to design 'mac_8in_bw8_bw_psum20_pr8_6'
   Mapping 'sfp_row_col8_bw8_DW01_add_220'
   Mapping 'sfp_row_col8_bw8_DW01_add_221'
   Mapping 'sfp_row_col8_bw8_DW01_add_222'
-  Mapping 'sfp_row_col8_bw8_DW_div_uns_7'
-  Structuring 'sfp_row_col8_bw8_DW_div_uns_8'
-  Mapping 'sfp_row_col8_bw8_DW_div_uns_8'
-  Mapping 'DW01_add'
-  Mapping 'DW01_add'
-  Mapping 'DW01_add'
-  Mapping 'DW01_add'
   Mapping 'sfp_row_col8_bw8_DW01_add_223'
   Mapping 'sfp_row_col8_bw8_DW01_add_224'
   Mapping 'sfp_row_col8_bw8_DW01_add_225'
@@ -1455,15 +1406,7 @@ Information: Added key list 'DesignWare' to design 'mac_8in_bw8_bw_psum20_pr8_6'
   Mapping 'sfp_row_col8_bw8_DW01_add_235'
   Mapping 'sfp_row_col8_bw8_DW01_add_236'
   Mapping 'sfp_row_col8_bw8_DW01_add_237'
-  Structuring 'sfp_row_col8_bw8_DW_div_uns_9'
-  Mapping 'sfp_row_col8_bw8_DW_div_uns_9'
   Mapping 'sfp_row_col8_bw8_DW01_add_238'
-  Mapping 'DW01_add'
-  Mapping 'DW01_add'
-  Mapping 'DW01_add'
-  Mapping 'DW01_add'
-  Mapping 'DW01_add'
-  Mapping 'DW01_add'
   Mapping 'sfp_row_col8_bw8_DW01_add_239'
   Mapping 'sfp_row_col8_bw8_DW01_add_240'
   Mapping 'sfp_row_col8_bw8_DW01_add_241'
@@ -1478,6 +1421,13 @@ Information: Added key list 'DesignWare' to design 'mac_8in_bw8_bw_psum20_pr8_6'
   Mapping 'sfp_row_col8_bw8_DW01_add_250'
   Mapping 'sfp_row_col8_bw8_DW01_add_251'
   Mapping 'sfp_row_col8_bw8_DW01_add_252'
+  Mapping 'sfp_row_col8_bw8_DW_div_uns_7'
+  Structuring 'sfp_row_col8_bw8_DW_div_uns_8'
+  Mapping 'sfp_row_col8_bw8_DW_div_uns_8'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
   Mapping 'sfp_row_col8_bw8_DW01_add_253'
   Mapping 'sfp_row_col8_bw8_DW01_add_254'
   Mapping 'sfp_row_col8_bw8_DW01_add_255'
@@ -1485,15 +1435,24 @@ Information: Added key list 'DesignWare' to design 'mac_8in_bw8_bw_psum20_pr8_6'
   Mapping 'sfp_row_col8_bw8_DW01_add_257'
   Mapping 'sfp_row_col8_bw8_DW01_add_258'
   Mapping 'sfp_row_col8_bw8_DW01_add_259'
-  Structuring 'sfp_row_col8_bw8_DW_div_uns_10'
-  Mapping 'sfp_row_col8_bw8_DW_div_uns_10'
   Mapping 'sfp_row_col8_bw8_DW01_add_260'
   Mapping 'sfp_row_col8_bw8_DW01_add_261'
   Mapping 'sfp_row_col8_bw8_DW01_add_262'
-  Mapping 'sfp_row_col8_bw8_DW01_sub_2'
   Mapping 'sfp_row_col8_bw8_DW01_add_263'
   Mapping 'sfp_row_col8_bw8_DW01_add_264'
   Mapping 'sfp_row_col8_bw8_DW01_add_265'
+  Mapping 'sfp_row_col8_bw8_DW01_add_266'
+  Mapping 'sfp_row_col8_bw8_DW01_add_267'
+  Structuring 'sfp_row_col8_bw8_DW_div_uns_9'
+  Mapping 'sfp_row_col8_bw8_DW_div_uns_9'
+  Mapping 'sfp_row_col8_bw8_DW01_add_268'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'sfp_row_col8_bw8_DW01_add_269'
   Mapping 'sfp_row_col8_bw8_DW01_add_270'
   Mapping 'sfp_row_col8_bw8_DW01_add_271'
   Mapping 'sfp_row_col8_bw8_DW01_add_272'
@@ -1514,16 +1473,15 @@ Information: Added key list 'DesignWare' to design 'mac_8in_bw8_bw_psum20_pr8_6'
   Mapping 'sfp_row_col8_bw8_DW01_add_287'
   Mapping 'sfp_row_col8_bw8_DW01_add_288'
   Mapping 'sfp_row_col8_bw8_DW01_add_289'
+  Structuring 'sfp_row_col8_bw8_DW_div_uns_10'
+  Mapping 'sfp_row_col8_bw8_DW_div_uns_10'
   Mapping 'sfp_row_col8_bw8_DW01_add_290'
   Mapping 'sfp_row_col8_bw8_DW01_add_291'
   Mapping 'sfp_row_col8_bw8_DW01_add_292'
+  Mapping 'sfp_row_col8_bw8_DW01_sub_3'
   Mapping 'sfp_row_col8_bw8_DW01_add_293'
   Mapping 'sfp_row_col8_bw8_DW01_add_294'
   Mapping 'sfp_row_col8_bw8_DW01_add_295'
-  Mapping 'sfp_row_col8_bw8_DW01_add_296'
-  Mapping 'sfp_row_col8_bw8_DW01_add_297'
-  Mapping 'sfp_row_col8_bw8_DW01_add_298'
-  Mapping 'sfp_row_col8_bw8_DW01_add_299'
   Mapping 'sfp_row_col8_bw8_DW01_add_300'
   Mapping 'sfp_row_col8_bw8_DW01_add_301'
   Mapping 'sfp_row_col8_bw8_DW01_add_302'
@@ -1536,15 +1494,16 @@ Information: Added key list 'DesignWare' to design 'mac_8in_bw8_bw_psum20_pr8_6'
   Mapping 'sfp_row_col8_bw8_DW01_add_309'
   Mapping 'sfp_row_col8_bw8_DW01_add_310'
   Mapping 'sfp_row_col8_bw8_DW01_add_311'
-  Structuring 'sfp_row_col8_bw8_DW_div_uns_11'
-  Mapping 'sfp_row_col8_bw8_DW_div_uns_11'
   Mapping 'sfp_row_col8_bw8_DW01_add_312'
   Mapping 'sfp_row_col8_bw8_DW01_add_313'
   Mapping 'sfp_row_col8_bw8_DW01_add_314'
-  Mapping 'sfp_row_col8_bw8_DW01_sub_3'
   Mapping 'sfp_row_col8_bw8_DW01_add_315'
   Mapping 'sfp_row_col8_bw8_DW01_add_316'
   Mapping 'sfp_row_col8_bw8_DW01_add_317'
+  Mapping 'sfp_row_col8_bw8_DW01_add_318'
+  Mapping 'sfp_row_col8_bw8_DW01_add_319'
+  Mapping 'sfp_row_col8_bw8_DW01_add_320'
+  Mapping 'sfp_row_col8_bw8_DW01_add_321'
   Mapping 'sfp_row_col8_bw8_DW01_add_322'
   Mapping 'sfp_row_col8_bw8_DW01_add_323'
   Mapping 'sfp_row_col8_bw8_DW01_add_324'
@@ -1565,7 +1524,15 @@ Information: Added key list 'DesignWare' to design 'mac_8in_bw8_bw_psum20_pr8_6'
   Mapping 'sfp_row_col8_bw8_DW01_add_339'
   Mapping 'sfp_row_col8_bw8_DW01_add_340'
   Mapping 'sfp_row_col8_bw8_DW01_add_341'
+  Structuring 'sfp_row_col8_bw8_DW_div_uns_11'
+  Mapping 'sfp_row_col8_bw8_DW_div_uns_11'
   Mapping 'sfp_row_col8_bw8_DW01_add_342'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
+  Mapping 'DW01_add'
   Mapping 'sfp_row_col8_bw8_DW01_add_343'
   Mapping 'sfp_row_col8_bw8_DW01_add_344'
   Mapping 'sfp_row_col8_bw8_DW01_add_345'
@@ -2257,7 +2224,6 @@ Information: Added key list 'DesignWare' to design 'mac_8in_bw8_bw_psum20_pr8_6'
   Mapping Optimization (Phase 2)
   Mapping Optimization (Phase 3)
   Mapping Optimization (Phase 4)
-  Mapping Optimization (Phase 5)
 
   Beginning Constant Register Removal
   -----------------------------------
@@ -2297,13 +2263,13 @@ Information: Added key list 'DesignWare' to design 'mac_8in_bw8_bw_psum20_pr8_6'
   Global Optimization (Phase 29)
   Global Optimization (Phase 30)
   Global Optimization (Phase 31)
-  Global Optimization (Phase 32)
-  Mapping 'sfp_row_col8_bw8_DW01_add_1351'
-  Mapping 'sfp_row_col8_bw8_DW01_add_1352'
-  Mapping 'sfp_row_col8_bw8_DW01_add_1353'
-  Mapping 'sfp_row_col8_bw8_DW01_add_1354'
-  Mapping 'sfp_row_col8_bw8_DW01_add_1355'
-  Mapping 'sfp_row_col8_bw8_DW01_add_1356'
+  Mapping 'sfp_row_col8_bw8_DW01_sub_11'
+  Mapping 'sfp_row_col8_bw8_DW01_add_1302'
+  Mapping 'sfp_row_col8_bw8_DW01_add_1303'
+  Mapping 'sfp_row_col8_bw8_DW01_add_1304'
+  Mapping 'sfp_row_col8_bw8_DW01_add_1305'
+  Mapping 'sfp_row_col8_bw8_DW01_add_1306'
+  Mapping 'sfp_row_col8_bw8_DW01_add_1307'
 
   Beginning Isolate Ports
   -----------------------
@@ -2315,36 +2281,35 @@ Information: Added key list 'DesignWare' to design 'mac_8in_bw8_bw_psum20_pr8_6'
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
   --------- --------- --------- --------- --------- ------------------------- --------- -----------
-    0:11:08  186301.1      0.80      17.9       0.5                           968836.5000      0.00  
-    0:11:39  189473.8      0.00       0.0       0.8                           994938.9375      0.00  
-    0:11:39  189473.8      0.00       0.0       0.8                           994938.9375      0.00  
-    0:11:39  189473.8      0.00       0.0       0.8                           994938.9375      0.00  
+    0:09:33  129586.3      0.79      16.0       7.7                           708727.6250      0.00  
+    0:09:59  132193.4      0.00       0.0       8.0                           729855.0625      0.00  
+    0:09:59  132193.4      0.00       0.0       8.0                           729855.0625      0.00  
+    0:09:59  132193.4      0.00       0.0       8.0                           729855.0625      0.00  
 
   Beginning WLM Backend Optimization
   --------------------------------------
-    0:12:10  185153.0      0.32       2.6       0.7                           963006.3125      0.00  
-    0:12:15  184679.6      0.31       2.6       0.6                           958830.3125      0.00  
-    0:12:21  184024.1      0.29       2.4       0.4                           954203.8750      0.00  
-    0:12:23  184069.4      0.00       0.0       0.4                           954607.6875      0.00  
-    0:12:44  183583.8      0.00       0.0       0.2                           876557.3750      0.00  
-    0:12:44  183583.8      0.00       0.0       0.2                           876557.3750      0.00  
-    0:12:44  183583.8      0.00       0.0       0.2                           876557.3750      0.00  
-    0:12:44  183583.8      0.00       0.0       0.2                           876557.3750      0.00  
-    0:12:44  183583.8      0.00       0.0       0.2                           876557.3750      0.00  
-    0:12:44  183583.8      0.00       0.0       0.2                           876557.3750      0.00  
-    0:12:44  183583.8      0.00       0.0       0.2                           876557.3750      0.00  
-    0:12:44  183583.8      0.00       0.0       0.2                           876557.3750      0.00  
-    0:12:44  183583.8      0.00       0.0       0.2                           876557.3750      0.00  
-    0:12:44  183583.8      0.00       0.0       0.2                           876557.3750      0.00  
-    0:12:44  183583.8      0.00       0.0       0.2                           876557.3750      0.00  
-    0:12:44  183583.8      0.00       0.0       0.2                           876557.3750      0.00  
-    0:12:44  183583.8      0.00       0.0       0.2                           876557.3750      0.00  
-    0:12:44  183583.8      0.00       0.0       0.2                           876557.3750      0.00  
-    0:12:44  183583.8      0.00       0.0       0.2                           876557.3750      0.00  
-    0:12:44  183583.8      0.00       0.0       0.2                           876557.3750      0.00  
-    0:12:44  183583.8      0.00       0.0       0.2                           876557.3750      0.00  
-    0:12:44  183583.8      0.00       0.0       0.2                           876557.3750      0.00  
-    0:12:44  183583.8      0.00       0.0       0.2                           876557.3750      0.00  
+    0:10:29  128092.0      0.29       1.3       7.9                           699530.8125      0.00  
+    0:10:33  127720.1      0.26       1.5       7.9                           696535.3750      0.00  
+    0:10:40  127318.0      0.00       0.0       7.6                           693936.1875      0.00  
+    0:11:01  126509.0      0.00       0.0       7.3                           633739.5625      0.00  
+    0:11:01  126509.0      0.00       0.0       7.3                           633739.5625      0.00  
+    0:11:01  126509.0      0.00       0.0       7.3                           633739.5625      0.00  
+    0:11:01  126509.0      0.00       0.0       7.3                           633739.5625      0.00  
+    0:11:01  126509.0      0.00       0.0       7.3                           633739.5625      0.00  
+    0:11:01  126509.0      0.00       0.0       7.3                           633739.5625      0.00  
+    0:11:01  126509.0      0.00       0.0       7.3                           633739.5625      0.00  
+    0:11:01  126509.0      0.00       0.0       7.3                           633739.5625      0.00  
+    0:11:01  126509.0      0.00       0.0       7.3                           633739.5625      0.00  
+    0:11:01  126509.0      0.00       0.0       7.3                           633739.5625      0.00  
+    0:11:01  126509.0      0.00       0.0       7.3                           633739.5625      0.00  
+    0:11:01  126509.0      0.00       0.0       7.3                           633739.5625      0.00  
+    0:11:01  126509.0      0.00       0.0       7.3                           633739.5625      0.00  
+    0:11:01  126509.0      0.00       0.0       7.3                           633739.5625      0.00  
+    0:11:01  126509.0      0.00       0.0       7.3                           633739.5625      0.00  
+    0:11:01  126509.0      0.00       0.0       7.3                           633739.5625      0.00  
+    0:11:01  126509.0      0.00       0.0       7.3                           633739.5625      0.00  
+    0:11:01  126509.0      0.00       0.0       7.3                           633739.5625      0.00  
+    0:11:01  126509.0      0.00       0.0       7.3                           633739.5625      0.00  
 
 
   Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
@@ -2354,12 +2319,12 @@ Information: Added key list 'DesignWare' to design 'mac_8in_bw8_bw_psum20_pr8_6'
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
   --------- --------- --------- --------- --------- ------------------------- --------- -----------
-    0:12:44  183583.8      0.00       0.0       0.2                           876557.3750      0.00  
+    0:11:01  126509.0      0.00       0.0       7.3                           633739.5625      0.00  
+  Global Optimization (Phase 32)
   Global Optimization (Phase 33)
   Global Optimization (Phase 34)
-  Global Optimization (Phase 35)
-    0:12:45  183575.9      0.00       0.0       0.0                           876448.3125      0.00  
-    0:12:45  183575.9      0.00       0.0       0.0                           876448.3125      0.00  
+    0:11:02  126520.9      0.00       0.0       0.0                           633971.1875      0.00  
+    0:11:02  126520.9      0.00       0.0       0.0                           633971.1875      0.00  
 
 
   Beginning Leakage Power Optimization  (max_leakage_power 0)
@@ -2369,7 +2334,8 @@ Information: Added key list 'DesignWare' to design 'mac_8in_bw8_bw_psum20_pr8_6'
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
   --------- --------- --------- --------- --------- ------------------------- --------- -----------
-    0:12:45  183575.9      0.00       0.0       0.0                           876448.3125      0.00  
+    0:11:02  126520.9      0.00       0.0       0.0                           633971.1875      0.00  
+  Global Optimization (Phase 35)
   Global Optimization (Phase 36)
   Global Optimization (Phase 37)
   Global Optimization (Phase 38)
@@ -2387,48 +2353,44 @@ Information: Added key list 'DesignWare' to design 'mac_8in_bw8_bw_psum20_pr8_6'
   Global Optimization (Phase 50)
   Global Optimization (Phase 51)
   Global Optimization (Phase 52)
-  Global Optimization (Phase 53)
-  Global Optimization (Phase 54)
-Information: Complementing port 'WEN' in design 'sram_w16_sram_bit160'.
-	 The new name of the port is 'WEN_BAR'. (OPT-319)
-    0:14:02  183121.2      0.00       0.0       0.0                           848931.8125      0.00  
-    0:14:02  183121.2      0.00       0.0       0.0                           848931.8125      0.00  
-    0:14:02  183121.2      0.00       0.0       0.0                           848931.8125      0.00  
-    0:14:08  183019.3      0.00       0.0       0.0                           846678.0000      0.00  
-    0:14:08  183019.3      0.00       0.0       0.0                           846678.0000      0.00  
-    0:14:08  183019.3      0.00       0.0       0.0                           846678.0000      0.00  
-    0:14:08  183019.3      0.00       0.0       0.0                           846678.0000      0.00  
-    0:14:08  183019.3      0.00       0.0       0.0                           846678.0000      0.00  
-    0:14:08  183019.3      0.00       0.0       0.0                           846678.0000      0.00  
-    0:14:08  183019.3      0.00       0.0       0.0                           846678.0000      0.00  
-    0:14:08  183019.3      0.00       0.0       0.0                           846678.0000      0.00  
-    0:14:08  183019.3      0.00       0.0       0.0                           846678.0000      0.00  
-    0:14:08  183019.3      0.00       0.0       0.0                           846678.0000      0.00  
-    0:14:08  183019.3      0.00       0.0       0.0                           846678.0000      0.00  
-    0:14:08  183019.3      0.00       0.0       0.0                           846678.0000      0.00  
-    0:14:08  183019.3      0.00       0.0       0.0                           846678.0000      0.00  
-    0:14:08  183019.3      0.00       0.0       0.0                           846678.0000      0.00  
-    0:14:08  183019.3      0.00       0.0       0.0                           846678.0000      0.00  
-    0:14:08  183019.3      0.00       0.0       0.0                           846678.0000      0.00  
-    0:14:08  183019.3      0.00       0.0       0.0                           846678.0000      0.00  
-    0:14:08  183019.3      0.00       0.0       0.0                           846678.0000      0.00  
-    0:14:08  183019.3      0.00       0.0       0.0                           846678.0000      0.00  
+    0:12:15  126273.6      0.00       0.0       0.0                           607302.6250      0.00  
+    0:12:15  126273.6      0.00       0.0       0.0                           607302.6250      0.00  
+    0:12:15  126273.6      0.00       0.0       0.0                           607302.6250      0.00  
+    0:12:20  126171.0      0.00       0.0       0.0                           604939.6875      0.00  
+    0:12:20  126171.0      0.00       0.0       0.0                           604939.6875      0.00  
+    0:12:20  126171.0      0.00       0.0       0.0                           604939.6875      0.00  
+    0:12:20  126171.0      0.00       0.0       0.0                           604939.6875      0.00  
+    0:12:20  126171.0      0.00       0.0       0.0                           604939.6875      0.00  
+    0:12:20  126171.0      0.00       0.0       0.0                           604939.6875      0.00  
+    0:12:20  126171.0      0.00       0.0       0.0                           604939.6875      0.00  
+    0:12:20  126171.0      0.00       0.0       0.0                           604939.6875      0.00  
+    0:12:20  126171.0      0.00       0.0       0.0                           604939.6875      0.00  
+    0:12:20  126171.0      0.00       0.0       0.0                           604939.6875      0.00  
+    0:12:20  126171.0      0.00       0.0       0.0                           604939.6875      0.00  
+    0:12:20  126171.0      0.00       0.0       0.0                           604939.6875      0.00  
+    0:12:20  126171.0      0.00       0.0       0.0                           604939.6875      0.00  
+    0:12:20  126171.0      0.00       0.0       0.0                           604939.6875      0.00  
+    0:12:20  126171.0      0.00       0.0       0.0                           604939.6875      0.00  
+    0:12:20  126171.0      0.00       0.0       0.0                           604939.6875      0.00  
+    0:12:20  126171.0      0.00       0.0       0.0                           604939.6875      0.00  
+    0:12:20  126171.0      0.00       0.0       0.0                           604939.6875      0.00  
+    0:12:20  126171.0      0.00       0.0       0.0                           604939.6875      0.00  
 
                                   TOTAL                                                            
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
   --------- --------- --------- --------- --------- ------------------------- --------- -----------
-    0:14:10  182724.5      0.00       0.0       0.0                           846220.7500      0.00  
-    0:14:18  181762.2      0.00       0.0       0.0                           834593.6875      0.00  
-    0:14:18  181762.2      0.00       0.0       0.0                           834593.6875      0.00  
-    0:14:18  181762.2      0.00       0.0       0.0                           834593.6875      0.00  
-    0:14:23  181732.3      0.00       0.0       0.0                           833940.0625      0.00  
-    0:14:27  181710.7      0.00       0.0       0.0                           833736.3125      0.00  
-    0:14:35  181649.2      0.00       0.0       0.0                           831271.0625      0.00  
-    0:14:35  181649.2      0.00       0.0       0.0                           831271.0625      0.00  
-    0:14:36  181649.2      0.00       0.0       0.0                           831271.0625      0.00  
-    0:14:36  181649.2      0.00       0.0       0.0                           831271.0625      0.00  
-    0:14:51  181166.8      0.00       0.0       0.0                           827112.3750      0.00  
+    0:12:21  125876.2      0.00       0.0       0.0                           604482.4375      0.00  
+    0:12:28  125187.1      0.00       0.0       0.0                           595504.0625      0.00  
+    0:12:28  125187.1      0.00       0.0       0.0                           595504.0625      0.00  
+    0:12:28  125187.1      0.00       0.0       0.0                           595504.0625      0.00  
+    0:12:32  125143.6      0.00       0.0       0.0                           594893.3125      0.00  
+    0:12:37  125124.5      0.00       0.0       0.0                           594771.5625      0.00  
+    0:12:44  125065.8      0.00       0.0       0.0                           592439.6250      0.00  
+    0:12:44  125065.8      0.00       0.0       0.0                           592439.6250      0.00  
+    0:12:45  125065.8      0.00       0.0       0.0                           592439.6250      0.00  
+    0:12:45  125065.8      0.00       0.0       0.0                           592439.6250      0.00  
+    0:12:57  124614.7      0.00       0.0       0.0                           588575.8750      0.00  
 Loading db file '/home/linux/ieng6/ee260bwi25/public/PDKdata/db/tcbn65gplustc.db'
 
 
@@ -2438,9 +2400,29 @@ Note: Symbol # after min delay cost means estimated hold TNS across all active s
   Optimization Complete
   ---------------------
 Warning: Design 'core' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
-     Net 'ofifo_inst/col_idx[2].fifo_instance/wr_clk': 9102 load(s), 1 driver(s)
+     Net 'ofifo_inst/col_idx[2].fifo_instance/wr_clk': 4206 load(s), 1 driver(s), 3 inout(s)
+Information: Building the design 'sram_w16_in' instantiated from design 'core' with
+	the parameters "sram_bit=64". (HDL-193)
+Warning: Cannot find the design 'sram_w16_in' in the library 'WORK'. (LBR-1)
+Information: Building the design 'sram_w16_out' instantiated from design 'core' with
+	the parameters "sram_bit=160". (HDL-193)
+Warning: Cannot find the design 'sram_w16_out' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'sram_w16_in' in 'core'. (LINK-5)
+Warning: Unable to resolve reference 'sram_w16_out' in 'core'. (LINK-5)
 Information: State dependent leakage is now switched from off to on.
 Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated black box outputs. (PWR-428)
 Current design is 'core'.
+Information: Building the design 'sram_w16_in' instantiated from design 'core' with
+	the parameters "sram_bit=64". (HDL-193)
+Warning: Cannot find the design 'sram_w16_in' in the library 'WORK'. (LBR-1)
+Information: Building the design 'sram_w16_out' instantiated from design 'core' with
+	the parameters "sram_bit=160". (HDL-193)
+Warning: Cannot find the design 'sram_w16_out' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'sram_w16_in' in 'core'. (LINK-5)
+Warning: Unable to resolve reference 'sram_w16_out' in 'core'. (LINK-5)
+Warning: The specified replacement character (_) is conflicting with the specified allowed or restricted character.   (UCN-4)
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
 Writing verilog file '/home/linux/ieng6/ee260bwi25/zhbian/1D-Vector-based-NPU/singleCore_SFP/syn/core.out.v'.
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
 run.scr completed successfully

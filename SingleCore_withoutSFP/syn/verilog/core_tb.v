@@ -88,7 +88,7 @@ initial begin
 $display("##### Q data txt reading #####");
 
 
-  qk_file = $fopen("./../testdata/qdata.txt", "r");
+  qk_file = $fopen("./../../testdata/qdata.txt", "r");
 
   //// To get rid of first 3 lines in data file ////
   qk_scan_file = $fscanf(qk_file, "%s\n", captured_data);
@@ -127,7 +127,7 @@ $display("##### K data txt reading #####");
   end
   reset = 0;
 
-  qk_file = $fopen("./../testdata/kdata.txt", "r");
+  qk_file = $fopen("./../../testdata/kdata.txt", "r");
 
   //// To get rid of first 4 lines in data file ////
   qk_scan_file = $fscanf(qk_file, "%s\n", captured_data);
