@@ -1,3 +1,4 @@
+set_host_options -max_cores 8
 set top_module sram_w16_in
 set rtlPath "./rtl"
 

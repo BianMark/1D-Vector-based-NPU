@@ -1,1 +1,0 @@
-/home/linux/ieng6/ee260bwi25/zhbian/1D-Vector-based-NPU/SingleCore_withoutSFP/pnr/constraints/core.sdc

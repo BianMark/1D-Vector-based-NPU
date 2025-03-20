@@ -1,7 +1,7 @@
 #######################################################
 #                                                     
 #  Innovus Command Logging File                     
-#  Created on Mon Mar 17 15:14:13 2025                
+#  Created on Thu Mar 20 13:57:04 2025                
 #                                                     
 #######################################################
 
@@ -18,3 +18,78 @@ suppressMessage ENCEXT-2799
 getDrawView
 loadWorkspace -name Physical
 win
+setMultiCpuUsage -localCpu 8
+set init_pwr_net VDD
+set init_gnd_net VSS
+set init_verilog ./netlist/sram_w16_in.v
+set init_design_netlisttype Verilog
+set init_design_settop 1
+set init_top_cell sram_w16_in
+set init_lef_file /home/linux/ieng6/ee260bwi25/public/PDKdata/lef/tcbn65gplus_8lmT2.lef
+create_library_set -name WC_LIB -timing $worst_timing_lib
+create_library_set -name BC_LIB -timing $best_timing_lib
+create_rc_corner -name Cmax -cap_table $worst_captbl -T 125
+create_rc_corner -name Cmin -cap_table $best_captbl -T -40
+create_delay_corner -name WC -library_set WC_LIB -rc_corner Cmax
+create_delay_corner -name BC -library_set BC_LIB -rc_corner Cmin
+create_constraint_mode -name CON -sdc_file [list $sdc]
+create_analysis_view -name WC_VIEW -delay_corner WC -constraint_mode CON
+create_analysis_view -name BC_VIEW -delay_corner BC -constraint_mode CON
+init_design -setup WC_VIEW -hold BC_VIEW
+set_interactive_constraint_modes {CON}
+setDesignMode -process 65
+floorPlan -site core -r 1 0.50 10 10 10 10
+globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
+globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
+setAddStripeMode -break_at block_ring
+addStripe -number_of_sets 15 -spacing 1 -layer M4 -width 1 -nets { VSS VDD } -start_from left -start 20 -stop 250
+sroute
+setPinAssignMode -pinEditInBatch true
+editPin -fixedPin True -pinWidth 0.1 -pinDepth 0.52 -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -side Bottom -layer 4 -spreadType center -spacing 4 -pin {{D[0]} {D[1]} {D[2]} {D[3]} {D[4]} {D[5]} {D[6]} {D[7]} {D[8]} {D[9]} {D[10]} {D[11]} {D[12]} {D[13]} {D[14]} {D[15]} {D[16]} {D[17]} {D[18]} {D[19]} {D[20]} {D[21]} {D[22]} {D[23]} {D[24]} {D[25]} {D[26]} {D[27]} {D[28]} {D[29]} {D[30]} {D[31]} {D[32]} {D[33]} {D[34]} {D[35]} {D[36]} {D[37]} {D[38]} {D[39]} {D[40]} {D[41]} {D[42]} {D[43]} {D[44]} {D[45]} {D[46]} {D[47]} {D[48]} {D[49]} {D[50]} {D[51]} {D[52]} {D[53]} {D[54]} {D[55]} {D[56]} {D[57]} {D[58]} {D[59]} {D[60]} {D[61]} {D[62]} {D[63]}}
+setMaxRouteLayer 4
+saveDesign floorplan.enc
+setPlaceMode -timingDriven true -reorderScan false -congEffort medium -modulePlan false
+setOptMode -effort high -powerEffort high -leakageToDynamicRatio 0.5 -fixFanoutLoad true -restruct true -verbose true
+place_opt_design
+saveDesign placement.enc
+set_ccopt_property -update_io_latency false
+create_ccopt_clock_tree_spec -file ./constraints/sram_w16_in.ccopt
+ccopt_design
+set_propagated_clock [all_clocks]
+optDesign -postCTS -hold
+saveDesign cts.enc
+setNanoRouteMode -quiet -drouteAllowMergedWireAtPin false
+setNanoRouteMode -quiet -drouteFixAntenna true
+setNanoRouteMode -quiet -routeWithTimingDriven true
+setNanoRouteMode -quiet -routeWithSiDriven true
+setNanoRouteMode -quiet -routeSiEffort medium
+setNanoRouteMode -quiet -routeWithSiPostRouteFix false
+setNanoRouteMode -quiet -drouteAutoStop true
+setNanoRouteMode -quiet -routeSelectedNetOnly false
+setNanoRouteMode -quiet -drouteStartIteration default
+routeDesign
+setExtractRCMode -engine postRoute
+extractRC
+setAnalysisMode -analysisType onChipVariation -cppr both
+optDesign -postRoute -setup -hold
+optDesign -postRoute -drv
+optDesign -postRoute -inc
+saveDesign route.enc
+verifyGeometry
+verifyConnectivity
+report_timing -max_paths 5 > ${design}.post_route.timing.rpt
+report_power -outfile sram_w16_in.post_route.power.rpt
+summaryReport -outfile sram_w16_in.post_route.summary.rpt
+streamOut sram_w16_in.gds2
+write_lef_abstract -stripePin -PGPinLayers 4 -extractBlockPGPinLayers 4 sram_w16_in.lef -specifyTopLayer 4
+defOut -netlist -routing sram_w16_in.def
+saveNetlist sram_w16_in.pnr.v
+setAnalysisMode -setup
+set_analysis_view -setup WC_VIEW -hold WC_VIEW
+do_extract_model -view WC_VIEW -format dotlib ${design}_WC.lib
+write_sdf -view WC_VIEW ${design}_WC.sdf
+setAnalysisMode -hold
+set_analysis_view -setup BC_VIEW -hold BC_VIEW
+do_extract_model -view BC_VIEW -format dotlib ${design}_BC.lib
+write_sdf -view BC_VIEW ${design}_BC.sdf
+fit

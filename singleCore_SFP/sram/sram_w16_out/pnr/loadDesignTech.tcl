@@ -1,9 +1,9 @@
-#
+setMultiCpuUsage -localCpu 8
 #Load design
 set desdir 		"/home/linux/ieng6/ee260bwi25/public/DESIGNdata"
 set libdir 		"/home/linux/ieng6/ee260bwi25/public/PDKdata"
 set design 		"sram_w16_out"
-set netlist 		"./netlist/$design.v"
+set netlist 	    "./netlist/$design.v"
 set sdc 		"./constraints/$design.sdc"
 set best_timing_lib 	"$libdir/lib/tcbn65gplusbc.lib"
 set worst_timing_lib 	"$libdir/lib/tcbn65gpluswc.lib"

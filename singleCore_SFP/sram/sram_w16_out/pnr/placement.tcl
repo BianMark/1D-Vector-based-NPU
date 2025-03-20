@@ -3,11 +3,15 @@
 # This should be consistent with lef gen command in outputgen tcl.
 setMaxRouteLayer 4 
 saveDesign floorplan.enc
-setPlaceMode -timingDriven true -reorderScan false -congEffort medium -modulePlan false
-setOptMode -effort high -powerEffort high -leakageToDynamicRatio 0.5 -fixFanoutLoad true -restruct true -verbose true
+
+# Note Hierarchical design need "-modulePlan true" 
+# Flatten design need "-modulePlan false", which means all cells can be moved huge distance
+# If the Pins are already placed(pinPlacement.tcl), use "-placeIOPins false"
+setPlaceMode -timingDriven true -reorderScan false -congEffort medium -modulePlan false -placeIOPins false 
+
+setOptMode -effort high -powerEffort high -leakageToDynamicRatio 0.5 -fixFanoutLoad true -restruct true -verbose true 
 place_opt_design
 
-#addFiller -cell {FILL FILL4 FILL8 FILL16 DCAP DCAP4 DCAP8 DCAP16 DCAP32}
-addFiller -cell {FILL FILL4 DCAP8 DCAP16 DCAP32}
+addFiller -cell {FILL FILL4 DCAP8 DCAP16 DCAP32} -merge true
 
 saveDesign placement.enc

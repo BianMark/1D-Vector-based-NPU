@@ -3,30 +3,31 @@
 Report : area
 Design : sram_w16_in
 Version: K-2015.06-SP2
-Date   : Mon Mar 17 15:40:29 2025
+Date   : Thu Mar 20 12:34:38 2025
 ****************************************
 
 Information: Updating design information... (UID-85)
+Warning: Design 'sram_w16_in' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
 Library(s) Used:
 
     tcbn65gplustc (File: /home/linux/ieng6/ee260bwi25/public/PDKdata/db/tcbn65gplustc.db)
 
 Number of ports:                          135
-Number of nets:                          1006
-Number of cells:                          935
-Number of combinational cells:            359
-Number of sequential cells:               576
+Number of nets:                          1942
+Number of cells:                         1871
+Number of combinational cells:            783
+Number of sequential cells:              1088
 Number of macros/black boxes:               0
-Number of buf/inv:                         18
-Number of references:                      12
+Number of buf/inv:                         37
+Number of references:                      10
 
-Combinational area:                872.639996
-Buf/Inv area:                       25.560001
-Noncombinational area:            5391.359802
+Combinational area:               1876.320014
+Buf/Inv area:                       51.840002
+Noncombinational area:           10183.679626
 Macro/Black Box area:                0.000000
 Net Interconnect area:      undefined  (Wire load has zero net area)
 
-Total cell area:                  6263.999799
+Total cell area:                 12059.999640
 Total area:                 undefined
 1
  
@@ -34,7 +35,7 @@ Total area:                 undefined
 Report : reference
 Design : sram_w16_in
 Version: K-2015.06-SP2
-Date   : Mon Mar 17 15:40:29 2025
+Date   : Thu Mar 20 12:34:38 2025
 ****************************************
 
 Attributes:
@@ -50,30 +51,26 @@ Attributes:
 
 Reference          Library       Unit Area   Count    Total Area   Attributes
 -----------------------------------------------------------------------------
+AN4D0              tcbn65gplustc
+                                  2.880000     128    368.640015  
 AOI22D0            tcbn65gplustc
-                                  2.520000     256    645.119995  
+                                  2.520000     512   1290.239990  
 BUFFD0             tcbn65gplustc
-                                  1.440000       8     11.520000  
+                                  1.440000      16     23.040001  
 CKBD1              tcbn65gplustc
-                                  1.440000       9     12.960001  
+                                  1.440000      17     24.480001  
 CKND2D0            tcbn65gplustc
-                                  1.440000       1      1.440000  
+                                  1.440000      72    103.680004  
 EDFQD1             tcbn65gplustc
-                                  9.360000     576   5391.359802  n
-IND2D0             tcbn65gplustc
-                                  2.160000       2      4.320000  
+                                  9.360000    1088  10183.679626  n
 INR2XD0            tcbn65gplustc
-                                  2.160000       9     19.440001  
+                                  2.160000      17     36.720001  
 INVD0              tcbn65gplustc
-                                  1.080000       1      1.080000  
-ND4D0              tcbn65gplustc
-                                  2.520000      64    161.279999  
+                                  1.080000       4      4.320000  
 NR2D0              tcbn65gplustc
-                                  1.440000       6      8.640000  
-NR3D0              tcbn65gplustc
-                                  2.160000       2      4.320000  
-OR3D0              tcbn65gplustc
-                                  2.520000       1      2.520000  
+                                  1.440000      16     23.040001  
+OR2D0              tcbn65gplustc
+                                  2.160000       1      2.160000  
 -----------------------------------------------------------------------------
-Total 12 references                                  6263.999799
+Total 10 references                                 12059.999640
 1
