@@ -61,12 +61,11 @@ ofifo #(.bw(bw_psum), .col(col))  ofifo_inst (
         .in(array_out),
         .wr(fifo_wr),
         .rd(ofifo_rd),
-        .o_valid(fifo_valid),
         .out(fifo_out)
 );
 
 
-sram_w16 #(.sram_bit(pr*bw)) qmem_instance (
+sram_w16_in #(.sram_bit(pr*bw)) qmem_instance (
         .CLK(clk),
         .D(mem_in),
         .Q(qmem_out),
@@ -75,7 +74,7 @@ sram_w16 #(.sram_bit(pr*bw)) qmem_instance (
         .A(qkmem_add)
 );
 
-sram_w16 #(.sram_bit(pr*bw)) kmem_instance (
+sram_w16_in #(.sram_bit(pr*bw)) kmem_instance (
         .CLK(clk),
         .D(mem_in),
         .Q(kmem_out),
@@ -84,7 +83,7 @@ sram_w16 #(.sram_bit(pr*bw)) kmem_instance (
         .A(qkmem_add)
 );
 
-sram_w16 #(.sram_bit(col*bw_psum)) psum_mem_instance (
+sram_w16_out #(.sram_bit(col*bw_psum)) psum_mem_instance (
         .CLK(clk),
         .D(pmem_in),
         .Q(pmem_out),
@@ -94,13 +93,13 @@ sram_w16 #(.sram_bit(col*bw_psum)) psum_mem_instance (
 );
 
 
-
+/*
   //////////// For printing purpose ////////////
   always @(posedge clk) begin
       if(pmem_wr)
          $display("Memory write to PSUM mem add %x %x ", pmem_add, pmem_in); 
   end
-
+*/
 
 
 endmodule

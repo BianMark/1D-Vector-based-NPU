@@ -1,0 +1,20 @@
+xrun(64): 20.09-s017: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	20.09-s017: Started on Mar 19, 2025 at 17:00:20 PDT
+xrun
+	+gui
+	+access+rwc
+	+xm64bit
+	+xmstatus
+	+xmtimescale+1ns/1ps
+	+xmoveride_timescale
+	-v ./netlist/core.out.v
+	-v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v
+	./netlist/core_tb.v
+	+xmseq_udp_delay+20ps
+
+   User defined plus("+") options:
+	+xmoveride_timescale
+
+xrun: *W,WKWTLK: Waiting for a Exclusive lock on file '/home/linux/ieng6/ee260bwi25/zhbian/1D-Vector-based-NPU/SingleCore_withoutSFP/sim/gls/xcelium.d/run.lnx8664.20.09.d/.xmlib.lock'. pid:8499.
+xrun: *F,WKNOLK: Failed to get a Exclusive lock on file '/home/linux/ieng6/ee260bwi25/zhbian/1D-Vector-based-NPU/SingleCore_withoutSFP/sim/gls/xcelium.d/run.lnx8664.20.09.d/.xmlib.lock' (Resource temporarily unavailable).
+TOOL:	xrun(64)	20.09-s017: Exiting on Mar 19, 2025 at 18:00:21 PDT  (total: 01:00:01)

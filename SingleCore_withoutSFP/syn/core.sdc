@@ -6,9 +6,12 @@ set clock_port clk
 
 create_clock -name clk -period $clock_cycle [get_ports $clock_port]
 
-set_input_delay -clock [get_clocks clk] -add_delay -max $io_delay [get_ports {*}]
-set_output_delay -clock [get_clocks clk] -add_delay -max $io_delay [get_ports {*}]
-
+set_input_delay -clock [get_clocks clk] -add_delay -max $io_delay [get_ports {mem_in}]
+set_input_delay -clock [get_clocks clk] -add_delay -max $io_delay [get_ports {clk}]
+set_input_delay -clock [get_clocks clk] -add_delay -max $io_delay [get_ports {inst}]
+set_input_delay -clock [get_clocks clk] -add_delay -max $io_delay [get_ports {reset}]
+set_output_delay -clock [get_clocks clk] -add_delay -max $io_delay [get_ports {sum_out}]
+set_output_delay -clock [get_clocks clk] -add_delay -max $io_delay [get_ports {out}]
 
 
 #set_multicycle_path -setup 2 -from [get_cells fifo_top_instance/fifo_instance/rd_ptr*] -to [get_cells out_reg*]

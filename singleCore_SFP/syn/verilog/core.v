@@ -66,7 +66,6 @@ ofifo #(.bw(bw_psum), .col(col))  ofifo_inst (
         .in(array_out),
         .wr(fifo_wr),
         .rd(ofifo_rd),
-        .o_valid(fifo_valid),
         .out(fifo_out)
 );
 

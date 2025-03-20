@@ -3,7 +3,7 @@
 Report : area
 Design : core
 Version: K-2015.06-SP2
-Date   : Sun Mar  9 13:49:51 2025
+Date   : Wed Mar 19 16:30:55 2025
 ****************************************
 
 Information: Updating design information... (UID-85)
@@ -12,21 +12,21 @@ Library(s) Used:
 
     tcbn65gplustc (File: /home/linux/ieng6/ee260bwi25/public/PDKdata/db/tcbn65gplustc.db)
 
-Number of ports:                        17233
-Number of nets:                         45983
-Number of cells:                        26733
-Number of combinational cells:          17936
-Number of sequential cells:              8624
+Number of ports:                          267
+Number of nets:                         24878
+Number of cells:                        22370
+Number of combinational cells:          14017
+Number of sequential cells:              8353
 Number of macros/black boxes:               0
-Number of buf/inv:                       1729
-Number of references:                       8
+Number of buf/inv:                       1629
+Number of references:                      56
 
-Combinational area:              61863.479969
-Buf/Inv area:                     1960.560078
-Noncombinational area:           72325.798667
+Combinational area:              48801.959716
+Buf/Inv area:                     1814.400072
+Noncombinational area:           78141.237141
 Macro/Black Box area:                0.000000
 Net Interconnect area:      undefined  (Wire load has zero net area)
 
-Total cell area:                134189.278636
+Total cell area:                126943.196857
 Total area:                 undefined
 1

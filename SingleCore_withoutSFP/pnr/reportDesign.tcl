@@ -12,3 +12,6 @@ report_power -outfile ${design}.post_route.power.rpt
 # Design report
 summaryReport -nohtml -outfile ${design}.post_route.summary.rpt
 
+report_ccopt_worst_chain
+
+report_area

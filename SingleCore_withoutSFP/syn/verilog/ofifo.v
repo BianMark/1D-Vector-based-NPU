@@ -1,4 +1,4 @@
-module ofifo (clk, in, out, rd, wr, o_valid, reset, o_full);
+module ofifo (clk, in, out, rd, wr, reset);
 
   parameter col  = 16;
   parameter simd = 1;
@@ -10,8 +10,8 @@ module ofifo (clk, in, out, rd, wr, o_valid, reset, o_full);
   input  reset;
   input  [simd*col*bw-1:0] in;
   output [simd*col*bw-1:0] out;
-  output o_full;
-  output o_valid;
+  wire o_full;
+  wire o_valid;
 
   wire  [col-1:0] full;
   wire  [col-1:0] empty; 
