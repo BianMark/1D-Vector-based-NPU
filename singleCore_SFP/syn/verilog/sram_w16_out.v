@@ -5,10 +5,13 @@ module sram_w16_out (CLK,
                  CEN,
                  WEN,
                  A);
-    
-    parameter sram_bit = 160;
-    parameter sram_fold = sram_bit/4;
-    parameter sram_addr = 16*4;
+
+    parameter initial_addr = 16;    // original SRAM depth is 16
+    parameter sram_bit = 160;        // original SRAM width is 160 (data width)
+    parameter spliter = 4;
+    parameter sram_fold = sram_bit/spliter;
+    parameter sram_addr = initial_addr*spliter;
+
     input  CLK;
     input  WEN;//active low
     input  CEN;
@@ -22,11 +25,11 @@ module sram_w16_out (CLK,
     
     always @ (posedge CLK) begin
         if (!CEN && WEN) begin // read operation
-            // Combine four 40-bit blocks into a 160-bit output
+            // Combine four 40bit datas into one 160bit output
             Q <= {memory[{A, 2'b11}],memory[{A, 2'b10}],memory[{A, 2'b01}],memory[{A, 2'b00}]};
         end
         else if (!CEN && !WEN) begin // write operation
-            // Split the 160-bit input into four 40-bit blocks and write to memory
+            // Split the 160bit input into four 40bit datas and write them to memory
             memory[{A, 2'b00}] <= D[sram_fold-1:0];
             memory[{A, 2'b01}] <= D[sram_fold*2-1:sram_fold*1];
             memory[{A, 2'b10}] <= D[sram_fold*3-1:sram_fold*2];

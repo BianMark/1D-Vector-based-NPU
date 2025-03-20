@@ -31,6 +31,9 @@ wire  kmem_rd;
 wire  kmem_wr; 
 wire  pmem_rd;
 wire  pmem_wr; 
+wire  sfp_wr2pmem;
+wire  sfp_div;
+wire  sfp_acc;
 
 assign ofifo_rd = inst[16];
 assign qkmem_add = inst[15:12];
@@ -110,7 +113,7 @@ sfp_row #(.bw(bw), .col(col)) sfp_instance (
         .sfp_out(sfp_out)
 );
 
-
+/*
   //////////// For printing purpose ////////////
   always @(posedge clk) begin
         //if(pmem_wr)
@@ -118,7 +121,7 @@ sfp_row #(.bw(bw), .col(col)) sfp_instance (
         //if(sfp_div)
         //        $display("SFP div result %x ", sfp_out);
   end
-
+*/
 
 
 endmodule

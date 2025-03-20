@@ -1,0 +1,19 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(19Mar2025:21:01:57):( xrun +gui +access+rwc +xm64bit +xmstatus +xmtimescale+1ns/1ps +xmoveride_timescale -v ./netlist/core.pnr.v -v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v ./netlist/core_tb.v )
+s2::(19Mar2025:21:17:37):( xrun +gui +access+rwc +xm64bit +xmstatus +xmtimescale+1ns/1ps +xmoveride_timescale -v ./netlist/core.pnr.v -v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v ./netlist/core_tb.v +xmseq_udp_delay+20ps )
+s3::(19Mar2025:22:47:15):( xrun +gui +access+rwc +xm64bit +xmstatus +xmtimescale+1ns/1ps +xmoveride_timescale -v ./netlist/core.pnr.v -v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v ./netlist/core_tb.v )
+s4::(19Mar2025:22:59:36):( xrun +gui +access+rwc +xm64bit +xmstatus +xmtimescale+1ns/1ps +xmoveride_timescale -v ./netlist/core.pnr.v -v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v ./netlist/core_tb.v )
+s5::(19Mar2025:23:24:44):( xrun +gui +access+rwc +xm64bit +xmstatus +xmtimescale+1ns/1ps +xmoveride_timescale -v ./netlist/core.pnr.v -v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v ./netlist/core_tb.v )
+s6::(19Mar2025:23:26:27):( xrun +gui +access+rwc +xm64bit +xmstatus +xmtimescale+1ns/1ps +xmoveride_timescale -v ./netlist/core.pnr.v -v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v ./netlist/core_tb.v )
+s7::(19Mar2025:23:49:23):( xrun +gui +access+rwc +xm64bit +xmstatus +xmtimescale+1ns/1ps +xmoveride_timescale -v ./netlist/core.pnr.v -v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v ./netlist/core_tb.v )
+s8::(20Mar2025:00:57:31):( xrun +gui +access+rwc +xm64bit +xmstatus +xmtimescale+1ns/1ps +xmoveride_timescale -v ./netlist/core.pnr.v -v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v ./netlist/core_tb.v )
+s9::(20Mar2025:10:04:18):( xrun +gui +access+rwc +xm64bit +xmstatus +xmtimescale+1ns/1ps +xmoveride_timescale -v ./netlist/core.pnr.v -v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v ./netlist/core_tb.v +xmseq_udp_delay+20ps )
+s10::(20Mar2025:10:38:57):( xrun +gui +access+rwc +xm64bit +xmstatus +xmtimescale+1ns/1ps +xmoveride_timescale -v ./netlist/core.pnr.v -v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v ./netlist/core_tb.v )
+s11::(20Mar2025:10:41:18):( xrun +gui +access+rwc +xm64bit +xmstatus +xmtimescale+1ns/1ps +xmoveride_timescale -v ./netlist/core.pnr.v -v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v ./netlist/core_tb.v )
+s12::(20Mar2025:12:04:05):( xrun +gui +access+rwc +xm64bit +xmstatus +xmtimescale+1ns/1ps +xmoveride_timescale -v ./netlist/core.pnr.v -v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v ./netlist/core_tb.v )
+s13::(20Mar2025:12:06:42):( xrun +gui +access+rwc +xm64bit +xmstatus -define INITIALIZE_MEMORY -xminitialize 0 +xmtimescale+1ns/1ps +xmoveride_timescale -v ./netlist/core.pnr.v -v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v ./netlist/core_tb.v )
+s14::(20Mar2025:12:09:25):( xrun +gui +access+rwc +xm64bit +xmstatus -define INITIALIZE_MEMORY -xminitialize 0 +xmtimescale+1ns/1ps +xmoveride_timescale -v ./netlist/core.pnr.v -v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v ./netlist/core_tb.v )
+s15::(20Mar2025:12:19:10):( xrun +gui +access+rwc +xm64bit +xmstatus -define INITIALIZE_MEMORY -xminitialize 0 +xmtimescale+1ns/1ps +xmoveride_timescale -v ./netlist/core.pnr.v -v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v ./netlist/core_tb.v )

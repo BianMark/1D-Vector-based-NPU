@@ -87,7 +87,7 @@ module sfp_row (clk, acc, div, fifo_ext_rd, sum_in, sum_out, sfp_in, sfp_out);
      .reset(reset)
   );
 
-  always @ (posedge clk) begin
+  always @ (posedge clk or posedge reset) begin
     if (reset) begin
       fifo_wr <= 0;
     end

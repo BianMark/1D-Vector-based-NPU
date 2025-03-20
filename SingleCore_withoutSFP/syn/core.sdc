@@ -6,6 +6,11 @@ set clock_port clk
 
 create_clock -name clk -period $clock_cycle [get_ports $clock_port]
 
+# Use this if reset is Asynchronous
+set_false_path -from [get_ports reset]
+
+#set_clock_uncertainty Tuncertain [get_clocks <clock>]
+
 set_input_delay -clock [get_clocks clk] -add_delay -max $io_delay [get_ports {mem_in}]
 set_input_delay -clock [get_clocks clk] -add_delay -max $io_delay [get_ports {clk}]
 set_input_delay -clock [get_clocks clk] -add_delay -max $io_delay [get_ports {inst}]

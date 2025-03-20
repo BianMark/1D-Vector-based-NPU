@@ -1,0 +1,172 @@
+Warning: You requested 8 cores. However, load on host ieng6-ece-13.ucsd.edu is 3.33. Tool will ignore the request and use 5 cores. (UIO-231)
+Warning: Detected use of obsolete/unsupported feature.  The following
+Warning: Cannot find the design 'sram_w16_in' in the library 'WORK'. (LBR-1)
+Warning: Cannot find the design 'sram_w16_in' in the library 'WORK'. (LBR-1)
+Warning: Cannot find the design 'sram_w16_out' in the library 'WORK'. (LBR-1)
+Warning: Cannot find the design 'sram_w16_out' in the library 'WORK'. (LBR-1)
+Warning:  ./verilog/sfp_row.v:39: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:40: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:41: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:42: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:43: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:44: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:45: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:46: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:49: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:50: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:51: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:52: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:53: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:54: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:55: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:56: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:59: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:113: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:114: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:115: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:116: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:117: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:118: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:119: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:120: signed to unsigned conversion occurs. (VER-318)
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Cannot find the design 'sram_w16_in' in the library 'WORK'. (LBR-1)
+Warning: Cannot find the design 'sram_w16_out' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'sram_w16_in' in 'core'. (LINK-5)
+Warning: Unable to resolve reference 'sram_w16_out' in 'core'. (LINK-5)
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Cannot find the design 'sram_w16_in' in the library 'WORK'. (LBR-1)
+Warning: Cannot find the design 'sram_w16_out' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'sram_w16_in' in 'core'. (LINK-5)
+Warning: Unable to resolve reference 'sram_w16_out' in 'core'. (LINK-5)
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'core' contains 12 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: The -timing_high_effort_script option is ignored.  (OPT-1342)
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Warning: Cannot find the design 'sram_w16_in' in the library 'WORK'. (LBR-1)
+Warning: Cannot find the design 'sram_w16_out' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'sram_w16_in' in 'core'. (LINK-5)
+Warning: Unable to resolve reference 'sram_w16_out' in 'core'. (LINK-5)
+Warning: Cannot find the design 'sram_w16_in' in the library 'WORK'. (LBR-1)
+Warning: Cannot find the design 'sram_w16_out' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'sram_w16_in' in 'core'. (LINK-5)
+Warning: Unable to resolve reference 'sram_w16_out' in 'core'. (LINK-5)
+Warning: Design 'core' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Warning: Cannot find the design 'sram_w16_in' in the library 'WORK'. (LBR-1)
+Warning: Cannot find the design 'sram_w16_out' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'sram_w16_in' in 'core'. (LINK-5)
+Warning: Unable to resolve reference 'sram_w16_out' in 'core'. (LINK-5)
+Warning: Design has unannotated black box outputs. (PWR-428)
+Warning: Cannot find the design 'sram_w16_in' in the library 'WORK'. (LBR-1)
+Warning: Cannot find the design 'sram_w16_out' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'sram_w16_in' in 'core'. (LINK-5)
+Warning: Unable to resolve reference 'sram_w16_out' in 'core'. (LINK-5)
+Warning: The specified replacement character (_) is conflicting with the specified allowed or restricted character.   (UCN-4)
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)

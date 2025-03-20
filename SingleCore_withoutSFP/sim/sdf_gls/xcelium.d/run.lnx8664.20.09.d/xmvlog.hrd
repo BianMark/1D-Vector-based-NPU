@@ -1,0 +1,10 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-VFILE
+./netlist/core.pnr.v
+-VFILE
+/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v
+-DEFINE
+INITIALIZE_MEMORY

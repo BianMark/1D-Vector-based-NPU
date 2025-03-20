@@ -10,8 +10,8 @@ report_timing -max_paths 5 > ${design}.post_route.timing.rpt
 report_power -outfile ${design}.post_route.power.rpt
 
 # Design report
-summaryReport -nohtml -outfile ${design}.post_route.summary.rpt
+summaryReport -outfile ${design}.post_route.summary.rpt
 
-report_ccopt_worst_chain
+report_ccopt_worst_chain -file ${design}.post_route.worst_chain.rpt
 
-report_area
+#report_area -out_file ${design}.post_route.area.rpt

@@ -8,6 +8,9 @@ create_library_set -name WC_LIB\
 create_library_set -name BC_LIB\
    -timing\
     [list ${::IMEX::libVar}/mmmc/tcbn65gplusbc.lib]
+create_library_set -name TC_LIB\
+   -timing\
+    [list ${::IMEX::libVar}/mmmc/tcbn65gplustc.lib]
 create_rc_corner -name Cmin\
    -cap_table ${::IMEX::libVar}/mmmc/cln65g+_1p08m+alrdl_top2_cbest.captable\
    -preRoute_res 1\
@@ -31,12 +34,16 @@ create_rc_corner -name Cmax\
 create_delay_corner -name WC\
    -library_set WC_LIB\
    -rc_corner Cmax
+create_delay_corner -name TC\
+   -library_set TC_LIB\
+   -rc_corner Cmax
 create_delay_corner -name BC\
    -library_set BC_LIB\
    -rc_corner Cmin
 create_constraint_mode -name CON\
    -sdc_files\
     [list ${::IMEX::dataVar}/mmmc/modes/CON/CON.sdc]
+create_analysis_view -name TC_VIEW -constraint_mode CON -delay_corner TC
 create_analysis_view -name WC_VIEW -constraint_mode CON -delay_corner WC -latency_file ${::IMEX::dataVar}/mmmc/views/WC_VIEW/latency.sdc
 create_analysis_view -name BC_VIEW -constraint_mode CON -delay_corner BC -latency_file ${::IMEX::dataVar}/mmmc/views/BC_VIEW/latency.sdc
 set_analysis_view -setup [list WC_VIEW] -hold [list BC_VIEW]

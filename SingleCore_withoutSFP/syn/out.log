@@ -1,3 +1,4 @@
+Warning: You requested 8 cores. However, load on host ieng6-ece-13.ucsd.edu is 6.21. Tool will ignore the request and use 2 cores. (UIO-231)
 Information: Variable 'hdlin_enable_vpp' is obsolete and is being ignored. (INFO-100)
 Running PRESTO HDLC
 Compiling source file ./verilog/core.v
@@ -100,12 +101,12 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|  load_ready_q_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
-|     inst_q_reg      | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
-|     inst_2q_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      cnt_q_reg      | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  load_ready_q_reg   | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|     inst_2q_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     inst_q_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
 |     query_q_reg     | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
 |      key_q_reg      | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
-|      cnt_q_reg      | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
 ===============================================================================
 Presto compilation completed successfully.
 Information: Building the design 'mac_col' instantiated from design 'mac_array_col8_bw8_bw_psum20_pr8' with
@@ -117,12 +118,12 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|  load_ready_q_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
-|     inst_q_reg      | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
-|     inst_2q_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      cnt_q_reg      | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  load_ready_q_reg   | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|     inst_2q_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     inst_q_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
 |     query_q_reg     | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
 |      key_q_reg      | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
-|      cnt_q_reg      | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
 ===============================================================================
 Presto compilation completed successfully.
 Information: Building the design 'mac_col' instantiated from design 'mac_array_col8_bw8_bw_psum20_pr8' with
@@ -134,12 +135,12 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|  load_ready_q_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
-|     inst_q_reg      | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
-|     inst_2q_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      cnt_q_reg      | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  load_ready_q_reg   | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|     inst_2q_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     inst_q_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
 |     query_q_reg     | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
 |      key_q_reg      | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
-|      cnt_q_reg      | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
 ===============================================================================
 Presto compilation completed successfully.
 Information: Building the design 'mac_col' instantiated from design 'mac_array_col8_bw8_bw_psum20_pr8' with
@@ -151,12 +152,12 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|  load_ready_q_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
-|     inst_q_reg      | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
-|     inst_2q_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      cnt_q_reg      | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  load_ready_q_reg   | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|     inst_2q_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     inst_q_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
 |     query_q_reg     | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
 |      key_q_reg      | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
-|      cnt_q_reg      | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
 ===============================================================================
 Presto compilation completed successfully.
 Information: Building the design 'mac_col' instantiated from design 'mac_array_col8_bw8_bw_psum20_pr8' with
@@ -168,12 +169,12 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|  load_ready_q_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
-|     inst_q_reg      | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
-|     inst_2q_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      cnt_q_reg      | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  load_ready_q_reg   | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|     inst_2q_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     inst_q_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
 |     query_q_reg     | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
 |      key_q_reg      | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
-|      cnt_q_reg      | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
 ===============================================================================
 Presto compilation completed successfully.
 Information: Building the design 'mac_col' instantiated from design 'mac_array_col8_bw8_bw_psum20_pr8' with
@@ -185,12 +186,12 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|  load_ready_q_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
-|     inst_q_reg      | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
-|     inst_2q_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      cnt_q_reg      | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  load_ready_q_reg   | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|     inst_2q_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     inst_q_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
 |     query_q_reg     | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
 |      key_q_reg      | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
-|      cnt_q_reg      | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
 ===============================================================================
 Presto compilation completed successfully.
 Information: Building the design 'mac_col' instantiated from design 'mac_array_col8_bw8_bw_psum20_pr8' with
@@ -202,12 +203,12 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|  load_ready_q_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
-|     inst_q_reg      | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
-|     inst_2q_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      cnt_q_reg      | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  load_ready_q_reg   | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|     inst_2q_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     inst_q_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
 |     query_q_reg     | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
 |      key_q_reg      | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
-|      cnt_q_reg      | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
 ===============================================================================
 Presto compilation completed successfully.
 Information: Building the design 'mac_col' instantiated from design 'mac_array_col8_bw8_bw_psum20_pr8' with
@@ -219,12 +220,12 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|  load_ready_q_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
-|     inst_q_reg      | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
-|     inst_2q_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      cnt_q_reg      | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  load_ready_q_reg   | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|     inst_2q_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     inst_q_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
 |     query_q_reg     | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
 |      key_q_reg      | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
-|      cnt_q_reg      | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
 ===============================================================================
 Presto compilation completed successfully.
 Information: Building the design 'fifo_depth16' instantiated from design 'ofifo_col8_bw20' with
@@ -244,7 +245,7 @@ Inferred memory devices in process
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|     rd_ptr_reg      | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+|     rd_ptr_reg      | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
@@ -259,7 +260,7 @@ Inferred memory devices in process
 |       q8_reg        | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
 |       q9_reg        | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
 |       q11_reg       | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
-|     wr_ptr_reg      | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+|     wr_ptr_reg      | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
 |       q12_reg       | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
 |       q13_reg       | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
 |       q14_reg       | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
@@ -1004,6 +1005,7 @@ Warning: Design 'core' contains 12 high-fanout nets. A fanout number of 1000 wil
 Warning: The -timing_high_effort_script option is ignored.  (OPT-1342)
 Information: Performing power optimization. (PWR-850)
 Alib files are up-to-date.
+Information: Running optimization using a maximum of 2 cores. (OPT-1500)
 Loading db file '/software/nonrdist64/dc-2015.06-64/libraries/syn/dw_foundation.sldb'
 Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
 Information: Evaluating DesignWare library utilization. (UISN-27)
@@ -1090,33 +1092,33 @@ Information: The target library(s) contains cell(s), other than black boxes, tha
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
   --------- --------- --------- --------- --------- ------------------------- --------- -----------
-    0:01:42  127382.8      0.00       0.0       3.1                           662747.1250      0.00  
-    0:01:42  127382.8      0.00       0.0       3.1                           662747.1250      0.00  
-    0:01:42  127382.8      0.00       0.0       3.1                           662747.1250      0.00  
-    0:01:42  127382.8      0.00       0.0       3.1                           662747.1250      0.00  
+    0:01:36  127471.7      0.00       0.0       2.4                           662477.1250      0.00  
+    0:01:36  127471.7      0.00       0.0       2.4                           662477.1250      0.00  
+    0:01:36  127471.7      0.00       0.0       2.4                           662477.1250      0.00  
+    0:01:36  127471.7      0.00       0.0       2.4                           662477.1250      0.00  
 
   Beginning WLM Backend Optimization
   --------------------------------------
-    0:01:52  127064.9      0.00       0.0       2.2                           656434.0000      0.00  
-    0:01:59  127064.9      0.00       0.0       0.6                           603584.4375      0.00  
-    0:01:59  127064.9      0.00       0.0       0.6                           603584.4375      0.00  
-    0:01:59  127064.9      0.00       0.0       0.6                           603584.4375      0.00  
-    0:01:59  127064.9      0.00       0.0       0.6                           603584.4375      0.00  
-    0:01:59  127064.9      0.00       0.0       0.6                           603584.4375      0.00  
-    0:01:59  127064.9      0.00       0.0       0.6                           603584.4375      0.00  
-    0:01:59  127064.9      0.00       0.0       0.6                           603584.4375      0.00  
-    0:01:59  127064.9      0.00       0.0       0.6                           603584.4375      0.00  
-    0:01:59  127064.9      0.00       0.0       0.6                           603584.4375      0.00  
-    0:01:59  127064.9      0.00       0.0       0.6                           603584.4375      0.00  
-    0:01:59  127064.9      0.00       0.0       0.6                           603584.4375      0.00  
-    0:01:59  127064.9      0.00       0.0       0.6                           603584.4375      0.00  
-    0:01:59  127064.9      0.00       0.0       0.6                           603584.4375      0.00  
-    0:01:59  127064.9      0.00       0.0       0.6                           603584.4375      0.00  
-    0:01:59  127064.9      0.00       0.0       0.6                           603584.4375      0.00  
-    0:01:59  127064.9      0.00       0.0       0.6                           603584.4375      0.00  
-    0:01:59  127064.9      0.00       0.0       0.6                           603584.4375      0.00  
-    0:01:59  127064.9      0.00       0.0       0.6                           603584.4375      0.00  
-    0:01:59  127064.9      0.00       0.0       0.6                           603584.4375      0.00  
+    0:01:46  127147.7      0.00       0.0       1.7                           656198.4375      0.00  
+    0:01:51  127146.6      0.00       0.0       0.4                           603197.5625      0.00  
+    0:01:52  127146.6      0.00       0.0       0.4                           603197.5625      0.00  
+    0:01:52  127146.6      0.00       0.0       0.4                           603197.5625      0.00  
+    0:01:52  127146.6      0.00       0.0       0.4                           603197.5625      0.00  
+    0:01:52  127146.6      0.00       0.0       0.4                           603197.5625      0.00  
+    0:01:52  127146.6      0.00       0.0       0.4                           603197.5625      0.00  
+    0:01:52  127146.6      0.00       0.0       0.4                           603197.5625      0.00  
+    0:01:52  127146.6      0.00       0.0       0.4                           603197.5625      0.00  
+    0:01:52  127146.6      0.00       0.0       0.4                           603197.5625      0.00  
+    0:01:52  127146.6      0.00       0.0       0.4                           603197.5625      0.00  
+    0:01:52  127146.6      0.00       0.0       0.4                           603197.5625      0.00  
+    0:01:52  127146.6      0.00       0.0       0.4                           603197.5625      0.00  
+    0:01:52  127146.6      0.00       0.0       0.4                           603197.5625      0.00  
+    0:01:52  127146.6      0.00       0.0       0.4                           603197.5625      0.00  
+    0:01:52  127146.6      0.00       0.0       0.4                           603197.5625      0.00  
+    0:01:52  127146.6      0.00       0.0       0.4                           603197.5625      0.00  
+    0:01:52  127146.6      0.00       0.0       0.4                           603197.5625      0.00  
+    0:01:52  127146.6      0.00       0.0       0.4                           603197.5625      0.00  
+    0:01:52  127146.6      0.00       0.0       0.4                           603197.5625      0.00  
 
 
   Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
@@ -1126,12 +1128,12 @@ Information: The target library(s) contains cell(s), other than black boxes, tha
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
   --------- --------- --------- --------- --------- ------------------------- --------- -----------
-    0:01:59  127064.9      0.00       0.0       0.6                           603584.4375      0.00  
+    0:01:52  127146.6      0.00       0.0       0.4                           603197.5625      0.00  
   Global Optimization (Phase 33)
   Global Optimization (Phase 34)
   Global Optimization (Phase 35)
-    0:02:00  127078.9      0.00       0.0       0.0                           603659.0000      0.00  
-    0:02:00  127078.9      0.00       0.0       0.0                           603659.0000      0.00  
+    0:01:52  127155.2      0.00       0.0       0.0                           603244.0625      0.00  
+    0:01:52  127155.2      0.00       0.0       0.0                           603244.0625      0.00  
 
 
   Beginning Leakage Power Optimization  (max_leakage_power 0)
@@ -1141,7 +1143,7 @@ Information: The target library(s) contains cell(s), other than black boxes, tha
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
   --------- --------- --------- --------- --------- ------------------------- --------- -----------
-    0:02:00  127078.9      0.00       0.0       0.0                           603659.0000      0.00  
+    0:01:52  127155.2      0.00       0.0       0.0                           603244.0625      0.00  
   Global Optimization (Phase 36)
   Global Optimization (Phase 37)
   Global Optimization (Phase 38)
@@ -1154,43 +1156,45 @@ Information: The target library(s) contains cell(s), other than black boxes, tha
   Global Optimization (Phase 45)
   Global Optimization (Phase 46)
   Global Optimization (Phase 47)
-    0:02:05  126992.2      0.00       0.0       0.9                           597655.7500      0.00  
-    0:02:05  126992.2      0.00       0.0       0.9                           597655.7500      0.00  
-    0:02:05  126992.2      0.00       0.0       0.9                           597655.7500      0.00  
-    0:02:07  126976.0      0.00       0.0       0.9                           597492.1250      0.00  
-    0:02:07  126976.0      0.00       0.0       0.9                           597492.1250      0.00  
-    0:02:07  126976.0      0.00       0.0       0.9                           597492.1250      0.00  
-    0:02:07  126976.0      0.00       0.0       0.9                           597492.1250      0.00  
-    0:02:07  126976.0      0.00       0.0       0.9                           597492.1250      0.00  
-    0:02:07  126976.0      0.00       0.0       0.9                           597492.1250      0.00  
-    0:02:07  126976.0      0.00       0.0       0.9                           597492.1250      0.00  
-    0:02:07  126976.0      0.00       0.0       0.9                           597492.1250      0.00  
-    0:02:07  126976.0      0.00       0.0       0.9                           597492.1250      0.00  
-    0:02:07  126976.0      0.00       0.0       0.9                           597492.1250      0.00  
-    0:02:07  126976.0      0.00       0.0       0.9                           597492.1250      0.00  
-    0:02:07  126976.0      0.00       0.0       0.9                           597492.1250      0.00  
-    0:02:07  126976.0      0.00       0.0       0.9                           597492.1250      0.00  
-    0:02:07  126976.0      0.00       0.0       0.9                           597492.1250      0.00  
-    0:02:07  126976.0      0.00       0.0       0.9                           597492.1250      0.00  
-    0:02:07  126976.0      0.00       0.0       0.9                           597492.1250      0.00  
-    0:02:07  126976.0      0.00       0.0       0.9                           597492.1250      0.00  
-    0:02:07  126976.0      0.00       0.0       0.9                           597492.1250      0.00  
-    0:02:07  126976.0      0.00       0.0       0.9                           597492.1250      0.00  
-    0:02:07  127010.5      0.00       0.0       0.0                           597900.4375      0.00  
+  Global Optimization (Phase 48)
+    0:01:57  127065.2      0.00       0.0       0.9                           597513.8750      0.00  
+    0:01:57  127065.2      0.00       0.0       0.9                           597513.8750      0.00  
+    0:01:57  127065.2      0.00       0.0       0.9                           597513.8750      0.00  
+    0:01:59  127054.4      0.00       0.0       0.9                           597407.6250      0.00  
+    0:01:59  127054.4      0.00       0.0       0.9                           597407.6250      0.00  
+    0:01:59  127054.4      0.00       0.0       0.9                           597407.6250      0.00  
+    0:01:59  127054.4      0.00       0.0       0.9                           597407.6250      0.00  
+    0:01:59  127054.4      0.00       0.0       0.9                           597407.6250      0.00  
+    0:01:59  127054.4      0.00       0.0       0.9                           597407.6250      0.00  
+    0:01:59  127054.4      0.00       0.0       0.9                           597407.6250      0.00  
+    0:01:59  127054.4      0.00       0.0       0.9                           597407.6250      0.00  
+    0:01:59  127054.4      0.00       0.0       0.9                           597407.6250      0.00  
+    0:01:59  127054.4      0.00       0.0       0.9                           597407.6250      0.00  
+    0:01:59  127054.4      0.00       0.0       0.9                           597407.6250      0.00  
+    0:01:59  127054.4      0.00       0.0       0.9                           597407.6250      0.00  
+    0:01:59  127054.4      0.00       0.0       0.9                           597407.6250      0.00  
+    0:01:59  127054.4      0.00       0.0       0.9                           597407.6250      0.00  
+    0:01:59  127054.4      0.00       0.0       0.9                           597407.6250      0.00  
+    0:01:59  127054.4      0.00       0.0       0.9                           597407.6250      0.00  
+    0:01:59  127054.4      0.00       0.0       0.9                           597407.6250      0.00  
+    0:01:59  127054.4      0.00       0.0       0.9                           597407.6250      0.00  
+    0:01:59  127054.4      0.00       0.0       0.9                           597407.6250      0.00  
+    0:01:59  127089.0      0.00       0.0       0.0                           597815.9375      0.00  
 
                                   TOTAL                                                            
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
   --------- --------- --------- --------- --------- ------------------------- --------- -----------
-    0:02:07  127010.5      0.00       0.0       0.0                           597900.4375      0.00  
-    0:02:10  126957.6      0.00       0.0       0.0                           597762.0625      0.00  
-    0:02:10  126957.6      0.00       0.0       0.0                           597762.0625      0.00  
-    0:02:10  126957.6      0.00       0.0       0.0                           597762.0625      0.00  
-    0:02:12  126943.2      0.00       0.0       0.0                           597529.8750      0.00  
-    0:02:13  126943.2      0.00       0.0       0.0                           597526.9375      0.00  
-    0:02:13  126943.2      0.00       0.0       0.0                           597526.9375      0.00  
-    0:02:13  126943.2      0.00       0.0       0.0                           597526.9375      0.00  
-    0:02:13  126943.2      0.00       0.0       0.0                           597526.9375      0.00  
+    0:01:59  127089.0      0.00       0.0       0.0                           597815.9375      0.00  
+    0:02:02  127029.6      0.00       0.0       0.0                           597679.2500      0.00  
+    0:02:02  127029.6      0.00       0.0       0.0                           597679.2500      0.00  
+    0:02:02  127029.6      0.00       0.0       0.0                           597679.2500      0.00  
+    0:02:04  127014.8      0.00       0.0       0.0                           597460.8125      0.00  
+    0:02:05  127013.4      0.00       0.0       0.0                           597454.2500      0.00  
+    0:02:05  127013.4      0.00       0.0       0.0                           597454.2500      0.00  
+    0:02:05  127013.4      0.00       0.0       0.0                           597454.2500      0.00  
+    0:02:05  127013.4      0.00       0.0       0.0                           597454.2500      0.00  
+    0:02:06  127012.3      0.00       0.0       0.0                           597452.8125      0.00  
 Loading db file '/home/linux/ieng6/ee260bwi25/public/PDKdata/db/tcbn65gplustc.db'
 
 

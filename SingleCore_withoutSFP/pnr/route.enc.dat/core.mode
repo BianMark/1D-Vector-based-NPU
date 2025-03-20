@@ -36,6 +36,7 @@ catch {setNanoRouteMode -quiet -routeWithTimingDriven true}
 
 catch { setPlaceMode -congEffort medium }
 catch { setPlaceMode -modulePlan false }
+catch { setPlaceMode -placeIoPins false }
 catch { setPlaceMode -reorderScan false }
 catch { setPlaceMode -timingDriven true }
 catch { setIlmMode -keepHighFanoutPorts true -keepLoopBack false -keepFlatten true }

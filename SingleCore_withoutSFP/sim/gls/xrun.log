@@ -1,5 +1,5 @@
 xrun(64): 20.09-s017: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	20.09-s017: Started on Mar 19, 2025 at 17:00:20 PDT
+TOOL:	xrun(64)	20.09-s017: Started on Mar 20, 2025 at 11:39:48 PDT
 xrun
 	+gui
 	+access+rwc
@@ -15,6 +15,205 @@ xrun
    User defined plus("+") options:
 	+xmoveride_timescale
 
-xrun: *W,WKWTLK: Waiting for a Exclusive lock on file '/home/linux/ieng6/ee260bwi25/zhbian/1D-Vector-based-NPU/SingleCore_withoutSFP/sim/gls/xcelium.d/run.lnx8664.20.09.d/.xmlib.lock'. pid:8499.
-xrun: *F,WKNOLK: Failed to get a Exclusive lock on file '/home/linux/ieng6/ee260bwi25/zhbian/1D-Vector-based-NPU/SingleCore_withoutSFP/sim/gls/xcelium.d/run.lnx8664.20.09.d/.xmlib.lock' (Resource temporarily unavailable).
-TOOL:	xrun(64)	20.09-s017: Exiting on Mar 19, 2025 at 18:00:21 PDT  (total: 01:00:01)
+file: ./netlist/core_tb.v
+	module worklib.core_tb:v
+		errors: 0, warnings: 0
+file: ./netlist/core.out.v
+	module core.core:v
+		errors: 0, warnings: 0
+file: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v
+	module tcbn65gplus.AO31D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.CKAN2D2:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.CKAN2D4:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.DFCNQD1:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.DFSNQD1:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.EDFCNQD1:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.IAO21D0:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.NR3D1:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.OA21D2:v
+		errors: 0, warnings: 0
+xmvlog: Memory Usage - Current physical: 29.8M, Current virtual: 100.7M
+xmvlog: CPU Usage - 0.1s system + 0.9s user = 0.9s total (1.1s, 85.0% cpu)
+xmelab: *N,INFSUD: -NOSPECIFY is automatically used with -SEQ_UDP_DELAY.
+		Caching library 'worklib' ....... Done
+		Caching library 'core' ....... Done
+		Caching library 'tcbn65gplus' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		core_tb
+	Building instance overlay tables: 
+    mem_in[9*bw-1:8*bw] = Q[q][8];
+         |
+xmelab: *W,BNDWRN (./netlist/core_tb.v,220|9): Bit-select or part-select index out of declared bounds.
+    mem_in[9*bw-1:8*bw] = Q[q][8];
+                              |
+xmelab: *W,BNDWRN (./netlist/core_tb.v,220|30): Bit-select or part-select index out of declared bounds.
+    mem_in[10*bw-1:9*bw] = Q[q][9];
+         |
+xmelab: *W,BNDWRN (./netlist/core_tb.v,221|9): Bit-select or part-select index out of declared bounds.
+    mem_in[10*bw-1:9*bw] = Q[q][9];
+                               |
+xmelab: *W,BNDWRN (./netlist/core_tb.v,221|31): Bit-select or part-select index out of declared bounds.
+    mem_in[11*bw-1:10*bw] = Q[q][10];
+         |
+xmelab: *W,BNDWRN (./netlist/core_tb.v,222|9): Bit-select or part-select index out of declared bounds.
+    mem_in[11*bw-1:10*bw] = Q[q][10];
+                                |
+xmelab: *W,BNDWRN (./netlist/core_tb.v,222|32): Bit-select or part-select index out of declared bounds.
+    mem_in[12*bw-1:11*bw] = Q[q][11];
+         |
+xmelab: *W,BNDWRN (./netlist/core_tb.v,223|9): Bit-select or part-select index out of declared bounds.
+    mem_in[12*bw-1:11*bw] = Q[q][11];
+                                |
+xmelab: *W,BNDWRN (./netlist/core_tb.v,223|32): Bit-select or part-select index out of declared bounds.
+    mem_in[13*bw-1:12*bw] = Q[q][12];
+         |
+xmelab: *W,BNDWRN (./netlist/core_tb.v,224|9): Bit-select or part-select index out of declared bounds.
+    mem_in[13*bw-1:12*bw] = Q[q][12];
+                                |
+xmelab: *W,BNDWRN (./netlist/core_tb.v,224|32): Bit-select or part-select index out of declared bounds.
+    mem_in[14*bw-1:13*bw] = Q[q][13];
+         |
+xmelab: *W,BNDWRN (./netlist/core_tb.v,225|9): Bit-select or part-select index out of declared bounds.
+    mem_in[14*bw-1:13*bw] = Q[q][13];
+                                |
+xmelab: *W,BNDWRN (./netlist/core_tb.v,225|32): Bit-select or part-select index out of declared bounds.
+    mem_in[15*bw-1:14*bw] = Q[q][14];
+         |
+xmelab: *W,BNDWRN (./netlist/core_tb.v,226|9): Bit-select or part-select index out of declared bounds.
+    mem_in[15*bw-1:14*bw] = Q[q][14];
+                                |
+xmelab: *W,BNDWRN (./netlist/core_tb.v,226|32): Bit-select or part-select index out of declared bounds.
+    mem_in[16*bw-1:15*bw] = Q[q][15];
+         |
+xmelab: *W,BNDWRN (./netlist/core_tb.v,227|9): Bit-select or part-select index out of declared bounds.
+    mem_in[16*bw-1:15*bw] = Q[q][15];
+                                |
+xmelab: *W,BNDWRN (./netlist/core_tb.v,227|32): Bit-select or part-select index out of declared bounds.
+    mem_in[9*bw-1:8*bw] = K[q][8];
+         |
+xmelab: *W,BNDWRN (./netlist/core_tb.v,261|9): Bit-select or part-select index out of declared bounds.
+    mem_in[9*bw-1:8*bw] = K[q][8];
+                              |
+xmelab: *W,BNDWRN (./netlist/core_tb.v,261|30): Bit-select or part-select index out of declared bounds.
+    mem_in[10*bw-1:9*bw] = K[q][9];
+         |
+xmelab: *W,BNDWRN (./netlist/core_tb.v,262|9): Bit-select or part-select index out of declared bounds.
+    mem_in[10*bw-1:9*bw] = K[q][9];
+                               |
+xmelab: *W,BNDWRN (./netlist/core_tb.v,262|31): Bit-select or part-select index out of declared bounds.
+    mem_in[11*bw-1:10*bw] = K[q][10];
+         |
+xmelab: *W,BNDWRN (./netlist/core_tb.v,263|9): Bit-select or part-select index out of declared bounds.
+    mem_in[11*bw-1:10*bw] = K[q][10];
+                                |
+xmelab: *W,BNDWRN (./netlist/core_tb.v,263|32): Bit-select or part-select index out of declared bounds.
+    mem_in[12*bw-1:11*bw] = K[q][11];
+         |
+xmelab: *W,BNDWRN (./netlist/core_tb.v,264|9): Bit-select or part-select index out of declared bounds.
+    mem_in[12*bw-1:11*bw] = K[q][11];
+                                |
+xmelab: *W,BNDWRN (./netlist/core_tb.v,264|32): Bit-select or part-select index out of declared bounds.
+    mem_in[13*bw-1:12*bw] = K[q][12];
+         |
+xmelab: *W,BNDWRN (./netlist/core_tb.v,265|9): Bit-select or part-select index out of declared bounds.
+    mem_in[13*bw-1:12*bw] = K[q][12];
+                                |
+xmelab: *W,BNDWRN (./netlist/core_tb.v,265|32): Bit-select or part-select index out of declared bounds.
+    mem_in[14*bw-1:13*bw] = K[q][13];
+         |
+xmelab: *W,BNDWRN (./netlist/core_tb.v,266|9): Bit-select or part-select index out of declared bounds.
+    mem_in[14*bw-1:13*bw] = K[q][13];
+                                |
+xmelab: *W,BNDWRN (./netlist/core_tb.v,266|32): Bit-select or part-select index out of declared bounds.
+    mem_in[15*bw-1:14*bw] = K[q][14];
+         |
+xmelab: *W,BNDWRN (./netlist/core_tb.v,267|9): Bit-select or part-select index out of declared bounds.
+    mem_in[15*bw-1:14*bw] = K[q][14];
+                                |
+xmelab: *W,BNDWRN (./netlist/core_tb.v,267|32): Bit-select or part-select index out of declared bounds.
+    mem_in[16*bw-1:15*bw] = K[q][15];
+         |
+xmelab: *W,BNDWRN (./netlist/core_tb.v,268|9): Bit-select or part-select index out of declared bounds.
+    mem_in[16*bw-1:15*bw] = K[q][15];
+                                |
+xmelab: *W,BNDWRN (./netlist/core_tb.v,268|32): Bit-select or part-select index out of declared bounds.
+.................... Done
+	Generating native compiled code:
+		worklib.core_tb:v <0x76dc6570>
+			streams:  28, words: 43785
+		tcbn65gplus.DFSNQD1:v <0x5e8f6f07>
+			streams:   0, words:     0
+		tcbn65gplus.EDFCNQD1:v <0x53781701>
+			streams:   0, words:     0
+		tcbn65gplus.DFCNQD1:v <0x6eea6967>
+			streams:   0, words:     0
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:               22293      66
+		UDPs:                  25271       3
+		Primitives:            67846       8
+		Registers:              8387      39
+		Scalar wires:          16787       -
+		Expanded wires:           72       3
+		Vectored wires:            1       -
+		Initial blocks:           14      14
+		Cont. assignments:        11      11
+		Pseudo assignments:        3       3
+		Simulation timescale:    1ps
+	Writing initial simulation snapshot: worklib.core_tb:v
+xmelab: Memory Usage - Final: 54.8M, Peak: 61.1M, Peak virtual: 185.4M
+xmelab: CPU Usage - 0.1s system + 3.0s user = 3.1s total (3.4s, 93.4% cpu)
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /software/ECE/XCELIUM-2009/tools/xcelium/files/xmsimrc
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm core_tb.pmem_out
+Created probe 1
+xcelium> run
+##### Q data txt reading #####
+##### K data txt reading #####
+##### Estimated multiplication result #####
+prd @cycle 0: 00006fffa3000640000cfffa0fffe0fffea00003
+prd @cycle 1: 000230000100023fffe0ffffc00002ffff00004b
+prd @cycle 2: fffc6fffa50005400030fffde0000a0002cffff0
+prd @cycle 3: 00005fffd000050fffe7fffabfffaffffeafffbd
+prd @cycle 4: 00028ffff80004b00038fffd6fffdffffd20000b
+prd @cycle 5: 0004200040ffffd0002e000250005f00024ffff6
+prd @cycle 6: 0006100075fffd60001d000260002bffffefffd3
+prd @cycle 7: 00004fffef0001a0000b0000000008ffff40001e
+##### Qmem writing  #####
+##### Kmem writing #####
+##### K data loading to processor #####
+##### execute #####
+##### move ofifo to pmem #####
+##### display multiplication result from pmem #####
+prd @PMEM Add 0: 00006fffa3000640000cfffa0fffe0fffea00003
+prd @PMEM Add 1: 000230000100023fffe0ffffc00002ffff00004b
+prd @PMEM Add 2: fffc6fffa50005400030fffde0000a0002cffff0
+prd @PMEM Add 3: 00005fffd000050fffe7fffabfffaffffeafffbd
+prd @PMEM Add 4: 00028ffff80004b00038fffd6fffdffffd20000b
+prd @PMEM Add 5: 0004200040ffffd0002e000250005f00024ffff6
+prd @PMEM Add 6: 0006100075fffd60001d000260002bffffefffd3
+prd @PMEM Add 7: 00004fffef0001a0000b0000000008ffff40001e
+Simulation complete via $finish(1) at time 109 NS + 0
+./netlist/core_tb.v:403 
+xcelium> ^C
+xcelium> exit
+xmsim: Memory Usage - Final: 103.3M, Peak: 106.7M, Peak virtual: 571.9M
+xmsim: Main Thread CPU Usage - 1.1s system + 1.5s user = 2.6s total
+xmsim: CPU Usage - 1.0s system + 1.2s user = 2.2s total (76.1s, 2.9% cpu)
+TOOL:	xrun(64)	20.09-s017: Exiting on Mar 20, 2025 at 11:41:09 PDT  (total: 00:01:21)

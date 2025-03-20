@@ -1,3 +1,5 @@
+set_host_options -max_cores 8
+
 set top_module core
 set rtlPath "./verilog"
 

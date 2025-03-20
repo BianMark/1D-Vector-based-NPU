@@ -203,6 +203,7 @@ $display("##### Qmem writing  #####");
     mem_in[6*bw-1:5*bw] = Q[q][5];
     mem_in[7*bw-1:6*bw] = Q[q][6];
     mem_in[8*bw-1:7*bw] = Q[q][7];
+    /*
     mem_in[9*bw-1:8*bw] = Q[q][8];
     mem_in[10*bw-1:9*bw] = Q[q][9];
     mem_in[11*bw-1:10*bw] = Q[q][10];
@@ -211,7 +212,7 @@ $display("##### Qmem writing  #####");
     mem_in[14*bw-1:13*bw] = Q[q][13];
     mem_in[15*bw-1:14*bw] = Q[q][14];
     mem_in[16*bw-1:15*bw] = Q[q][15];
-
+    */
     #0.5 clk = 1'b1;  
 
   end
@@ -244,6 +245,7 @@ $display("##### Kmem writing #####");
     mem_in[6*bw-1:5*bw] = K[q][5];
     mem_in[7*bw-1:6*bw] = K[q][6];
     mem_in[8*bw-1:7*bw] = K[q][7];
+    /*
     mem_in[9*bw-1:8*bw] = K[q][8];
     mem_in[10*bw-1:9*bw] = K[q][9];
     mem_in[11*bw-1:10*bw] = K[q][10];
@@ -252,7 +254,7 @@ $display("##### Kmem writing #####");
     mem_in[14*bw-1:13*bw] = K[q][13];
     mem_in[15*bw-1:14*bw] = K[q][14];
     mem_in[16*bw-1:15*bw] = K[q][15];
-
+    */
     #0.5 clk = 1'b1;  
 
   end
