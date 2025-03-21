@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version K-2015.06-SP2 for linux64 -- Aug 31, 2015
-#@ # Date:   Thu Mar 20 11:36:24 2025
+#@ # Date:   Thu Mar 20 16:45:45 2025
 #@ # Run by: zhbian@ieng6-ece-13.ucsd.edu
 #@ 
 
@@ -3788,8 +3788,13 @@ source /software/nonrdist64/dc-2015.06-64/admin/setup/.synopsys_dc.setup
 #@ }
 #@ # -- End source /software/nonrdist64/dc-2015.06-64/admin/setup/.synopsys_dc.setup
 
-source run_dc.tcl > out.log
+grep -E "WARN|Warn|warn" out.log > warning.log
+tclsh clean_syn.tcl
+source run_dc.tcl
 #@ # -- Starting source run_dc.tcl
+
+#@ source dc.tcl > out.log
+#@ # -- Starting source dc.tcl
 
 #@ set_host_options -max_cores 8
 #@ 
@@ -3833,7 +3838,7 @@ source run_dc.tcl > out.log
 #@ set hdlin_enable_vpp true
 #@ set hdlin_auto_save_templates false
 #@ 
-#@ define_design_lib WORK -path .template
+#@ define_design_lib WORK -path ./template
 #@ set verilogout_single_bit false
 #@ 
 #@ 
@@ -3939,6 +3944,6 @@ source run_dc.tcl > out.log
 #@ # Done
 #@ echo "run.scr completed successfully"
 #@ 
-#@ # -- End source run_dc.tcl
+#@ # -- End source dc.tcl
 
-exit
+#@ exit

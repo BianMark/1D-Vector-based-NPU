@@ -8,7 +8,7 @@ Report : power
         -analysis_effort low
 Design : core
 Version: K-2015.06-SP2
-Date   : Thu Mar 20 11:52:19 2025
+Date   : Thu Mar 20 17:37:41 2025
 ****************************************
 
 
@@ -34,12 +34,12 @@ Power-specific unit information :
     Leakage Power Units = 1nW
 
 
-  Cell Internal Power  =  12.0222 mW    (5%)
-  Net Switching Power  = 215.7771 mW   (95%)
+  Cell Internal Power  =  11.9971 mW    (5%)
+  Net Switching Power  = 215.7732 mW   (95%)
                          ---------
-Total Dynamic Power    = 227.7992 mW  (100%)
+Total Dynamic Power    = 227.7704 mW  (100%)
 
-Cell Leakage Power     = 620.1719 uW
+Cell Leakage Power     = 620.6196 uW
 
 
                  Internal         Switching           Leakage            Total
@@ -48,10 +48,10 @@ Power Group      Power            Power               Power              Power  
 io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
-clock_network      1.5767          215.3416        1.9672e+05          217.1267  (  95.06%)
-register           9.6414        4.1052e-02        1.8075e+05            9.8631  (   4.32%)
+clock_network      1.5693          215.3443        1.9717e+05          217.1188  (  95.07%)
+register           9.6341        4.0577e-02        1.8077e+05            9.8554  (   4.32%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational      0.8041            0.3760        2.4270e+05            1.4228  (   0.62%)
+combinational      0.7938            0.3722        2.4268e+05            1.4087  (   0.62%)
 --------------------------------------------------------------------------------------------------
-Total             12.0222 mW       215.7587 mW     6.2017e+05 nW       228.4127 mW
+Total             11.9972 mW       215.7570 mW     6.2062e+05 nW       228.3828 mW
 1

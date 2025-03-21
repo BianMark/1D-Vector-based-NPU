@@ -6,7 +6,14 @@
 *.cmd*
 *.dat*
 *.enc*
+*enc*
+*placement.enc.dat*
+*floorplan.enc.dat*
+*.nfs*
 *template*
+*.template*
 *gate*
 *simvision*
 *xcelium.d*
+*.rs*
+*.tif*

@@ -22,4 +22,4 @@ optDesign -postRoute -setup -hold
 optDesign -postRoute -drv
 optDesign -postRoute -inc
 
-saveDesign route.enc
+saveDesign ./encFile/route.enc

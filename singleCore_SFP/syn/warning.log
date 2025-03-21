@@ -1,4 +1,4 @@
-Warning: You requested 8 cores. However, load on host ieng6-ece-13.ucsd.edu is 3.33. Tool will ignore the request and use 5 cores. (UIO-231)
+Warning: You requested 8 cores. However, load on host ieng6-ece-13.ucsd.edu is 3.61. Tool will ignore the request and use 5 cores. (UIO-231)
 Warning: Detected use of obsolete/unsupported feature.  The following
 Warning: Cannot find the design 'sram_w16_in' in the library 'WORK'. (LBR-1)
 Warning: Cannot find the design 'sram_w16_in' in the library 'WORK'. (LBR-1)

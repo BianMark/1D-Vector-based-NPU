@@ -1,0 +1,30 @@
+ *** Starting Verify Geometry (MEM: 1660.9) ***
+
+  VERIFY GEOMETRY ...... Starting Verification
+  VERIFY GEOMETRY ...... Initializing
+  VERIFY GEOMETRY ...... Deleting Existing Violations
+  VERIFY GEOMETRY ...... Creating Sub-Areas
+                  ...... bin size: 2880
+**WARN: (IMPVFG-198):	Area to be verified is small to see any runtime gain from multi-cpus. Use setMultiCpuUsage command to adjust the number of CPUs. 
+Multi-CPU acceleration using 8 CPU(s).
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+  VERIFY GEOMETRY ...... SubArea : 1 of 4  Thread : 0
+  VERIFY GEOMETRY ...... SubArea : 2 of 4  Thread : 1
+  VERIFY GEOMETRY ...... SubArea : 3 of 4  Thread : 2
+  VERIFY GEOMETRY ...... SubArea : 4 of 4  Thread : 3
+VG: elapsed time: 2.00
+Begin Summary ...
+  Cells       : 0
+  SameNet     : 0
+  Wiring      : 0
+  Antenna     : 0
+  Short       : 0
+  Overlap     : 0
+End Summary
+
+  Verification Complete : 0 Viols.  0 Wrngs.
+
+**********End: VERIFY GEOMETRY**********
+ *** verify geometry (CPU: 0:00:04.2  MEM: 372.4M)
+

@@ -8,4 +8,4 @@ set_propagated_clock [all_clocks]
 
 # Post-CTS timing optimization
 optDesign -postCTS -hold
-saveDesign cts.enc
+saveDesign ./encFile/cts.enc

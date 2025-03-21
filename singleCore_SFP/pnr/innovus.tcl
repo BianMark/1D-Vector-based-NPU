@@ -6,3 +6,4 @@ source clock.tcl
 source route.tcl
 source reportDesign.tcl
 source outputGen.tcl
+tclsh clean_pnr.tcl

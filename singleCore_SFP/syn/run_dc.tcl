@@ -147,3 +147,4 @@ sh uptime
 # Done
 echo "run.scr completed successfully"
 
+tclsh clean_syn.tcl
