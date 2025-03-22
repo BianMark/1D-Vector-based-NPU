@@ -1,0 +1,11 @@
+**WARN: (IMPPTN-1235):	Cannot find pin clk_o on partition core
+**WARN: (IMPPTN-1235):	Cannot find pin fifo_ext_rd on partition inst[11]
+To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+Successfully spread [22] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 745.4M).
+Successfully spread [160] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 745.4M).
+Successfully spread [21] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 745.4M).
+Successfully spread [64] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 745.4M).

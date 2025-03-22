@@ -1,0 +1,98 @@
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+38126 new pwr-pin connections were made to global net 'VDD'.
+38126 new gnd-pin connections were made to global net 'VSS'.
+
+Ring generation is complete; vias are now being generated.
+The power planner created 8 wires.
+*** Ending Ring Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 716.0M) ***
+Stripe will break at block ring.
+**WARN: (IMPPP-4022):	Option "-stacked_via_top_layer" is obsolete and has been replaced by "setAddStripeMode -stacked_via_top_layer". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "setAddStripeMode -stacked_via_top_layer layerName"..
+**WARN: (IMPPP-4022):	Option "-stacked_via_bottom_layer" is obsolete and has been replaced by "setAddStripeMode -stacked_via_bottom_layer". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "setAddStripeMode -stacked_via_bottom_layer layerName"..
+**WARN: (IMPPP-4063):	Multi-CPU is set to 4 in addStripe.  When the number of CPU in setMultiCpuUsage is more than 4, addStripe gets worse runtime caused by data exchange and other time consuming operations
+
+Starting stripe generation ...
+Non-Default setAddStripeOption Settings :
+  NONE
+The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+Multi-CPU acceleration using 4 CPU(s).
+Multi-CPU acceleration using 4 CPU(s).
+Stripe generation is complete; vias are now being generated.
+Multi-CPU acceleration using 4 CPU(s).
+Multi-CPU acceleration using 4 CPU(s).
+Multi-CPU acceleration using 4 CPU(s).
+Multi-CPU acceleration using 4 CPU(s).
+The power planner created 20 wires.
+*** Ending Stripe Generation (totcpu: 0:00:00.5,real: 0:00:01.0, mem: 716.0M) ***
+
+Ring generation is complete; vias are now being generated.
+The power planner created 24 wires.
+*** Ending Ring Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 716.0M) ***
+0 new pwr-pin connection was made to global net 'VDD'.
+0 new gnd-pin connection was made to global net 'VSS'.
+0 new gnd-pin connection was made to global net 'VSS'.
+*** Begin SPECIAL ROUTE on Fri Mar 21 18:51:04 2025 ***
+SPECIAL ROUTE ran on directory: /home/linux/ieng6/ee260bwi25/zhbian/1D-Vector-based-NPU/singleCore/pnr
+SPECIAL ROUTE ran on machine: ieng6-ece-05.ucsd.edu (Linux 3.10.0-1160.119.1.el7.x86_64 Xeon 2.19Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSpecial set to true
+srouteConnectConverterPin set to false
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1432.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 17 layers, 8 routing layers, 1 overlap layer
+Read in 848 macros, 174 used
+Read in 175 components
+  172 core components: 172 unplaced, 0 placed, 0 fixed
+  3 block/ring components: 0 unplaced, 3 placed, 0 fixed
+Read in 246 logical pins
+Read in 4 blockages
+Read in 246 nets
+Read in 2 special nets, 2 routed
+Read in 350 terminals
+Begin power routing ...
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VDD. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VSS. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+CPU time for FollowPin 0 seconds
+CPU time for FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Block ports routed: 6
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 1488
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+  Number of Followpin connections: 744
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1457.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 121 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+
+sroute post-processing starts at Fri Mar 21 18:51:05 2025
+The viaGen is rebuilding shadow vias for net VSS.
+sroute post-processing ends at Fri Mar 21 18:51:05 2025
+
+sroute post-processing starts at Fri Mar 21 18:51:05 2025
+The viaGen is rebuilding shadow vias for net VDD.
+sroute post-processing ends at Fri Mar 21 18:51:05 2025
+sroute: Total CPU time used = 0:0:0
+sroute: Total Real time used = 0:0:1
+sroute: Total Memory used = 18.16 megs
+sroute: Total Peak Memory used = 731.43 megs

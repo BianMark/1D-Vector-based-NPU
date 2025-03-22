@@ -1,0 +1,24 @@
+VERIFY_CONNECTIVITY use new engine.
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Fri Mar 21 14:34:02 2025
+
+Design Name: sram_w16_in
+Database Units: 2000
+Design Boundary: (0.0000, 0.0000) (320.0000, 120.0000)
+Error Limit = 1000; Warning Limit = 50
+Check all nets
+Multi-CPU acceleration using 8 CPU(s).
+
+Begin Summary 
+    85 Problem(s) (IMPVFC-94): The net has dangling wire(s).
+    85 total info(s) created.
+End Summary
+
+End Time: Fri Mar 21 14:34:03 2025
+Time Elapsed: 0:00:01.0
+
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 85 Viols.  0 Wrngs.
+  (CPU Time: 0:00:00.8  MEM: 7.344M)
+

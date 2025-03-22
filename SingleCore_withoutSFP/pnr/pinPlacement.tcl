@@ -17,8 +17,8 @@ editPin -fixedPin True				\
 	-fixOverlap True			\
 	-unit MICRON				\
 	-spreadDirection clockwise		\
-	-side Right				\
-	-layer 3				\
+	-side Bottom				\
+	-layer 2				\
 	-spreadType center			\
 	-spacing 2.5				\
 	-pin {{out[*]}	\

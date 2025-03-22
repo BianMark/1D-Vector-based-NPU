@@ -1270,4 +1270,9 @@ prd @PMEM Add 6: 0006100075fffd60001d000260002bffffefffd3
 prd @PMEM Add 7: 00004fffef0001a0000b0000000008ffff40001e
 Simulation complete via $finish(1) at time 109 NS + 0
 ./netlist/core_tb.v:409   #10 $finish;
-xcelium> 
+xcelium> ^C
+xcelium> exit
+xmsim: Memory Usage - Final: 123.7M, Peak: 144.9M, Peak virtual: 609.7M
+xmsim: Main Thread CPU Usage - 399.9s system + 226.6s user = 626.5s total
+xmsim: CPU Usage - 399.9s system + 226.2s user = 626.1s total (21163.1s, 3.0% cpu)
+TOOL:	xrun(64)	20.09-s017: Exiting on Mar 20, 2025 at 18:12:00 PDT  (total: 05:52:50)

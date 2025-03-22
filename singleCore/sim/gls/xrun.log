@@ -1,0 +1,627 @@
+xrun(64): 20.09-s017: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	20.09-s017: Started on Mar 20, 2025 at 20:46:12 PDT
+xrun
+	+gui
+	+access+rwc
+	+xm64bit
+	+xmstatus
+	-define INITIALIZE_MEMORY
+	-xminitialize 0
+	+xmtimescale+1ns/1ps
+	+xmoveride_timescale
+	-v ./netlist/core.out.v
+	-v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v
+	./netlist/core_tb.v
+	+xmseq_udp_delay+20ps
+
+   User defined plus("+") options:
+	+xmoveride_timescale
+
+Recompiling... reason: file './netlist/core_tb.v' is newer than expected.
+	expected: Thu Mar 20 18:11:08 2025
+	actual:   Thu Mar 20 20:43:54 2025
+file: ./netlist/core_tb.v
+	module worklib.core_tb:v
+		errors: 0, warnings: 0
+file: ./netlist/core.out.v
+	module core.core:v
+		errors: 0, warnings: 0
+file: /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v
+	module tcbn65gplus.AOI22D4:v
+		errors: 0, warnings: 0
+	module tcbn65gplus.FICOND1:v
+		errors: 0, warnings: 0
+xmvlog: Memory Usage - Current physical: 42.4M, Current virtual: 113.2M
+xmvlog: CPU Usage - 0.1s system + 1.4s user = 1.5s total (1.7s, 91.9% cpu)
+xmelab: *N,INFSUD: -NOSPECIFY is automatically used with -SEQ_UDP_DELAY.
+		Caching library 'worklib' ....... Done
+		Caching library 'core' ....... Done
+		Caching library 'tcbn65gplus' ....... Done
+	Elaborating the design hierarchy:
+core #(.bw(bw), .bw_psum(bw_psum), .col(col), .pr(pr)) core_instance (
+            |
+xmelab: *E,CUTMIP (./netlist/core_tb.v,79|12): Too many module instance parameter assignments (definition in file ./netlist/core.out.v, line 8).
+  HICIND1 U11503 ( .A(div_382_u_div_BInv_5__20_), .CIN(n7061), .CO(n7064) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,43099|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,11672): S
+
+  HICIND1 U11641 ( .A(div_383_u_div_BInv_5__8_), .CIN(n5635), .CO(n6791) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,43297|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,11672): S
+
+  HICIND1 U11925 ( .A(div_380_u_div_BInv_5__15_), .CIN(n5686), .CO(n18131) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,43654|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,11672): S
+
+  HICIND1 U12651 ( .A(div_380_u_div_BInv_5__16_), .CIN(n18618), .CO(n18619) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,44573|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,11672): S
+
+  HICIND1 U12659 ( .A(div_379_u_div_BInv_7__17_), .CIN(n10934), .CO(n10935) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,44581|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,11672): S
+
+  HICIND1 U12876 ( .A(div_383_u_div_BInv_5__14_), .CIN(n6796), .CO(n6798) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,44820|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,11672): S
+
+  HICIND1 U12877 ( .A(div_383_u_div_BInv_5__12_), .CIN(n6794), .CO(n6795) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,44821|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,11672): S
+
+  HICIND1 U12903 ( .A(div_382_u_div_BInv_5__13_), .CIN(n7055), .CO(n7056) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,44850|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,11672): S
+
+  HICIND1 U13578 ( .A(div_383_u_div_BInv_7__9_), .CIN(n6765), .CO(n6767) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,45677|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,11672): S
+
+  HICIND1 U13579 ( .A(n29005), .CIN(n6762), .CO(n6764) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,45678|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,11672): S
+
+  HICIND1 U13580 ( .A(div_383_u_div_BInv_5__18_), .CIN(n6802), .CO(n6804) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,45679|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,11672): S
+
+  HICIND1 U13581 ( .A(div_383_u_div_BInv_5__16_), .CIN(n6799), .CO(n6801) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,45680|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,11672): S
+
+  HICIND1 U15112 ( .A(div_383_u_div_BInv_7__13_), .CIN(n6771), .CO(n6773) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,47331|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,11672): S
+
+  HICIND1 U15114 ( .A(n9591), .CIN(n6768), .CO(n6770) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,47333|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,11672): S
+
+  HICIND1 U16820 ( .A(div_384_u_div_BInv_5__16_), .CIN(n14947), .CO(n14948) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,49599|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,11672): S
+
+  HICIND1 U16893 ( .A(div_383_u_div_BInv_7__17_), .CIN(n6777), .CO(n6778) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,49679|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,11672): S
+
+  HICIND1 U16894 ( .A(div_383_u_div_BInv_7__15_), .CIN(n6774), .CO(n6776) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,49680|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,11672): S
+
+  HICIND1 U16907 ( .A(div_383_u_div_BInv_7__19_), .CIN(n9049), .CO(n9050) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,49695|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,11672): S
+
+  HICIND1 U16908 ( .A(div_383_u_div_BInv_5__19_), .CIN(n9119), .CO(n9120) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,49696|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,11672): S
+
+  HICIND1 U16944 ( .A(div_382_u_div_BInv_7__20_), .CIN(n7475), .CO(n7484) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,49735|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,11672): S
+
+  HICIND1 U16946 ( .A(div_382_u_div_BInv_5__20_), .CIN(n7544), .CO(n7545) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,49737|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,11672): S
+
+  HICIND1 U16989 ( .A(div_381_u_div_BInv_7__18_), .CIN(n16809), .CO(n16810) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,49782|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,11672): S
+
+  HICIND1 U16992 ( .A(div_381_u_div_BInv_5__18_), .CIN(n16854), .CO(n16855) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,49785|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,11672): S
+
+  HICIND1 U17095 ( .A(div_379_u_div_BInv_5__17_), .CIN(n10978), .CO(n10979) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,49900|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,11672): S
+
+  HICIND1 U17134 ( .A(div_386_u_div_BInv_7__15_), .CIN(n13260), .CO(n13261) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,49943|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,11672): S
+
+  HICIND1 U18448 ( .A(div_380_u_div_BInv_7__16_), .CIN(n18573), .CO(n18595) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,51663|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,11672): S
+
+  HICIND1 U18742 ( .A(div_381_u_div_BInv_7__17_), .CIN(n16365), .CO(n16366) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,52082|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,11672): S
+
+  HICIND1 U19009 ( .A(div_386_u_div_BInv_5__15_), .CIN(n13248), .CO(n13249) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,52378|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,11672): S
+
+  FICIND1 U21310 ( .CIN(n6572), .B(n5509), .A(n38069), .CO(n6573) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,55748|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FA1D0 U21388 ( .A(n38029), .B(n20295), .CI(n6785), .CO(n6786) );
+             |
+xmelab: *W,CUVWSP (./netlist/core.out.v,55838|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,9754): S
+
+  FA1D0 U21389 ( .A(n41397), .B(n38069), .CI(n6786), .CO(n6787) );
+             |
+xmelab: *W,CUVWSP (./netlist/core.out.v,55839|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,9754): S
+
+  HICIND1 U21391 ( .A(div_383_u_div_BInv_5__10_), .CIN(n6792), .CO(n6793) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,55841|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,11672): S
+
+  FICIND1 U21496 ( .CIN(n7005), .B(n38075), .A(n5509), .CO(n7006) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,55957|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FICIND1 U21528 ( .CIN(n7075), .B(n38035), .A(n27726), .CO(n7051) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,55997|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FA1D0 U21529 ( .A(n41397), .B(n38075), .CI(n7051), .CO(n7052) );
+             |
+xmelab: *W,CUVWSP (./netlist/core.out.v,55998|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,9754): S
+
+  HICIND1 U21530 ( .A(div_382_u_div_BInv_5__10_), .CIN(n5636), .CO(n7054) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,55999|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,11672): S
+
+  FICIND1 U22739 ( .CIN(n10347), .B(n5509), .A(n38060), .CO(n10348) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,57347|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FICIND1 U22787 ( .CIN(n10450), .B(n38021), .A(div_381_u_div_BInv_5__1_), 
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,57398|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FA1D0 U22788 ( .A(n41397), .B(n38060), .CI(n10434), .CO(n10435) );
+             |
+xmelab: *W,CUVWSP (./netlist/core.out.v,57400|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,9754): S
+
+  HICIND1 U22790 ( .A(div_379_u_div_BInv_5__16_), .CIN(n5874), .CO(n10437) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,57402|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,11672): S
+
+  FICIND1 U23808 ( .CIN(n12732), .B(n38074), .A(n5509), .CO(n12733) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,58505|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FICIND1 U23834 ( .CIN(n12801), .B(n38036), .A(div_381_u_div_BInv_5__1_), 
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,58533|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FA1D0 U23835 ( .A(n41397), .B(n38074), .CI(n12782), .CO(n12783) );
+             |
+xmelab: *W,CUVWSP (./netlist/core.out.v,58535|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,9754): S
+
+  HA1D0 U23910 ( .A(n12922), .B(div_386_u_div_BInv_7__17_), .CO(n12984) );
+             |
+xmelab: *W,CUVWSP (./netlist/core.out.v,58619|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,11454): S
+
+  FICIND1 U24596 ( .CIN(n14422), .B(n38073), .A(n5509), .CO(n14423) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,59411|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FICIND1 U24623 ( .CIN(n14503), .B(n38033), .A(div_384_u_div_BInv_5__1_), 
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,59439|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FA1D0 U24624 ( .A(n41397), .B(n38073), .CI(n14483), .CO(n14484) );
+             |
+xmelab: *W,CUVWSP (./netlist/core.out.v,59441|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,9754): S
+
+  FICIND1 U25787 ( .CIN(n16326), .B(n5509), .A(n38068), .CO(n16327) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,60723|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FICIND1 U25810 ( .CIN(n16392), .B(n38028), .A(div_381_u_div_BInv_5__1_), 
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,60748|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FA1D0 U25811 ( .A(n41397), .B(n38068), .CI(n16369), .CO(n16370) );
+             |
+xmelab: *W,CUVWSP (./netlist/core.out.v,60750|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,9754): S
+
+  HICIND1 U25813 ( .A(div_381_u_div_BInv_5__16_), .CIN(n5726), .CO(n16372) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,60752|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,11672): S
+
+  FICIND1 U26741 ( .CIN(n18077), .B(n5509), .A(n38051), .CO(n18078) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,61790|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FICIND1 U26767 ( .CIN(n18167), .B(n38047), .A(n20295), .CO(n18128) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,61819|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FA1D0 U26768 ( .A(n41397), .B(n38051), .CI(n18128), .CO(n18129) );
+             |
+xmelab: *W,CUVWSP (./netlist/core.out.v,61820|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,9754): S
+
+  FICIND1 U27868 ( .CIN(n22008), .B(div_381_u_div_BInv_5__1_), .A(n37656), 
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63074|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FA1D0 U27871 ( .A(n20186), .B(n37620), .CI(n41397), .CO(n20187) );
+             |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63078|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,9754): S
+
+  FICIND1 U27873 ( .CIN(n22008), .B(n35812), .A(n37656), .CO(n20188) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63080|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FA1D0 U27874 ( .A(div_382_u_div_BInv_7__2_), .B(n37620), .CI(n20188), .CO(
+             |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63081|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,9754): S
+
+  FICIND1 U27980 ( .CIN(n22014), .B(div_381_u_div_BInv_5__1_), .A(n37647), 
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63200|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FA1D0 U27984 ( .A(n20538), .B(n37626), .CI(n41397), .CO(n20539) );
+             |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63205|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,9754): S
+
+  FICIND1 U27986 ( .CIN(n22014), .B(n35812), .A(n37647), .CO(n20540) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63207|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FA1D0 U27987 ( .A(div_382_u_div_BInv_7__2_), .B(n37626), .CI(n20540), .CO(
+             |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63208|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,9754): S
+
+  FICIND1 U27992 ( .CIN(n22020), .B(div_381_u_div_BInv_5__1_), .A(n37653), 
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63214|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FA1D0 U27996 ( .A(n20545), .B(n37627), .CI(n41397), .CO(n20546) );
+             |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63219|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,9754): S
+
+  FICIND1 U27998 ( .CIN(n22020), .B(n35812), .A(n37653), .CO(n20547) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63221|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FA1D0 U27999 ( .A(div_382_u_div_BInv_7__2_), .B(n37627), .CI(n20547), .CO(
+             |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63222|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,9754): S
+
+  FICIND1 U28004 ( .CIN(n22017), .B(n27726), .A(n37646), .CO(n20553) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63228|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FA1D0 U28008 ( .A(n20553), .B(n37628), .CI(n41397), .CO(n20554) );
+             |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63232|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,9754): S
+
+  FICIND1 U28010 ( .CIN(n22017), .B(n35812), .A(n37646), .CO(n20555) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63234|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FA1D0 U28011 ( .A(div_382_u_div_BInv_7__2_), .B(n37628), .CI(n20555), .CO(
+             |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63235|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,9754): S
+
+  FICIND1 U28016 ( .CIN(n22011), .B(div_384_u_div_BInv_5__1_), .A(n37657), 
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63241|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FA1D0 U28019 ( .A(n20561), .B(n37621), .CI(n41397), .CO(n20562) );
+             |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63245|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,9754): S
+
+  FICIND1 U28021 ( .CIN(n22011), .B(n35812), .A(n37657), .CO(n20563) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63247|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FA1D0 U28022 ( .A(div_382_u_div_BInv_7__2_), .B(n37621), .CI(n20563), .CO(
+             |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63248|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,9754): S
+
+  FICIND1 U28095 ( .CIN(n22008), .B(n35163), .A(n37656), .CO(n20767) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63327|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FA1D0 U28096 ( .A(n33426), .B(n37620), .CI(n20767), .CO(n20768) );
+             |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63328|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,9754): S
+
+  FICIND1 U28098 ( .CIN(n22011), .B(n35163), .A(n37657), .CO(n20769) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63330|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FA1D0 U28099 ( .A(n33426), .B(n37621), .CI(n20769), .CO(n20770) );
+             |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63331|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,9754): S
+
+  FICIND1 U28101 ( .CIN(n22014), .B(n35163), .A(n37647), .CO(n20771) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63333|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FA1D0 U28102 ( .A(n33426), .B(n37626), .CI(n20771), .CO(n20772) );
+             |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63334|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,9754): S
+
+  FICIND1 U28104 ( .CIN(n22017), .B(n35163), .A(n37646), .CO(n20773) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63336|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FA1D0 U28105 ( .A(n33426), .B(n37628), .CI(n20773), .CO(n20774) );
+             |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63337|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,9754): S
+
+  FICIND1 U28107 ( .CIN(n22020), .B(n20295), .A(n37653), .CO(n20775) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63339|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FA1D0 U28108 ( .A(n33426), .B(n37627), .CI(n20775), .CO(n20776) );
+             |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63340|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,9754): S
+
+  FICIND1 U28115 ( .CIN(n26648), .B(n20295), .A(n37622), .CO(n20782) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63348|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FA1D0 U28116 ( .A(n33426), .B(sfp_instance_abs[62]), .CI(n20782), .CO(n20783) );
+             |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63349|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,9754): S
+
+  FICIND1 U28123 ( .CIN(n27542), .B(n35163), .A(n37623), .CO(n20788) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63357|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FA1D0 U28124 ( .A(n33426), .B(sfp_instance_abs[82]), .CI(n20788), .CO(n20789) );
+             |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63358|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,9754): S
+
+  FICIND1 U28127 ( .CIN(n22023), .B(n20295), .A(n37620), .CO(n20790) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63361|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FICIND1 U28521 ( .CIN(n22027), .B(n27726), .A(n37626), .CO(n21562) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63801|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FICIND1 U28524 ( .CIN(n22029), .B(n35163), .A(n37628), .CO(n21563) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63804|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FICIND1 U28527 ( .CIN(n22025), .B(n35163), .A(n37621), .CO(n21564) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63807|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FICIND1 U28530 ( .CIN(n22031), .B(n27726), .A(n37627), .CO(n21565) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63810|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FICIND1 U28599 ( .CIN(n22253), .B(n20295), .A(sfp_instance_abs[62]), .CO(
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63885|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FICIND1 U28602 ( .CIN(n22255), .B(n27726), .A(sfp_instance_abs[82]), .CO(
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63889|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FICIND1 U28687 ( .CIN(n22008), .B(n5509), .A(n37656), .CO(n22009) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63990|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FA1D0 U28688 ( .A(n5480), .B(n37620), .CI(n22009), .CO(n22010) );
+             |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63991|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,9754): S
+
+  FICIND1 U28690 ( .CIN(n22011), .B(n5509), .A(n37657), .CO(n22012) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63993|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FA1D0 U28691 ( .A(n5480), .B(n37621), .CI(n22012), .CO(n22013) );
+             |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63994|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,9754): S
+
+  FICIND1 U28693 ( .CIN(n22014), .B(n5509), .A(n37647), .CO(n22015) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63996|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FA1D0 U28694 ( .A(n5480), .B(n37626), .CI(n22015), .CO(n22016) );
+             |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63997|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,9754): S
+
+  FICIND1 U28696 ( .CIN(n22017), .B(n5509), .A(n37646), .CO(n22018) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,63999|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FA1D0 U28697 ( .A(n5480), .B(n37628), .CI(n22018), .CO(n22019) );
+             |
+xmelab: *W,CUVWSP (./netlist/core.out.v,64000|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,9754): S
+
+  FICIND1 U28699 ( .CIN(n22020), .B(n5509), .A(n37653), .CO(n22021) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,64002|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FA1D0 U28700 ( .A(n5480), .B(n37627), .CI(n22021), .CO(n22022) );
+             |
+xmelab: *W,CUVWSP (./netlist/core.out.v,64003|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,9754): S
+
+  FICIND1 U28702 ( .CIN(n22023), .B(n5509), .A(n37620), .CO(n22024) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,64005|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FICIND1 U28704 ( .CIN(n22025), .B(n5509), .A(n37621), .CO(n22026) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,64007|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FICIND1 U28706 ( .CIN(n22027), .B(n5509), .A(n37626), .CO(n22028) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,64009|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FICIND1 U28708 ( .CIN(n22029), .B(n5509), .A(n37628), .CO(n22030) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,64011|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FICIND1 U28710 ( .CIN(n22031), .B(n5509), .A(n37627), .CO(n22032) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,64013|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FICIND1 U28712 ( .CIN(n26648), .B(n5509), .A(n37622), .CO(n22033) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,64015|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FA1D0 U28713 ( .A(n5480), .B(sfp_instance_abs[62]), .CI(n22033), .CO(n22034)
+             |
+xmelab: *W,CUVWSP (./netlist/core.out.v,64016|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,9754): S
+
+  FICIND1 U28715 ( .CIN(n27542), .B(n5509), .A(n37623), .CO(n22035) );
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,64019|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FA1D0 U28716 ( .A(n5480), .B(sfp_instance_abs[82]), .CI(n22035), .CO(n22036)
+             |
+xmelab: *W,CUVWSP (./netlist/core.out.v,64020|13): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,9754): S
+
+  FICIND1 U28788 ( .CIN(n22253), .B(n5509), .A(sfp_instance_abs[62]), .CO(
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,64106|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+  FICIND1 U28790 ( .CIN(n22255), .B(n5509), .A(sfp_instance_abs[82]), .CO(
+               |
+xmelab: *W,CUVWSP (./netlist/core.out.v,64109|15): 1 output port was not connected:
+xmelab: (/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v,10366): S
+
+xmelab: Memory Usage - Final: 61.1M, Peak: 61.1M, Peak virtual: 189.5M
+xmelab: CPU Usage - 0.1s system + 0.2s user = 0.3s total (0.3s, 91.0% cpu)
+xrun: *E,ELBERR: Error during elaboration (status 1), exiting.
+TOOL:	xrun(64)	20.09-s017: Exiting on Mar 20, 2025 at 20:46:14 PDT  (total: 00:00:02)

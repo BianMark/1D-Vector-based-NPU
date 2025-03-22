@@ -1,0 +1,122 @@
+** NOTE: Created directory path './summaryReport' for file './summaryReport/core.geom.rpt'.
+Load RC corner of view WC_VIEW
+
+Begin Power Analysis
+
+    0.00V	    VSS
+    0.90V	    VDD
+
+Begin Processing Timing Library for Power Calculation
+
+Begin Processing Timing Library for Power Calculation
+
+
+
+Begin Processing Power Net/Grid for Power Calculation
+
+Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total)=2119.91MB/2119.91MB)
+
+Begin Processing Timing Window Data for Power Calculation
+
+CK: assigning clock clk to net clk
+Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total)=2120.01MB/2120.01MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total)=2120.01MB/2120.01MB)
+
+Begin Processing Signal Activity
+
+
+Starting Levelizing
+2025-Mar-21 19:53:04 (2025-Mar-22 02:53:04 GMT)
+2025-Mar-21 19:53:04 (2025-Mar-22 02:53:04 GMT): 10%
+2025-Mar-21 19:53:04 (2025-Mar-22 02:53:04 GMT): 20%
+2025-Mar-21 19:53:04 (2025-Mar-22 02:53:04 GMT): 30%
+2025-Mar-21 19:53:04 (2025-Mar-22 02:53:04 GMT): 40%
+2025-Mar-21 19:53:04 (2025-Mar-22 02:53:04 GMT): 50%
+2025-Mar-21 19:53:04 (2025-Mar-22 02:53:04 GMT): 60%
+2025-Mar-21 19:53:04 (2025-Mar-22 02:53:04 GMT): 70%
+2025-Mar-21 19:53:04 (2025-Mar-22 02:53:04 GMT): 80%
+2025-Mar-21 19:53:04 (2025-Mar-22 02:53:04 GMT): 90%
+
+Finished Levelizing
+2025-Mar-21 19:53:04 (2025-Mar-22 02:53:04 GMT)
+
+Starting Activity Propagation
+2025-Mar-21 19:53:04 (2025-Mar-22 02:53:04 GMT)
+2025-Mar-21 19:53:05 (2025-Mar-22 02:53:05 GMT): 10%
+2025-Mar-21 19:53:05 (2025-Mar-22 02:53:05 GMT): 20%
+2025-Mar-21 19:53:05 (2025-Mar-22 02:53:05 GMT): 30%
+
+Finished Activity Propagation
+2025-Mar-21 19:53:06 (2025-Mar-22 02:53:06 GMT)
+Ended Processing Signal Activity: (cpu=0:00:02, real=0:00:02, mem(process/total)=2121.28MB/2121.28MB)
+
+Begin Power Computation
+
+      ----------------------------------------------------------
+      # of cell(s) missing both power/leakage table: 0
+      # of cell(s) missing power table: 4
+      # of cell(s) missing leakage table: 2
+      # of MSMV cell(s) missing power_level: 0
+      ----------------------------------------------------------
+CellName                                  Missing Table(s)
+TIEH                                      internal power, 
+TIEL                                      internal power, 
+sram_w16_in                               internal power, leakge power, 
+sram_w16_out                              internal power, leakge power, 
+
+
+
+Starting Calculating power
+2025-Mar-21 19:53:06 (2025-Mar-22 02:53:06 GMT)
+2025-Mar-21 19:53:07 (2025-Mar-22 02:53:07 GMT): 10%
+2025-Mar-21 19:53:07 (2025-Mar-22 02:53:07 GMT): 20%
+2025-Mar-21 19:53:07 (2025-Mar-22 02:53:07 GMT): 30%
+2025-Mar-21 19:53:07 (2025-Mar-22 02:53:07 GMT): 40%
+2025-Mar-21 19:53:07 (2025-Mar-22 02:53:07 GMT): 50%
+2025-Mar-21 19:53:08 (2025-Mar-22 02:53:08 GMT): 60%
+2025-Mar-21 19:53:08 (2025-Mar-22 02:53:08 GMT): 70%
+2025-Mar-21 19:53:08 (2025-Mar-22 02:53:08 GMT): 80%
+2025-Mar-21 19:53:08 (2025-Mar-22 02:53:08 GMT): 90%
+
+Finished Calculating power
+2025-Mar-21 19:53:08 (2025-Mar-22 02:53:08 GMT)
+Ended Power Computation: (cpu=0:00:04, real=0:00:01, mem(process/total)=2129.66MB/2129.66MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total)=2129.66MB/2129.66MB)
+
+Ended Power Analysis: (cpu=0:00:08, real=0:00:05, mem(process/total)=2129.66MB/2129.66MB)
+
+Begin Static Power Report Generation
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:       30.15380229 	   55.4045%
+Total Switching Power:      22.48456741 	   41.3131%
+Total Leakage Power:         1.78640818 	    3.2823%
+Total Power:                54.42477790
+-----------------------------------------------------------------------------------------
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total)=2130.10MB/2130.10MB)
+
+
+Output file is ./summaryReport/core.post_route.power.rpt
+Start to collect the design information.
+Build netlist information for Cell core.
+Finished collecting the design information.
+Generating macro cells used in the design report.
+Generating standard cells used in the design report.
+Analyze library ... 
+Analyze netlist ... 
+Generate no-driven nets information report.
+Analyze timing ... 
+Analyze floorplan/placement ... 
+Analysis Routing ...
+Report saved in file ./summaryReport/core.post_route.summary.rpt.
