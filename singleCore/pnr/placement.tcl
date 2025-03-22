@@ -2,18 +2,16 @@
 
 # Make sure that the max route is maintained to be up to MX.
 # This should be consistent with lef gen command in outputgen tcl 
-#setMaxRouteLayer 4 
+#setMaxRouteLayer 6
 
 saveDesign ./encFile/floorplan.enc
 
-# Note Hierarchical design need "-modulePlan true" 
+# Note the top module in Hierarchical design need "-modulePlan true" 
 # Flatten design need "-modulePlan false", which means all cells can be moved huge distance
-# If the Pins are already placed(pinPlacement.tcl), use "-placeIOPins false"
+# If this the top module, and the Pins are already placed(pinPlacement.tcl), use "-placeIOPins false"
 setPlaceMode    -timingDriven true \
                 -reorderScan false \
                 -congEffort medium \
-                -modulePlan false  \
-                -placeIOPins false
 
 setOptMode  -effort high \
             -powerEffort high \

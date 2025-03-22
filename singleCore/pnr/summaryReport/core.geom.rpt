@@ -1,4 +1,4 @@
- *** Starting Verify Geometry (MEM: 2816.9) ***
+ *** Starting Verify Geometry (MEM: 2909.7) ***
 
   VERIFY GEOMETRY ...... Starting Verification
   VERIFY GEOMETRY ...... Initializing
@@ -7,42 +7,39 @@
                   ...... bin size: 2880
 Multi-CPU acceleration using 8 CPU(s).
 Saving Drc markers ...
-... 155 markers are saved ...
-... 44 geometry drc markers are saved ...
-... 8 antenna drc markers are saved ...
-  VERIFY GEOMETRY ...... SubArea : 1 of 20  Thread : 0
-  VERIFY GEOMETRY ...... SubArea : 3 of 20  Thread : 2
-  VERIFY GEOMETRY ...... SubArea : 8 of 20  Thread : 7
-  VERIFY GEOMETRY ...... SubArea : 4 of 20  Thread : 3
+... No Drc file written since there is no markers found.
   VERIFY GEOMETRY ...... SubArea : 2 of 20  Thread : 1
-  VERIFY GEOMETRY ...... SubArea : 9 of 20  Thread : 0
-  VERIFY GEOMETRY ...... SubArea : 11 of 20  Thread : 2
-  VERIFY GEOMETRY ...... SubArea : 12 of 20  Thread : 3
+  VERIFY GEOMETRY ...... SubArea : 3 of 20  Thread : 2
+  VERIFY GEOMETRY ...... SubArea : 1 of 20  Thread : 0
+  VERIFY GEOMETRY ...... SubArea : 4 of 20  Thread : 3
+  VERIFY GEOMETRY ...... SubArea : 8 of 20  Thread : 7
   VERIFY GEOMETRY ...... SubArea : 5 of 20  Thread : 4
   VERIFY GEOMETRY ...... SubArea : 6 of 20  Thread : 5
-  VERIFY GEOMETRY ...... SubArea : 10 of 20  Thread : 1
   VERIFY GEOMETRY ...... SubArea : 7 of 20  Thread : 6
+  VERIFY GEOMETRY ...... SubArea : 12 of 20  Thread : 3
+  VERIFY GEOMETRY ...... SubArea : 9 of 20  Thread : 0
+  VERIFY GEOMETRY ...... SubArea : 10 of 20  Thread : 1
+  VERIFY GEOMETRY ...... SubArea : 11 of 20  Thread : 2
   VERIFY GEOMETRY ...... SubArea : 20 of 20  Thread : 3
-**WARN: (IMPVFG-103):	VERIFY GEOMETRY issue this message when number of violations exceeds the Error Limit or with insufficient memory and disk space. Change the limit to higher number or make sure the disk space before running VERIFY GEOMETRY.Number of violations exceeds the Error Limit [1000]
-**WARN: (IMPVFG-103):	VERIFY GEOMETRY issue this message when number of violations exceeds the Error Limit or with insufficient memory and disk space. Change the limit to higher number or make sure the disk space before running VERIFY GEOMETRY.Number of violations exceeds the Error Limit [1000]
-**WARN: (IMPVFG-103):	VERIFY GEOMETRY issue this message when number of violations exceeds the Error Limit or with insufficient memory and disk space. Change the limit to higher number or make sure the disk space before running VERIFY GEOMETRY.Number of violations exceeds the Error Limit [1000]
-**WARN: (IMPVFG-103):	VERIFY GEOMETRY issue this message when number of violations exceeds the Error Limit or with insufficient memory and disk space. Change the limit to higher number or make sure the disk space before running VERIFY GEOMETRY.Number of violations exceeds the Error Limit [1000]
-**WARN: (IMPVFG-103):	VERIFY GEOMETRY issue this message when number of violations exceeds the Error Limit or with insufficient memory and disk space. Change the limit to higher number or make sure the disk space before running VERIFY GEOMETRY.Number of violations exceeds the Error Limit [1000]
-**WARN: (IMPVFG-103):	VERIFY GEOMETRY issue this message when number of violations exceeds the Error Limit or with insufficient memory and disk space. Change the limit to higher number or make sure the disk space before running VERIFY GEOMETRY.Number of violations exceeds the Error Limit [1000]
-**WARN: (IMPVFG-103):	VERIFY GEOMETRY issue this message when number of violations exceeds the Error Limit or with insufficient memory and disk space. Change the limit to higher number or make sure the disk space before running VERIFY GEOMETRY.Number of violations exceeds the Error Limit [1000]
-**WARN: (IMPVFG-103):	VERIFY GEOMETRY issue this message when number of violations exceeds the Error Limit or with insufficient memory and disk space. Change the limit to higher number or make sure the disk space before running VERIFY GEOMETRY.Number of violations exceeds the Error Limit [1000]
-VG: elapsed time: 4.00
+  VERIFY GEOMETRY ...... SubArea : 19 of 20  Thread : 2
+  VERIFY GEOMETRY ...... SubArea : 15 of 20  Thread : 6
+  VERIFY GEOMETRY ...... SubArea : 14 of 20  Thread : 5
+  VERIFY GEOMETRY ...... SubArea : 16 of 20  Thread : 7
+  VERIFY GEOMETRY ...... SubArea : 13 of 20  Thread : 4
+  VERIFY GEOMETRY ...... SubArea : 18 of 20  Thread : 1
+  VERIFY GEOMETRY ...... SubArea : 17 of 20  Thread : 0
+VG: elapsed time: 7.00
 Begin Summary ...
   Cells       : 0
-  SameNet     : 104
-  Wiring      : 47
+  SameNet     : 0
+  Wiring      : 0
   Antenna     : 0
-  Short       : 849
+  Short       : 44
   Overlap     : 0
 End Summary
 
-  Verification Complete : 1000 Viols.  0 Wrngs.
+  Verification Complete : 44 Viols.  0 Wrngs.
 
 **********End: VERIFY GEOMETRY**********
- *** verify geometry (CPU: 0:00:03.5  MEM: 544.8M)
+ *** verify geometry (CPU: 0:00:23.4  MEM: 585.3M)
 

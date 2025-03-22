@@ -1,6 +1,6 @@
 ##
 ## LEF for PtnCells ;
-## created by Innovus v15.23-s045_1 on Fri Mar 21 14:45:28 2025
+## created by Innovus v15.23-s045_1 on Sat Mar 22 07:34:55 2025
 ##
 
 VERSION 5.8 ;
@@ -17,6 +17,10 @@ MACRO sram_w16_out
   PIN clk
     DIRECTION INPUT ;
     USE SIGNAL ;
+    PORT
+      LAYER M2 ;
+        RECT 363.0500 0.0000 363.1500 0.5200 ;
+    END
   END clk
   PIN D[159]
     DIRECTION INPUT ;
@@ -2772,7 +2776,9 @@ MACRO sram_w16_out
     LAYER M1 ;
       RECT 0.0000 0.0000 730.0000 130.0000 ;
     LAYER M2 ;
-      RECT 0.0000 0.0000 730.0000 130.0000 ;
+      RECT 0.0000 0.6200 730.0000 130.0000 ;
+      RECT 363.2500 0.0000 730.0000 0.6200 ;
+      RECT 0.0000 0.0000 362.9500 0.6200 ;
     LAYER M3 ;
       RECT 0.0000 75.3500 730.0000 130.0000 ;
       RECT 0.6200 75.0500 730.0000 75.3500 ;

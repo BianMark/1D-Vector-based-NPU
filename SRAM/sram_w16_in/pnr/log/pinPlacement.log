@@ -1,0 +1,7 @@
+Successfully spread [64] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 685.6M).
+Successfully spread [64] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 685.6M).
+**WARN: (IMPPTN-1235):	Cannot find pin CLK on partition Q[1]
+Successfully spread [6] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 685.6M).

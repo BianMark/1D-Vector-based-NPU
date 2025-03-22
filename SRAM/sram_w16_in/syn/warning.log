@@ -1,4 +1,4 @@
-Warning: You requested 8 cores. However, load on host ieng6-ece-13.ucsd.edu is 1.42. Tool will ignore the request and use 7 cores. (UIO-231)
+Warning: You requested 8 cores. However, load on host ieng6-ece-13.ucsd.edu is 2.95. Tool will ignore the request and use 6 cores. (UIO-231)
 Warning: Detected use of obsolete/unsupported feature.  The following
 Warning: Design rule attributes from the driving cell will be
 Warning: Design rule attributes from the driving cell will be

@@ -1,6 +1,4 @@
 
-editPin -fixedPin True -fixOverlap True -unit MICRON -spreadDirection clockwise -side Top -layer 4 -spreadType center -spacing 4 -pin {clk clk_o {inst[*]} reset {sum_in[*]} fifo_ext_rd {sum_out[*]}}
-
 # Assign pins
 setPinAssignMode -pinEditInBatch true
 

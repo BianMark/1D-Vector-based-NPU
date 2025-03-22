@@ -9,6 +9,7 @@ set patterns { \
     "*.rs*" \
     "*.tif*" \
     "*.nfs*" \
+    "*.cts*" \
     "*rpt"}
 
 foreach pattern $patterns {

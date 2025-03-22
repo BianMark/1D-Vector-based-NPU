@@ -153,32 +153,32 @@ Type 'man IMPLF-201' for more detail.
 **WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
 To increase the message display limit, refer to the product command reference manual.
 
-viaInitial starts at Fri Mar 21 18:51:00 2025
-viaInitial ends at Fri Mar 21 18:51:00 2025
+viaInitial starts at Sat Mar 22 07:48:33 2025
+viaInitial ends at Sat Mar 22 07:48:33 2025
 Starting library reading in 'Multi-threaded flow' (with '8' threads)
 
 Threads Configured:8
 Reading WC_LIB timing library /home/linux/ieng6/ee260bwi25/public/PDKdata/lib/tcbn65gpluswc.lib.
-**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D4' is not defined in the library.
 **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D1' is not defined in the library.
-**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D8' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D0' is not defined in the library.
 **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2XD1' is not defined in the library.
-**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D1' is not defined in the library.
 **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D0' is not defined in the library.
 **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D4' is not defined in the library.
 **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D2' is not defined in the library.
 **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D8' is not defined in the library.
-**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D4' is not defined in the library.
 **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3XD1' is not defined in the library.
-**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D0' is not defined in the library.
 **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D0' is not defined in the library.
 **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D2' is not defined in the library.
 **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D4' is not defined in the library.
 **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D8' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D8' is not defined in the library.
 **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4XD1' is not defined in the library.
 **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D0' is not defined in the library.
 **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D1' is not defined in the library.
-**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D2' is not defined in the library.
 Message <TECHLIB-436> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this.
 Read 811 cells in  tcbn65gpluswc.
 Reading WC_LIB timing library /home/linux/ieng6/ee260bwi25/zhbian/1D-Vector-based-NPU/singleCore/pnr/subckt/sram_w16_in_WC.lib.
@@ -196,8 +196,8 @@ Read 1 cells in  sram_w16_in.
 Reading BC_LIB timing library /home/linux/ieng6/ee260bwi25/zhbian/1D-Vector-based-NPU/singleCore/pnr/subckt/sram_w16_out_BC.lib.
 Read 1 cells in  sram_w16_out.
 Library reading multithread flow ended.
-*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.54min, fe_real=1.85min, fe_mem=515.0M) ***
-*** Begin netlist parsing (mem=515.0M) ***
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=7.61min, fe_real=41.20min, fe_mem=510.6M) ***
+*** Begin netlist parsing (mem=510.6M) ***
 **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D4' is defined in LEF but not in the timing library.
 **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D4' is defined in LEF but not in the timing library.
 **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D2' is defined in LEF but not in the timing library.
@@ -225,8 +225,8 @@ Reading netlist ...
 Backslashed names will retain backslash and a trailing blank character.
 Reading verilog netlist './netlist/core.v'
 
-*** Memory Usage v#1 (Current mem = 520.578M, initial mem = 149.258M) ***
-*** End netlist parsing (cpu=0:00:00.3, real=0:00:01.0, mem=520.6M) ***
+*** Memory Usage v#1 (Current mem = 521.562M, initial mem = 149.258M) ***
+*** End netlist parsing (cpu=0:00:00.3, real=0:00:01.0, mem=521.6M) ***
 Set top cell to core.
 Hooked 1626 DB cells to tlib cells.
 Starting recursive module instantiation check.
@@ -234,10 +234,10 @@ No recursion found.
 Building hierarchical netlist for Cell core ...
 *** Netlist is unique.
 ** info: there are 1852 modules.
-** info: there are 38123 stdCell insts.
+** info: there are 38310 stdCell insts.
 ** info: there are 3 macros.
 
-*** Memory Usage v#1 (Current mem = 572.078M, initial mem = 149.258M) ***
+*** Memory Usage v#1 (Current mem = 574.062M, initial mem = 149.258M) ***
 **WARN: (IMPFP-3961):	The techSite 'dcore' has no related cells in LEF/OA library. Cannot make calculations for this site type unless cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
 Type 'man IMPFP-3961' for more detail.
 **WARN: (IMPFP-3961):	The techSite 'ccore' has no related cells in LEF/OA library. Cannot make calculations for this site type unless cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
@@ -290,12 +290,12 @@ Summary of Active RC-Corners :
     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
 *Info: initialize multi-corner CTS.
 Reading timing constraints file './constraints/core.sdc' ...
-Current (total cpu=0:00:33.8, real=0:01:53, peak res=337.2M, current mem=693.8M)
+Current (total cpu=0:07:38, real=0:41:14, peak res=338.8M, current mem=695.5M)
 Number of path exceptions in the constraint file = 1
 Number of paths exceptions after getting compressed = 1
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=352.4M, current mem=710.0M)
-Current (total cpu=0:00:34.0, real=0:01:53, peak res=352.4M, current mem=710.0M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=354.0M, current mem=711.8M)
+Current (total cpu=0:07:38, real=0:41:14, peak res=354.0M, current mem=711.8M)
 Total number of combinational cells: 492
 Total number of sequential cells: 303
 Total number of tristate cells: 11

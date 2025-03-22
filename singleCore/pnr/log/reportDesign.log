@@ -1,4 +1,3 @@
-** NOTE: Created directory path './summaryReport' for file './summaryReport/core.geom.rpt'.
 Load RC corner of view WC_VIEW
 
 Begin Power Analysis
@@ -14,44 +13,44 @@ Begin Processing Timing Library for Power Calculation
 
 Begin Processing Power Net/Grid for Power Calculation
 
-Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total)=2119.91MB/2119.91MB)
+Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total)=2182.11MB/2182.11MB)
 
 Begin Processing Timing Window Data for Power Calculation
 
 CK: assigning clock clk to net clk
-Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total)=2120.01MB/2120.01MB)
+Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total)=2182.15MB/2182.15MB)
 
 Begin Processing User Attributes
 
-Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total)=2120.01MB/2120.01MB)
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total)=2182.15MB/2182.15MB)
 
 Begin Processing Signal Activity
 
 
 Starting Levelizing
-2025-Mar-21 19:53:04 (2025-Mar-22 02:53:04 GMT)
-2025-Mar-21 19:53:04 (2025-Mar-22 02:53:04 GMT): 10%
-2025-Mar-21 19:53:04 (2025-Mar-22 02:53:04 GMT): 20%
-2025-Mar-21 19:53:04 (2025-Mar-22 02:53:04 GMT): 30%
-2025-Mar-21 19:53:04 (2025-Mar-22 02:53:04 GMT): 40%
-2025-Mar-21 19:53:04 (2025-Mar-22 02:53:04 GMT): 50%
-2025-Mar-21 19:53:04 (2025-Mar-22 02:53:04 GMT): 60%
-2025-Mar-21 19:53:04 (2025-Mar-22 02:53:04 GMT): 70%
-2025-Mar-21 19:53:04 (2025-Mar-22 02:53:04 GMT): 80%
-2025-Mar-21 19:53:04 (2025-Mar-22 02:53:04 GMT): 90%
+2025-Mar-22 08:49:48 (2025-Mar-22 15:49:48 GMT)
+2025-Mar-22 08:49:48 (2025-Mar-22 15:49:48 GMT): 10%
+2025-Mar-22 08:49:48 (2025-Mar-22 15:49:48 GMT): 20%
+2025-Mar-22 08:49:48 (2025-Mar-22 15:49:48 GMT): 30%
+2025-Mar-22 08:49:48 (2025-Mar-22 15:49:48 GMT): 40%
+2025-Mar-22 08:49:48 (2025-Mar-22 15:49:48 GMT): 50%
+2025-Mar-22 08:49:48 (2025-Mar-22 15:49:48 GMT): 60%
+2025-Mar-22 08:49:48 (2025-Mar-22 15:49:48 GMT): 70%
+2025-Mar-22 08:49:48 (2025-Mar-22 15:49:48 GMT): 80%
+2025-Mar-22 08:49:48 (2025-Mar-22 15:49:48 GMT): 90%
 
 Finished Levelizing
-2025-Mar-21 19:53:04 (2025-Mar-22 02:53:04 GMT)
+2025-Mar-22 08:49:49 (2025-Mar-22 15:49:49 GMT)
 
 Starting Activity Propagation
-2025-Mar-21 19:53:04 (2025-Mar-22 02:53:04 GMT)
-2025-Mar-21 19:53:05 (2025-Mar-22 02:53:05 GMT): 10%
-2025-Mar-21 19:53:05 (2025-Mar-22 02:53:05 GMT): 20%
-2025-Mar-21 19:53:05 (2025-Mar-22 02:53:05 GMT): 30%
+2025-Mar-22 08:49:49 (2025-Mar-22 15:49:49 GMT)
+2025-Mar-22 08:49:49 (2025-Mar-22 15:49:49 GMT): 10%
+2025-Mar-22 08:49:49 (2025-Mar-22 15:49:49 GMT): 20%
+2025-Mar-22 08:49:49 (2025-Mar-22 15:49:49 GMT): 30%
 
 Finished Activity Propagation
-2025-Mar-21 19:53:06 (2025-Mar-22 02:53:06 GMT)
-Ended Processing Signal Activity: (cpu=0:00:02, real=0:00:02, mem(process/total)=2121.28MB/2121.28MB)
+2025-Mar-22 08:49:50 (2025-Mar-22 15:49:50 GMT)
+Ended Processing Signal Activity: (cpu=0:00:02, real=0:00:02, mem(process/total)=2185.16MB/2185.16MB)
 
 Begin Power Computation
 
@@ -70,26 +69,26 @@ sram_w16_out                              internal power, leakge power,
 
 
 Starting Calculating power
-2025-Mar-21 19:53:06 (2025-Mar-22 02:53:06 GMT)
-2025-Mar-21 19:53:07 (2025-Mar-22 02:53:07 GMT): 10%
-2025-Mar-21 19:53:07 (2025-Mar-22 02:53:07 GMT): 20%
-2025-Mar-21 19:53:07 (2025-Mar-22 02:53:07 GMT): 30%
-2025-Mar-21 19:53:07 (2025-Mar-22 02:53:07 GMT): 40%
-2025-Mar-21 19:53:07 (2025-Mar-22 02:53:07 GMT): 50%
-2025-Mar-21 19:53:08 (2025-Mar-22 02:53:08 GMT): 60%
-2025-Mar-21 19:53:08 (2025-Mar-22 02:53:08 GMT): 70%
-2025-Mar-21 19:53:08 (2025-Mar-22 02:53:08 GMT): 80%
-2025-Mar-21 19:53:08 (2025-Mar-22 02:53:08 GMT): 90%
+2025-Mar-22 08:49:50 (2025-Mar-22 15:49:50 GMT)
+2025-Mar-22 08:49:51 (2025-Mar-22 15:49:51 GMT): 10%
+2025-Mar-22 08:49:51 (2025-Mar-22 15:49:51 GMT): 20%
+2025-Mar-22 08:49:51 (2025-Mar-22 15:49:51 GMT): 30%
+2025-Mar-22 08:49:51 (2025-Mar-22 15:49:51 GMT): 40%
+2025-Mar-22 08:49:51 (2025-Mar-22 15:49:51 GMT): 50%
+2025-Mar-22 08:49:51 (2025-Mar-22 15:49:51 GMT): 60%
+2025-Mar-22 08:49:51 (2025-Mar-22 15:49:51 GMT): 70%
+2025-Mar-22 08:49:51 (2025-Mar-22 15:49:51 GMT): 80%
+2025-Mar-22 08:49:51 (2025-Mar-22 15:49:51 GMT): 90%
 
 Finished Calculating power
-2025-Mar-21 19:53:08 (2025-Mar-22 02:53:08 GMT)
-Ended Power Computation: (cpu=0:00:04, real=0:00:01, mem(process/total)=2129.66MB/2129.66MB)
+2025-Mar-22 08:49:51 (2025-Mar-22 15:49:51 GMT)
+Ended Power Computation: (cpu=0:00:03, real=0:00:01, mem(process/total)=2196.01MB/2196.01MB)
 
 Begin Processing User Attributes
 
-Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total)=2129.66MB/2129.66MB)
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total)=2196.01MB/2196.01MB)
 
-Ended Power Analysis: (cpu=0:00:08, real=0:00:05, mem(process/total)=2129.66MB/2129.66MB)
+Ended Power Analysis: (cpu=0:00:06, real=0:00:04, mem(process/total)=2196.01MB/2196.01MB)
 
 Begin Static Power Report Generation
 *
@@ -98,13 +97,13 @@ Begin Static Power Report Generation
 
 Total Power
 -----------------------------------------------------------------------------------------
-Total Internal Power:       30.15380229 	   55.4045%
-Total Switching Power:      22.48456741 	   41.3131%
-Total Leakage Power:         1.78640818 	    3.2823%
-Total Power:                54.42477790
+Total Internal Power:       29.99648026 	   55.2901%
+Total Switching Power:      22.45389707 	   41.3875%
+Total Leakage Power:         1.80249556 	    3.3224%
+Total Power:                54.25287292
 -----------------------------------------------------------------------------------------
 Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
-mem(process/total)=2130.10MB/2130.10MB)
+mem(process/total)=2196.56MB/2196.56MB)
 
 
 Output file is ./summaryReport/core.post_route.power.rpt

@@ -1,4 +1,4 @@
-Warning: You requested 8 cores. However, load on host ieng6-ece-13.ucsd.edu is 4.46. Tool will ignore the request and use 4 cores. (UIO-231)
+Warning: You requested 8 cores. However, load on host ieng6-ece-13.ucsd.edu is 2.92. Tool will ignore the request and use 6 cores. (UIO-231)
 Warning: Detected use of obsolete/unsupported feature.  The following
 Warning: Cannot find the design 'sram_w16_in' in the library 'WORK'. (LBR-1)
 Warning: Cannot find the design 'sram_w16_in' in the library 'WORK'. (LBR-1)
@@ -42,8 +42,6 @@ Warning: Design 'core' has '2' unresolved references. For more detailed informat
 Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
 Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
 Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
-Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
-Warning: Can't find port 'sum_out' in design 'core'. (UID-95)
 Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
 Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
 Warning: Design 'core' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)

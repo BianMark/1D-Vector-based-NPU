@@ -1,0 +1,95 @@
+Load RC corner of view WC_VIEW
+
+Begin Power Analysis
+
+    0.00V	    VSS
+    0.90V	    VDD
+Begin Processing Timing Library for Power Calculation
+
+Begin Processing Timing Library for Power Calculation
+
+
+
+Begin Processing Power Net/Grid for Power Calculation
+
+Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total)=1421.15MB/1421.15MB)
+
+Begin Processing Timing Window Data for Power Calculation
+
+Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total)=1421.15MB/1421.15MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total)=1421.15MB/1421.15MB)
+
+Begin Processing Signal Activity
+
+
+Starting Activity Propagation
+2025-Mar-22 07:25:23 (2025-Mar-22 14:25:23 GMT)
+2025-Mar-22 07:25:23 (2025-Mar-22 14:25:23 GMT): 10%
+
+Finished Activity Propagation
+2025-Mar-22 07:25:23 (2025-Mar-22 14:25:23 GMT)
+Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total)=1421.15MB/1421.15MB)
+
+Begin Power Computation
+
+      ----------------------------------------------------------
+      # of cell(s) missing both power/leakage table: 0
+      # of cell(s) missing power table: 0
+      # of cell(s) missing leakage table: 0
+      # of MSMV cell(s) missing power_level: 0
+      ----------------------------------------------------------
+
+
+
+Starting Calculating power
+2025-Mar-22 07:25:23 (2025-Mar-22 14:25:23 GMT)
+2025-Mar-22 07:25:23 (2025-Mar-22 14:25:23 GMT): 10%
+2025-Mar-22 07:25:23 (2025-Mar-22 14:25:23 GMT): 20%
+2025-Mar-22 07:25:23 (2025-Mar-22 14:25:23 GMT): 30%
+2025-Mar-22 07:25:23 (2025-Mar-22 14:25:23 GMT): 40%
+2025-Mar-22 07:25:23 (2025-Mar-22 14:25:23 GMT): 50%
+2025-Mar-22 07:25:23 (2025-Mar-22 14:25:23 GMT): 60%
+2025-Mar-22 07:25:23 (2025-Mar-22 14:25:23 GMT): 70%
+2025-Mar-22 07:25:23 (2025-Mar-22 14:25:23 GMT): 80%
+2025-Mar-22 07:25:23 (2025-Mar-22 14:25:23 GMT): 90%
+
+Finished Calculating power
+2025-Mar-22 07:25:23 (2025-Mar-22 14:25:23 GMT)
+Ended Power Computation: (cpu=0:00:00, real=0:00:00, mem(process/total)=1424.37MB/1424.37MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total)=1424.37MB/1424.37MB)
+
+Ended Power Analysis: (cpu=0:00:00, real=0:00:00, mem(process/total)=1424.37MB/1424.37MB)
+
+Begin Static Power Report Generation
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:        2.51371642 	   77.6501%
+Total Switching Power:       0.55603975 	   17.1764%
+Total Leakage Power:         0.16747775 	    5.1735%
+Total Power:                 3.23723403
+-----------------------------------------------------------------------------------------
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total)=1424.37MB/1424.37MB)
+
+
+Output file is ./summaryReport/sram_w16_in.post_route.power.rpt
+Start to collect the design information.
+Build netlist information for Cell sram_w16_in.
+Finished collecting the design information.
+Generating standard cells used in the design report.
+Analyze library ... 
+Analyze netlist ... 
+Analyze timing ... 
+Analyze floorplan/placement ... 
+Analysis Routing ...
+Report saved in file ./summaryReport/sram_w16_in.post_route.summary.rpt.

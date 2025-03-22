@@ -1,0 +1,85 @@
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+1871 new pwr-pin connections were made to global net 'VDD'.
+1871 new gnd-pin connections were made to global net 'VSS'.
+Stripe will break at block ring.
+**WARN: (IMPPP-4063):	Multi-CPU is set to 4 in addStripe.  When the number of CPU in setMultiCpuUsage is more than 4, addStripe gets worse runtime caused by data exchange and other time consuming operations
+
+Starting stripe generation ...
+Non-Default setAddStripeOption Settings :
+  NONE
+The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+Multi-CPU acceleration using 4 CPU(s).
+Multi-CPU acceleration using 4 CPU(s).
+Stripe generation is complete; vias are now being generated.
+Multi-CPU acceleration using 4 CPU(s).
+Multi-CPU acceleration using 4 CPU(s).
+Multi-CPU acceleration using 4 CPU(s).
+Multi-CPU acceleration using 4 CPU(s).
+The power planner created 40 wires.
+*** Ending Stripe Generation (totcpu: 0:00:00.4,real: 0:00:00.0, mem: 669.1M) ***
+*** Begin SPECIAL ROUTE on Sat Mar 22 07:23:05 2025 ***
+SPECIAL ROUTE ran on directory: /home/linux/ieng6/ee260bwi25/zhbian/1D-Vector-based-NPU/SRAM/sram_w16_in/pnr
+SPECIAL ROUTE ran on machine: ieng6-ece-05.ucsd.edu (Linux 3.10.0-1160.119.1.el7.x86_64 Xeon 2.19Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSpecial set to true
+srouteConnectConverterPin set to false
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1383.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 17 layers, 8 routing layers, 1 overlap layer
+Read in 846 macros, 11 used
+Read in 11 components
+  11 core components: 11 unplaced, 0 placed, 0 fixed
+Read in 135 logical pins
+Read in 135 nets
+Read in 2 special nets, 2 routed
+Read in 22 terminals
+Begin power routing ...
+**WARN: (IMPSR-1254):	Cannot find any block pin of net VDD. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VDD. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-1254):	Cannot find any block pin of net VSS. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VSS. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+CPU time for FollowPin 0 seconds
+CPU time for FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0  open: 80
+  Number of Core ports routed: 0  open: 112
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+  Number of Followpin connections: 56
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1403.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 101 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+
+sroute post-processing starts at Sat Mar 22 07:23:05 2025
+The viaGen is rebuilding shadow vias for net VSS.
+sroute post-processing ends at Sat Mar 22 07:23:06 2025
+
+sroute post-processing starts at Sat Mar 22 07:23:06 2025
+The viaGen is rebuilding shadow vias for net VDD.
+sroute post-processing ends at Sat Mar 22 07:23:06 2025
+sroute: Total CPU time used = 0:0:0
+sroute: Total Real time used = 0:0:1
+sroute: Total Memory used = 20.30 megs
+sroute: Total Peak Memory used = 685.62 megs

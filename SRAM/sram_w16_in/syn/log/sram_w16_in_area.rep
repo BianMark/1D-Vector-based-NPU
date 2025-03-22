@@ -3,7 +3,7 @@
 Report : area
 Design : sram_w16_in
 Version: K-2015.06-SP2
-Date   : Fri Mar 21 14:26:44 2025
+Date   : Sat Mar 22 07:19:44 2025
 ****************************************
 
 Information: Updating design information... (UID-85)
@@ -19,7 +19,7 @@ Number of combinational cells:            783
 Number of sequential cells:              1088
 Number of macros/black boxes:               0
 Number of buf/inv:                         37
-Number of references:                      10
+Number of references:                      11
 
 Combinational area:               1876.320014
 Buf/Inv area:                       51.840002
@@ -35,7 +35,7 @@ Total area:                 undefined
 Report : reference
 Design : sram_w16_in
 Version: K-2015.06-SP2
-Date   : Fri Mar 21 14:26:44 2025
+Date   : Sat Mar 22 07:19:44 2025
 ****************************************
 
 Attributes:
@@ -63,8 +63,10 @@ CKND2D0            tcbn65gplustc
                                   1.440000      72    103.680004  
 EDFQD1             tcbn65gplustc
                                   9.360000    1088  10183.679626  n
+INR2D1             tcbn65gplustc
+                                  2.160000      16     34.560001  
 INR2XD0            tcbn65gplustc
-                                  2.160000      17     36.720001  
+                                  2.160000       1      2.160000  
 INVD0              tcbn65gplustc
                                   1.080000       4      4.320000  
 NR2D0              tcbn65gplustc
@@ -72,5 +74,5 @@ NR2D0              tcbn65gplustc
 OR2D0              tcbn65gplustc
                                   2.160000       1      2.160000  
 -----------------------------------------------------------------------------
-Total 10 references                                 12059.999640
+Total 11 references                                 12059.999640
 1

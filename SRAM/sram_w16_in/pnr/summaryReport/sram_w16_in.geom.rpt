@@ -1,4 +1,4 @@
- *** Starting Verify Geometry (MEM: 1603.5) ***
+ *** Starting Verify Geometry (MEM: 1609.5) ***
 
   VERIFY GEOMETRY ...... Starting Verification
   VERIFY GEOMETRY ...... Initializing
@@ -25,5 +25,5 @@ End Summary
   Verification Complete : 0 Viols.  0 Wrngs.
 
 **********End: VERIFY GEOMETRY**********
- *** verify geometry (CPU: 0:00:02.3  MEM: 166.4M)
+ *** verify geometry (CPU: 0:00:02.0  MEM: 165.4M)
 

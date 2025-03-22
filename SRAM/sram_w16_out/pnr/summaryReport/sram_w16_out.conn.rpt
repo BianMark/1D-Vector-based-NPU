@@ -1,7 +1,7 @@
 VERIFY_CONNECTIVITY use new engine.
 
 ******** Start: VERIFY CONNECTIVITY ********
-Start Time: Fri Mar 21 14:45:26 2025
+Start Time: Sat Mar 22 07:34:53 2025
 
 Design Name: sram_w16_out
 Database Units: 2000
@@ -11,14 +11,14 @@ Check all nets
 Multi-CPU acceleration using 8 CPU(s).
 
 Begin Summary 
-    150 Problem(s) (IMPVFC-94): The net has dangling wire(s).
-    150 total info(s) created.
+    153 Problem(s) (IMPVFC-94): The net has dangling wire(s).
+    153 total info(s) created.
 End Summary
 
-End Time: Fri Mar 21 14:45:27 2025
+End Time: Sat Mar 22 07:34:54 2025
 Time Elapsed: 0:00:01.0
 
 ******** End: VERIFY CONNECTIVITY ********
-  Verification Complete : 150 Viols.  0 Wrngs.
-  (CPU Time: 0:00:00.8  MEM: 1.438M)
+  Verification Complete : 153 Viols.  0 Wrngs.
+  (CPU Time: 0:00:00.6  MEM: 4.625M)
 

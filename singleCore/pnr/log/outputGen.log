@@ -1,4 +1,3 @@
-** NOTE: Created directory path './targetFile' for file './targetFile/core.gds2'.
 Finding the highest version number among the merge files
 Merge file: ./subckt/sram_w16_in.gds2 has version number: 3
 Merge file: ./subckt/sram_w16_out.gds2 has version number: 3
@@ -203,23 +202,23 @@ Units: 2000 DBU
 
 Object                             Count
 ----------------------------------------
-Instances                          64770
+Instances                          64899
 
-Ports/Pins                           244
+Ports/Pins                           243
     metal layer M3                    63
-    metal layer M4                   181
+    metal layer M4                   180
 
-Nets                              532838
-    metal layer M1                  5152
-    metal layer M2                265419
-    metal layer M3                168755
-    metal layer M4                 61781
-    metal layer M5                 22044
-    metal layer M6                  3469
-    metal layer M7                  3923
-    metal layer M8                  2295
+Nets                              572279
+    metal layer M1                  4718
+    metal layer M2                273644
+    metal layer M3                179530
+    metal layer M4                 74126
+    metal layer M5                 28093
+    metal layer M6                  3830
+    metal layer M7                  5186
+    metal layer M8                  3152
 
-    Via Instances                 336458
+    Via Instances                 360186
 
 Special Nets                        2313
     metal layer M1                  2267
@@ -238,15 +237,15 @@ Metal FillOPCs                         0
 
     Via Instances                      0
 
-Text                               46756
-    metal layer M1                  1407
-    metal layer M2                 36460
-    metal layer M3                  7714
-    metal layer M4                   930
-    metal layer M5                   152
-    metal layer M6                    56
-    metal layer M7                    23
-    metal layer M8                    14
+Text                               50991
+    metal layer M1                  1490
+    metal layer M2                 39872
+    metal layer M3                  8360
+    metal layer M4                  1002
+    metal layer M5                   177
+    metal layer M6                    11
+    metal layer M7                    50
+    metal layer M8                    29
 
 
 Blockages                              0
@@ -271,7 +270,7 @@ Merging GDS file ./subckt/sram_w16_out.gds2 ......
 	****** Merge file: ./subckt/sram_w16_out.gds2 has version number: 3.
 	****** Merge file: ./subckt/sram_w16_out.gds2 has units: 2000 per micron.
 	****** unit scaling factor = 1 ******
-    There are 21 structures ignored in file ./subckt/sram_w16_out.gds2
+    There are 20 structures ignored in file ./subckt/sram_w16_out.gds2
 **WARN: (IMPOGDS-217):	Master cell: AO22D2 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
 **WARN: (IMPOGDS-217):	Master cell: INR2D2 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
 **WARN: (IMPOGDS-217):	Master cell: INR4D2 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
@@ -280,26 +279,26 @@ Merging GDS file ./subckt/sram_w16_out.gds2 ......
 **WARN: (IMPOGDS-217):	Master cell: XOR2D2 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
 **WARN: (IMPOGDS-217):	Master cell: MUX2ND1 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
 **WARN: (IMPOGDS-217):	Master cell: IND2D1 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: IND4D1 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
 **WARN: (IMPOGDS-217):	Master cell: CKXOR2D0 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
 **WARN: (IMPOGDS-217):	Master cell: CKXOR2D1 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
 **WARN: (IMPOGDS-217):	Master cell: CKXOR2D2 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
 **WARN: (IMPOGDS-217):	Master cell: MAOI222D0 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
 **WARN: (IMPOGDS-217):	Master cell: CKXOR2D4 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: MAOI222D1 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
 **WARN: (IMPOGDS-217):	Master cell: NR2XD2 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
 **WARN: (IMPOGDS-217):	Master cell: AOI21D1 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
 **WARN: (IMPOGDS-217):	Master cell: FILL4 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
 **WARN: (IMPOGDS-217):	Master cell: AOI22D1 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
 **WARN: (IMPOGDS-217):	Master cell: IAO21D2 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
-**WARN: (IMPOGDS-217):	Master cell: CKND2D2 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
-**WARN: (IMPOGDS-217):	Master cell: BUFFD0 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
 **WARN: (EMS-27):	Message (IMPOGDS-217) has exceeded the current message display limit of 20.
 To increase the message display limit, refer to the product command reference manual.
-**WARN: (IMPOGDS-218):	Number of master cells not found after merging: 267
+**WARN: (IMPOGDS-218):	Number of master cells not found after merging: 265
 
 ######Streamout is finished!
-Writing DEF file './targetFile/core.def', current time is Fri Mar 21 19:53:11 2025 ...
+Writing DEF file './targetFile/core.def', current time is Sat Mar 22 08:49:54 2025 ...
 unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
-DEF file './targetFile/core.def' is written, current time is Fri Mar 21 19:53:12 2025 ...
+DEF file './targetFile/core.def' is written, current time is Sat Mar 22 08:49:55 2025 ...
 Writing Netlist "./targetFile/core.pnr.v" ...
 **WARN: (IMPTCM-70):	Option "-setup" for command setAnalysisMode is obsolete and has been replaced by "-checkType setup". The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, update your script to use "-checkType setup".
 **WARN: (IMPCTE-104):	The constraint mode of this inactive view 'TC_VIEW' has been modified and may need to be reanalyzed to ensure proper timing results. To reanalyze timing for this view make the view active using 'set_analysis_view' and run timing analysis.
@@ -328,14 +327,14 @@ Summary of Active RC-Corners :
     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
 set_analysis_view/update_rc_corner called to change MMMC setup. New set of RC Corners are a subset of previous MMMC setup and the RC setup information for the new set has remained same. Therefore, parasitic data in the tool brought as per previous MMMC setup is being maintained.
 *Info: initialize multi-corner CTS.
-Reading timing constraints file '/tmp/innovus_temp_9811_ieng6-ece-05.ucsd.edu_zhbian_b0d6YS/.mmmcFAr80W/modes/CON/CON.sdc' ...
-Current (total cpu=2:39:15, real=1:04:04, peak res=2222.2M, current mem=2527.7M)
+Reading timing constraints file '/tmp/innovus_temp_31611_ieng6-ece-05.ucsd.edu_zhbian_XB7kot/.mmmcrDso7x/modes/CON/CON.sdc' ...
+Current (total cpu=2:57:48, real=1:42:36, peak res=2252.8M, current mem=2627.0M)
 core
 Number of path exceptions in the constraint file = 1
 Number of paths exceptions after getting compressed = 1
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1401.3M, current mem=2537.4M)
-Current (total cpu=2:39:15, real=1:04:04, peak res=2222.2M, current mem=2537.4M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1449.8M, current mem=2636.7M)
+Current (total cpu=2:57:48, real=1:42:36, peak res=2252.8M, current mem=2636.7M)
 Total number of combinational cells: 492
 Total number of sequential cells: 303
 Total number of tristate cells: 11
@@ -371,17 +370,17 @@ End IPO call back ...
 # Signoff Settings: SI On 
 #################################################################################
 Cannot find current Dcalc in active list!
-AAE_INFO-618: Total number of nets in the design is 46772,  99.5 percent of the nets selected for SI analysis
-End delay calculation. (MEM=3213.05 CPU=0:00:14.7 REAL=0:00:04.0)
-Save waveform /tmp/innovus_temp_9811_ieng6-ece-05.ucsd.edu_zhbian_b0d6YS/.AAE_9J7B5C/.AAE_9811/waveform.data...
-*** CDM Built up (cpu=0:00:18.1  real=0:00:06.0  mem= 3213.1M) ***
+AAE_INFO-618: Total number of nets in the design is 51004,  99.6 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3325.05 CPU=0:00:14.5 REAL=0:00:03.0)
+Save waveform /tmp/innovus_temp_31611_ieng6-ece-05.ucsd.edu_zhbian_XB7kot/.AAE_XB2cHK/.AAE_31611/waveform.data...
+*** CDM Built up (cpu=0:00:17.9  real=0:00:06.0  mem= 3325.1M) ***
 Add other clocks and setupCteToAAEClockMapping during iter 1
 Starting SI iteration 2
-AAE_INFO-618: Total number of nets in the design is 46772,  10.0 percent of the nets selected for SI analysis
-End delay calculation. (MEM=3181.05 CPU=0:00:08.2 REAL=0:00:03.0)
-*** CDM Built up (cpu=0:00:08.4  real=0:00:03.0  mem= 3181.0M) ***
+AAE_INFO-618: Total number of nets in the design is 51004,  4.4 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3293.05 CPU=0:00:03.3 REAL=0:00:01.0)
+*** CDM Built up (cpu=0:00:03.4  real=0:00:01.0  mem= 3293.0M) ***
 All-RC-Corners-Per-Net-In-Memory is turned ON...
-TAMODEL Cpu User Time =    5.3 sec
+TAMODEL Cpu User Time =    7.8 sec
 TAMODEL Memory Usage  =   57.2 MB
 **WARN: (SDF-808):	The software is currently operating in a high performance mode which optimizes the handling of multiple timing arcs between input and output pin pairs. With the current settings, the SDF file generated will contain the same delay information for all of these arcs. To have the SDF recalculated with explicit pin pair data, you should use the option '-recompute_parallel_arcs'. This setting is recommended for generating SDF for functional  simulation applications.
 Starting SI iteration 1 using Infinite Timing Windows
@@ -393,15 +392,15 @@ Starting SI iteration 1 using Infinite Timing Windows
 # Parasitics Mode: SPEF/RCDB
 # Signoff Settings: SI On 
 #################################################################################
-AAE_INFO-618: Total number of nets in the design is 46772,  99.5 percent of the nets selected for SI analysis
-End delay calculation. (MEM=3258.75 CPU=0:00:14.0 REAL=0:00:04.0)
-Save waveform /tmp/innovus_temp_9811_ieng6-ece-05.ucsd.edu_zhbian_b0d6YS/.AAE_9J7B5C/.AAE_9811/waveform.data...
-*** CDM Built up (cpu=0:00:16.4  real=0:00:05.0  mem= 3258.7M) ***
+AAE_INFO-618: Total number of nets in the design is 51004,  99.6 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3372.75 CPU=0:00:14.3 REAL=0:00:04.0)
+Save waveform /tmp/innovus_temp_31611_ieng6-ece-05.ucsd.edu_zhbian_XB7kot/.AAE_XB2cHK/.AAE_31611/waveform.data...
+*** CDM Built up (cpu=0:00:16.6  real=0:00:05.0  mem= 3372.7M) ***
 Add other clocks and setupCteToAAEClockMapping during iter 1
 Starting SI iteration 2
-AAE_INFO-618: Total number of nets in the design is 46772,  10.0 percent of the nets selected for SI analysis
-End delay calculation. (MEM=3224.73 CPU=0:00:08.1 REAL=0:00:02.0)
-*** CDM Built up (cpu=0:00:08.2  real=0:00:02.0  mem= 3224.7M) ***
+AAE_INFO-618: Total number of nets in the design is 51004,  4.4 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3340.74 CPU=0:00:03.3 REAL=0:00:01.0)
+*** CDM Built up (cpu=0:00:03.4  real=0:00:01.0  mem= 3340.7M) ***
 **WARN: (IMPTCM-70):	Option "-hold" for command setAnalysisMode is obsolete and has been replaced by "-checkType hold". The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, update your script to use "-checkType hold".
 **WARN: (IMPCTE-104):	The constraint mode of this inactive view 'BC_VIEW' has been modified and may need to be reanalyzed to ensure proper timing results. To reanalyze timing for this view make the view active using 'set_analysis_view' and run timing analysis.
 **WARN: (IMPCTE-104):	The constraint mode of this inactive view 'TC_VIEW' has been modified and may need to be reanalyzed to ensure proper timing results. To reanalyze timing for this view make the view active using 'set_analysis_view' and run timing analysis.
@@ -430,14 +429,14 @@ Summary of Active RC-Corners :
     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
 **WARN: (IMPEXT-3503):	The corner setup has changed in the MMMC flow. New RC corners 'Cmin' have been added, therefore, no parasitic data exists for them. As a result, the parasitic data in the tool from the previous setup is deleted. Extract or restore the parasitic data for all the current corners by calling 'extractRC/spefIn'.
 *Info: initialize multi-corner CTS.
-Reading timing constraints file '/tmp/innovus_temp_9811_ieng6-ece-05.ucsd.edu_zhbian_b0d6YS/.mmmctaYgH1/modes/CON/CON.sdc' ...
-Current (total cpu=2:40:23, real=1:04:31, peak res=2222.2M, current mem=2871.6M)
+Reading timing constraints file '/tmp/innovus_temp_31611_ieng6-ece-05.ucsd.edu_zhbian_XB7kot/.mmmcsFAF4l/modes/CON/CON.sdc' ...
+Current (total cpu=2:58:48, real=1:43:02, peak res=2252.8M, current mem=2864.2M)
 core
 Number of path exceptions in the constraint file = 1
 Number of paths exceptions after getting compressed = 1
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1415.0M, current mem=2881.3M)
-Current (total cpu=2:40:23, real=1:04:32, peak res=2222.2M, current mem=2881.3M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1468.1M, current mem=2873.9M)
+Current (total cpu=2:58:48, real=1:43:02, peak res=2252.8M, current mem=2873.9M)
 Total number of combinational cells: 492
 Total number of sequential cells: 303
 Total number of tristate cells: 11
@@ -471,13 +470,13 @@ Starting SI iteration 1 using Infinite Timing Windows
 # Signoff Settings: SI On 
 #################################################################################
 **WARN: (IMPEXT-3518):	The lower process node is set (using command 'setDesignMode') but the technology file for TQRC extraction not specified. Therefore, going for postRoute (effortLevel low) extraction instead of recommended extractor 'TQRC' for lower nodes. Use command 'set_analysis_view/update_rc_corner' to specify the technology file for TQRC extraction to take place.
-Extraction called for design 'core' of instances=64770 and nets=46772 using extraction engine 'postRoute' at effort level 'low' .
+Extraction called for design 'core' of instances=64899 and nets=51004 using extraction engine 'postRoute' at effort level 'low' .
 PostRoute (effortLevel low) RC Extraction called for design core.
 RC Extraction called in multi-corner(1) mode.
 **WARN: (IMPEXT-3442):	The version of the capacitance table file being used is obsolete and is no longer recommended. For improved accuracy, generate the capacitance table file using the generateCapTbl command.
 Process corner(s) are loaded.
  Corner: Cmin
-extractDetailRC Option : -outfile /tmp/innovus_temp_9811_ieng6-ece-05.ucsd.edu_zhbian_b0d6YS/core_9811_yKjg6O.rcdb.d -maxResLength 200  -extended
+extractDetailRC Option : -outfile /tmp/innovus_temp_31611_ieng6-ece-05.ucsd.edu_zhbian_XB7kot/core_31611_tTclHs.rcdb.d -maxResLength 200  -extended
 RC Mode: PostRoute -effortLevel low [Extended CapTable, LEF Resistances]
       RC Corner Indexes            0   
 Capacitance Scaling Factor   : 1.00000 
@@ -488,39 +487,39 @@ Clock Res. Scaling Factor    : 1.00000
 Shrink Factor                : 1.00000
 Initializing multi-corner capacitance tables ... 
 Initializing multi-corner resistance tables ...
-Checking LVS Completed (CPU Time= 0:00:00.2  MEM= 2910.0M)
-Extracted 10.0003% (CPU Time= 0:00:01.0  MEM= 2991.9M)
-Extracted 20.0003% (CPU Time= 0:00:01.5  MEM= 2995.9M)
-Extracted 30.0003% (CPU Time= 0:00:02.2  MEM= 2995.9M)
-Extracted 40.0004% (CPU Time= 0:00:02.5  MEM= 2995.9M)
-Extracted 50.0004% (CPU Time= 0:00:02.7  MEM= 2995.9M)
-Extracted 60.0003% (CPU Time= 0:00:03.0  MEM= 2995.9M)
-Extracted 70.0003% (CPU Time= 0:00:03.5  MEM= 2995.9M)
-Extracted 80.0003% (CPU Time= 0:00:04.1  MEM= 2995.9M)
-Extracted 90.0004% (CPU Time= 0:00:05.2  MEM= 2995.9M)
-Extracted 100% (CPU Time= 0:00:06.2  MEM= 2995.9M)
-Number of Extracted Resistors     : 871982
-Number of Extracted Ground Cap.   : 858849
-Number of Extracted Coupling Cap. : 1501712
+Checking LVS Completed (CPU Time= 0:00:00.3  MEM= 2902.5M)
+Extracted 10.0003% (CPU Time= 0:00:01.9  MEM= 2980.5M)
+Extracted 20.0004% (CPU Time= 0:00:03.2  MEM= 2984.5M)
+Extracted 30.0003% (CPU Time= 0:00:03.6  MEM= 2984.5M)
+Extracted 40.0004% (CPU Time= 0:00:04.0  MEM= 2984.5M)
+Extracted 50.0003% (CPU Time= 0:00:04.2  MEM= 2984.5M)
+Extracted 60.0004% (CPU Time= 0:00:04.6  MEM= 2984.5M)
+Extracted 70.0003% (CPU Time= 0:00:05.2  MEM= 2984.5M)
+Extracted 80.0004% (CPU Time= 0:00:05.8  MEM= 2984.5M)
+Extracted 90.0003% (CPU Time= 0:00:07.3  MEM= 2984.5M)
+Extracted 100% (CPU Time= 0:00:09.1  MEM= 2984.5M)
+Number of Extracted Resistors     : 934420
+Number of Extracted Ground Cap.   : 916690
+Number of Extracted Coupling Cap. : 1600020
 Filtering XCap in 'relativeAndCoupling' mode using values coupling_c_threshold=0.1fF, relative_c_threshold=1, and total_c_threshold=0fF.
  Corner: Cmin
-Checking LVS Completed (CPU Time= 0:00:00.1  MEM= 2983.9M)
-PostRoute (effortLevel low) RC Extraction DONE (CPU Time: 0:00:07.5  Real Time: 0:00:07.0  MEM: 2983.914M)
+Checking LVS Completed (CPU Time= 0:00:00.3  MEM= 2972.4M)
+PostRoute (effortLevel low) RC Extraction DONE (CPU Time: 0:00:11.6  Real Time: 0:00:11.0  MEM: 2972.445M)
 *** Calculating scaling factor for BC_LIB libraries using the default operating condition of each library.
 Initializing multi-corner capacitance tables ... 
 Initializing multi-corner resistance tables ...
 Cannot find current Dcalc in active list!
-AAE_INFO-618: Total number of nets in the design is 46772,  99.5 percent of the nets selected for SI analysis
-End delay calculation. (MEM=3611.38 CPU=0:00:13.6 REAL=0:00:03.0)
-Save waveform /tmp/innovus_temp_9811_ieng6-ece-05.ucsd.edu_zhbian_b0d6YS/.AAE_Q0pHVb/.AAE_9811/waveform.data...
-*** CDM Built up (cpu=0:00:24.9  real=0:00:13.0  mem= 3611.4M) ***
+AAE_INFO-618: Total number of nets in the design is 51004,  99.6 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3616.13 CPU=0:00:13.9 REAL=0:00:04.0)
+Save waveform /tmp/innovus_temp_31611_ieng6-ece-05.ucsd.edu_zhbian_XB7kot/.AAE_hYMZgW/.AAE_31611/waveform.data...
+*** CDM Built up (cpu=0:00:29.2  real=0:00:17.0  mem= 3616.1M) ***
 Add other clocks and setupCteToAAEClockMapping during iter 1
 Starting SI iteration 2
-AAE_INFO-618: Total number of nets in the design is 46772,  2.6 percent of the nets selected for SI analysis
-End delay calculation. (MEM=3579.38 CPU=0:00:02.5 REAL=0:00:01.0)
-*** CDM Built up (cpu=0:00:02.6  real=0:00:01.0  mem= 3579.4M) ***
+AAE_INFO-618: Total number of nets in the design is 51004,  4.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3584.12 CPU=0:00:02.4 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:02.5  real=0:00:01.0  mem= 3584.1M) ***
 All-RC-Corners-Per-Net-In-Memory is turned ON...
-TAMODEL Cpu User Time =    5.6 sec
+TAMODEL Cpu User Time =    7.9 sec
 TAMODEL Memory Usage  =   47.7 MB
 **WARN: (SDF-808):	The software is currently operating in a high performance mode which optimizes the handling of multiple timing arcs between input and output pin pairs. With the current settings, the SDF file generated will contain the same delay information for all of these arcs. To have the SDF recalculated with explicit pin pair data, you should use the option '-recompute_parallel_arcs'. This setting is recommended for generating SDF for functional  simulation applications.
 Starting SI iteration 1 using Infinite Timing Windows
@@ -532,15 +531,15 @@ Starting SI iteration 1 using Infinite Timing Windows
 # Parasitics Mode: SPEF/RCDB
 # Signoff Settings: SI On 
 #################################################################################
-AAE_INFO-618: Total number of nets in the design is 46772,  99.5 percent of the nets selected for SI analysis
-End delay calculation. (MEM=3659.07 CPU=0:00:13.1 REAL=0:00:02.0)
-Save waveform /tmp/innovus_temp_9811_ieng6-ece-05.ucsd.edu_zhbian_b0d6YS/.AAE_Q0pHVb/.AAE_9811/waveform.data...
-*** CDM Built up (cpu=0:00:15.6  real=0:00:04.0  mem= 3659.1M) ***
+AAE_INFO-618: Total number of nets in the design is 51004,  99.6 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3663.82 CPU=0:00:13.4 REAL=0:00:03.0)
+Save waveform /tmp/innovus_temp_31611_ieng6-ece-05.ucsd.edu_zhbian_XB7kot/.AAE_hYMZgW/.AAE_31611/waveform.data...
+*** CDM Built up (cpu=0:00:15.7  real=0:00:04.0  mem= 3663.8M) ***
 Add other clocks and setupCteToAAEClockMapping during iter 1
 Starting SI iteration 2
-AAE_INFO-618: Total number of nets in the design is 46772,  2.6 percent of the nets selected for SI analysis
-End delay calculation. (MEM=3627.07 CPU=0:00:02.5 REAL=0:00:01.0)
-*** CDM Built up (cpu=0:00:02.7  real=0:00:01.0  mem= 3627.1M) ***
+AAE_INFO-618: Total number of nets in the design is 51004,  4.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3622.28 CPU=0:00:02.5 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:02.6  real=0:00:01.0  mem= 3622.3M) ***
 **WARN: (IMPTCM-70):	Option "-setup" for command setAnalysisMode is obsolete and has been replaced by "-checkType setup". The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, update your script to use "-checkType setup".
 **WARN: (IMPCTE-104):	The constraint mode of this inactive view 'WC_VIEW' has been modified and may need to be reanalyzed to ensure proper timing results. To reanalyze timing for this view make the view active using 'set_analysis_view' and run timing analysis.
 **WARN: (IMPCTE-104):	The constraint mode of this inactive view 'TC_VIEW' has been modified and may need to be reanalyzed to ensure proper timing results. To reanalyze timing for this view make the view active using 'set_analysis_view' and run timing analysis.
@@ -579,14 +578,14 @@ Read 1 cells in  sram_w16_in.
 Reading TC_LIB timing library /home/linux/ieng6/ee260bwi25/zhbian/1D-Vector-based-NPU/singleCore/pnr/subckt/sram_w16_out_TC.lib.
 Read 1 cells in  sram_w16_out.
 Library reading multithread flow ended.
-Reading timing constraints file '/tmp/innovus_temp_9811_ieng6-ece-05.ucsd.edu_zhbian_b0d6YS/.mmmcJn5ME8/modes/CON/CON.sdc' ...
-Current (total cpu=2:41:28, real=1:05:04, peak res=2222.2M, current mem=3221.8M)
+Reading timing constraints file '/tmp/innovus_temp_31611_ieng6-ece-05.ucsd.edu_zhbian_XB7kot/.mmmc4nv7vB/modes/CON/CON.sdc' ...
+Current (total cpu=2:59:59, real=1:43:40, peak res=2252.8M, current mem=3237.1M)
 core
 Number of path exceptions in the constraint file = 1
 Number of paths exceptions after getting compressed = 1
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1476.7M, current mem=3231.5M)
-Current (total cpu=2:41:28, real=1:05:04, peak res=2222.2M, current mem=3231.5M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1517.0M, current mem=3246.8M)
+Current (total cpu=2:59:59, real=1:43:40, peak res=2252.8M, current mem=3246.8M)
 Total number of combinational cells: 492
 Total number of sequential cells: 303
 Total number of tristate cells: 11
@@ -620,13 +619,13 @@ Starting SI iteration 1 using Infinite Timing Windows
 # Signoff Settings: SI On 
 #################################################################################
 **WARN: (IMPEXT-3518):	The lower process node is set (using command 'setDesignMode') but the technology file for TQRC extraction not specified. Therefore, going for postRoute (effortLevel low) extraction instead of recommended extractor 'TQRC' for lower nodes. Use command 'set_analysis_view/update_rc_corner' to specify the technology file for TQRC extraction to take place.
-Extraction called for design 'core' of instances=64770 and nets=46772 using extraction engine 'postRoute' at effort level 'low' .
+Extraction called for design 'core' of instances=64899 and nets=51004 using extraction engine 'postRoute' at effort level 'low' .
 PostRoute (effortLevel low) RC Extraction called for design core.
 RC Extraction called in multi-corner(1) mode.
 **WARN: (IMPEXT-3442):	The version of the capacitance table file being used is obsolete and is no longer recommended. For improved accuracy, generate the capacitance table file using the generateCapTbl command.
 Process corner(s) are loaded.
  Corner: Cmax
-extractDetailRC Option : -outfile /tmp/innovus_temp_9811_ieng6-ece-05.ucsd.edu_zhbian_b0d6YS/core_9811_yKjg6O.rcdb.d -maxResLength 200  -extended
+extractDetailRC Option : -outfile /tmp/innovus_temp_31611_ieng6-ece-05.ucsd.edu_zhbian_XB7kot/core_31611_tTclHs.rcdb.d -maxResLength 200  -extended
 RC Mode: PostRoute -effortLevel low [Extended CapTable, LEF Resistances]
       RC Corner Indexes            0   
 Capacitance Scaling Factor   : 1.00000 
@@ -637,38 +636,39 @@ Clock Res. Scaling Factor    : 1.00000
 Shrink Factor                : 1.00000
 Initializing multi-corner capacitance tables ... 
 Initializing multi-corner resistance tables ...
-Checking LVS Completed (CPU Time= 0:00:00.1  MEM= 3260.1M)
-Extracted 10.0003% (CPU Time= 0:00:01.0  MEM= 3318.1M)
-Extracted 20.0003% (CPU Time= 0:00:01.5  MEM= 3322.1M)
-Extracted 30.0003% (CPU Time= 0:00:02.3  MEM= 3322.1M)
-Extracted 40.0004% (CPU Time= 0:00:02.5  MEM= 3322.1M)
-Extracted 50.0004% (CPU Time= 0:00:02.8  MEM= 3322.1M)
-Extracted 60.0003% (CPU Time= 0:00:03.0  MEM= 3322.1M)
-Extracted 70.0003% (CPU Time= 0:00:03.6  MEM= 3322.1M)
-Extracted 80.0003% (CPU Time= 0:00:04.1  MEM= 3322.1M)
-Extracted 90.0004% (CPU Time= 0:00:05.2  MEM= 3322.1M)
-Extracted 100% (CPU Time= 0:00:06.2  MEM= 3322.1M)
-Number of Extracted Resistors     : 871982
-Number of Extracted Ground Cap.   : 858849
-Number of Extracted Coupling Cap. : 1501772
+Checking LVS Completed (CPU Time= 0:00:00.3  MEM= 3275.4M)
+Extracted 10.0003% (CPU Time= 0:00:01.9  MEM= 3329.4M)
+Extracted 20.0004% (CPU Time= 0:00:03.2  MEM= 3333.4M)
+Extracted 30.0003% (CPU Time= 0:00:03.6  MEM= 3333.4M)
+Extracted 40.0004% (CPU Time= 0:00:04.0  MEM= 3333.4M)
+Extracted 50.0003% (CPU Time= 0:00:04.3  MEM= 3333.4M)
+Extracted 60.0004% (CPU Time= 0:00:04.6  MEM= 3333.4M)
+Extracted 70.0003% (CPU Time= 0:00:05.3  MEM= 3333.4M)
+Extracted 80.0004% (CPU Time= 0:00:05.9  MEM= 3333.4M)
+Extracted 90.0003% (CPU Time= 0:00:07.4  MEM= 3333.4M)
+Extracted 100% (CPU Time= 0:00:09.2  MEM= 3333.4M)
+Number of Extracted Resistors     : 934420
+Number of Extracted Ground Cap.   : 916690
+Number of Extracted Coupling Cap. : 1600096
 Filtering XCap in 'relativeAndCoupling' mode using values coupling_c_threshold=0.1fF, relative_c_threshold=1, and total_c_threshold=0fF.
  Corner: Cmax
-Checking LVS Completed (CPU Time= 0:00:00.1  MEM= 3310.1M)
-PostRoute (effortLevel low) RC Extraction DONE (CPU Time: 0:00:07.6  Real Time: 0:00:08.0  MEM: 3310.062M)
+Checking LVS Completed (CPU Time= 0:00:00.3  MEM= 3321.4M)
+PostRoute (effortLevel low) RC Extraction DONE (CPU Time: 0:00:11.6  Real Time: 0:00:12.0  MEM: 3321.383M)
 Initializing multi-corner capacitance tables ... 
 Initializing multi-corner resistance tables ...
 Cannot find current Dcalc in active list!
-AAE_INFO-618: Total number of nets in the design is 46772,  99.5 percent of the nets selected for SI analysis
-End delay calculation. (MEM=3912.46 CPU=0:00:15.2 REAL=0:00:03.0)
-Save waveform /tmp/innovus_temp_9811_ieng6-ece-05.ucsd.edu_zhbian_b0d6YS/.AAE_t1FSKJ/.AAE_9811/waveform.data...
-*** CDM Built up (cpu=0:00:27.0  real=0:00:14.0  mem= 3912.5M) ***
+AAE_INFO-618: Total number of nets in the design is 51004,  99.6 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3902.4 CPU=0:00:15.3 REAL=0:00:03.0)
+Save waveform /tmp/innovus_temp_31611_ieng6-ece-05.ucsd.edu_zhbian_XB7kot/.AAE_in904o/.AAE_31611/waveform.data...
+*** CDM Built up (cpu=0:00:31.0  real=0:00:18.0  mem= 3902.4M) ***
 Add other clocks and setupCteToAAEClockMapping during iter 1
 Starting SI iteration 2
-AAE_INFO-618: Total number of nets in the design is 46772,  5.0 percent of the nets selected for SI analysis
-End delay calculation. (MEM=3899.54 CPU=0:00:03.6 REAL=0:00:01.0)
-*** CDM Built up (cpu=0:00:03.8  real=0:00:01.0  mem= 3899.5M) ***
+**WARN: (IMPESI-3140):	Bumpy transitions may exist in the design which may lead to inaccurate delay computation. To report/analyze the nets having bumpy transition, please enable delay report and use command 'report_noise -bumpy_waveform' after timing analysis. Delay report is enabled by setting 'set_si_mode -enable_delay_report true' before timing analysis.
+AAE_INFO-618: Total number of nets in the design is 51004,  2.7 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3889.48 CPU=0:00:02.0 REAL=0:00:01.0)
+*** CDM Built up (cpu=0:00:02.1  real=0:00:01.0  mem= 3889.5M) ***
 All-RC-Corners-Per-Net-In-Memory is turned ON...
-TAMODEL Cpu User Time =    5.5 sec
+TAMODEL Cpu User Time =    8.1 sec
 TAMODEL Memory Usage  =   57.2 MB
 **WARN: (SDF-808):	The software is currently operating in a high performance mode which optimizes the handling of multiple timing arcs between input and output pin pairs. With the current settings, the SDF file generated will contain the same delay information for all of these arcs. To have the SDF recalculated with explicit pin pair data, you should use the option '-recompute_parallel_arcs'. This setting is recommended for generating SDF for functional  simulation applications.
 Starting SI iteration 1 using Infinite Timing Windows
@@ -680,12 +680,12 @@ Starting SI iteration 1 using Infinite Timing Windows
 # Parasitics Mode: SPEF/RCDB
 # Signoff Settings: SI On 
 #################################################################################
-AAE_INFO-618: Total number of nets in the design is 46772,  99.5 percent of the nets selected for SI analysis
-End delay calculation. (MEM=3988.78 CPU=0:00:14.7 REAL=0:00:03.0)
-Save waveform /tmp/innovus_temp_9811_ieng6-ece-05.ucsd.edu_zhbian_b0d6YS/.AAE_t1FSKJ/.AAE_9811/waveform.data...
-*** CDM Built up (cpu=0:00:17.1  real=0:00:04.0  mem= 3988.8M) ***
+AAE_INFO-618: Total number of nets in the design is 51004,  99.6 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3978.71 CPU=0:00:14.9 REAL=0:00:03.0)
+Save waveform /tmp/innovus_temp_31611_ieng6-ece-05.ucsd.edu_zhbian_XB7kot/.AAE_in904o/.AAE_31611/waveform.data...
+*** CDM Built up (cpu=0:00:17.4  real=0:00:04.0  mem= 3978.7M) ***
 Add other clocks and setupCteToAAEClockMapping during iter 1
 Starting SI iteration 2
-AAE_INFO-618: Total number of nets in the design is 46772,  5.0 percent of the nets selected for SI analysis
-End delay calculation. (MEM=3956.77 CPU=0:00:03.7 REAL=0:00:01.0)
-*** CDM Built up (cpu=0:00:03.8  real=0:00:01.0  mem= 3956.8M) ***
+AAE_INFO-618: Total number of nets in the design is 51004,  2.7 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3946.71 CPU=0:00:01.9 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:02.1  real=0:00:00.0  mem= 3946.7M) ***

@@ -1,10 +1,10 @@
 **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
-38126 new pwr-pin connections were made to global net 'VDD'.
-38126 new gnd-pin connections were made to global net 'VSS'.
+38313 new pwr-pin connections were made to global net 'VDD'.
+38313 new gnd-pin connections were made to global net 'VSS'.
 
 Ring generation is complete; vias are now being generated.
 The power planner created 8 wires.
-*** Ending Ring Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 716.0M) ***
+*** Ending Ring Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 719.8M) ***
 Stripe will break at block ring.
 **WARN: (IMPPP-4022):	Option "-stacked_via_top_layer" is obsolete and has been replaced by "setAddStripeMode -stacked_via_top_layer". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "setAddStripeMode -stacked_via_top_layer layerName"..
 **WARN: (IMPPP-4022):	Option "-stacked_via_bottom_layer" is obsolete and has been replaced by "setAddStripeMode -stacked_via_bottom_layer". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "setAddStripeMode -stacked_via_bottom_layer layerName"..
@@ -23,15 +23,15 @@ Multi-CPU acceleration using 4 CPU(s).
 Multi-CPU acceleration using 4 CPU(s).
 Multi-CPU acceleration using 4 CPU(s).
 The power planner created 20 wires.
-*** Ending Stripe Generation (totcpu: 0:00:00.5,real: 0:00:01.0, mem: 716.0M) ***
+*** Ending Stripe Generation (totcpu: 0:00:00.5,real: 0:00:00.0, mem: 719.8M) ***
 
 Ring generation is complete; vias are now being generated.
 The power planner created 24 wires.
-*** Ending Ring Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 716.0M) ***
+*** Ending Ring Generation (totcpu: 0:00:00.0,real: 0:00:01.0, mem: 719.8M) ***
 0 new pwr-pin connection was made to global net 'VDD'.
 0 new gnd-pin connection was made to global net 'VSS'.
 0 new gnd-pin connection was made to global net 'VSS'.
-*** Begin SPECIAL ROUTE on Fri Mar 21 18:51:04 2025 ***
+*** Begin SPECIAL ROUTE on Sat Mar 22 07:48:37 2025 ***
 SPECIAL ROUTE ran on directory: /home/linux/ieng6/ee260bwi25/zhbian/1D-Vector-based-NPU/singleCore/pnr
 SPECIAL ROUTE ran on machine: ieng6-ece-05.ucsd.edu (Linux 3.10.0-1160.119.1.el7.x86_64 Xeon 2.19Ghz)
 
@@ -44,22 +44,22 @@ srouteJogControl set to "preferWithChanges differentLayer"
 sroutePadPinAllPorts set to true
 sroutePreserveExistingRoutes set to true
 srouteRoutePowerBarPortOnBothDir set to true
-End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1432.00 megs.
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1434.00 megs.
 
 Reading DB technology information...
 Finished reading DB technology information.
 Reading floorplan and netlist information...
 Finished reading floorplan and netlist information.
 Read in 17 layers, 8 routing layers, 1 overlap layer
-Read in 848 macros, 174 used
-Read in 175 components
-  172 core components: 172 unplaced, 0 placed, 0 fixed
+Read in 848 macros, 180 used
+Read in 181 components
+  178 core components: 178 unplaced, 0 placed, 0 fixed
   3 block/ring components: 0 unplaced, 3 placed, 0 fixed
 Read in 246 logical pins
 Read in 4 blockages
 Read in 246 nets
 Read in 2 special nets, 2 routed
-Read in 350 terminals
+Read in 362 terminals
 Begin power routing ...
 **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VDD. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
 Type 'man IMPSR-1256' for more detail.
@@ -76,7 +76,7 @@ CPU time for FollowPin 0 seconds
   Number of Pad ports routed: 0
   Number of Power Bump ports routed: 0
   Number of Followpin connections: 744
-End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1457.00 megs.
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1459.00 megs.
 
 
 
@@ -85,14 +85,14 @@ End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1457.00 megs.
 Pin and blockage extraction finished
 
 
-sroute post-processing starts at Fri Mar 21 18:51:05 2025
+sroute post-processing starts at Sat Mar 22 07:48:37 2025
 The viaGen is rebuilding shadow vias for net VSS.
-sroute post-processing ends at Fri Mar 21 18:51:05 2025
+sroute post-processing ends at Sat Mar 22 07:48:37 2025
 
-sroute post-processing starts at Fri Mar 21 18:51:05 2025
+sroute post-processing starts at Sat Mar 22 07:48:37 2025
 The viaGen is rebuilding shadow vias for net VDD.
-sroute post-processing ends at Fri Mar 21 18:51:05 2025
+sroute post-processing ends at Sat Mar 22 07:48:37 2025
 sroute: Total CPU time used = 0:0:0
-sroute: Total Real time used = 0:0:1
-sroute: Total Memory used = 18.16 megs
-sroute: Total Peak Memory used = 731.43 megs
+sroute: Total Real time used = 0:0:0
+sroute: Total Memory used = 22.49 megs
+sroute: Total Peak Memory used = 736.90 megs

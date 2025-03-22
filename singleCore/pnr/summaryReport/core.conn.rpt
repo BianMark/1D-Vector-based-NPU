@@ -1,7 +1,7 @@
 VERIFY_CONNECTIVITY use new engine.
 
 ******** Start: VERIFY CONNECTIVITY ********
-Start Time: Fri Mar 21 19:52:59 2025
+Start Time: Sat Mar 22 08:49:44 2025
 
 Design Name: core
 Database Units: 2000
@@ -9,27 +9,23 @@ Design Boundary: (0.0000, 0.0000) (900.0000, 650.0000)
 Error Limit = 1000; Warning Limit = 50
 Check all nets
 Multi-CPU acceleration using 8 CPU(s).
-**** 19:53:00 **** Processed 5000 nets (Total 5847) in Job 3
-**** 19:53:00 **** Processed 5000 nets (Total 5847) in Job 4
-**** 19:53:00 **** Processed 5000 nets (Total 5847) in Job 8
-**** 19:53:01 **** Processed 5000 nets (Total 5847) in Job 5
-**** 19:53:01 **** Processed 5000 nets (Total 5847) in Job 7
-**** 19:53:01 **** Processed 5000 nets (Total 5847) in Job 6
-**** 19:53:01 **** Processed 5000 nets (Total 5847) in Job 9
-**** 19:53:01 **** Processed 5000 nets (Total 5841) in Job 10
+**** 08:49:45 **** Processed 5000 nets (Total 6376) in Job 3
+**** 08:49:45 **** Processed 5000 nets (Total 6376) in Job 5
+**** 08:49:45 **** Processed 5000 nets (Total 6376) in Job 4
+**** 08:49:45 **** Processed 5000 nets (Total 6376) in Job 8
+**** 08:49:45 **** Processed 5000 nets (Total 6376) in Job 6
+**** 08:49:45 **** Processed 5000 nets (Total 6376) in Job 7
+**** 08:49:46 **** Processed 5000 nets (Total 6376) in Job 9
+**** 08:49:46 **** Processed 5000 nets (Total 6370) in Job 10
 
 Begin Summary 
-    69 Problem(s) (IMPVFC-96): Terminal(s) are not connected.
-    2 Problem(s) (IMPVFC-200): Special Wires: Pieces of the net are not connected together.
-    454 Problem(s) (IMPVFC-92): Pieces of the net are not connected together.
-    166 Problem(s) (IMPVFC-94): The net has dangling wire(s).
-    691 total info(s) created.
+  Found no problems or warnings.
 End Summary
 
-End Time: Fri Mar 21 19:53:02 2025
-Time Elapsed: 0:00:03.0
+End Time: Sat Mar 22 08:49:46 2025
+Time Elapsed: 0:00:02.0
 
 ******** End: VERIFY CONNECTIVITY ********
-  Verification Complete : 691 Viols.  0 Wrngs.
-  (CPU Time: 0:00:01.0  MEM: 7.312M)
+  Verification Complete : 0 Viols.  0 Wrngs.
+  (CPU Time: 0:00:00.9  MEM: 5.656M)
 

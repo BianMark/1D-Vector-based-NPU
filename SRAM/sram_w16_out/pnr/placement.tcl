@@ -10,8 +10,6 @@ saveDesign ./encFile/floorplan.enc
 setPlaceMode    -timingDriven true \
                 -reorderScan false \
                 -congEffort medium \
-                -modulePlan false  \
-                -placeIOPins false
 
 setOptMode  -effort high \
             -powerEffort high \
