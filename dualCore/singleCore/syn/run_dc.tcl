@@ -53,6 +53,7 @@ analyze -format verilog -lib WORK mac_array.v
 analyze -format verilog -lib WORK sfp_row.v
 #analyze -format verilog -lib WORK sram_w16_in.v
 #analyze -format verilog -lib WORK sram_w16_out.v
+#analyze -format verilog -lib WORK sram_w16.v
 analyze -format verilog -lib WORK ofifo.v
 analyze -format verilog -lib WORK fifo_depth16.v
 analyze -format verilog -lib WORK fifo_mux_16_1.v

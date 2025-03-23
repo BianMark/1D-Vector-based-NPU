@@ -1,0 +1,2820 @@
+Creating clock tree spec for modes (timing configs): CON
+extract_clock_generator_skew_groups=true: create_ccopt_clock_tree_spec will generate skew groups with a name prefix of "_clock_gen" to balance clock generator connected flops with the clock generator they drive.
+Analyzing clock structure... 
+Analyzing clock structure done.
+Wrote: ./constraints/sram_w16_out.ccopt
+(ccopt_design): CTS Engine: auto. Used Spec: CCOPT spec from create_ccopt_clock_tree_spec.
+(ccopt_design): create_ccopt_clock_tree_spec
+Creating clock tree spec for modes (timing configs): CON
+extract_clock_generator_skew_groups=true: create_ccopt_clock_tree_spec will generate skew groups with a name prefix of "_clock_gen" to balance clock generator connected flops with the clock generator they drive.
+Analyzing clock structure... 
+Analyzing clock structure done.
+Extracting original clock gating for clk... 
+  clock_tree clk contains 2720 sinks and 0 clock gates.
+  Extraction for clk complete.
+Extracting original clock gating for clk done.
+Checking clock tree convergence... 
+Checking clock tree convergence done.
+Preferred extra space for top nets is 0
+Preferred extra space for trunk nets is 1
+Preferred extra space for leaf nets is 1
+Placement constraints of type 'region' or 'fence' will not be downgraded to 'guide' because the property change_fences_to_guides has been set to false.
+Using CCOpt effort low.
+Begin checking placement ... (start mem=1422.4M, init mem=1422.4M)
+*info: Placed = 11061         
+*info: Unplaced = 0           
+Placement Density:93.73%(58206/62100)
+Finished checkPlace (cpu: total=0:00:00.1, vio checks=0:00:00.0; mem=1422.4M)
+Validating CTS configuration... 
+  Non-default CCOpt properties:
+  preferred_extra_space is set for at least one key
+  route_type is set for at least one key
+  update_io_latency: 0 (default: true)
+  Route type trimming info:
+    No route type modifications were made.
+  Clock tree balancer configuration for clock_tree clk:
+  Non-default CCOpt properties for clock tree clk:
+    route_type (leaf): default_route_type_leaf (default: default)
+    route_type (trunk): default_route_type_nonleaf (default: default)
+    route_type (top): default_route_type_nonleaf (default: default)
+  For power_domain auto-default and effective power_domain auto-default:
+    Buffers:     CKBD16 CKBD12 CKBD8 CKBD6 CKBD4 CKBD3 CKBD2 CKBD1 CKBD0 
+    Inverters:   CKND12 CKND8 CKND6 CKND4 CKND3 CKND2 CKND1 CKND0 
+    Clock gates: CKLNQD16 CKLNQD12 CKLNQD8 CKLNQD6 CKLNQD4 CKLNQD3 CKLNQD2 CKLNQD1 
+    Unblocked area available for placement of any clock cells in power_domain auto-default: 71050.000um^2
+  Top Routing info:
+    Route-type name: default_route_type_nonleaf; Top/bottom preferred layer name: M4/M3; 
+    Unshielded; Mask Constraint: 0.
+  Trunk Routing info:
+    Route-type name: default_route_type_nonleaf; Top/bottom preferred layer name: M4/M3; 
+    Unshielded; Preferred extra space: 1; Mask Constraint: 0.
+  Leaf Routing info:
+    Route-type name: default_route_type_leaf; Top/bottom preferred layer name: M4/M3; 
+    Unshielded; Preferred extra space: 1; Mask Constraint: 0.
+  Rebuilding timing graph... 
+  Rebuilding timing graph done.
+  For timing_corner WC:setup, late:
+    Slew time target (leaf):    0.105ns
+    Slew time target (trunk):   0.105ns
+    Slew time target (top):     0.105ns
+    Buffer unit delay for power_domain auto-default and effective power_domain auto-default:   0.057ns
+    Buffer max distance for power_domain auto-default and effective power_domain auto-default: 562.449um
+  Fastest wire driving cells and distances for power_domain auto-default and effective power_domain auto-default:
+    Buffer    : {lib_cell:CKBD16, fastest_considered_half_corner=WC:setup.late, maxDistance=562.449um, maxSlew=0.088ns, speed=5392.608um per ns, cellArea=17.922um^2 per 1000um}
+    Inverter  : {lib_cell:CKND12, fastest_considered_half_corner=WC:setup.late, maxDistance=460.235um, maxSlew=0.087ns, speed=6202.628um per ns, cellArea=13.298um^2 per 1000um}
+    Clock gate: {lib_cell:CKLNQD16, fastest_considered_half_corner=WC:setup.late, maxDistance=441.111um, maxSlew=0.094ns, speed=2741.523um per ns, cellArea=34.277um^2 per 1000um}
+  Info: CCOpt is analyzing the delay of a net driven by CKBD16/Z using a timing arc from cell CKBD16
+  Info: CCOpt is analyzing the delay of a net driven by CKND12/ZN using a timing arc from cell CKND12
+  Info: CCOpt is analyzing the delay of a net driven by CKLNQD16/Q using a timing arc from cell CKLNQD16
+  Clock tree balancer configuration for skew_group clk/CON:
+    Sources:                     pin clk
+    Total number of sinks:       2720
+    Delay constrained sinks:     2720
+    Non-leaf sinks:              0
+    Ignore pins:                 0
+   Timing corner WC:setup.late:
+    Skew target:                 0.057ns
+  
+  Via Selection for Estimated Routes (rule default):
+  
+  ----------------------------------------------------------------
+  Layer    Via Cell        Res.     Cap.     RC       Top of Stack
+  Range                    (Ohm)    (fF)     (fs)     Only
+  ----------------------------------------------------------------
+  M1-M2    VIA12_1cut_V    1.500    0.032    0.047    false
+  M2-M3    VIA23_1cut      1.500    0.030    0.046    false
+  M3-M4    VIA34_1cut      1.500    0.030    0.046    false
+  M4-M5    VIA45_1cut      1.500    0.030    0.046    false
+  M5-M6    VIA56_1cut      1.500    0.028    0.043    false
+  M6-M7    VIA67_1cut      0.220    0.099    0.022    false
+  M7-M8    VIA78_1cut      0.220    0.119    0.026    false
+  ----------------------------------------------------------------
+  
+Validating CTS configuration done.
+**WARN: (IMPCCOPT-2015):	Innovus will not update I/O latencies for the following reason(s):
+ * CCOpt property update_io_latency is false
+
+All good
+Executing ccopt post-processing.
+Synthesizing clock trees with CCOpt...
+[NR-eagl] Detected a user setting of 'getTrialRouteMode -handlePreroute true' which was ignored.
+[NR-eagl] honorMsvRouteConstraint: false
+[NR-eagl] honorClockSpecNDR      : 0
+[NR-eagl] minRouteLayer          : 2
+[NR-eagl] maxRouteLayer          : 4
+[NR-eagl] numTracksPerClockWire  : 0
+[NR-eagl] Layer1 has no routable track
+[NR-eagl] Layer2 has single uniform track structure
+[NR-eagl] Layer3 has single uniform track structure
+[NR-eagl] Layer4 has single uniform track structure
+[NR-eagl] numRoutingBlks=0 numInstBlks=0 numPGBlocks=14665 numBumpBlks=0 numBoundaryFakeBlks=0
+[NR-eagl] numPreroutedNet = 0  numPreroutedWires = 0
+[NR-eagl] Read numTotalNets=4792  numIgnoredNets=0
+[NR-eagl] There are 1 clock nets ( 0 with NDR ).
+[NR-eagl] ============ Routing rule table ============
+[NR-eagl] Rule id 0. Nets 4792 
+[NR-eagl] id=0  routeTrackId=0  extraSpace=0  numShields=0  maxHorDemand=1  maxVerDemand=1
+[NR-eagl] Pitch:  L1=360  L2=400  L3=400  L4=400
+[NR-eagl] ========================================
+[NR-eagl] 
+[NR-eagl] Layer group 1: route 4792 net(s) in layer range [2, 4]
+[NR-eagl] earlyGlobalRoute overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 1.596060e+05um
+[NR-eagl] 
+[NR-eagl] Overflow after earlyGlobalRoute (GR compatible) 0.00% H + 0.00% V
+[NR-eagl] Overflow after earlyGlobalRoute 0.00% H + 0.00% V
+[NR-eagl] Layer1(M1)(F) length: 0.000000e+00um, number of vias: 19692
+[NR-eagl] Layer2(M2)(V) length: 6.757180e+04um, number of vias: 34059
+[NR-eagl] Layer3(M3)(H) length: 6.202810e+04um, number of vias: 1508
+[NR-eagl] Layer4(M4)(V) length: 3.475500e+04um, number of vias: 0
+[NR-eagl] Total length: 1.643549e+05um, number of vias: 55259
+[NR-eagl] End Peak syMemory usage = 1433.9 MB
+[NR-eagl] Early Global Router Kernel+IO runtime : 0.24 seconds
+Validating CTS configuration... 
+  Non-default CCOpt properties:
+  cts_merge_clock_gates is set for at least one key
+  cts_merge_clock_logic is set for at least one key
+  preferred_extra_space is set for at least one key
+  route_type is set for at least one key
+  update_io_latency: 0 (default: true)
+  Route type trimming info:
+    No route type modifications were made.
+  Clock tree balancer configuration for clock_tree clk:
+  Non-default CCOpt properties for clock tree clk:
+    cts_merge_clock_gates: true (default: false)
+    cts_merge_clock_logic: true (default: false)
+    route_type (leaf): default_route_type_leaf (default: default)
+    route_type (trunk): default_route_type_nonleaf (default: default)
+    route_type (top): default_route_type_nonleaf (default: default)
+  For power_domain auto-default and effective power_domain auto-default:
+    Buffers:     CKBD16 CKBD12 CKBD8 CKBD6 CKBD4 CKBD3 CKBD2 CKBD1 CKBD0 
+    Inverters:   CKND12 CKND8 CKND6 CKND4 CKND3 CKND2 CKND1 CKND0 
+    Clock gates: CKLNQD16 CKLNQD12 CKLNQD8 CKLNQD6 CKLNQD4 CKLNQD3 CKLNQD2 CKLNQD1 
+    Unblocked area available for placement of any clock cells in power_domain auto-default: 73500.000um^2
+  Top Routing info:
+    Route-type name: default_route_type_nonleaf; Top/bottom preferred layer name: M4/M3; 
+    Unshielded; Mask Constraint: 0.
+  Trunk Routing info:
+    Route-type name: default_route_type_nonleaf; Top/bottom preferred layer name: M4/M3; 
+    Unshielded; Preferred extra space: 1; Mask Constraint: 0.
+  Leaf Routing info:
+    Route-type name: default_route_type_leaf; Top/bottom preferred layer name: M4/M3; 
+    Unshielded; Preferred extra space: 1; Mask Constraint: 0.
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+  Rebuilding timing graph... 
+  Rebuilding timing graph done.
+  For timing_corner WC:setup, late:
+    Slew time target (leaf):    0.105ns
+    Slew time target (trunk):   0.105ns
+    Slew time target (top):     0.105ns
+    Buffer unit delay for power_domain auto-default and effective power_domain auto-default:   0.057ns
+    Buffer max distance for power_domain auto-default and effective power_domain auto-default: 562.449um
+  Fastest wire driving cells and distances for power_domain auto-default and effective power_domain auto-default:
+    Buffer    : {lib_cell:CKBD16, fastest_considered_half_corner=WC:setup.late, maxDistance=562.449um, maxSlew=0.088ns, speed=5392.608um per ns, cellArea=17.922um^2 per 1000um}
+    Inverter  : {lib_cell:CKND12, fastest_considered_half_corner=WC:setup.late, maxDistance=460.235um, maxSlew=0.087ns, speed=6202.628um per ns, cellArea=13.298um^2 per 1000um}
+    Clock gate: {lib_cell:CKLNQD16, fastest_considered_half_corner=WC:setup.late, maxDistance=441.111um, maxSlew=0.094ns, speed=2741.523um per ns, cellArea=34.277um^2 per 1000um}
+  Clock tree balancer configuration for skew_group clk/CON:
+    Sources:                     pin clk
+    Total number of sinks:       2720
+    Delay constrained sinks:     2720
+    Non-leaf sinks:              0
+    Ignore pins:                 0
+   Timing corner WC:setup.late:
+    Skew target:                 0.057ns
+  
+  Via Selection for Estimated Routes (rule default):
+  
+  ----------------------------------------------------------------
+  Layer    Via Cell        Res.     Cap.     RC       Top of Stack
+  Range                    (Ohm)    (fF)     (fs)     Only
+  ----------------------------------------------------------------
+  M1-M2    VIA12_1cut_V    1.500    0.032    0.047    false
+  M2-M3    VIA23_1cut      1.500    0.030    0.046    false
+  M3-M4    VIA34_1cut      1.500    0.030    0.046    false
+  M4-M5    VIA45_1cut      1.500    0.030    0.046    false
+  M5-M6    VIA56_1cut      1.500    0.028    0.043    false
+  M6-M7    VIA67_1cut      0.220    0.099    0.022    false
+  M7-M8    VIA78_1cut      0.220    0.119    0.026    false
+  ----------------------------------------------------------------
+  
+Validating CTS configuration done.
+Adding driver cell for primary IO roots...
+Maximizing clock DAG abstraction... 
+Maximizing clock DAG abstraction done.
+Synthesizing clock trees... 
+  Merging duplicate siblings in DAG... 
+    Resynthesising clock tree into netlist... 
+    Resynthesising clock tree into netlist done.
+    Summary of the merge of duplicate siblings
+    
+    ----------------------------------------------------------
+    Description                          Number of occurrences
+    ----------------------------------------------------------
+    Total clock gates                              0
+    Globally unique enables                        0
+    Potentially mergeable clock gates              0
+    Actually merged                                0
+    ----------------------------------------------------------
+    
+    
+    Disconnecting clock tree from netlist... 
+    Disconnecting clock tree from netlist done.
+  Merging duplicate siblings in DAG done.
+  Clustering... 
+    Clock DAG stats before clustering:
+      cell counts    : b=0, i=0, cg=0, l=0, total=0
+      cell areas     : b=0.000um^2, i=0.000um^2, cg=0.000um^2, l=0.000um^2, total=0.000um^2
+    Clustering clock_tree clk... 
+      Creating channel graph for ccopt_3_8... 
+      Creating channel graph for ccopt_3_8 done.
+      Creating channel graph for ccopt_3_4_available_3_8... 
+      Creating channel graph for ccopt_3_4_available_3_8 done.
+      Rebuilding timing graph... 
+      Rebuilding timing graph done.
+    Clustering clock_tree clk done.
+    Clock DAG stats after bottom-up phase:
+      cell counts    : b=45, i=0, cg=0, l=0, total=45
+      cell areas     : b=453.600um^2, i=0.000um^2, cg=0.000um^2, l=0.000um^2, total=453.600um^2
+    Legalizing clock trees... 
+      Resynthesising clock tree into netlist... 
+      Resynthesising clock tree into netlist done.
+*** Starting refinePlace (0:01:35 mem=1499.1M) ***
+Total net bbox length = 1.092e+05 (3.310e+04 7.612e+04) (ext = 2.765e+04)
+Density distribution unevenness ratio = 0.621%
+Move report: Detail placement moves 1746 insts, mean move: 1.01 um, max move: 7.20 um
+	Max move on inst (CTS_ccl_BUF_CLOCK_NODE_UID_Af50a): (50.80, 132.00) --> (50.80, 124.80)
+	Runtime: CPU: 0:00:00.2 REAL: 0:00:00.0 MEM: 1499.1MB
+Summary Report:
+Instances move: 777 (out of 4670 movable)
+Mean displacement: 1.11 um
+Max displacement: 7.20 um (Instance: CTS_ccl_BUF_CLOCK_NODE_UID_Af50a) (50.8, 132) -> (50.8, 124.8)
+	Length: 28 sites, height: 1 rows, site name: core, cell type: CKBD16
+Total net bbox length = 1.095e+05 (3.326e+04 7.625e+04) (ext = 2.765e+04)
+Runtime: CPU: 0:00:00.2 REAL: 0:00:01.0 MEM: 1499.1MB
+*** Finished refinePlace (0:01:35 mem=1499.1M) ***
+      Disconnecting clock tree from netlist... 
+      Disconnecting clock tree from netlist done.
+      Rebuilding timing graph... 
+      Rebuilding timing graph done.
+      
+      Clock tree legalization - Histogram:
+      ====================================
+      
+      --------------------------------
+      Movement (um)    Number of cells
+      --------------------------------
+      [3.6,3.96)              3
+      [3.96,4.32)             0
+      [4.32,4.68)             0
+      [4.68,5.04)             0
+      [5.04,5.4)              0
+      [5.4,5.76)              0
+      [5.76,6.12)             0
+      [6.12,6.48)             0
+      [6.48,6.84)             0
+      [6.84,7.2)              2
+      --------------------------------
+      
+      
+      Clock tree legalization - Top 10 Movements:
+      ===========================================
+      
+      -------------------------------------------------------------------------------------------------------------------------------------------------------------
+      Movement (um)    Desired              Achieved             Node
+                       location             location             
+      -------------------------------------------------------------------------------------------------------------------------------------------------------------
+           7.2         (53.307,132.718)     (53.307,125.517)     ccl clock buffer, uid:Af50a (a lib_cell CKBD16) at (50.800,124.800), in power domain auto-default
+           7.2         (185.107,132.718)    (185.107,125.517)    ccl clock buffer, uid:Af509 (a lib_cell CKBD16) at (182.600,124.800), in power domain auto-default
+           3.6         (53.307,132.718)     (53.307,136.317)     ccl clock buffer, uid:Af4e2 (a lib_cell CKBD16) at (50.800,135.600), in power domain auto-default
+           3.6         (185.107,132.718)    (185.107,136.317)    ccl clock buffer, uid:Af4e7 (a lib_cell CKBD16) at (182.600,135.600), in power domain auto-default
+           3.6         (185.107,132.718)    (185.107,129.118)    ccl clock buffer, uid:Af4df (a lib_cell CKBD16) at (182.600,128.400), in power domain auto-default
+           0           (145.708,64.317)     (145.708,64.317)     ccl clock buffer, uid:Af4f1 (a lib_cell CKBD16) at (143.200,63.600), in power domain auto-default
+           0           (160.308,100.317)    (160.308,100.317)    ccl clock buffer, uid:Af4ef (a lib_cell CKBD16) at (157.800,99.600), in power domain auto-default
+           0           (53.307,125.517)     (53.307,125.517)     ccl clock buffer, uid:Af50a (a lib_cell CKBD16) at (50.800,124.800), in power domain auto-default
+           0           (185.107,125.517)    (185.107,125.517)    ccl clock buffer, uid:Af509 (a lib_cell CKBD16) at (182.600,124.800), in power domain auto-default
+           0           (60.108,100.317)     (60.108,100.317)     ccl clock buffer, uid:Af508 (a lib_cell CKBD16) at (57.600,99.600), in power domain auto-default
+      -------------------------------------------------------------------------------------------------------------------------------------------------------------
+      
+    Legalizing clock trees done.
+    Clock DAG stats after 'Clustering':
+      cell counts    : b=45, i=0, cg=0, l=0, total=45
+      cell areas     : b=453.600um^2, i=0.000um^2, cg=0.000um^2, l=0.000um^2, total=453.600um^2
+      gate capacitance : top=0.000pF, trunk=0.247pF, leaf=2.448pF, total=2.696pF
+      wire capacitance : top=0.000pF, trunk=0.183pF, leaf=2.128pF, total=2.311pF
+      wire lengths   : top=0.000um, trunk=1180.000um, leaf=11525.198um, total=12705.198um
+      sink capacitance : count=2720, total=2.448pF, avg=0.001pF, sd=0.000pF, min=0.001pF, max=0.001pF
+    Clock DAG net violations after 'Clustering':none
+    Clock tree state after 'Clustering':
+      clock_tree clk: worst slew is leaf(0.086),trunk(0.086),top(nil), margined worst slew is leaf(0.086),trunk(0.086),top(nil)
+      skew_group clk/CON: insertion delay [min=0.150, max=0.170, avg=0.163, sd=0.005], skew [0.020 vs 0.057, 100% {0.150, 0.163, 0.170}] (wid=0.018 ws=0.014) (gid=0.162 gs=0.019)
+    Clock network insertion delays are now [0.150ns, 0.170ns] average 0.163ns std.dev 0.005ns
+  Clustering done.
+  Resynthesising clock tree into netlist... 
+  Resynthesising clock tree into netlist done.
+  Updating congestion map to accurately time the clock tree... 
+    Updating RC parasitics by calling: "extractRC -noRouteCheck"... Extraction called for design 'sram_w16_out' of instances=11106 and nets=4839 using extraction engine 'preRoute' .
+PreRoute RC Extraction called for design sram_w16_out.
+RC Extraction called in multi-corner(2) mode.
+**WARN: (IMPEXT-3442):	The version of the capacitance table file being used is obsolete and is no longer recommended. For improved accuracy, generate the capacitance table file using the generateCapTbl command.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.00000 1.00000 
+Resistance Scaling Factor    : 1.00000 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 1.00000 
+Clock Res. Scaling Factor    : 1.00000 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.2  Real Time: 0:00:01.0  MEM: 1433.891M)
+
+    Updating RC parasitics by calling: "extractRC -noRouteCheck" done.
+  Updating congestion map to accurately time the clock tree done.
+  Disconnecting clock tree from netlist... 
+  Disconnecting clock tree from netlist done.
+  Rebuilding timing graph... 
+  Rebuilding timing graph done.
+  Rebuilding timing graph Clock DAG stats After congestion update:
+  Rebuilding timing graph   cell counts    : b=45, i=0, cg=0, l=0, total=45
+  Rebuilding timing graph   cell areas     : b=453.600um^2, i=0.000um^2, cg=0.000um^2, l=0.000um^2, total=453.600um^2
+  Rebuilding timing graph   gate capacitance : top=0.000pF, trunk=0.247pF, leaf=2.448pF, total=2.696pF
+  Rebuilding timing graph   wire capacitance : top=0.000pF, trunk=0.184pF, leaf=2.135pF, total=2.319pF
+  Rebuilding timing graph   wire lengths   : top=0.000um, trunk=1180.000um, leaf=11525.198um, total=12705.198um
+  Rebuilding timing graph   sink capacitance : count=2720, total=2.448pF, avg=0.001pF, sd=0.000pF, min=0.001pF, max=0.001pF
+  Rebuilding timing graph Clock DAG net violations After congestion update:none
+  Clock tree state After congestion update:
+    clock_tree clk: worst slew is leaf(0.086),trunk(0.087),top(nil), margined worst slew is leaf(0.086),trunk(0.087),top(nil)
+    skew_group clk/CON: insertion delay [min=0.151, max=0.170, avg=0.163, sd=0.005], skew [0.020 vs 0.057, 100% {0.151, 0.164, 0.170}] (wid=0.018 ws=0.014) (gid=0.162 gs=0.020)
+  Clock network insertion delays are now [0.151ns, 0.170ns] average 0.163ns std.dev 0.005ns
+  Fixing clock tree slew time and max cap violations... 
+    Fixing clock tree overload: 
+    Fixing clock tree overload: .
+    Fixing clock tree overload: ..
+    Fixing clock tree overload: ...
+    Fixing clock tree overload: ... 20% 
+    Fixing clock tree overload: ... 20% .
+    Fixing clock tree overload: ... 20% ..
+    Fixing clock tree overload: ... 20% ...
+    Fixing clock tree overload: ... 20% ... 40% 
+    Fixing clock tree overload: ... 20% ... 40% .
+    Fixing clock tree overload: ... 20% ... 40% ..
+    Fixing clock tree overload: ... 20% ... 40% ...
+    Fixing clock tree overload: ... 20% ... 40% ... 60% 
+    Fixing clock tree overload: ... 20% ... 40% ... 60% .
+    Fixing clock tree overload: ... 20% ... 40% ... 60% ..
+    Fixing clock tree overload: ... 20% ... 40% ... 60% ...
+    Fixing clock tree overload: ... 20% ... 40% ... 60% ... 80% 
+    Fixing clock tree overload: ... 20% ... 40% ... 60% ... 80% .
+    Fixing clock tree overload: ... 20% ... 40% ... 60% ... 80% ..
+    Fixing clock tree overload: ... 20% ... 40% ... 60% ... 80% ...
+    Fixing clock tree overload: ... 20% ... 40% ... 60% ... 80% ... 100% 
+    Clock DAG stats after 'Fixing clock tree slew time and max cap violations':
+      cell counts    : b=45, i=0, cg=0, l=0, total=45
+      cell areas     : b=453.600um^2, i=0.000um^2, cg=0.000um^2, l=0.000um^2, total=453.600um^2
+      gate capacitance : top=0.000pF, trunk=0.247pF, leaf=2.448pF, total=2.696pF
+      wire capacitance : top=0.000pF, trunk=0.184pF, leaf=2.135pF, total=2.319pF
+      wire lengths   : top=0.000um, trunk=1180.000um, leaf=11525.198um, total=12705.198um
+      sink capacitance : count=2720, total=2.448pF, avg=0.001pF, sd=0.000pF, min=0.001pF, max=0.001pF
+    Clock DAG net violations after 'Fixing clock tree slew time and max cap violations':none
+    Clock tree state after 'Fixing clock tree slew time and max cap violations':
+      clock_tree clk: worst slew is leaf(0.086),trunk(0.087),top(nil), margined worst slew is leaf(0.086),trunk(0.087),top(nil)
+      skew_group clk/CON: insertion delay [min=0.151, max=0.170, avg=0.163, sd=0.005], skew [0.020 vs 0.057, 100% {0.151, 0.164, 0.170}] (wid=0.018 ws=0.014) (gid=0.162 gs=0.020)
+    Clock network insertion delays are now [0.151ns, 0.170ns] average 0.163ns std.dev 0.005ns
+  Fixing clock tree slew time and max cap violations done.
+  Fixing clock tree slew time and max cap violations - detailed pass... 
+    Fixing clock tree overload: 
+    Fixing clock tree overload: .
+    Fixing clock tree overload: ..
+    Fixing clock tree overload: ...
+    Fixing clock tree overload: ... 20% 
+    Fixing clock tree overload: ... 20% .
+    Fixing clock tree overload: ... 20% ..
+    Fixing clock tree overload: ... 20% ...
+    Fixing clock tree overload: ... 20% ... 40% 
+    Fixing clock tree overload: ... 20% ... 40% .
+    Fixing clock tree overload: ... 20% ... 40% ..
+    Fixing clock tree overload: ... 20% ... 40% ...
+    Fixing clock tree overload: ... 20% ... 40% ... 60% 
+    Fixing clock tree overload: ... 20% ... 40% ... 60% .
+    Fixing clock tree overload: ... 20% ... 40% ... 60% ..
+    Fixing clock tree overload: ... 20% ... 40% ... 60% ...
+    Fixing clock tree overload: ... 20% ... 40% ... 60% ... 80% 
+    Fixing clock tree overload: ... 20% ... 40% ... 60% ... 80% .
+    Fixing clock tree overload: ... 20% ... 40% ... 60% ... 80% ..
+    Fixing clock tree overload: ... 20% ... 40% ... 60% ... 80% ...
+    Fixing clock tree overload: ... 20% ... 40% ... 60% ... 80% ... 100% 
+    Clock DAG stats after 'Fixing clock tree slew time and max cap violations - detailed pass':
+      cell counts    : b=45, i=0, cg=0, l=0, total=45
+      cell areas     : b=453.600um^2, i=0.000um^2, cg=0.000um^2, l=0.000um^2, total=453.600um^2
+      gate capacitance : top=0.000pF, trunk=0.247pF, leaf=2.448pF, total=2.696pF
+      wire capacitance : top=0.000pF, trunk=0.184pF, leaf=2.135pF, total=2.319pF
+      wire lengths   : top=0.000um, trunk=1180.000um, leaf=11525.198um, total=12705.198um
+      sink capacitance : count=2720, total=2.448pF, avg=0.001pF, sd=0.000pF, min=0.001pF, max=0.001pF
+    Clock DAG net violations after 'Fixing clock tree slew time and max cap violations - detailed pass':none
+    Clock tree state after 'Fixing clock tree slew time and max cap violations - detailed pass':
+      clock_tree clk: worst slew is leaf(0.086),trunk(0.087),top(nil), margined worst slew is leaf(0.086),trunk(0.087),top(nil)
+      skew_group clk/CON: insertion delay [min=0.151, max=0.170, avg=0.163, sd=0.005], skew [0.020 vs 0.057, 100% {0.151, 0.164, 0.170}] (wid=0.018 ws=0.014) (gid=0.162 gs=0.020)
+    Clock network insertion delays are now [0.151ns, 0.170ns] average 0.163ns std.dev 0.005ns
+  Fixing clock tree slew time and max cap violations - detailed pass done.
+  Removing unnecessary root buffering... 
+    Clock DAG stats after 'Removing unnecessary root buffering':
+      cell counts    : b=45, i=0, cg=0, l=0, total=45
+      cell areas     : b=453.600um^2, i=0.000um^2, cg=0.000um^2, l=0.000um^2, total=453.600um^2
+      gate capacitance : top=0.000pF, trunk=0.247pF, leaf=2.448pF, total=2.696pF
+      wire capacitance : top=0.000pF, trunk=0.184pF, leaf=2.135pF, total=2.319pF
+      wire lengths   : top=0.000um, trunk=1180.000um, leaf=11525.198um, total=12705.198um
+      sink capacitance : count=2720, total=2.448pF, avg=0.001pF, sd=0.000pF, min=0.001pF, max=0.001pF
+    Clock DAG net violations after 'Removing unnecessary root buffering':none
+    Clock tree state after 'Removing unnecessary root buffering':
+      clock_tree clk: worst slew is leaf(0.086),trunk(0.087),top(nil), margined worst slew is leaf(0.086),trunk(0.087),top(nil)
+      skew_group clk/CON: insertion delay [min=0.151, max=0.170, avg=0.163, sd=0.005], skew [0.020 vs 0.057, 100% {0.151, 0.164, 0.170}] (wid=0.018 ws=0.014) (gid=0.162 gs=0.020)
+    Clock network insertion delays are now [0.151ns, 0.170ns] average 0.163ns std.dev 0.005ns
+  Removing unnecessary root buffering done.
+  Equalizing net lengths... 
+    Clock DAG stats after 'Equalizing net lengths':
+      cell counts    : b=45, i=0, cg=0, l=0, total=45
+      cell areas     : b=453.600um^2, i=0.000um^2, cg=0.000um^2, l=0.000um^2, total=453.600um^2
+      gate capacitance : top=0.000pF, trunk=0.247pF, leaf=2.448pF, total=2.696pF
+      wire capacitance : top=0.000pF, trunk=0.184pF, leaf=2.135pF, total=2.319pF
+      wire lengths   : top=0.000um, trunk=1180.000um, leaf=11525.198um, total=12705.198um
+      sink capacitance : count=2720, total=2.448pF, avg=0.001pF, sd=0.000pF, min=0.001pF, max=0.001pF
+    Clock DAG net violations after 'Equalizing net lengths':none
+    Clock tree state after 'Equalizing net lengths':
+      clock_tree clk: worst slew is leaf(0.086),trunk(0.087),top(nil), margined worst slew is leaf(0.086),trunk(0.087),top(nil)
+      skew_group clk/CON: insertion delay [min=0.151, max=0.170, avg=0.163, sd=0.005], skew [0.020 vs 0.057, 100% {0.151, 0.164, 0.170}] (wid=0.018 ws=0.014) (gid=0.162 gs=0.020)
+    Clock network insertion delays are now [0.151ns, 0.170ns] average 0.163ns std.dev 0.005ns
+  Equalizing net lengths done.
+  Reducing insertion delay 1... 
+    Clock DAG stats after 'Reducing insertion delay 1':
+      cell counts    : b=45, i=0, cg=0, l=0, total=45
+      cell areas     : b=453.600um^2, i=0.000um^2, cg=0.000um^2, l=0.000um^2, total=453.600um^2
+      gate capacitance : top=0.000pF, trunk=0.247pF, leaf=2.448pF, total=2.696pF
+      wire capacitance : top=0.000pF, trunk=0.184pF, leaf=2.135pF, total=2.319pF
+      wire lengths   : top=0.000um, trunk=1180.000um, leaf=11525.198um, total=12705.198um
+      sink capacitance : count=2720, total=2.448pF, avg=0.001pF, sd=0.000pF, min=0.001pF, max=0.001pF
+    Clock DAG net violations after 'Reducing insertion delay 1':none
+    Clock tree state after 'Reducing insertion delay 1':
+      clock_tree clk: worst slew is leaf(0.086),trunk(0.087),top(nil), margined worst slew is leaf(0.086),trunk(0.087),top(nil)
+      skew_group clk/CON: insertion delay [min=0.151, max=0.170, avg=0.163, sd=0.005], skew [0.020 vs 0.057, 100% {0.151, 0.164, 0.170}] (wid=0.018 ws=0.014) (gid=0.162 gs=0.020)
+    Clock network insertion delays are now [0.151ns, 0.170ns] average 0.163ns std.dev 0.005ns
+  Reducing insertion delay 1 done.
+  Removing longest path buffering... 
+    Clock DAG stats after removing longest path buffering:
+      cell counts    : b=45, i=0, cg=0, l=0, total=45
+      cell areas     : b=453.600um^2, i=0.000um^2, cg=0.000um^2, l=0.000um^2, total=453.600um^2
+      gate capacitance : top=0.000pF, trunk=0.247pF, leaf=2.448pF, total=2.696pF
+      wire capacitance : top=0.000pF, trunk=0.184pF, leaf=2.135pF, total=2.319pF
+      wire lengths   : top=0.000um, trunk=1180.000um, leaf=11525.198um, total=12705.198um
+      sink capacitance : count=2720, total=2.448pF, avg=0.001pF, sd=0.000pF, min=0.001pF, max=0.001pF
+    Clock DAG net violations after removing longest path buffering:none
+    Clock tree state after removing longest path buffering:
+      clock_tree clk: worst slew is leaf(0.086),trunk(0.087),top(nil), margined worst slew is leaf(0.086),trunk(0.087),top(nil)
+      skew_group clk/CON: insertion delay [min=0.151, max=0.170, avg=0.163, sd=0.005], skew [0.020 vs 0.057, 100% {0.151, 0.164, 0.170}] (wid=0.018 ws=0.014) (gid=0.162 gs=0.020)
+    Clock network insertion delays are now [0.151ns, 0.170ns] average 0.163ns std.dev 0.005ns
+    Clock DAG stats after 'Removing longest path buffering':
+      cell counts    : b=45, i=0, cg=0, l=0, total=45
+      cell areas     : b=453.600um^2, i=0.000um^2, cg=0.000um^2, l=0.000um^2, total=453.600um^2
+      gate capacitance : top=0.000pF, trunk=0.247pF, leaf=2.448pF, total=2.696pF
+      wire capacitance : top=0.000pF, trunk=0.184pF, leaf=2.135pF, total=2.319pF
+      wire lengths   : top=0.000um, trunk=1180.000um, leaf=11525.198um, total=12705.198um
+      sink capacitance : count=2720, total=2.448pF, avg=0.001pF, sd=0.000pF, min=0.001pF, max=0.001pF
+    Clock DAG net violations after 'Removing longest path buffering':none
+    Clock tree state after 'Removing longest path buffering':
+      clock_tree clk: worst slew is leaf(0.086),trunk(0.087),top(nil), margined worst slew is leaf(0.086),trunk(0.087),top(nil)
+      skew_group clk/CON: insertion delay [min=0.151, max=0.170, avg=0.163, sd=0.005], skew [0.020 vs 0.057, 100% {0.151, 0.164, 0.170}] (wid=0.018 ws=0.014) (gid=0.162 gs=0.020)
+    Clock network insertion delays are now [0.151ns, 0.170ns] average 0.163ns std.dev 0.005ns
+  Removing longest path buffering done.
+  Reducing insertion delay 2... 
+    Path optimization required 260 stage delay updates 
+    Clock DAG stats after 'Reducing insertion delay 2':
+      cell counts    : b=45, i=0, cg=0, l=0, total=45
+      cell areas     : b=453.600um^2, i=0.000um^2, cg=0.000um^2, l=0.000um^2, total=453.600um^2
+      gate capacitance : top=0.000pF, trunk=0.247pF, leaf=2.448pF, total=2.696pF
+      wire capacitance : top=0.000pF, trunk=0.186pF, leaf=2.138pF, total=2.324pF
+      wire lengths   : top=0.000um, trunk=1190.377um, leaf=11547.575um, total=12737.953um
+      sink capacitance : count=2720, total=2.448pF, avg=0.001pF, sd=0.000pF, min=0.001pF, max=0.001pF
+    Clock DAG net violations after 'Reducing insertion delay 2':none
+    Clock tree state after 'Reducing insertion delay 2':
+      clock_tree clk: worst slew is leaf(0.092),trunk(0.086),top(nil), margined worst slew is leaf(0.092),trunk(0.086),top(nil)
+      skew_group clk/CON: insertion delay [min=0.150, max=0.170, avg=0.162, sd=0.004], skew [0.020 vs 0.057, 100% {0.150, 0.164, 0.170}] (wid=0.019 ws=0.016) (gid=0.162 gs=0.019)
+    Clock network insertion delays are now [0.150ns, 0.170ns] average 0.162ns std.dev 0.004ns
+  Reducing insertion delay 2 done.
+  Reducing clock tree power 1... 
+    Resizing gates: 
+    Resizing gates: .
+    Resizing gates: ..
+    Resizing gates: ...
+    Resizing gates: ... 20% 
+    Resizing gates: ... 20% .
+    Resizing gates: ... 20% ..
+    Resizing gates: ... 20% ...
+    Resizing gates: ... 20% ... 40% 
+    Resizing gates: ... 20% ... 40% .
+    Resizing gates: ... 20% ... 40% ..
+    Resizing gates: ... 20% ... 40% ...
+    Resizing gates: ... 20% ... 40% ... 60% 
+    Resizing gates: ... 20% ... 40% ... 60% .
+    Resizing gates: ... 20% ... 40% ... 60% ..
+    Resizing gates: ... 20% ... 40% ... 60% ...
+    Resizing gates: ... 20% ... 40% ... 60% ... 80% 
+    Resizing gates: ... 20% ... 40% ... 60% ... 80% .
+    Resizing gates: ... 20% ... 40% ... 60% ... 80% ..
+    Resizing gates: ... 20% ... 40% ... 60% ... 80% ...
+    Resizing gates: ... 20% ... 40% ... 60% ... 80% ... 100% 
+    Clock DAG stats after 'Reducing clock tree power 1':
+      cell counts    : b=45, i=0, cg=0, l=0, total=45
+      cell areas     : b=371.520um^2, i=0.000um^2, cg=0.000um^2, l=0.000um^2, total=371.520um^2
+      gate capacitance : top=0.000pF, trunk=0.205pF, leaf=2.448pF, total=2.653pF
+      wire capacitance : top=0.000pF, trunk=0.186pF, leaf=2.142pF, total=2.329pF
+      wire lengths   : top=0.000um, trunk=1192.118um, leaf=11572.612um, total=12764.730um
+      sink capacitance : count=2720, total=2.448pF, avg=0.001pF, sd=0.000pF, min=0.001pF, max=0.001pF
+    Clock DAG net violations after 'Reducing clock tree power 1':none
+    Clock tree state after 'Reducing clock tree power 1':
+      clock_tree clk: worst slew is leaf(0.104),trunk(0.077),top(nil), margined worst slew is leaf(0.104),trunk(0.077),top(nil)
+      skew_group clk/CON: insertion delay [min=0.154, max=0.177, avg=0.166, sd=0.005], skew [0.023 vs 0.057, 100% {0.154, 0.166, 0.177}] (wid=0.019 ws=0.016) (gid=0.168 gs=0.021)
+    Clock network insertion delays are now [0.154ns, 0.177ns] average 0.166ns std.dev 0.005ns
+  Reducing clock tree power 1 done.
+  Reducing clock tree power 2... 
+    Path optimization required 0 stage delay updates 
+    Clock DAG stats after 'Reducing clock tree power 2':
+      cell counts    : b=45, i=0, cg=0, l=0, total=45
+      cell areas     : b=371.520um^2, i=0.000um^2, cg=0.000um^2, l=0.000um^2, total=371.520um^2
+      gate capacitance : top=0.000pF, trunk=0.205pF, leaf=2.448pF, total=2.653pF
+      wire capacitance : top=0.000pF, trunk=0.186pF, leaf=2.142pF, total=2.329pF
+      wire lengths   : top=0.000um, trunk=1192.118um, leaf=11572.612um, total=12764.730um
+      sink capacitance : count=2720, total=2.448pF, avg=0.001pF, sd=0.000pF, min=0.001pF, max=0.001pF
+    Clock DAG net violations after 'Reducing clock tree power 2':none
+    Clock tree state after 'Reducing clock tree power 2':
+      clock_tree clk: worst slew is leaf(0.104),trunk(0.077),top(nil), margined worst slew is leaf(0.104),trunk(0.077),top(nil)
+      skew_group clk/CON: insertion delay [min=0.154, max=0.177, avg=0.166, sd=0.005], skew [0.023 vs 0.057, 100% {0.154, 0.166, 0.177}] (wid=0.019 ws=0.016) (gid=0.168 gs=0.021)
+    Clock network insertion delays are now [0.154ns, 0.177ns] average 0.166ns std.dev 0.005ns
+  Reducing clock tree power 2 done.
+  Approximately balancing fragments step... 
+    Resolving skew group constraints... 
+      Solving LP: 1 skew groups; 2 fragments, 2 fraglets and 3 vertices; 25 variables and 66 constraints; tolerance 1
+    Resolving skew group constraints done.
+    Approximately balancing fragments... 
+      Approximately balancing fragments, wire and cell delays, iteration 1... 
+        Clock DAG stats after Approximately balancing fragments, wire and cell delays, iteration 1:
+          cell counts    : b=45, i=0, cg=0, l=0, total=45
+          cell areas     : b=371.520um^2, i=0.000um^2, cg=0.000um^2, l=0.000um^2, total=371.520um^2
+          gate capacitance : top=0.000pF, trunk=0.205pF, leaf=2.448pF, total=2.653pF
+          wire capacitance : top=0.000pF, trunk=0.186pF, leaf=2.142pF, total=2.329pF
+          wire lengths   : top=0.000um, trunk=1192.118um, leaf=11572.612um, total=12764.730um
+          sink capacitance : count=2720, total=2.448pF, avg=0.001pF, sd=0.000pF, min=0.001pF, max=0.001pF
+        Clock DAG net violations after Approximately balancing fragments, wire and cell delays, iteration 1:none
+      Approximately balancing fragments, wire and cell delays, iteration 1 done.
+    Approximately balancing fragments done.
+    Clock DAG stats after 'Approximately balancing fragments step':
+      cell counts    : b=45, i=0, cg=0, l=0, total=45
+      cell areas     : b=371.520um^2, i=0.000um^2, cg=0.000um^2, l=0.000um^2, total=371.520um^2
+      gate capacitance : top=0.000pF, trunk=0.205pF, leaf=2.448pF, total=2.653pF
+      wire capacitance : top=0.000pF, trunk=0.186pF, leaf=2.142pF, total=2.329pF
+      wire lengths   : top=0.000um, trunk=1192.118um, leaf=11572.612um, total=12764.730um
+      sink capacitance : count=2720, total=2.448pF, avg=0.001pF, sd=0.000pF, min=0.001pF, max=0.001pF
+    Clock DAG net violations after 'Approximately balancing fragments step':none
+    Clock tree state after 'Approximately balancing fragments step':
+      clock_tree clk: worst slew is leaf(0.104),trunk(0.077),top(nil), margined worst slew is leaf(0.104),trunk(0.077),top(nil)
+    Clock network insertion delays are now [0.154ns, 0.177ns] average 0.166ns std.dev 0.005ns
+  Approximately balancing fragments step done.
+  Clock DAG stats after Approximately balancing fragments:
+    cell counts    : b=45, i=0, cg=0, l=0, total=45
+    cell areas     : b=371.520um^2, i=0.000um^2, cg=0.000um^2, l=0.000um^2, total=371.520um^2
+    gate capacitance : top=0.000pF, trunk=0.205pF, leaf=2.448pF, total=2.653pF
+    wire capacitance : top=0.000pF, trunk=0.186pF, leaf=2.142pF, total=2.329pF
+    wire lengths   : top=0.000um, trunk=1192.118um, leaf=11572.612um, total=12764.730um
+    sink capacitance : count=2720, total=2.448pF, avg=0.001pF, sd=0.000pF, min=0.001pF, max=0.001pF
+  Clock DAG net violations after Approximately balancing fragments:none
+  Clock tree state after Approximately balancing fragments:
+    clock_tree clk: worst slew is leaf(0.104),trunk(0.077),top(nil), margined worst slew is leaf(0.104),trunk(0.077),top(nil)
+    skew_group clk/CON: insertion delay [min=0.154, max=0.177, avg=0.166, sd=0.005], skew [0.023 vs 0.057, 100% {0.154, 0.166, 0.177}] (wid=0.019 ws=0.016) (gid=0.168 gs=0.021)
+  Clock network insertion delays are now [0.154ns, 0.177ns] average 0.166ns std.dev 0.005ns
+  Improving fragments clock skew... 
+    Clock DAG stats after 'Improving fragments clock skew':
+      cell counts    : b=45, i=0, cg=0, l=0, total=45
+      cell areas     : b=371.520um^2, i=0.000um^2, cg=0.000um^2, l=0.000um^2, total=371.520um^2
+      gate capacitance : top=0.000pF, trunk=0.205pF, leaf=2.448pF, total=2.653pF
+      wire capacitance : top=0.000pF, trunk=0.186pF, leaf=2.142pF, total=2.329pF
+      wire lengths   : top=0.000um, trunk=1192.118um, leaf=11572.612um, total=12764.730um
+      sink capacitance : count=2720, total=2.448pF, avg=0.001pF, sd=0.000pF, min=0.001pF, max=0.001pF
+    Clock DAG net violations after 'Improving fragments clock skew':none
+    Clock tree state after 'Improving fragments clock skew':
+      clock_tree clk: worst slew is leaf(0.104),trunk(0.077),top(nil), margined worst slew is leaf(0.104),trunk(0.077),top(nil)
+      skew_group clk/CON: insertion delay [min=0.154, max=0.177, avg=0.166, sd=0.005], skew [0.023 vs 0.057, 100% {0.154, 0.166, 0.177}] (wid=0.019 ws=0.016) (gid=0.168 gs=0.021)
+    Clock network insertion delays are now [0.154ns, 0.177ns] average 0.166ns std.dev 0.005ns
+  Improving fragments clock skew done.
+  Approximately balancing step... 
+    Resolving skew group constraints... 
+      Solving LP: 1 skew groups; 2 fragments, 2 fraglets and 3 vertices; 25 variables and 66 constraints; tolerance 1
+    Resolving skew group constraints done.
+    Approximately balancing... 
+      Approximately balancing, wire and cell delays, iteration 1... 
+        Clock DAG stats after Approximately balancing, wire and cell delays, iteration 1:
+          cell counts    : b=45, i=0, cg=0, l=0, total=45
+          cell areas     : b=371.520um^2, i=0.000um^2, cg=0.000um^2, l=0.000um^2, total=371.520um^2
+          gate capacitance : top=0.000pF, trunk=0.205pF, leaf=2.448pF, total=2.653pF
+          wire capacitance : top=0.000pF, trunk=0.186pF, leaf=2.142pF, total=2.329pF
+          wire lengths   : top=0.000um, trunk=1192.118um, leaf=11572.612um, total=12764.730um
+          sink capacitance : count=2720, total=2.448pF, avg=0.001pF, sd=0.000pF, min=0.001pF, max=0.001pF
+        Clock DAG net violations after Approximately balancing, wire and cell delays, iteration 1:none
+      Approximately balancing, wire and cell delays, iteration 1 done.
+    Approximately balancing done.
+    Clock DAG stats after 'Approximately balancing step':
+      cell counts    : b=45, i=0, cg=0, l=0, total=45
+      cell areas     : b=371.520um^2, i=0.000um^2, cg=0.000um^2, l=0.000um^2, total=371.520um^2
+      gate capacitance : top=0.000pF, trunk=0.205pF, leaf=2.448pF, total=2.653pF
+      wire capacitance : top=0.000pF, trunk=0.186pF, leaf=2.142pF, total=2.329pF
+      wire lengths   : top=0.000um, trunk=1192.118um, leaf=11572.612um, total=12764.730um
+      sink capacitance : count=2720, total=2.448pF, avg=0.001pF, sd=0.000pF, min=0.001pF, max=0.001pF
+    Clock DAG net violations after 'Approximately balancing step':none
+    Clock tree state after 'Approximately balancing step':
+      clock_tree clk: worst slew is leaf(0.104),trunk(0.077),top(nil), margined worst slew is leaf(0.104),trunk(0.077),top(nil)
+      skew_group clk/CON: insertion delay [min=0.154, max=0.177, avg=0.166, sd=0.005], skew [0.023 vs 0.057, 100% {0.154, 0.166, 0.177}] (wid=0.019 ws=0.016) (gid=0.168 gs=0.021)
+    Clock network insertion delays are now [0.154ns, 0.177ns] average 0.166ns std.dev 0.005ns
+  Approximately balancing step done.
+  Fixing clock tree overload... 
+    Fixing clock tree overload: 
+    Fixing clock tree overload: .
+    Fixing clock tree overload: ..
+    Fixing clock tree overload: ...
+    Fixing clock tree overload: ... 20% 
+    Fixing clock tree overload: ... 20% .
+    Fixing clock tree overload: ... 20% ..
+    Fixing clock tree overload: ... 20% ...
+    Fixing clock tree overload: ... 20% ... 40% 
+    Fixing clock tree overload: ... 20% ... 40% .
+    Fixing clock tree overload: ... 20% ... 40% ..
+    Fixing clock tree overload: ... 20% ... 40% ...
+    Fixing clock tree overload: ... 20% ... 40% ... 60% 
+    Fixing clock tree overload: ... 20% ... 40% ... 60% .
+    Fixing clock tree overload: ... 20% ... 40% ... 60% ..
+    Fixing clock tree overload: ... 20% ... 40% ... 60% ...
+    Fixing clock tree overload: ... 20% ... 40% ... 60% ... 80% 
+    Fixing clock tree overload: ... 20% ... 40% ... 60% ... 80% .
+    Fixing clock tree overload: ... 20% ... 40% ... 60% ... 80% ..
+    Fixing clock tree overload: ... 20% ... 40% ... 60% ... 80% ...
+    Fixing clock tree overload: ... 20% ... 40% ... 60% ... 80% ... 100% 
+    Clock DAG stats after 'Fixing clock tree overload':
+      cell counts    : b=45, i=0, cg=0, l=0, total=45
+      cell areas     : b=371.520um^2, i=0.000um^2, cg=0.000um^2, l=0.000um^2, total=371.520um^2
+      gate capacitance : top=0.000pF, trunk=0.205pF, leaf=2.448pF, total=2.653pF
+      wire capacitance : top=0.000pF, trunk=0.186pF, leaf=2.142pF, total=2.329pF
+      wire lengths   : top=0.000um, trunk=1192.118um, leaf=11572.612um, total=12764.730um
+      sink capacitance : count=2720, total=2.448pF, avg=0.001pF, sd=0.000pF, min=0.001pF, max=0.001pF
+    Clock DAG net violations after 'Fixing clock tree overload':none
+    Clock tree state after 'Fixing clock tree overload':
+      clock_tree clk: worst slew is leaf(0.104),trunk(0.077),top(nil), margined worst slew is leaf(0.104),trunk(0.077),top(nil)
+      skew_group clk/CON: insertion delay [min=0.154, max=0.177, avg=0.166, sd=0.005], skew [0.023 vs 0.057, 100% {0.154, 0.166, 0.177}] (wid=0.019 ws=0.016) (gid=0.168 gs=0.021)
+    Clock network insertion delays are now [0.154ns, 0.177ns] average 0.166ns std.dev 0.005ns
+  Fixing clock tree overload done.
+  Approximately balancing paths... 
+    Added 0 buffers.
+    Clock DAG stats after 'Approximately balancing paths':
+      cell counts    : b=45, i=0, cg=0, l=0, total=45
+      cell areas     : b=371.520um^2, i=0.000um^2, cg=0.000um^2, l=0.000um^2, total=371.520um^2
+      gate capacitance : top=0.000pF, trunk=0.205pF, leaf=2.448pF, total=2.653pF
+      wire capacitance : top=0.000pF, trunk=0.186pF, leaf=2.142pF, total=2.329pF
+      wire lengths   : top=0.000um, trunk=1192.118um, leaf=11572.612um, total=12764.730um
+      sink capacitance : count=2720, total=2.448pF, avg=0.001pF, sd=0.000pF, min=0.001pF, max=0.001pF
+    Clock DAG net violations after 'Approximately balancing paths':none
+    Clock tree state after 'Approximately balancing paths':
+      clock_tree clk: worst slew is leaf(0.104),trunk(0.077),top(nil), margined worst slew is leaf(0.104),trunk(0.077),top(nil)
+      skew_group clk/CON: insertion delay [min=0.154, max=0.177, avg=0.166, sd=0.005], skew [0.023 vs 0.057, 100% {0.154, 0.166, 0.177}] (wid=0.019 ws=0.016) (gid=0.168 gs=0.021)
+    Clock network insertion delays are now [0.154ns, 0.177ns] average 0.166ns std.dev 0.005ns
+  Approximately balancing paths done.
+  Resynthesising clock tree into netlist... 
+  Resynthesising clock tree into netlist done.
+  Updating congestion map to accurately time the clock tree... 
+    Updating RC parasitics by calling: "extractRC -noRouteCheck"... Extraction called for design 'sram_w16_out' of instances=11106 and nets=4839 using extraction engine 'preRoute' .
+PreRoute RC Extraction called for design sram_w16_out.
+RC Extraction called in multi-corner(2) mode.
+**WARN: (IMPEXT-3442):	The version of the capacitance table file being used is obsolete and is no longer recommended. For improved accuracy, generate the capacitance table file using the generateCapTbl command.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.00000 1.00000 
+Resistance Scaling Factor    : 1.00000 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 1.00000 
+Clock Res. Scaling Factor    : 1.00000 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.2  Real Time: 0:00:01.0  MEM: 1433.895M)
+
+    Updating RC parasitics by calling: "extractRC -noRouteCheck" done.
+  Updating congestion map to accurately time the clock tree done.
+  Disconnecting clock tree from netlist... 
+  Disconnecting clock tree from netlist done.
+  Rebuilding timing graph... 
+  Rebuilding timing graph done.
+  Rebuilding timing graph Clock DAG stats After congestion update:
+  Rebuilding timing graph   cell counts    : b=45, i=0, cg=0, l=0, total=45
+  Rebuilding timing graph   cell areas     : b=371.520um^2, i=0.000um^2, cg=0.000um^2, l=0.000um^2, total=371.520um^2
+  Rebuilding timing graph   gate capacitance : top=0.000pF, trunk=0.205pF, leaf=2.448pF, total=2.653pF
+  Rebuilding timing graph   wire capacitance : top=0.000pF, trunk=0.186pF, leaf=2.142pF, total=2.328pF
+  Rebuilding timing graph   wire lengths   : top=0.000um, trunk=1192.118um, leaf=11572.612um, total=12764.730um
+  Rebuilding timing graph   sink capacitance : count=2720, total=2.448pF, avg=0.001pF, sd=0.000pF, min=0.001pF, max=0.001pF
+  Rebuilding timing graph Clock DAG net violations After congestion update:none
+  Clock tree state After congestion update:
+    clock_tree clk: worst slew is leaf(0.104),trunk(0.077),top(nil), margined worst slew is leaf(0.104),trunk(0.077),top(nil)
+    skew_group clk/CON: insertion delay [min=0.154, max=0.177, avg=0.166, sd=0.005], skew [0.023 vs 0.057, 100% {0.154, 0.166, 0.177}] (wid=0.019 ws=0.016) (gid=0.168 gs=0.021)
+  Clock network insertion delays are now [0.154ns, 0.177ns] average 0.166ns std.dev 0.005ns
+  Improving clock skew... 
+    Clock DAG stats after 'Improving clock skew':
+      cell counts    : b=45, i=0, cg=0, l=0, total=45
+      cell areas     : b=371.520um^2, i=0.000um^2, cg=0.000um^2, l=0.000um^2, total=371.520um^2
+      gate capacitance : top=0.000pF, trunk=0.205pF, leaf=2.448pF, total=2.653pF
+      wire capacitance : top=0.000pF, trunk=0.186pF, leaf=2.142pF, total=2.328pF
+      wire lengths   : top=0.000um, trunk=1192.118um, leaf=11572.612um, total=12764.730um
+      sink capacitance : count=2720, total=2.448pF, avg=0.001pF, sd=0.000pF, min=0.001pF, max=0.001pF
+    Clock DAG net violations after 'Improving clock skew':none
+    Clock tree state after 'Improving clock skew':
+      clock_tree clk: worst slew is leaf(0.104),trunk(0.077),top(nil), margined worst slew is leaf(0.104),trunk(0.077),top(nil)
+      skew_group clk/CON: insertion delay [min=0.154, max=0.177, avg=0.166, sd=0.005], skew [0.023 vs 0.057, 100% {0.154, 0.166, 0.177}] (wid=0.019 ws=0.016) (gid=0.168 gs=0.021)
+    Clock network insertion delays are now [0.154ns, 0.177ns] average 0.166ns std.dev 0.005ns
+  Improving clock skew done.
+  Reducing clock tree power 3... 
+    Initial gate capacitance is (rise=2.653pF fall=2.645pF).
+    Resizing gates: 
+    Resizing gates: .
+    Resizing gates: ..
+    Resizing gates: ...
+    Resizing gates: ... 20% 
+    Resizing gates: ... 20% .
+    Resizing gates: ... 20% ..
+    Resizing gates: ... 20% ...
+    Resizing gates: ... 20% ... 40% 
+    Resizing gates: ... 20% ... 40% .
+    Resizing gates: ... 20% ... 40% ..
+    Resizing gates: ... 20% ... 40% ...
+    Resizing gates: ... 20% ... 40% ... 60% 
+    Resizing gates: ... 20% ... 40% ... 60% .
+    Resizing gates: ... 20% ... 40% ... 60% ..
+    Resizing gates: ... 20% ... 40% ... 60% ...
+    Resizing gates: ... 20% ... 40% ... 60% ... 80% 
+    Resizing gates: ... 20% ... 40% ... 60% ... 80% .
+    Resizing gates: ... 20% ... 40% ... 60% ... 80% ..
+    Resizing gates: ... 20% ... 40% ... 60% ... 80% ...
+    Resizing gates: ... 20% ... 40% ... 60% ... 80% ... 100% 
+    Stopping in iteration 1: unable to make further power recovery in this step.
+    Iteration 1: gate capacitance is (rise=2.647pF fall=2.638pF).
+    Clock DAG stats after 'Reducing clock tree power 3':
+      cell counts    : b=45, i=0, cg=0, l=0, total=45
+      cell areas     : b=358.560um^2, i=0.000um^2, cg=0.000um^2, l=0.000um^2, total=358.560um^2
+      gate capacitance : top=0.000pF, trunk=0.199pF, leaf=2.448pF, total=2.647pF
+      wire capacitance : top=0.000pF, trunk=0.186pF, leaf=2.143pF, total=2.329pF
+      wire lengths   : top=0.000um, trunk=1191.852um, leaf=11577.980um, total=12769.833um
+      sink capacitance : count=2720, total=2.448pF, avg=0.001pF, sd=0.000pF, min=0.001pF, max=0.001pF
+    Clock DAG net violations after 'Reducing clock tree power 3':none
+    Clock tree state after 'Reducing clock tree power 3':
+      clock_tree clk: worst slew is leaf(0.105),trunk(0.074),top(nil), margined worst slew is leaf(0.105),trunk(0.074),top(nil)
+      skew_group clk/CON: insertion delay [min=0.154, max=0.176, avg=0.166, sd=0.005], skew [0.022 vs 0.057, 100% {0.154, 0.166, 0.176}] (wid=0.019 ws=0.016) (gid=0.167 gs=0.020)
+    Clock network insertion delays are now [0.154ns, 0.176ns] average 0.166ns std.dev 0.005ns
+  Reducing clock tree power 3 done.
+  Improving insertion delay... 
+    Clock DAG stats after improving insertion delay:
+      cell counts    : b=45, i=0, cg=0, l=0, total=45
+      cell areas     : b=358.560um^2, i=0.000um^2, cg=0.000um^2, l=0.000um^2, total=358.560um^2
+      gate capacitance : top=0.000pF, trunk=0.199pF, leaf=2.448pF, total=2.647pF
+      wire capacitance : top=0.000pF, trunk=0.186pF, leaf=2.143pF, total=2.329pF
+      wire lengths   : top=0.000um, trunk=1191.852um, leaf=11577.980um, total=12769.833um
+      sink capacitance : count=2720, total=2.448pF, avg=0.001pF, sd=0.000pF, min=0.001pF, max=0.001pF
+    Clock DAG net violations after improving insertion delay:none
+    Clock tree state after improving insertion delay:
+      clock_tree clk: worst slew is leaf(0.105),trunk(0.074),top(nil), margined worst slew is leaf(0.105),trunk(0.074),top(nil)
+      skew_group clk/CON: insertion delay [min=0.154, max=0.176, avg=0.166, sd=0.005], skew [0.022 vs 0.057, 100% {0.154, 0.166, 0.176}] (wid=0.019 ws=0.016) (gid=0.167 gs=0.020)
+    Clock network insertion delays are now [0.154ns, 0.176ns] average 0.166ns std.dev 0.005ns
+    Clock DAG stats after 'Improving insertion delay':
+      cell counts    : b=45, i=0, cg=0, l=0, total=45
+      cell areas     : b=358.560um^2, i=0.000um^2, cg=0.000um^2, l=0.000um^2, total=358.560um^2
+      gate capacitance : top=0.000pF, trunk=0.199pF, leaf=2.448pF, total=2.647pF
+      wire capacitance : top=0.000pF, trunk=0.186pF, leaf=2.143pF, total=2.329pF
+      wire lengths   : top=0.000um, trunk=1191.852um, leaf=11577.980um, total=12769.833um
+      sink capacitance : count=2720, total=2.448pF, avg=0.001pF, sd=0.000pF, min=0.001pF, max=0.001pF
+    Clock DAG net violations after 'Improving insertion delay':none
+    Clock tree state after 'Improving insertion delay':
+      clock_tree clk: worst slew is leaf(0.105),trunk(0.074),top(nil), margined worst slew is leaf(0.105),trunk(0.074),top(nil)
+      skew_group clk/CON: insertion delay [min=0.154, max=0.176, avg=0.166, sd=0.005], skew [0.022 vs 0.057, 100% {0.154, 0.166, 0.176}] (wid=0.019 ws=0.016) (gid=0.167 gs=0.020)
+    Clock network insertion delays are now [0.154ns, 0.176ns] average 0.166ns std.dev 0.005ns
+  Improving insertion delay done.
+  Total capacitance is (rise=4.976pF fall=4.967pF), of which (rise=2.329pF fall=2.329pF) is wire, and (rise=2.647pF fall=2.638pF) is gate.
+  Legalizer releasing space for clock trees... 
+  Legalizer releasing space for clock trees done.
+  Updating netlist... 
+*
+* Starting clock placement refinement...
+*
+* First pass: Refine non-clock instances...
+*
+*** Starting refinePlace (0:01:45 mem=1499.1M) ***
+Total net bbox length = 1.095e+05 (3.329e+04 7.625e+04) (ext = 2.764e+04)
+Density distribution unevenness ratio = 1.388%
+Move report: Detail placement moves 61 insts, mean move: 4.16 um, max move: 8.40 um
+	Max move on inst (FILLER_1126): (124.60, 58.20) --> (125.80, 51.00)
+	Runtime: CPU: 0:00:00.1 REAL: 0:00:00.0 MEM: 1499.1MB
+Summary Report:
+Instances move: 19 (out of 1905 movable)
+Mean displacement: 4.09 um
+Max displacement: 8.00 um (Instance: U2228) (41.4, 135.6) -> (45.8, 132)
+	Length: 7 sites, height: 1 rows, site name: core, cell type: AOI22D0
+Total net bbox length = 1.096e+05 (3.337e+04 7.628e+04) (ext = 2.764e+04)
+Runtime: CPU: 0:00:00.1 REAL: 0:00:00.0 MEM: 1499.1MB
+*** Finished refinePlace (0:01:45 mem=1499.1M) ***
+*
+* Second pass: Refine clock instances...
+*
+*** Starting refinePlace (0:01:45 mem=1499.1M) ***
+Total net bbox length = 1.096e+05 (3.337e+04 7.628e+04) (ext = 2.764e+04)
+Density distribution unevenness ratio = 0.449%
+Move report: Detail placement moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+	Runtime: CPU: 0:00:00.1 REAL: 0:00:00.0 MEM: 1499.1MB
+Summary Report:
+Instances move: 0 (out of 4670 movable)
+Mean displacement: 0.00 um
+Max displacement: 0.00 um 
+Total net bbox length = 1.096e+05 (3.337e+04 7.628e+04) (ext = 2.764e+04)
+Runtime: CPU: 0:00:00.1 REAL: 0:00:00.0 MEM: 1499.1MB
+*** Finished refinePlace (0:01:46 mem=1499.1M) ***
+*
+* No clock instances moved during refinement.
+*
+* Finished with clock placement refinement.
+*
+
+    Rebuilding timing graph... 
+    Rebuilding timing graph done.
+    Clock implementation routing... Net route status summary:
+  Clock:        46 (unrouted=46, trialRouted=0, noStatus=0, routed=0, fixed=0)
+  Non-clock:  4791 (unrouted=0, trialRouted=4791, noStatus=0, routed=0, fixed=0)
+(Not counting 2 nets with <2 term connections)
+
+      Updating RC parasitics by calling: "extractRC -noRouteCheck"... Extraction called for design 'sram_w16_out' of instances=11106 and nets=4839 using extraction engine 'preRoute' .
+PreRoute RC Extraction called for design sram_w16_out.
+RC Extraction called in multi-corner(2) mode.
+**WARN: (IMPEXT-3442):	The version of the capacitance table file being used is obsolete and is no longer recommended. For improved accuracy, generate the capacitance table file using the generateCapTbl command.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.00000 1.00000 
+Resistance Scaling Factor    : 1.00000 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 1.00000 
+Clock Res. Scaling Factor    : 1.00000 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.2  Real Time: 0:00:00.0  MEM: 1500.668M)
+
+      Updating RC parasitics by calling: "extractRC -noRouteCheck" done.
+
+CCOPT: Preparing to route 46 clock nets with NanoRoute.
+  All net are default rule.
+  Removed pre-existing routes for 46 nets.
+  Preferred NanoRoute mode settings: Current
+
+  drouteAutoStop = "false"
+  drouteEndIteration = "20"
+  drouteExpDeterministicMultiThread = "true"
+  envHonorGlobalRoute = "false"
+  grouteExpUseNanoRoute2 = "false"
+  routeAllowPinAsFeedthrough = "false"
+  routeExpDeterministicMultiThread = "true"
+  routeSelectedNetOnly = "true"
+  routeTopRoutingLayer = "4" (current non-default setting)
+  routeWithEco = "true"
+  routeWithSiDriven = "false"
+  routeWithTimingDriven = "false"
+
+  setMultiCpuUsage -localCpu 8; # current non-default setting
+      Clock detailed routing... 
+globalDetailRoute
+
+#setNanoRouteMode -drouteAutoStop false
+#setNanoRouteMode -drouteEndIteration 20
+#setNanoRouteMode -routeAllowPinAsFeedthrough "false"
+#setNanoRouteMode -routeSelectedNetOnly true
+#setNanoRouteMode -routeTopRoutingLayer 4
+#setNanoRouteMode -routeWithEco true
+#setNanoRouteMode -routeWithSiDriven false
+#setNanoRouteMode -routeWithTimingDriven false
+#Start globalDetailRoute on Sat Mar 22 13:14:22 2025
+#
+#NanoRoute Version 15.23-s045_1 NR160414-1105/15_23-UB
+#Using multithreading with 8 threads.
+#Start routing data preparation.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M1 is not specified for width 0.090.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M2 is not specified for width 0.100.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M1 is not specified for width 0.090.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M2 is not specified for width 0.100.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M2 is not specified for width 0.100.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M3 is not specified for width 0.100.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M2 is not specified for width 0.100.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M3 is not specified for width 0.100.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M3 is not specified for width 0.100.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M4 is not specified for width 0.100.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M3 is not specified for width 0.100.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M4 is not specified for width 0.100.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M4 is not specified for width 0.100.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M5 is not specified for width 0.100.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M4 is not specified for width 0.100.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M5 is not specified for width 0.100.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M5 is not specified for width 0.100.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M6 is not specified for width 0.100.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M5 is not specified for width 0.100.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M6 is not specified for width 0.100.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M6 is not specified for width 0.100.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M7 is not specified for width 0.400.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M6 is not specified for width 0.100.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M7 is not specified for width 0.400.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M7 is not specified for width 0.400.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M8 is not specified for width 0.400.
+#WARNING (NRDB-2077) The below via enclosure for LAYER M7 is not specified for width 0.400.
+#WARNING (NRDB-2078) The above via enclosure for LAYER M8 is not specified for width 0.400.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.100.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Voltage range [0.900 - 1.100] has 1 net.
+#Voltage range [0.000 - 1.100] has 4837 nets.
+# M1           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.185
+# M2           V   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M3           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M4           V   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M5           H   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M6           V   Track-Pitch = 0.200    Line-2-Via Pitch = 0.200
+# M7           H   Track-Pitch = 0.800    Line-2-Via Pitch = 0.800
+# M8           V   Track-Pitch = 0.800    Line-2-Via Pitch = 0.800
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer M2's pitch = 0.200.
+#Using automatically generated G-grids.
+#Done routing data preparation.
+#cpu time = 00:00:02, elapsed time = 00:00:00, memory = 1113.92 (MB), peak = 1375.44 (MB)
+#Merging special wires using 8 threads...
+#reading routing guides ......
+#Number of eco nets is 0
+#
+#Start data preparation...
+#
+#Data preparation is done on Sat Mar 22 13:14:23 2025
+#
+#Analyzing routing resource...
+#Routing resource analysis is done on Sat Mar 22 13:14:23 2025
+#
+#  Resource Analysis:
+#
+#               Routing  #Avail      #Track     #Total     %Gcell
+#  Layer      Direction   Track     Blocked      Gcell    Blocked
+#  --------------------------------------------------------------
+#  Metal 1        H        1399           0        8649    78.74%
+#  Metal 2        V        1400           0        8649     0.00%
+#  Metal 3        H        1399           0        8649     0.00%
+#  Metal 4        V         948         452        8649     0.00%
+#  --------------------------------------------------------------
+#  Total                   5146       8.07%  34596    19.68%
+#
+#  46 nets (0.95%) with 1 preferred extra spacing.
+#
+#
+#Routing guide is on.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1115.65 (MB), peak = 1375.44 (MB)
+#
+#start global routing iteration 1...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1124.25 (MB), peak = 1375.44 (MB)
+#
+#start global routing iteration 2...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1124.58 (MB), peak = 1375.44 (MB)
+#
+#start global routing iteration 3...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1124.76 (MB), peak = 1375.44 (MB)
+#
+#start global routing iteration 4...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1124.83 (MB), peak = 1375.44 (MB)
+#
+#
+#Total number of trivial nets (e.g. < 2 pins) = 2 (skipped).
+#Total number of selected nets for routing = 46.
+#Total number of unselected nets (but routable) for routing = 4791 (skipped).
+#Total number of nets in the design = 4839.
+#
+#4791 skipped nets do not have any wires.
+#46 routable nets have only global wires.
+#46 global routed or unrouted (routable) nets have been constrained (e.g. have preferred extra spacing, require shielding etc.)
+#
+#Routed net constraints summary:
+#------------------------------------------------
+#        Rules   Pref Extra Space   Unconstrained  
+#------------------------------------------------
+#      Default                 46               0  
+#------------------------------------------------
+#        Total                 46               0  
+#------------------------------------------------
+#
+#Routing constraints summary of the whole design:
+#------------------------------------------------
+#        Rules   Pref Extra Space   Unconstrained  
+#------------------------------------------------
+#      Default                 46            4791  
+#------------------------------------------------
+#        Total                 46            4791  
+#------------------------------------------------
+#
+#
+#  Congestion Analysis: (blocked Gcells are excluded)
+#
+#                 OverCon          
+#                  #Gcell    %Gcell
+#     Layer           (1)   OverCon
+#  --------------------------------
+#   Metal 1      0(0.00%)   (0.00%)
+#   Metal 2      0(0.00%)   (0.00%)
+#   Metal 3      0(0.00%)   (0.00%)
+#   Metal 4      0(0.00%)   (0.00%)
+#  --------------------------------
+#     Total      0(0.00%)   (0.00%)
+#
+#  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 1
+#  Overflow after GR: 0.00% H + 0.00% V
+#
+#Complete Global Routing.
+#Total number of nets with non-default rule or having extra spacing = 46
+#Total wire length = 13536 um.
+#Total half perimeter of net bounding box = 4375 um.
+#Total wire length on LAYER M1 = 0 um.
+#Total wire length on LAYER M2 = 1656 um.
+#Total wire length on LAYER M3 = 7395 um.
+#Total wire length on LAYER M4 = 4485 um.
+#Total wire length on LAYER M5 = 0 um.
+#Total wire length on LAYER M6 = 0 um.
+#Total wire length on LAYER M7 = 0 um.
+#Total wire length on LAYER M8 = 0 um.
+#Total number of vias = 6881
+#Up-Via Summary (total 6881):
+#           
+#-----------------------
+#  Metal 1         2810
+#  Metal 2         2411
+#  Metal 3         1660
+#-----------------------
+#                  6881 
+#
+#Total number of involved priority nets 46
+#Maximum src to sink distance for priority net 215.1
+#Average of max src_to_sink distance for priority net 97.8
+#Average of ave src_to_sink distance for priority net 54.5
+#Max overcon = 0 track.
+#Total overcon = 0.00%.
+#Worst layer Gcell overcon rate = 0.00%.
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 1125.01 (MB), peak = 1375.44 (MB)
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1119.25 (MB), peak = 1375.44 (MB)
+#Start Track Assignment.
+#Done with 1807 horizontal wires in 1 hboxes and 1655 vertical wires in 1 hboxes.
+#Done with 50 horizontal wires in 1 hboxes and 62 vertical wires in 1 hboxes.
+#Complete Track Assignment.
+#Total number of nets with non-default rule or having extra spacing = 46
+#Total wire length = 15103 um.
+#Total half perimeter of net bounding box = 4375 um.
+#Total wire length on LAYER M1 = 1384 um.
+#Total wire length on LAYER M2 = 1654 um.
+#Total wire length on LAYER M3 = 7383 um.
+#Total wire length on LAYER M4 = 4683 um.
+#Total wire length on LAYER M5 = 0 um.
+#Total wire length on LAYER M6 = 0 um.
+#Total wire length on LAYER M7 = 0 um.
+#Total wire length on LAYER M8 = 0 um.
+#Total number of vias = 6881
+#Up-Via Summary (total 6881):
+#           
+#-----------------------
+#  Metal 1         2810
+#  Metal 2         2411
+#  Metal 3         1660
+#-----------------------
+#                  6881 
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1128.20 (MB), peak = 1375.44 (MB)
+#
+#Cpu time = 00:00:03
+#Elapsed time = 00:00:02
+#Increased memory = 24.52 (MB)
+#Total memory = 1128.20 (MB)
+#Peak memory = 1375.44 (MB)
+#Using multithreading with 8 threads.
+#
+#Start Detail Routing..
+#start initial detail routing ...
+# ECO: 0.4% of the total area was rechecked for DRC, and 96.4% required routing.
+#    number of violations = 0
+#cpu time = 00:00:15, elapsed time = 00:00:02, memory = 1394.81 (MB), peak = 1396.42 (MB)
+#start 1st optimization iteration ...
+#    number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1128.52 (MB), peak = 1396.42 (MB)
+#Complete Detail Routing.
+#Total number of nets with non-default rule or having extra spacing = 46
+#Total wire length = 13478 um.
+#Total half perimeter of net bounding box = 4375 um.
+#Total wire length on LAYER M1 = 0 um.
+#Total wire length on LAYER M2 = 846 um.
+#Total wire length on LAYER M3 = 7170 um.
+#Total wire length on LAYER M4 = 5463 um.
+#Total wire length on LAYER M5 = 0 um.
+#Total wire length on LAYER M6 = 0 um.
+#Total wire length on LAYER M7 = 0 um.
+#Total wire length on LAYER M8 = 0 um.
+#Total number of vias = 8112
+#Total number of multi-cut vias = 45 (  0.6%)
+#Total number of single cut vias = 8067 ( 99.4%)
+#Up-Via Summary (total 8112):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+#  Metal 1        2765 ( 98.4%)        45 (  1.6%)       2810
+#  Metal 2        2735 (100.0%)         0 (  0.0%)       2735
+#  Metal 3        2567 (100.0%)         0 (  0.0%)       2567
+#-----------------------------------------------------------
+#                 8067 ( 99.4%)        45 (  0.6%)       8112 
+#
+#Total number of DRC violations = 0
+#Cpu time = 00:00:16
+#Elapsed time = 00:00:03
+#Increased memory = -0.62 (MB)
+#Total memory = 1127.58 (MB)
+#Peak memory = 1396.42 (MB)
+#detailRoute Statistics:
+#Cpu time = 00:00:16
+#Elapsed time = 00:00:03
+#Increased memory = -0.62 (MB)
+#Total memory = 1127.58 (MB)
+#Peak memory = 1396.42 (MB)
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:00:20
+#Elapsed time = 00:00:06
+#Increased memory = 35.04 (MB)
+#Total memory = 1118.99 (MB)
+#Peak memory = 1396.42 (MB)
+#Number of warnings = 28
+#Total number of warnings = 28
+#Number of fails = 0
+#Total number of fails = 0
+#Complete globalDetailRoute on Sat Mar 22 13:14:28 2025
+#
+
+      Clock detailed routing done.
+Checking guided vs. routed lengths for 46 nets...
+
+      
+      Guided max path lengths
+      =======================
+      
+      ---------------------------------------
+      From (um)    To (um)    Number of paths
+      ---------------------------------------
+        40.000      60.000          10
+        60.000      80.000          28
+        80.000     100.000           3
+       100.000     120.000           1
+       120.000     140.000           1
+       140.000     160.000           1
+       160.000     180.000           0
+       180.000     200.000           2
+      ---------------------------------------
+      
+      Deviation of routing from guided max path lengths
+      =================================================
+      
+      --------------------------------------
+      From (%)    To (%)     Number of paths
+      --------------------------------------
+      below         0.000           1
+        0.000      20.000          19
+       20.000      40.000          11
+       40.000      60.000           8
+       60.000      80.000           3
+       80.000     100.000           3
+      100.000     120.000           0
+      120.000     140.000           1
+      --------------------------------------
+      
+
+    Top 10 notable deviations of routed length from guided length
+    =============================================================
+
+    Net CTS_159 (52 terminals)
+    Guided length:  max path =    47.992um, total =   209.340um
+    Routed length:  max path =   110.200um, total =   239.940um
+    Deviation:      max path =   129.619%,  total =    14.617%
+
+    Net CTS_139 (75 terminals)
+    Guided length:  max path =    53.363um, total =   290.155um
+    Routed length:  max path =    99.400um, total =   350.200um
+    Deviation:      max path =    86.273%,  total =    20.694%
+
+    Net CTS_143 (75 terminals)
+    Guided length:  max path =    54.127um, total =   278.510um
+    Routed length:  max path =    99.600um, total =   313.180um
+    Deviation:      max path =    84.010%,  total =    12.448%
+
+    Net CTS_176 (62 terminals)
+    Guided length:  max path =    55.695um, total =   261.725um
+    Routed length:  max path =   102.200um, total =   290.060um
+    Deviation:      max path =    83.499%,  total =    10.826%
+
+    Net CTS_161 (74 terminals)
+    Guided length:  max path =    75.720um, total =   308.457um
+    Routed length:  max path =   129.600um, total =   353.400um
+    Deviation:      max path =    71.157%,  total =    14.570%
+
+    Net CTS_149 (56 terminals)
+    Guided length:  max path =    73.795um, total =   258.640um
+    Routed length:  max path =   125.000um, total =   311.460um
+    Deviation:      max path =    69.388%,  total =    20.422%
+
+    Net CTS_174 (83 terminals)
+    Guided length:  max path =    59.205um, total =   312.683um
+    Routed length:  max path =    99.600um, total =   373.560um
+    Deviation:      max path =    68.229%,  total =    19.469%
+
+    Net CTS_151 (72 terminals)
+    Guided length:  max path =    59.680um, total =   301.115um
+    Routed length:  max path =    95.200um, total =   349.500um
+    Deviation:      max path =    59.517%,  total =    16.069%
+
+    Net CTS_170 (63 terminals)
+    Guided length:  max path =    84.252um, total =   265.980um
+    Routed length:  max path =   132.000um, total =   303.440um
+    Deviation:      max path =    56.672%,  total =    14.084%
+
+    Net CTS_177 (51 terminals)
+    Guided length:  max path =    57.000um, total =   227.007um
+    Routed length:  max path =    88.800um, total =   261.400um
+    Deviation:      max path =    55.789%,  total =    15.150%
+
+Set FIXED routing status on 46 net(s)
+Set FIXED placed status on 45 instance(s)
+Net route status summary:
+  Clock:        46 (unrouted=0, trialRouted=0, noStatus=0, routed=0, fixed=46)
+  Non-clock:  4791 (unrouted=4791, trialRouted=0, noStatus=0, routed=0, fixed=0)
+(Not counting 2 nets with <2 term connections)
+
+CCOPT: Done with clock implementation routing.
+
+
+CCOPT: Starting congestion repair using flow wrapper.
+Trial Route Overflow 0(H) 0(V)
+Starting congestion repair ...
+[NR-eagl] Detected a user setting of 'getTrialRouteMode -handlePreroute true' which was ignored.
+[NR-eagl] honorMsvRouteConstraint: false
+[NR-eagl] honorClockSpecNDR      : 0
+[NR-eagl] minRouteLayer          : 2
+[NR-eagl] maxRouteLayer          : 4
+[NR-eagl] numTracksPerClockWire  : 0
+[NR-eagl] Layer1 has no routable track
+[NR-eagl] Layer2 has single uniform track structure
+[NR-eagl] Layer3 has single uniform track structure
+[NR-eagl] Layer4 has single uniform track structure
+[NR-eagl] numRoutingBlks=0 numInstBlks=0 numPGBlocks=14665 numBumpBlks=0 numBoundaryFakeBlks=0
+[NR-eagl] numPreroutedNet = 46  numPreroutedWires = 8421
+[NR-eagl] Read numTotalNets=4837  numIgnoredNets=46
+[NR-eagl] ============ Routing rule table ============
+[NR-eagl] Rule id 0. Nets 0 
+[NR-eagl] id=0  routeTrackId=0  extraSpace=1  numShields=0  maxHorDemand=2  maxVerDemand=2
+[NR-eagl] Pitch:  L1=720  L2=800  L3=800  L4=800
+[NR-eagl] Rule id 1. Nets 4791 
+[NR-eagl] id=1  routeTrackId=0  extraSpace=0  numShields=0  maxHorDemand=1  maxVerDemand=1
+[NR-eagl] Pitch:  L1=360  L2=400  L3=400  L4=400
+[NR-eagl] ========================================
+[NR-eagl] 
+[NR-eagl] Layer group 1: route 4791 net(s) in layer range [2, 4]
+[NR-eagl] earlyGlobalRoute overflow of layer group 1: 0.02% H + 0.01% V. EstWL: 1.497870e+05um
+[NR-eagl] 
+[NR-eagl] Overflow after earlyGlobalRoute (GR compatible) 0.02% H + 0.00% V
+[NR-eagl] Overflow after earlyGlobalRoute 0.02% H + 0.00% V
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+describeCongestion: hCong = 0.00 vCong = 0.00
+Skipped repairing congestion.
+[NR-eagl] Layer1(M1)(F) length: 0.000000e+00um, number of vias: 19782
+[NR-eagl] Layer2(M2)(V) length: 7.111280e+04um, number of vias: 31679
+[NR-eagl] Layer3(M3)(H) length: 6.414300e+04um, number of vias: 3917
+[NR-eagl] Layer4(M4)(V) length: 3.193540e+04um, number of vias: 0
+[NR-eagl] Total length: 1.671912e+05um, number of vias: 55378
+End of congRepair (cpu=0:00:00.2, real=0:00:00.0)
+
+CCOPT: Done with congestion repair using flow wrapper.
+
+    Clock implementation routing done.
+    Updating RC parasitics by calling: "extractRC -noRouteCheck"... Extraction called for design 'sram_w16_out' of instances=11106 and nets=4839 using extraction engine 'preRoute' .
+PreRoute RC Extraction called for design sram_w16_out.
+RC Extraction called in multi-corner(2) mode.
+**WARN: (IMPEXT-3442):	The version of the capacitance table file being used is obsolete and is no longer recommended. For improved accuracy, generate the capacitance table file using the generateCapTbl command.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.00000 1.00000 
+Resistance Scaling Factor    : 1.00000 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 1.00000 
+Clock Res. Scaling Factor    : 1.00000 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.2  Real Time: 0:00:00.0  MEM: 1505.141M)
+
+    Updating RC parasitics by calling: "extractRC -noRouteCheck" done.
+    Rebuilding timing graph... 
+    Rebuilding timing graph done.
+    
+    Routing Correlation Report
+    ==========================
+    
+    Top/Trunk Low-Fanout (<=5) Routes:
+    
+    ------------------------------------------------------------------------------------------------------------------------------
+    Metric               Units    Pre-Route    Post-Route    Ratio    Pre-Route    Post-Route    PPMCC    Regression    Regression
+                                  Mean         Mean                   Std.Dev      Std.Dev                 X Slope       Y Slope
+    ------------------------------------------------------------------------------------------------------------------------------
+    Gate Delay           ns          0.000        0.000        -         0.000        0.000      1.000      1.000         1.000
+    S->S Wire Len.       um         81.683       85.750      1.050      80.547       85.175      1.000      1.057         0.946
+    S->S Wire Res.       Ohm        94.169      103.096      1.095      89.863       98.691      1.000      1.098         0.911
+    S->S Wire Res./um    Ohm         0.881        0.921      1.045       0.589        0.616      1.000      1.046         0.956
+    Total Wire Len.      um        109.237      117.400      1.075     154.485      166.029      1.000      1.075         0.930
+    Trans. Time          ns          0.005        0.005      1.066       0.003        0.004      0.997      1.077         0.924
+    Wire Cap.            fF         17.293       18.562      1.073      24.456       26.251      1.000      1.073         0.932
+    Wire Cap./um         fF          0.079        0.079      0.999       0.112        0.112      1.000      0.999         1.001
+    Wire Delay           ns          0.002        0.002      1.089       0.002        0.002      0.997      1.145         0.868
+    Wire Skew            ns          0.001        0.002      1.259       0.002        0.002      1.000      1.259         0.794
+    ------------------------------------------------------------------------------------------------------------------------------
+    
+    Top/Trunk High-Fanout (>5) Routes:
+    
+    -------------------------------------------------------------------------------------------------------------------------------
+    Metric               Units    Pre-Route    Post-Route    Ratio    Pre-Route    Post-Route    PPMCC     Regression    Regression
+                                  Mean         Mean                   Std.Dev      Std.Dev                  X Slope       Y Slope
+    -------------------------------------------------------------------------------------------------------------------------------
+    Gate Delay           ns          0.063        0.064      1.019      0.002         0.001       0.998       0.879         1.133
+    S->S Wire Len.       um         66.982       71.576      1.069     47.406        50.321       0.995       1.056         0.937
+    S->S Wire Res.       Ohm        84.558       93.523      1.106     53.137        60.060       0.995       1.124         0.880
+    S->S Wire Res./um    Ohm         1.460        1.439      0.986      0.441         0.265       0.949       0.570         1.580
+    Total Wire Len.      um        324.459      354.867      1.094     27.025        30.373       0.978       1.100         0.871
+    Trans. Time          ns          0.072        0.074      1.035      0.002         0.002       0.920       0.802         1.055
+    Wire Cap.            fF         50.570       55.031      1.088      4.280         4.644       0.969       1.051         0.893
+    Wire Cap./um         fF          0.156        0.155      0.995      0.000         0.001      -0.701      -1.744        -0.282
+    Wire Delay           ns          0.004        0.004      1.065      0.002         0.003       0.991       1.206         0.815
+    Wire Skew            ns          0.006        0.007      1.190      0.001         0.001       0.993       1.290         0.764
+    -------------------------------------------------------------------------------------------------------------------------------
+    
+    Leaf Routes:
+    
+    ------------------------------------------------------------------------------------------------------------------------------
+    Metric               Units    Pre-Route    Post-Route    Ratio    Pre-Route    Post-Route    PPMCC    Regression    Regression
+                                  Mean         Mean                   Std.Dev      Std.Dev                 X Slope       Y Slope
+    ------------------------------------------------------------------------------------------------------------------------------
+    Gate Delay           ns          0.093        0.093      0.995      0.005         0.005      0.979      1.014         0.946
+    S->S Wire Len.       um         39.782       51.954      1.306     17.724        25.258      0.795      1.133         0.558
+    S->S Wire Res.       Ohm        63.677       76.067      1.195     25.294        34.584      0.771      1.054         0.564
+    S->S Wire Res./um    Ohm         1.674        1.516      0.906      0.280         0.194      0.793      0.548         1.147
+    Total Wire Len.      um        275.666      289.976      1.052     33.877        37.033      0.969      1.059         0.886
+    Trans. Time          ns          0.091        0.091      1.009      0.008         0.008      0.990      1.036         0.945
+    Wire Cap.            fF         51.023       50.481      0.989      6.680         6.736      0.978      0.987         0.970
+    Wire Cap./um         fF          0.185        0.174      0.941      0.004         0.003      0.888      0.643         1.226
+    Wire Delay           ns          0.003        0.005      1.493      0.002         0.003      0.773      1.156         0.517
+    Wire Skew            ns          0.000        0.000        -        0.000         0.000      1.000      1.000         1.000
+    ------------------------------------------------------------------------------------------------------------------------------
+    
+    S->S: Measured source-to-sink; PPMCC: Pearson Product Moment Correlation Coefficient
+    
+    Top Wire Delay Differences (Top/Trunk Low-Fanout routes):
+    
+    ----------------------------------------------------
+    Route Sink Pin                        Difference (%)
+    ----------------------------------------------------
+    CTS_ccl_BUF_CLOCK_NODE_UID_Af509/I       -13.333
+    CTS_ccl_BUF_CLOCK_NODE_UID_Af508/I       -11.111
+    CTS_ccl_BUF_CLOCK_NODE_UID_Af50a/I         5.556
+    ----------------------------------------------------
+    
+    Clock Tree Layer Assignment (Top/Trunk Low-Fanout Routes):
+    
+    -----------------------------------------------------------------------------------------------
+    Layer                        Pre-Route    Post-Route    Res.           Cap.          RC
+                                                            (Ohm um^-1)    (fF um^-1)    (fs um^-2)
+    -----------------------------------------------------------------------------------------------
+    M3                           182.475um    189.000um        1.599         0.282         0.451
+    M4                            36.000um     45.800um        1.599         0.282         0.451
+    Preferred Layer Adherence    100.000%     100.000%           -             -             -
+    -----------------------------------------------------------------------------------------------
+    
+    No transition time violation increases to report
+    
+    Top Wire Delay Differences (Top/Trunk High-Fanout routes):
+    
+    ----------------------------------------------------
+    Route Sink Pin                        Difference (%)
+    ----------------------------------------------------
+    CTS_ccl_BUF_CLOCK_NODE_UID_Af4df/I        33.333
+    CTS_ccl_BUF_CLOCK_NODE_UID_Af4e0/I        30.769
+    CTS_ccl_BUF_CLOCK_NODE_UID_Af4e2/I        30.000
+    CTS_ccl_BUF_CLOCK_NODE_UID_Af4e3/I       -28.571
+    CTS_ccl_BUF_CLOCK_NODE_UID_Af4d4/I        27.273
+    ----------------------------------------------------
+    
+    Clock Tree Layer Assignment (Top/Trunk High-Fanout Routes):
+    
+    -----------------------------------------------------------------------------------------------
+    Layer                        Pre-Route    Post-Route    Res.           Cap.          RC
+                                                            (Ohm um^-1)    (fF um^-1)    (fs um^-2)
+    -----------------------------------------------------------------------------------------------
+    M2                             0.000um      7.000um        1.599         0.282         0.451
+    M3                           487.487um    537.800um        1.599         0.282         0.451
+    M4                           485.890um    519.800um        1.599         0.282         0.451
+    Preferred Layer Adherence    100.000%      99.342%           -             -             -
+    -----------------------------------------------------------------------------------------------
+    
+    No transition time violation increases to report
+    
+    Top Wire Delay Differences (Leaf routes):
+    
+    -------------------------------------
+    Route Sink Pin         Difference (%)
+    -------------------------------------
+    memory4_reg_34_/CP        -883.333
+    memory6_reg_131_/CP       -585.714
+    memory7_reg_131_/CP       -571.429
+    memory0_reg_130_/CP       -566.667
+    memory2_reg_143_/CP       -512.500
+    -------------------------------------
+    
+    Clock Tree Layer Assignment (Leaf Routes):
+    
+    ------------------------------------------------------------------------------------------------
+    Layer                        Pre-Route     Post-Route    Res.           Cap.          RC
+                                                             (Ohm um^-1)    (fF um^-1)    (fs um^-2)
+    ------------------------------------------------------------------------------------------------
+    M2                              0.000um     838.600um       1.599         0.282         0.451
+    M3                           5483.488um    6443.200um       1.599         0.282         0.451
+    M4                           6094.492um    4897.200um       1.599         0.282         0.451
+    Preferred Layer Adherence     100.000%       93.114%          -             -             -
+    ------------------------------------------------------------------------------------------------
+    
+    Transition Time Violating Nets (Leaf Routes)
+    ============================================
+    
+    Net: CTS_174:
+    
+    -------------------------------------------------------------------------
+    Layer                Pre-Route     Pre-Route     Post-Route    Post-Route
+                         Length        Via Count     Length        Via Count
+    -------------------------------------------------------------------------
+    M2                     0.000um      83            29.400um         83
+    M3                   165.768um      83           192.400um         81
+    M4                   146.915um     120           119.400um         69
+    -------------------------------------------------------------------------
+    Totals               311.000um     286           340.000um        233
+    -------------------------------------------------------------------------
+    Quantity             Pre-Route     Post-Route        -             -
+    -------------------------------------------------------------------------
+    S->WS OverSlew         0.000ns       0.001ns         -             -
+    S->WS Trans. Time      0.105ns       0.106ns         -             -
+    S->WS Wire Len.       22.323um      43.600um         -             -
+    S->WS Wire Res.       42.300Ohm     67.712Ohm        -             -
+    Wire Cap.             59.806fF      60.703fF         -             -
+    -------------------------------------------------------------------------
+    Pre-route worst sink: Q_reg_118_/CP.
+    Post-route worst sink: memory8_reg_103_/CP.
+    -------------------------------------------------------------------------
+    Driver instance: CTS_ccl_BUF_CLOCK_NODE_UID_Af4e0.
+    Driver fanout: 82.
+    Driver cell: CKBD12.
+    -------------------------------------------------------------------------
+    
+    Via Selection for Estimated Routes (rule default):
+    
+    ----------------------------------------------------------------
+    Layer    Via Cell        Res.     Cap.     RC       Top of Stack
+    Range                    (Ohm)    (fF)     (fs)     Only
+    ----------------------------------------------------------------
+    M1-M2    VIA12_1cut_V    1.500    0.032    0.047    false
+    M2-M3    VIA23_1cut      1.500    0.030    0.046    false
+    M3-M4    VIA34_1cut      1.500    0.030    0.046    false
+    M4-M5    VIA45_1cut      1.500    0.030    0.046    false
+    M5-M6    VIA56_1cut      1.500    0.028    0.043    false
+    M6-M7    VIA67_1cut      0.220    0.099    0.022    false
+    M7-M8    VIA78_1cut      0.220    0.119    0.026    false
+    ----------------------------------------------------------------
+    
+    Post-Route Via Usage Statistics:
+    
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+    Layer    Via Cell        Res.     Cap.     RC       Leaf     Leaf Usage    Leaf    Trunk    Trunk Usage    Trunk    Top      Top Usage    Top
+    Range                    (Ohm)    (fF)     (fs)     Usage    (%)           Tags    Usage    (%)            Tags     Usage    (%)          Tags
+                                                        Count                          Count                            Count                 
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+    M1-M2    VIA12_1cut_V    1.500    0.032    0.047    2720         98%       ER        45         94%        ER         -          -         -
+    M1-M2    VIA12_2cut_N    0.750    0.059    0.044      18          1%        -         2          4%          -        -          -         -
+    M1-M2    VIA12_2cut_S    0.750    0.059    0.044      24          1%        -         1          2%          -        -          -         -
+    M2-M3    VIA23_1cut      1.500    0.030    0.046    2687        100%       ER        48        100%        ER         -          -         -
+    M3-M4    VIA34_1cut      1.500    0.030    0.046    2452        100%       ER       115        100%        ER         -          -         -
+    ----------------------------------------------------------------------------------------------------------------------------------------------
+    
+    Tag Key:
+    	E=Used for route estimates;
+    	R=Most frequently used by router for this net type and layer transition.
+    
+    
+    Clock DAG stats after routing clock trees:
+      cell counts    : b=45, i=0, cg=0, l=0, total=45
+      cell areas     : b=358.560um^2, i=0.000um^2, cg=0.000um^2, l=0.000um^2, total=358.560um^2
+      gate capacitance : top=0.000pF, trunk=0.199pF, leaf=2.448pF, total=2.647pF
+      wire capacitance : top=0.000pF, trunk=0.202pF, leaf=2.120pF, total=2.322pF
+      wire lengths   : top=0.000um, trunk=1299.400um, leaf=12179.000um, total=13478.400um
+      sink capacitance : count=2720, total=2.448pF, avg=0.001pF, sd=0.000pF, min=0.001pF, max=0.001pF
+    Clock DAG net violations after routing clock trees:
+      Transition : {count=1, worst=[0.001ns]} avg=0.001ns sd=0.000ns
+    Clock tree state after routing clock trees:
+      clock_tree clk: worst slew is leaf(0.106),trunk(0.077),top(nil), margined worst slew is leaf(0.106),trunk(0.077),top(nil)
+      skew_group clk/CON: insertion delay [min=0.155, max=0.182, avg=0.169, sd=0.005], skew [0.027 vs 0.057, 100% {0.155, 0.168, 0.182}] (wid=0.026 ws=0.023) (gid=0.168 gs=0.023)
+    Clock network insertion delays are now [0.155ns, 0.182ns] average 0.169ns std.dev 0.005ns
+    Legalizer reserving space for clock trees... 
+    Legalizer reserving space for clock trees done.
+    PostConditioning... 
+      Update timing... 
+        Updating timing graph... 
+          
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: sram_w16_out
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in BcWc mode...
+End delay calculation. (MEM=2043.98 CPU=0:00:00.6 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:00.8  real=0:00:01.0  mem= 2044.0M) ***
+        Updating timing graph done.
+        Updating latch analysis... 
+        Updating latch analysis done.
+      Update timing done.
+      Invalidating timing
+      PostConditioning active optimizations:
+       - DRV fixing with cell sizing
+      
+      Currently running CTS, using active skew data
+      Rebuilding timing graph... 
+      Rebuilding timing graph done.
+      Rebuilding timing graph Clock DAG stats PostConditioning before bufferablility reset:
+      Rebuilding timing graph   cell counts    : b=45, i=0, cg=0, l=0, total=45
+      Rebuilding timing graph   cell areas     : b=358.560um^2, i=0.000um^2, cg=0.000um^2, l=0.000um^2, total=358.560um^2
+      Rebuilding timing graph   gate capacitance : top=0.000pF, trunk=0.199pF, leaf=2.448pF, total=2.647pF
+      Rebuilding timing graph   wire capacitance : top=0.000pF, trunk=0.202pF, leaf=2.120pF, total=2.322pF
+      Rebuilding timing graph   wire lengths   : top=0.000um, trunk=1299.400um, leaf=12179.000um, total=13478.400um
+      Rebuilding timing graph   sink capacitance : count=2720, total=2.448pF, avg=0.001pF, sd=0.000pF, min=0.001pF, max=0.001pF
+      Rebuilding timing graph Clock DAG net violations PostConditioning before bufferablility reset:
+      Rebuilding timing graph   Transition : {count=1, worst=[0.001ns]} avg=0.001ns sd=0.000ns
+      Resetting previous bufferability status on all nets so that PostConditioning will attempt to fix all clock tree violations.
+      Clock DAG stats PostConditioning initial state:
+        cell counts    : b=45, i=0, cg=0, l=0, total=45
+        cell areas     : b=358.560um^2, i=0.000um^2, cg=0.000um^2, l=0.000um^2, total=358.560um^2
+        gate capacitance : top=0.000pF, trunk=0.199pF, leaf=2.448pF, total=2.647pF
+        wire capacitance : top=0.000pF, trunk=0.202pF, leaf=2.120pF, total=2.322pF
+        wire lengths   : top=0.000um, trunk=1299.400um, leaf=12179.000um, total=13478.400um
+        sink capacitance : count=2720, total=2.448pF, avg=0.001pF, sd=0.000pF, min=0.001pF, max=0.001pF
+      Clock DAG net violations PostConditioning initial state:
+        Transition : {count=1, worst=[0.001ns]} avg=0.001ns sd=0.000ns
+      Recomputing CTS skew targets... 
+        Resolving skew group constraints... 
+          Solving LP: 1 skew groups; 2 fragments, 2 fraglets and 3 vertices; 25 variables and 66 constraints; tolerance 1
+        Resolving skew group constraints done.
+      Recomputing CTS skew targets done.
+      Fixing DRVs... 
+        Fixing clock tree DRVs: 
+        Fixing clock tree DRVs: .
+        Fixing clock tree DRVs: ..
+        Fixing clock tree DRVs: ...
+        Fixing clock tree DRVs: ... 20% 
+        Fixing clock tree DRVs: ... 20% .
+        Fixing clock tree DRVs: ... 20% ..
+        Fixing clock tree DRVs: ... 20% ...
+        Fixing clock tree DRVs: ... 20% ... 40% 
+        Fixing clock tree DRVs: ... 20% ... 40% .
+        Fixing clock tree DRVs: ... 20% ... 40% ..
+        Fixing clock tree DRVs: ... 20% ... 40% ...
+        Fixing clock tree DRVs: ... 20% ... 40% ... 60% 
+        Fixing clock tree DRVs: ... 20% ... 40% ... 60% .
+        Fixing clock tree DRVs: ... 20% ... 40% ... 60% ..
+        Fixing clock tree DRVs: ... 20% ... 40% ... 60% ...
+        Fixing clock tree DRVs: ... 20% ... 40% ... 60% ... 80% 
+        Fixing clock tree DRVs: ... 20% ... 40% ... 60% ... 80% .
+        Fixing clock tree DRVs: ... 20% ... 40% ... 60% ... 80% ..
+        Fixing clock tree DRVs: ... 20% ... 40% ... 60% ... 80% ...
+        Fixing clock tree DRVs: ... 20% ... 40% ... 60% ... 80% ... 100% 
+        CCOpt-PostConditioning: considered: 46, tested: 46, violation detected: 1, cannot run: 0, attempted: 1, failed: 0, sized: 1
+        
+        PRO Statistics: Fix DRVs (cell sizing):
+        =======================================
+        
+        Cell changes by Net Type:
+        
+        ------------------------------
+        Net Type    Attempted    Sized
+        ------------------------------
+        top             0          0
+        trunk           0          0
+        leaf            1          1
+        ------------------------------
+        Total           1          1
+        ------------------------------
+        
+        Upsized: 1, Downsized: 0, Sized but same area: 0, Unchanged: 0, Area change: 2.160um^2
+        Max. move: 0.000um, Min. move: 0.000um, Avg. move: 0.000um
+        
+        Clock DAG stats PostConditioning after DRV fixing:
+          cell counts    : b=45, i=0, cg=0, l=0, total=45
+          cell areas     : b=360.720um^2, i=0.000um^2, cg=0.000um^2, l=0.000um^2, total=360.720um^2
+          gate capacitance : top=0.000pF, trunk=0.200pF, leaf=2.448pF, total=2.648pF
+          wire capacitance : top=0.000pF, trunk=0.202pF, leaf=2.120pF, total=2.322pF
+          wire lengths   : top=0.000um, trunk=1299.400um, leaf=12179.000um, total=13478.400um
+          sink capacitance : count=2720, total=2.448pF, avg=0.001pF, sd=0.000pF, min=0.001pF, max=0.001pF
+        Clock DAG net violations PostConditioning after DRV fixing:none
+        Clock tree state PostConditioning after DRV fixing:
+          clock_tree clk: worst slew is leaf(0.105),trunk(0.077),top(nil), margined worst slew is leaf(0.105),trunk(0.077),top(nil)
+          skew_group clk/CON: insertion delay [min=0.155, max=0.182, avg=0.169, sd=0.005], skew [0.027 vs 0.057, 100% {0.155, 0.168, 0.182}] (wid=0.026 ws=0.023) (gid=0.167 gs=0.022)
+        Clock network insertion delays are now [0.155ns, 0.182ns] average 0.169ns std.dev 0.005ns
+      Fixing DRVs done.
+      
+      Slew Diagnostics: After DRV fixing
+      ==================================
+      
+      Global Causes:
+      
+      -------------------------------------
+      Cause
+      -------------------------------------
+      DRV fixing with buffering is disabled
+      -------------------------------------
+      
+      Top 5 overslews:
+      
+      ---------------------------------
+      Overslew    Causes    Driving Pin
+      ---------------------------------
+        (empty table)
+      ---------------------------------
+      
+      Slew Diagnostics Counts:
+      
+      -------------------
+      Cause    Occurences
+      -------------------
+        (empty table)
+      -------------------
+      
+      Reconnecting optimized routes... 
+      Reconnecting optimized routes done.
+      Refining placement... 
+*
+* Starting clock placement refinement...
+*
+* First pass: Refine non-clock instances...
+*
+*** Starting refinePlace (0:02:10 mem=1491.4M) ***
+Total net bbox length = 1.096e+05 (3.337e+04 7.628e+04) (ext = 2.764e+04)
+Density distribution unevenness ratio = 1.365%
+Move report: Detail placement moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+	Runtime: CPU: 0:00:00.1 REAL: 0:00:00.0 MEM: 1491.4MB
+Summary Report:
+Instances move: 0 (out of 1905 movable)
+Mean displacement: 0.00 um
+Max displacement: 0.00 um 
+Total net bbox length = 1.096e+05 (3.337e+04 7.628e+04) (ext = 2.764e+04)
+Runtime: CPU: 0:00:00.1 REAL: 0:00:01.0 MEM: 1491.4MB
+*** Finished refinePlace (0:02:10 mem=1491.4M) ***
+*
+* Second pass: Refine clock instances...
+*
+*** Starting refinePlace (0:02:10 mem=1491.4M) ***
+Total net bbox length = 1.096e+05 (3.337e+04 7.628e+04) (ext = 2.764e+04)
+Density distribution unevenness ratio = 0.450%
+Move report: Detail placement moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+	Runtime: CPU: 0:00:00.1 REAL: 0:00:00.0 MEM: 1491.4MB
+Summary Report:
+Instances move: 0 (out of 4670 movable)
+Mean displacement: 0.00 um
+Max displacement: 0.00 um 
+Total net bbox length = 1.096e+05 (3.337e+04 7.628e+04) (ext = 2.764e+04)
+Runtime: CPU: 0:00:00.1 REAL: 0:00:00.0 MEM: 1491.4MB
+*** Finished refinePlace (0:02:10 mem=1491.4M) ***
+*
+* No clock instances moved during refinement.
+*
+* Finished with clock placement refinement.
+*
+
+      Refining placement done.
+      Set dirty flag on 2 insts, 4 nets
+      Updating RC parasitics by calling: "extractRC -noRouteCheck"... Extraction called for design 'sram_w16_out' of instances=11106 and nets=4839 using extraction engine 'preRoute' .
+PreRoute RC Extraction called for design sram_w16_out.
+RC Extraction called in multi-corner(2) mode.
+**WARN: (IMPEXT-3442):	The version of the capacitance table file being used is obsolete and is no longer recommended. For improved accuracy, generate the capacitance table file using the generateCapTbl command.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.00000 1.00000 
+Resistance Scaling Factor    : 1.00000 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 1.00000 
+Clock Res. Scaling Factor    : 1.00000 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.2  Real Time: 0:00:00.0  MEM: 1491.441M)
+
+      Updating RC parasitics by calling: "extractRC -noRouteCheck" done.
+      Rebuilding timing graph... 
+      Rebuilding timing graph done.
+      Rebuilding timing graph Clock DAG stats PostConditioning final:
+      Rebuilding timing graph   cell counts    : b=45, i=0, cg=0, l=0, total=45
+      Rebuilding timing graph   cell areas     : b=360.720um^2, i=0.000um^2, cg=0.000um^2, l=0.000um^2, total=360.720um^2
+      Rebuilding timing graph   gate capacitance : top=0.000pF, trunk=0.200pF, leaf=2.448pF, total=2.648pF
+      Rebuilding timing graph   wire capacitance : top=0.000pF, trunk=0.202pF, leaf=2.120pF, total=2.322pF
+      Rebuilding timing graph   wire lengths   : top=0.000um, trunk=1299.400um, leaf=12179.000um, total=13478.400um
+      Rebuilding timing graph   sink capacitance : count=2720, total=2.448pF, avg=0.001pF, sd=0.000pF, min=0.001pF, max=0.001pF
+      Rebuilding timing graph Clock DAG net violations PostConditioning final:none
+    PostConditioning done.
+Net route status summary:
+  Clock:        46 (unrouted=0, trialRouted=0, noStatus=0, routed=0, fixed=46)
+  Non-clock:  4791 (unrouted=0, trialRouted=4791, noStatus=0, routed=0, fixed=0)
+(Not counting 2 nets with <2 term connections)
+    Clock DAG stats after post-conditioning:
+      cell counts    : b=45, i=0, cg=0, l=0, total=45
+      cell areas     : b=360.720um^2, i=0.000um^2, cg=0.000um^2, l=0.000um^2, total=360.720um^2
+      gate capacitance : top=0.000pF, trunk=0.200pF, leaf=2.448pF, total=2.648pF
+      wire capacitance : top=0.000pF, trunk=0.202pF, leaf=2.120pF, total=2.322pF
+      wire lengths   : top=0.000um, trunk=1299.400um, leaf=12179.000um, total=13478.400um
+      sink capacitance : count=2720, total=2.448pF, avg=0.001pF, sd=0.000pF, min=0.001pF, max=0.001pF
+    Clock DAG net violations after post-conditioning:none
+    Clock tree state after post-conditioning:
+      clock_tree clk: worst slew is leaf(0.105),trunk(0.077),top(nil), margined worst slew is leaf(0.105),trunk(0.077),top(nil)
+      skew_group clk/CON: insertion delay [min=0.155, max=0.182, avg=0.169, sd=0.005], skew [0.027 vs 0.057, 100% {0.155, 0.168, 0.182}] (wid=0.026 ws=0.023) (gid=0.167 gs=0.022)
+    Clock network insertion delays are now [0.155ns, 0.182ns] average 0.169ns std.dev 0.005ns
+  Updating netlist done.
+  
+  Clock DAG stats at end of CTS:
+  ==============================
+  
+  -------------------------------
+  Cell type      Count    Area
+  -------------------------------
+  Buffers         45      360.720
+  Inverters        0        0.000
+  Clock Gates      0        0.000
+  Clock Logic      0        0.000
+  All             45      360.720
+  -------------------------------
+  
+  
+  Clock DAG wire lengths at end of CTS:
+  =====================================
+  
+  --------------------
+  Type     Wire Length
+  --------------------
+  Top           0.000
+  Trunk      1299.400
+  Leaf      12179.000
+  Total     13478.400
+  --------------------
+  
+  
+  Clock DAG capacitances at end of CTS:
+  =====================================
+  
+  --------------------------------
+  Type     Gate     Wire     Total
+  --------------------------------
+  Top      0.000    0.000    0.000
+  Trunk    0.200    0.202    0.402
+  Leaf     2.448    2.120    4.568
+  Total    2.648    2.322    4.970
+  --------------------------------
+  
+  
+  Clock DAG sink capacitances at end of CTS:
+  ==========================================
+  
+  --------------------------------------------------------
+  Count    Total    Average    Std. Dev.    Min      Max
+  --------------------------------------------------------
+  2720     2.448     0.001       0.000      0.001    0.001
+  --------------------------------------------------------
+  
+  
+  Clock DAG net violations at end of CTS:
+  =======================================
+  
+  None
+  
+  
+  Clock tree summary at end of CTS:
+  =================================
+  
+  -----------------------------------------------------
+  Clock Tree        Worst Trunk Slew    Worst Leaf Slew
+  -----------------------------------------------------
+  clock_tree clk         0.077               0.105
+  -----------------------------------------------------
+  
+  
+  Skew group summary at end of CTS:
+  =================================
+  
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Half-corner      Skew Group    Min ID    Max ID    Skew     Skew target    Wire skew    Worst sink skew    Average ID    Std.Dev    Skew window occupancy
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------
+  WC:setup.late    clk/CON       0.155     0.182     0.027       0.057         0.023           0.011           0.169        0.005     100% {0.155, 0.168, 0.182}
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
+  Clock network insertion delays are now [0.155ns, 0.182ns] average 0.169ns std.dev 0.005ns
+  
+  Found a total of 0 clock tree pins with a slew violation.
+  
+Synthesizing clock trees done.
+Connecting clock gate test enables... 
+Connecting clock gate test enables done.
+**WARN: (IMPCCOPT-2015):	Innovus will not update I/O latencies for the following reason(s):
+ * CCOpt property update_io_latency is false
+
+Setting all clocks to propagated mode.
+Resetting all latency settings from fanout cone of clock 'clk'
+Resetting all latency settings from fanout cone of clock 'clk'
+Clock DAG stats after update timingGraph:
+  cell counts    : b=45, i=0, cg=0, l=0, total=45
+  cell areas     : b=360.720um^2, i=0.000um^2, cg=0.000um^2, l=0.000um^2, total=360.720um^2
+  gate capacitance : top=0.000pF, trunk=0.200pF, leaf=2.448pF, total=2.648pF
+  wire capacitance : top=0.000pF, trunk=0.202pF, leaf=2.120pF, total=2.322pF
+  wire lengths   : top=0.000um, trunk=1299.400um, leaf=12179.000um, total=13478.400um
+  sink capacitance : count=2720, total=2.448pF, avg=0.001pF, sd=0.000pF, min=0.001pF, max=0.001pF
+Clock DAG net violations after update timingGraph:none
+Clock tree state after update timingGraph:
+  clock_tree clk: worst slew is leaf(0.105),trunk(0.077),top(nil), margined worst slew is leaf(0.105),trunk(0.077),top(nil)
+  skew_group clk/CON: insertion delay [min=0.155, max=0.182, avg=0.169, sd=0.005], skew [0.027 vs 0.057, 100% {0.155, 0.168, 0.182}] (wid=0.026 ws=0.023) (gid=0.167 gs=0.022)
+Clock network insertion delays are now [0.155ns, 0.182ns] average 0.169ns std.dev 0.005ns
+Logging CTS constraint violations... 
+  No violations found.
+Logging CTS constraint violations done.
+Synthesizing clock trees with CCOpt done.
+**INFO: setDesignMode -flowEffort standard -> setting 'setOptMode -allEndPoints true' for the duration of this command.
+-powerEffort high                          # enums={none low high}, default=none, user setting
+-leakageToDynamicRatio 0.5                 # float, default=1, user setting
+-setupDynamicPowerViewAsDefaultView false
+                                           # bool, default=false, private
+GigaOpt running with 8 threads.
+**WARN: (IMPOPT-3564):	The following cells are set dont_use temporarily by the tool because there are no rows defined for their technology site, or they are not placeable in any power domain. To avoid this message, review the floorplan, msv setting, the library setting or set manualy those cells as dont_use.
+	Cell FILL1_LL, site bcore.
+	Cell FILL_NW_HH, site bcore.
+	Cell FILL_NW_LL, site bcore.
+	Cell GFILL, site gacore.
+	Cell GFILL10, site gacore.
+	Cell GFILL2, site gacore.
+	Cell GFILL3, site gacore.
+	Cell GFILL4, site gacore.
+	Cell LVLLHCD1, site bcore.
+	Cell LVLLHCD2, site bcore.
+	Cell LVLLHCD4, site bcore.
+	Cell LVLLHCD8, site bcore.
+	Cell LVLLHD1, site bcore.
+	Cell LVLLHD2, site bcore.
+	Cell LVLLHD4, site bcore.
+	Cell LVLLHD8, site bcore.
+.
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 1493.8M, totSessionCpu=0:02:12 **
+*** optDesign -postCTS ***
+DRC Margin: user margin 0.0; extra margin 0.2
+Hold Target Slack: user slack 0
+Setup Target Slack: user slack 0; extra slack 0.1
+setUsefulSkewMode -noEcoRoute
+**INFO: setOptMode -powerEffort high -> Total Power Opt will be called for all Setup Timing optDesign commands, with leakageToDynamicRatio 0.5.
+-powerEffort high                          # enums={none low high}, default=none, user setting
+-leakageToDynamicRatio 0.5                 # float, default=1, user setting
+-setupDynamicPowerViewAsDefaultView false
+                                           # bool, default=false, private
+Start to check current routing status for nets...
+All nets are already routed correctly.
+End to check current routing status for nets (mem=1493.8M)
+Compute RC Scale Done ...
+** Profile ** Start :  cpu=0:00:00.0, mem=1621.4M
+** Profile ** Other data :  cpu=0:00:00.0, mem=1621.4M
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: sram_w16_out
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in BcWc mode...
+End delay calculation. (MEM=2017.11 CPU=0:00:00.6 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:00.7  real=0:00:00.0  mem= 2017.1M) ***
+*** Done Building Timing Graph (cpu=0:00:00.9 real=0:00:00.0 totSessionCpu=0:02:14 mem=2017.1M)
+** Profile ** Overall slacks :  cpu=0:00:01.0, mem=1909.5M
+** Profile ** DRVs :  cpu=0:00:00.1, mem=1909.5M
+
+------------------------------------------------------------
+             Initial Summary                             
+------------------------------------------------------------
+
+Setup views included:
+ WC_VIEW 
+
++--------------------+---------+
+|     Setup mode     |   all   |
++--------------------+---------+
+|           WNS (ns):|  0.967  |
+|           TNS (ns):|  0.000  |
+|    Violating Paths:|    0    |
+|          All Paths:|  5600   |
++--------------------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 49.234%
+       (94.310% with Fillers)
+------------------------------------------------------------
+** Profile ** Report data :  cpu=0:00:00.0, mem=1909.5M
+**optDesign ... cpu = 0:00:01, real = 0:00:00, mem = 1543.1M, totSessionCpu=0:02:14 **
+** INFO : this run is activating low effort ccoptDesign flow
+
+**WARN: (IMPOPT-3663):	Power view is not set. First setup analysis view (WC_VIEW) will be treated as power view and VT partitioning will be done on basis of leakage specified in this view. If this is incorrect, specify correct power view via command "set_power_analysis_mode -analysis_view <view_name>".
+
+Type 'man IMPOPT-3663' for more detail.
+
+Power view               = WC_VIEW
+Number of VT partitions  = 2
+Standard cells in design = 811
+Instances in design      = 4670
+
+Instance distribution across the VT partitions:
+
+ LVT : inst = 186 (4.0%), cells = 335 (41%)
+   Lib tcbn65gpluswc        : inst = 186 (4.0%)
+
+ HVT : inst = 4484 (96.0%), cells = 457 (56%)
+   Lib tcbn65gpluswc        : inst = 4484 (96.0%)
+
+Reporting took 0 sec
+*** Starting optimizing excluded clock nets MEM= 1543.1M) ***
+*info: No excluded clock nets to be optimized.
+*** Finished optimizing excluded clock nets (CPU Time= 0:00:00.0  MEM= 1543.1M) ***
+*** Starting optimizing excluded clock nets MEM= 1543.1M) ***
+*info: No excluded clock nets to be optimized.
+*** Finished optimizing excluded clock nets (CPU Time= 0:00:00.0  MEM= 1543.1M) ***
+Include MVT Delays for Hold Opt
+*** Timing Is met
+*** Check timing (0:00:00.0)
+**INFO: Num dontuse cells 97, Num usable cells 750
+optDesignOneStep: Leakage Power Flow
+**INFO: Num dontuse cells 97, Num usable cells 750
+**INFO: Num dontuse cells 97, Num usable cells 750
+optDesignOneStep: Leakage Power Flow
+**INFO: Num dontuse cells 97, Num usable cells 750
+Info: 46 nets with fixed/cover wires excluded.
+Info: 46 clock nets excluded from IPO operation.
+**optDesign ... cpu = 0:00:02, real = 0:00:01, mem = 1537.0M, totSessionCpu=0:02:15 **
+** Profile ** Start :  cpu=0:00:00.0, mem=1537.0M
+** Profile ** Other data :  cpu=0:00:00.0, mem=1537.0M
+** Profile ** Overall slacks :  cpu=0:00:00.1, mem=1610.5M
+** Profile ** DRVs :  cpu=0:00:00.1, mem=1610.5M
+
+------------------------------------------------------------
+        Before Power Reclaim                             
+------------------------------------------------------------
+
+Setup views included:
+ WC_VIEW 
+
++--------------------+---------+
+|     Setup mode     |   all   |
++--------------------+---------+
+|           WNS (ns):|  0.967  |
+|           TNS (ns):|  0.000  |
+|    Violating Paths:|    0    |
+|          All Paths:|  5600   |
++--------------------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 49.234%
+       (94.310% with Fillers)
+------------------------------------------------------------
+** Profile ** Report data :  cpu=0:00:00.0, mem=1610.5M
+Info: 46 nets with fixed/cover wires excluded.
+Info: 46 clock nets excluded from IPO operation.
+
+Begin Power Analysis
+
+    0.00V	    VSS
+    0.90V	    VDD
+
+Begin Processing Timing Library for Power Calculation
+
+Begin Processing Timing Library for Power Calculation
+
+
+
+Begin Processing Power Net/Grid for Power Calculation
+
+Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total)=1178.25MB/1178.25MB)
+
+Begin Processing Timing Window Data for Power Calculation
+
+CK: assigning clock clk to net clk
+Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total)=1178.25MB/1178.25MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total)=1178.25MB/1178.25MB)
+
+Begin Processing Signal Activity
+
+
+Starting Levelizing
+2025-Mar-22 13:14:35 (2025-Mar-22 20:14:35 GMT)
+2025-Mar-22 13:14:35 (2025-Mar-22 20:14:35 GMT): 10%
+2025-Mar-22 13:14:35 (2025-Mar-22 20:14:35 GMT): 20%
+2025-Mar-22 13:14:35 (2025-Mar-22 20:14:35 GMT): 30%
+2025-Mar-22 13:14:35 (2025-Mar-22 20:14:35 GMT): 40%
+2025-Mar-22 13:14:35 (2025-Mar-22 20:14:35 GMT): 50%
+2025-Mar-22 13:14:35 (2025-Mar-22 20:14:35 GMT): 60%
+2025-Mar-22 13:14:35 (2025-Mar-22 20:14:35 GMT): 70%
+2025-Mar-22 13:14:35 (2025-Mar-22 20:14:35 GMT): 80%
+2025-Mar-22 13:14:35 (2025-Mar-22 20:14:35 GMT): 90%
+
+Finished Levelizing
+2025-Mar-22 13:14:35 (2025-Mar-22 20:14:35 GMT)
+
+Starting Activity Propagation
+2025-Mar-22 13:14:35 (2025-Mar-22 20:14:35 GMT)
+2025-Mar-22 13:14:35 (2025-Mar-22 20:14:35 GMT): 10%
+
+Finished Activity Propagation
+2025-Mar-22 13:14:35 (2025-Mar-22 20:14:35 GMT)
+Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total)=1178.25MB/1178.25MB)
+
+Begin Power Computation
+
+      ----------------------------------------------------------
+      # of cell(s) missing both power/leakage table: 0
+      # of cell(s) missing power table: 0
+      # of cell(s) missing leakage table: 0
+      # of MSMV cell(s) missing power_level: 0
+      ----------------------------------------------------------
+
+
+
+Starting Calculating power
+2025-Mar-22 13:14:35 (2025-Mar-22 20:14:35 GMT)
+2025-Mar-22 13:14:35 (2025-Mar-22 20:14:35 GMT): 10%
+2025-Mar-22 13:14:35 (2025-Mar-22 20:14:35 GMT): 20%
+2025-Mar-22 13:14:35 (2025-Mar-22 20:14:35 GMT): 30%
+2025-Mar-22 13:14:35 (2025-Mar-22 20:14:35 GMT): 40%
+2025-Mar-22 13:14:35 (2025-Mar-22 20:14:35 GMT): 50%
+2025-Mar-22 13:14:35 (2025-Mar-22 20:14:35 GMT): 60%
+2025-Mar-22 13:14:35 (2025-Mar-22 20:14:35 GMT): 70%
+2025-Mar-22 13:14:35 (2025-Mar-22 20:14:35 GMT): 80%
+2025-Mar-22 13:14:35 (2025-Mar-22 20:14:35 GMT): 90%
+
+Finished Calculating power
+2025-Mar-22 13:14:35 (2025-Mar-22 20:14:35 GMT)
+Ended Power Computation: (cpu=0:00:00, real=0:00:00, mem(process/total)=1183.55MB/1183.55MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total)=1183.55MB/1183.55MB)
+
+Ended Power Analysis: (cpu=0:00:00, real=0:00:00, mem(process/total)=1183.55MB/1183.55MB)
+
+Begin Static Power Report Generation
+*----------------------------------------------------------------------------------------
+*	Innovus 15.23-s045_1 (64bit) 04/22/2016 12:32 (Linux 2.6.18-194.el5)
+*	
+*
+* 	Date & Time:	2025-Mar-22 13:14:35 (2025-Mar-22 20:14:35 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: sram_w16_out
+*
+*	Liberty Libraries used:
+*	        WC_VIEW: /home/linux/ieng6/ee260bwi25/public/PDKdata/lib/tcbn65gpluswc.lib
+*
+*	Power Domain used:
+*		Rail:        VDD 	Voltage:        0.9
+*
+*       Power View : WC_VIEW
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs
+*
+*       report_power
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:        6.29432425 	   77.1151%
+Total Switching Power:       1.52537803 	   18.6882%
+Total Leakage Power:         0.34254705 	    4.1967%
+Total Power:                 8.16224961
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                         5.885      0.1238      0.1565       6.165       75.53
+Macro                                  0           0      0.1564      0.1564       1.916
+IO                                     0           0           0           0           0
+Combinational                    0.07656      0.2638     0.02196      0.3623       4.439
+Clock (Combinational)             0.3331       1.138    0.007648       1.479       18.11
+Clock (Sequential)                     0           0           0           0           0
+-----------------------------------------------------------------------------------------
+Total                              6.294       1.525      0.3425       8.162         100
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                       0.9      6.294       1.525      0.3425       8.162         100
+
+
+Clock                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+clk                               0.3331       1.138    0.007648       1.479       18.11
+-----------------------------------------------------------------------------------------
+Total                             0.3331       1.138    0.007648       1.479       18.11
+-----------------------------------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+* 		Highest Average Power:   CTS_ccl_BUF_clk_G0_L2_5 (CKBD16): 	   0.04203
+* 		Highest Leakage Power:   CTS_ccl_BUF_clk_G0_L1_1 (CKBD16): 	 0.0002228
+* 		Total Cap: 	3.55898e-11 F
+* 		Total instances in design:  8973
+* 		Total instances in design with no power:     0
+*                Total instances in design with no activty:     0
+
+* 		Total Fillers and Decap:  4303
+-----------------------------------------------------------------------------------------
+ 
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total)=1183.55MB/1183.55MB)
+
+Begin: Power Optimization
+Reclaim Optimization WNS Slack 0.000  TNS Slack 0.000 Density 94.31
++----------+---------+--------+--------+------------+--------+
+| Density  | Commits |  WNS   |  TNS   |    Real    |  Mem   |
++----------+---------+--------+--------+------------+--------+
+|    94.31%|        -|   0.000|   0.000|   0:00:00.0| 2296.9M|
+|    94.31%|        0|   0.000|   0.000|   0:00:03.0| 2296.9M|
+|    94.31%|        0|   0.000|   0.000|   0:00:00.0| 2297.0M|
+|    94.31%|        0|   0.000|   0.000|   0:00:01.0| 2297.0M|
+|    94.31%|        0|   0.000|   0.000|   0:00:00.0| 2297.0M|
++----------+---------+--------+--------+------------+--------+
+Reclaim Optimization End WNS Slack 0.000  TNS Slack 0.000 Density 94.31
+** Finished Core Power Optimization (cpu = 0:00:04.8) (real = 0:00:05.0) **
+Executing incremental physical updates
+*** Starting refinePlace (0:02:22 mem=2087.6M) ***
+Total net bbox length = 1.096e+05 (3.337e+04 7.628e+04) (ext = 2.764e+04)
+Density distribution unevenness ratio = 0.719%
+Density distribution unevenness ratio = 0.719%
+Move report: Detail placement moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+	Runtime: CPU: 0:00:00.1 REAL: 0:00:00.0 MEM: 2087.6MB
+Summary Report:
+Instances move: 0 (out of 4625 movable)
+Mean displacement: 0.00 um
+Max displacement: 0.00 um 
+Total net bbox length = 1.096e+05 (3.337e+04 7.628e+04) (ext = 2.764e+04)
+Runtime: CPU: 0:00:00.1 REAL: 0:00:00.0 MEM: 2087.6MB
+*** Finished refinePlace (0:02:22 mem=2087.6M) ***
+Checking setup slack degradation ...
+Info: 46 nets with fixed/cover wires excluded.
+Info: 46 clock nets excluded from IPO operation.
+Info: 46 nets with fixed/cover wires excluded.
+Info: 46 clock nets excluded from IPO operation.
++--------+---------+--------+---------+----------+------------+--------+----------+---------+----------------------+
+|  WNS   | All WNS |  TNS   | All TNS | Density  |    Real    |  Mem   |Worst View|Pathgroup|      End Point       |
++--------+---------+--------+---------+----------+------------+--------+----------+---------+----------------------+
+|   0.071|    0.967|   0.000|    0.000|    94.31%|   0:00:00.0| 2371.8M|   WC_VIEW|       NA| NA                   |
++--------+---------+--------+---------+----------+------------+--------+----------+---------+----------------------+
+
+*** Finish post-CTS Optimize Step (cpu=0:00:00.0 real=0:00:00.0 mem=2371.8M) ***
+
+*** Finish post-CTS Setup Fixing (cpu=0:00:00.1 real=0:00:00.0 mem=2371.8M) ***
+
+Begin Power Analysis
+
+    0.00V	    VSS
+    0.90V	    VDD
+Begin Processing Timing Library for Power Calculation
+
+Begin Processing Timing Library for Power Calculation
+
+
+
+Begin Processing Power Net/Grid for Power Calculation
+
+Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total)=1275.50MB/1275.50MB)
+
+Begin Processing Timing Window Data for Power Calculation
+
+Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total)=1275.50MB/1275.50MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total)=1275.50MB/1275.50MB)
+
+Begin Processing Signal Activity
+
+
+Starting Activity Propagation
+2025-Mar-22 13:14:44 (2025-Mar-22 20:14:44 GMT)
+2025-Mar-22 13:14:44 (2025-Mar-22 20:14:44 GMT): 10%
+
+Finished Activity Propagation
+2025-Mar-22 13:14:44 (2025-Mar-22 20:14:44 GMT)
+Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total)=1275.50MB/1275.50MB)
+
+Begin Power Computation
+
+      ----------------------------------------------------------
+      # of cell(s) missing both power/leakage table: 0
+      # of cell(s) missing power table: 0
+      # of cell(s) missing leakage table: 0
+      # of MSMV cell(s) missing power_level: 0
+      ----------------------------------------------------------
+
+
+
+Starting Calculating power
+2025-Mar-22 13:14:44 (2025-Mar-22 20:14:44 GMT)
+2025-Mar-22 13:14:44 (2025-Mar-22 20:14:44 GMT): 10%
+2025-Mar-22 13:14:44 (2025-Mar-22 20:14:44 GMT): 20%
+2025-Mar-22 13:14:44 (2025-Mar-22 20:14:44 GMT): 30%
+2025-Mar-22 13:14:44 (2025-Mar-22 20:14:44 GMT): 40%
+2025-Mar-22 13:14:44 (2025-Mar-22 20:14:44 GMT): 50%
+2025-Mar-22 13:14:44 (2025-Mar-22 20:14:44 GMT): 60%
+2025-Mar-22 13:14:44 (2025-Mar-22 20:14:44 GMT): 70%
+2025-Mar-22 13:14:44 (2025-Mar-22 20:14:44 GMT): 80%
+2025-Mar-22 13:14:44 (2025-Mar-22 20:14:44 GMT): 90%
+
+Finished Calculating power
+2025-Mar-22 13:14:44 (2025-Mar-22 20:14:44 GMT)
+Ended Power Computation: (cpu=0:00:00, real=0:00:00, mem(process/total)=1291.57MB/1291.57MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total)=1291.57MB/1291.57MB)
+
+Ended Power Analysis: (cpu=0:00:00, real=0:00:00, mem(process/total)=1291.57MB/1291.57MB)
+
+Begin Static Power Report Generation
+*----------------------------------------------------------------------------------------
+*	Innovus 15.23-s045_1 (64bit) 04/22/2016 12:32 (Linux 2.6.18-194.el5)
+*	
+*
+* 	Date & Time:	2025-Mar-22 13:14:44 (2025-Mar-22 20:14:44 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: sram_w16_out
+*
+*	Liberty Libraries used:
+*	        WC_VIEW: /home/linux/ieng6/ee260bwi25/public/PDKdata/lib/tcbn65gpluswc.lib
+*
+*	Power Domain used:
+*		Rail:        VDD 	Voltage:        0.9
+*
+*       Power View : WC_VIEW
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs
+*
+*       report_power
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:        6.29432425 	   77.1151%
+Total Switching Power:       1.52537803 	   18.6882%
+Total Leakage Power:         0.34254705 	    4.1967%
+Total Power:                 8.16224961
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                         5.885      0.1238      0.1565       6.165       75.53
+Macro                                  0           0      0.1564      0.1564       1.916
+IO                                     0           0           0           0           0
+Combinational                    0.07656      0.2638     0.02196      0.3623       4.439
+Clock (Combinational)             0.3331       1.138    0.007648       1.479       18.11
+Clock (Sequential)                     0           0           0           0           0
+-----------------------------------------------------------------------------------------
+Total                              6.294       1.525      0.3425       8.162         100
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                       0.9      6.294       1.525      0.3425       8.162         100
+
+
+Clock                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+clk                               0.3331       1.138    0.007648       1.479       18.11
+-----------------------------------------------------------------------------------------
+Total                             0.3331       1.138    0.007648       1.479       18.11
+-----------------------------------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+* 		Highest Average Power:   CTS_ccl_BUF_clk_G0_L2_5 (CKBD16): 	   0.04203
+* 		Highest Leakage Power:   CTS_ccl_BUF_clk_G0_L1_1 (CKBD16): 	 0.0002228
+* 		Total Cap: 	3.55898e-11 F
+* 		Total instances in design:  8973
+* 		Total instances in design with no power:     0
+*                Total instances in design with no activty:     0
+
+* 		Total Fillers and Decap:  4303
+-----------------------------------------------------------------------------------------
+ 
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total)=1291.57MB/1291.57MB)
+
+*** Finished Leakage Power Optimization (cpu=0:00:09, real=0:00:08, mem=1604.37M, totSessionCpu=0:02:26).
+doiPBLastSyncSlave
+Begin Static Power Report Generation
+*----------------------------------------------------------------------------------------
+*	Innovus 15.23-s045_1 (64bit) 04/22/2016 12:32 (Linux 2.6.18-194.el5)
+*	
+*
+* 	Date & Time:	2025-Mar-22 13:14:44 (2025-Mar-22 20:14:44 GMT)
+*
+*----------------------------------------------------------------------------------------
+
+*
+
+*	Design: sram_w16_out
+
+*
+
+*	Liberty Libraries used: 
+
+*	        WC_VIEW: /home/linux/ieng6/ee260bwi25/public/PDKdata/lib/tcbn65gpluswc.lib
+
+*
+
+*	Power Domain used: 
+
+*		Rail:        VDD 	Voltage:        0.9 
+
+*
+
+*       Power View : WC_VIEW
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+
+*
+
+*	Time Units = 1e-09 secs 
+
+*
+
+*       report_power -outfile ./timingReports/sram_w16_out_postCTS.power
+
+*
+
+-----------------------------------------------------------------------------------------
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:        6.29432425 	   77.1151%
+Total Switching Power:       1.52537803 	   18.6882%
+Total Leakage Power:         0.34254705 	    4.1967%
+Total Power:                 8.16224961
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                         5.885      0.1238      0.1565       6.165       75.53
+Macro                                  0           0      0.1564      0.1564       1.916
+IO                                     0           0           0           0           0
+Combinational                    0.07656      0.2638     0.02196      0.3623       4.439
+Clock (Combinational)             0.3331       1.138    0.007648       1.479       18.11
+Clock (Sequential)                     0           0           0           0           0
+-----------------------------------------------------------------------------------------
+Total                              6.294       1.525      0.3425       8.162         100
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                       0.9      6.294       1.525      0.3425       8.162         100
+
+
+Clock                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+clk                               0.3331       1.138    0.007648       1.479       18.11
+-----------------------------------------------------------------------------------------
+Total                             0.3331       1.138    0.007648       1.479       18.11
+-----------------------------------------------------------------------------------------
+Total leakage power = 0.342547 mW
+Cell usage statistics:  
+Library tcbn65gpluswc , 8973 cells ( 100.000000%) , 0.342547 mW ( 100.000000% ) 
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total)=1220.02MB/1220.02MB)
+
+
+Output file is ./timingReports/sram_w16_out_postCTS.power
+<optDesign CMD> Restore Using all VT Cells
+Reported timing to dir ./timingReports
+**optDesign ... cpu = 0:00:14, real = 0:00:12, mem = 1604.4M, totSessionCpu=0:02:26 **
+** Profile ** Start :  cpu=0:00:00.0, mem=1604.4M
+** Profile ** Other data :  cpu=0:00:00.0, mem=1604.4M
+** Profile ** Overall slacks :  cpu=0:00:00.1, mem=1681.8M
+** Profile ** Total reports :  cpu=0:00:00.3, mem=1604.4M
+** Profile ** DRVs :  cpu=0:00:00.1, mem=1604.4M
+
+------------------------------------------------------------
+     optDesign Final Summary                             
+------------------------------------------------------------
+
+Setup views included:
+ WC_VIEW 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  0.967  |  2.485  |  0.967  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|  5600   |   160   |  5600   |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 49.234%
+       (94.310% with Fillers)
+Routing Overflow: 0.02% H and 0.00% V
+------------------------------------------------------------
+** Profile ** Report data :  cpu=0:00:00.0, mem=1604.4M
+**optDesign ... cpu = 0:00:14, real = 0:00:12, mem = 1602.4M, totSessionCpu=0:02:27 **
+*** Finished optDesign ***
+Removing temporary dont_use automatically set for cells with technology sites with no row.
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPEXT-3442          5  The version of the capacitance table fil...
+WARNING   IMPOPT-3663          1  Power view is not set. First setup analy...
+WARNING   IMPOPT-3564          1  The following cells are set dont_use tem...
+WARNING   IMPCCOPT-2015        2  %s will not update I/O latencies for the...
+*** Message Summary: 9 warning(s), 0 error(s)
+
+**ccopt_design ... cpu = 0:00:57, real = 0:00:40, mem = 1568.7M, totSessionCpu=0:02:27 **
+GigaOpt running with 8 threads.
+-powerEffort high                          # enums={none low high}, default=none, user setting
+-leakageToDynamicRatio 0.5                 # float, default=1, user setting
+-setupDynamicPowerViewAsDefaultView false
+                                           # bool, default=false, private
+**WARN: (IMPOPT-3564):	The following cells are set dont_use temporarily by the tool because there are no rows defined for their technology site, or they are not placeable in any power domain. To avoid this message, review the floorplan, msv setting, the library setting or set manualy those cells as dont_use.
+	Cell FILL1_LL, site bcore.
+	Cell FILL_NW_HH, site bcore.
+	Cell FILL_NW_LL, site bcore.
+	Cell GFILL, site gacore.
+	Cell GFILL10, site gacore.
+	Cell GFILL2, site gacore.
+	Cell GFILL3, site gacore.
+	Cell GFILL4, site gacore.
+	Cell LVLLHCD1, site bcore.
+	Cell LVLLHCD2, site bcore.
+	Cell LVLLHCD4, site bcore.
+	Cell LVLLHCD8, site bcore.
+	Cell LVLLHD1, site bcore.
+	Cell LVLLHD2, site bcore.
+	Cell LVLLHD4, site bcore.
+	Cell LVLLHD8, site bcore.
+.
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 1564.7M, totSessionCpu=0:02:28 **
+*** optDesign -postCTS ***
+DRC Margin: user margin 0.0
+Hold Target Slack: user slack 0
+Setup Target Slack: user slack 0;
+setUsefulSkewMode -noEcoRoute
+Start to check current routing status for nets...
+All nets are already routed correctly.
+End to check current routing status for nets (mem=1564.7M)
+Compute RC Scale Done ...
+DEL0 does not have usable cells
+ This may be because it is dont_use, or because it has no LEF.
+ **WARN: (IMPOPT-3080):	All delay cells are dont_use. Buffers will be used to fix hold violations.
+Type 'man IMPOPT-3080' for more detail.
+GigaOpt Hold Optimizer is used
+Include MVT Delays for Hold Opt
+<optDesign CMD> fixhold  no -lvt Cells
+**INFO: Num dontuse cells 396, Num usable cells 451
+optDesignOneStep: Leakage Power Flow
+**INFO: Num dontuse cells 396, Num usable cells 451
+Starting initialization (fixHold) cpu=0:00:00.0 real=0:00:00.0 totSessionCpu=0:02:28 mem=1687.5M ***
+**INFO: Starting Blocking QThread with 8 CPU
+   ____________________________________________________________________
+__/ message from Blocking QThread
+Multi-CPU acceleration using 8 CPU(s).
+Multithreaded Timing Analysis is initialized with 8 threads
+
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: sram_w16_out
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in BcWc mode...
+*** Calculating scaling factor for BC_LIB libraries using the default operating condition of each library.
+End delay calculation. (MEM=270.016 CPU=0:00:00.6 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:00.7  real=0:00:01.0  mem= 270.0M) ***
+*** Done Building Timing Graph (cpu=0:00:01.0 real=0:00:01.0 totSessionCpu=0:00:01.6 mem=270.0M)
+
+Active hold views:
+ BC_VIEW
+  Dominating endpoints: 0
+  Dominating TNS: -0.000
+
+Done building cte hold timing graph (fixHold) cpu=0:00:01.5 real=0:00:01.0 totSessionCpu=0:00:01.6 mem=270.0M ***
+** Profile ** Start :  cpu=0:00:00.0, mem=270.0M
+** Profile ** Overall slacks :  cpu=0:00:00.1, mem=270.0M
+Done building hold timer [1 node(s), 0 edge(s), 1 view(s)] (fixHold) cpu=0:00:01.7 real=0:00:01.0 totSessionCpu=0:00:01.8 mem=270.0M ***
+_______________________________________________________________________
+Done building cte setup timing graph (fixHold) cpu=0:00:01.4 real=0:00:01.0 totSessionCpu=0:02:30 mem=1687.5M ***
+** Profile ** Start :  cpu=0:00:00.0, mem=1687.5M
+** Profile ** Overall slacks :  cpu=0:00:00.1, mem=1687.5M
+Restoring autoHoldViews:  BC_VIEW
+** Profile ** Start :  cpu=0:00:00.0, mem=1687.5M
+** Profile ** Other data :  cpu=0:00:00.0, mem=1687.5M
+** Profile ** DRVs :  cpu=0:00:00.1, mem=1687.5M
+
+------------------------------------------------------------
+             Initial Summary                             
+------------------------------------------------------------
+
+Setup views included:
+ WC_VIEW
+Hold  views included:
+ BC_VIEW
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  0.967  |  2.485  |  0.967  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|  5600   |   160   |  5600   |
++--------------------+---------+---------+---------+
+
++--------------------+---------+---------+---------+
+|     Hold mode      |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  0.133  |  0.133  |  0.000  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|   160   |   160   |    0    |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 49.234%
+       (94.310% with Fillers)
+------------------------------------------------------------
+
+*Info: minBufDelay = 55.1 ps, libStdDelay = 14.2 ps, minBufSize = 5760000 (4.0)
+*Info: worst delay setup view: WC_VIEW
+**optDesign ... cpu = 0:00:03, real = 0:00:03, mem = 1591.2M, totSessionCpu=0:02:31 **
+*info: Run optDesign holdfix with 8 threads.
+Info: 46 nets with fixed/cover wires excluded.
+Info: 46 clock nets excluded from IPO operation.
+*** Hold timing is met. Hold fixing is not needed 
+<optDesign CMD> Restore Using all VT Cells
+Reported timing to dir ./timingReports
+**optDesign ... cpu = 0:00:03, real = 0:00:03, mem = 1581.7M, totSessionCpu=0:02:31 **
+** Profile ** Start :  cpu=0:00:00.0, mem=1581.7M
+** Profile ** Other data :  cpu=0:00:00.0, mem=1581.7M
+**INFO: Starting Blocking QThread with 8 CPU
+   ____________________________________________________________________
+__/ message from Blocking QThread
+Multi-CPU acceleration using 8 CPU(s).
+Multithreaded Timing Analysis is initialized with 8 threads
+
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: sram_w16_out
+# Design Mode: 65nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in BcWc mode...
+*** Calculating scaling factor for BC_LIB libraries using the default operating condition of each library.
+End delay calculation. (MEM=360.57 CPU=0:00:00.7 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:00.8  real=0:00:00.0  mem= 360.6M) ***
+*** Done Building Timing Graph (cpu=0:00:01.0 real=0:00:00.0 totSessionCpu=0:00:02.6 mem=360.6M)
+** Profile ** Overall slacks :  cpu=0:0-2:0-8.-4, mem=360.6M
+** Profile ** Total reports :  cpu=0:00:00.1, mem=0.0M
+_______________________________________________________________________
+** Profile ** Overall slacks :  cpu=0:00:01.2, mem=1661.2M
+** Profile ** Total reports :  cpu=0:00:00.2, mem=1583.7M
+** Profile ** DRVs :  cpu=0:00:00.1, mem=1583.7M
+
+------------------------------------------------------------
+     optDesign Final Summary                             
+------------------------------------------------------------
+
+Setup views included:
+ WC_VIEW 
+Hold  views included:
+ BC_VIEW
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  0.967  |  2.485  |  0.967  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|  5600   |   160   |  5600   |
++--------------------+---------+---------+---------+
+
++--------------------+---------+---------+---------+
+|     Hold mode      |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  0.133  |  0.133  |  0.000  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|   160   |   160   |    0    |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 49.234%
+       (94.310% with Fillers)
+Routing Overflow: 0.02% H and 0.00% V
+------------------------------------------------------------
+** Profile ** Report data :  cpu=0:00:00.0, mem=1583.7M
+**optDesign ... cpu = 0:00:05, real = 0:00:05, mem = 1581.7M, totSessionCpu=0:02:33 **
+*** Finished optDesign ***
+Removing temporary dont_use automatically set for cells with technology sites with no row.
+Writing Netlist "./encFile/cts.enc.dat/sram_w16_out.v.gz" ...
+Saving AAE Data ...
+**WARN: (IMPCTE-104):	The constraint mode of this inactive view 'TC_VIEW' has been modified and may need to be reanalyzed to ensure proper timing results. To reanalyze timing for this view make the view active using 'set_analysis_view' and run timing analysis.
+Saving preference file ./encFile/cts.enc.dat/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+Saving floorplan file ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement file ...
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.1 real=0:00:00.0 mem=1581.7M) ***
+Saving DEF file ...
+**ERROR: (IMPOAX-142):	Could not open shared library libinnovusoax22.so : /acsnfs3/software/cadence-innovus152/tools/lib/64bit/libcdsSkillPcell.so: undefined symbol: _ZTIN12OpenAccess_413oaFSComponentE
+
+**ERROR: (IMPOAX-142):	Could not open shared library libcdsSkillPcell.so : (null)
+
+**ERROR: (IMPSYT-6245):	Error , while saving MS constraint file.
+
+
+
+Generated self-contained design cts.enc.dat
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+ERROR     IMPSYT-6245          1  Error %s, while saving MS constraint fil...
+ERROR     IMPOAX-142           2  %s                                       
+WARNING   IMPCTE-104           1  The constraint mode of this inactive vie...
+*** Message Summary: 1 warning(s), 3 error(s)
+

@@ -1,0 +1,121 @@
+Load RC corner of view WC_VIEW
+
+Begin Power Analysis
+
+    0.00V	    VSS
+    0.90V	    VDD
+
+Begin Processing Timing Library for Power Calculation
+
+Begin Processing Timing Library for Power Calculation
+
+
+
+Begin Processing Power Net/Grid for Power Calculation
+
+Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total)=2237.53MB/2237.53MB)
+
+Begin Processing Timing Window Data for Power Calculation
+
+CK: assigning clock clk_o to net clk_o
+CK: assigning clock clk to net clk
+Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total)=2237.53MB/2237.53MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total)=2237.53MB/2237.53MB)
+
+Begin Processing Signal Activity
+
+
+Starting Levelizing
+2025-Mar-22 19:24:23 (2025-Mar-23 02:24:23 GMT)
+2025-Mar-22 19:24:23 (2025-Mar-23 02:24:23 GMT): 10%
+2025-Mar-22 19:24:23 (2025-Mar-23 02:24:23 GMT): 20%
+2025-Mar-22 19:24:24 (2025-Mar-23 02:24:24 GMT): 30%
+2025-Mar-22 19:24:24 (2025-Mar-23 02:24:24 GMT): 40%
+2025-Mar-22 19:24:24 (2025-Mar-23 02:24:24 GMT): 50%
+2025-Mar-22 19:24:24 (2025-Mar-23 02:24:24 GMT): 60%
+2025-Mar-22 19:24:24 (2025-Mar-23 02:24:24 GMT): 70%
+2025-Mar-22 19:24:24 (2025-Mar-23 02:24:24 GMT): 80%
+2025-Mar-22 19:24:24 (2025-Mar-23 02:24:24 GMT): 90%
+
+Finished Levelizing
+2025-Mar-22 19:24:24 (2025-Mar-23 02:24:24 GMT)
+
+Starting Activity Propagation
+2025-Mar-22 19:24:24 (2025-Mar-23 02:24:24 GMT)
+2025-Mar-22 19:24:25 (2025-Mar-23 02:24:25 GMT): 10%
+2025-Mar-22 19:24:25 (2025-Mar-23 02:24:25 GMT): 20%
+
+Finished Activity Propagation
+2025-Mar-22 19:24:26 (2025-Mar-23 02:24:26 GMT)
+Ended Processing Signal Activity: (cpu=0:00:03, real=0:00:03, mem(process/total)=2241.43MB/2241.43MB)
+
+Begin Power Computation
+
+      ----------------------------------------------------------
+      # of cell(s) missing both power/leakage table: 0
+      # of cell(s) missing power table: 4
+      # of cell(s) missing leakage table: 2
+      # of MSMV cell(s) missing power_level: 0
+      ----------------------------------------------------------
+CellName                                  Missing Table(s)
+TIEH                                      internal power, 
+TIEL                                      internal power, 
+sram_w16_in                               internal power, leakge power, 
+sram_w16_out                              internal power, leakge power, 
+
+
+
+Starting Calculating power
+2025-Mar-22 19:24:26 (2025-Mar-23 02:24:26 GMT)
+2025-Mar-22 19:24:27 (2025-Mar-23 02:24:27 GMT): 10%
+2025-Mar-22 19:24:27 (2025-Mar-23 02:24:27 GMT): 20%
+2025-Mar-22 19:24:27 (2025-Mar-23 02:24:27 GMT): 30%
+2025-Mar-22 19:24:27 (2025-Mar-23 02:24:27 GMT): 40%
+2025-Mar-22 19:24:27 (2025-Mar-23 02:24:27 GMT): 50%
+2025-Mar-22 19:24:27 (2025-Mar-23 02:24:27 GMT): 60%
+2025-Mar-22 19:24:27 (2025-Mar-23 02:24:27 GMT): 70%
+2025-Mar-22 19:24:28 (2025-Mar-23 02:24:28 GMT): 80%
+2025-Mar-22 19:24:28 (2025-Mar-23 02:24:28 GMT): 90%
+
+Finished Calculating power
+2025-Mar-22 19:24:28 (2025-Mar-23 02:24:28 GMT)
+Ended Power Computation: (cpu=0:00:04, real=0:00:01, mem(process/total)=2253.26MB/2253.26MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total)=2253.26MB/2253.26MB)
+
+Ended Power Analysis: (cpu=0:00:08, real=0:00:05, mem(process/total)=2253.26MB/2253.26MB)
+
+Begin Static Power Report Generation
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:       28.64538520 	   55.7473%
+Total Switching Power:      19.43651970 	   37.8258%
+Total Leakage Power:         3.30242752 	    6.4269%
+Total Power:                51.38433254
+-----------------------------------------------------------------------------------------
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total)=2254.62MB/2254.62MB)
+
+
+Output file is ./summaryReport/core.post_route.power.rpt
+Start to collect the design information.
+Build netlist information for Cell core.
+Finished collecting the design information.
+Generating macro cells used in the design report.
+Generating standard cells used in the design report.
+Analyze library ... 
+Analyze netlist ... 
+Generate no-driven nets information report.
+Analyze timing ... 
+Analyze floorplan/placement ... 
+Analysis Routing ...
+Report saved in file ./summaryReport/core.post_route.summary.rpt.

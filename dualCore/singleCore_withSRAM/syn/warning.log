@@ -1,0 +1,146 @@
+Warning: You requested 16 cores. However, the host ieng6-ece-13.ucsd.edu only has 8 available cores. The tool will ignore the request and use -max_cores 8. (UIO-230)
+Warning: You requested 16 cores. However, load on host ieng6-ece-13.ucsd.edu is 2.65. Tool will ignore the request and use 6 cores. (UIO-231)
+Warning:  ./verilog/core.v:43: the undeclared symbol 'sfp_wr2pmem' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  ./verilog/core.v:44: the undeclared symbol 'sfp_div' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  ./verilog/core.v:45: the undeclared symbol 'sfp_acc' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning: Detected use of obsolete/unsupported feature.  The following
+Warning:  ./verilog/sfp_row.v:41: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:42: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:43: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:44: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:45: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:46: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:47: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:48: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:51: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:52: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:53: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:54: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:55: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:56: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:57: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:58: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:61: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:115: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:116: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:117: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:118: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:119: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:120: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:121: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./verilog/sfp_row.v:122: signed to unsigned conversion occurs. (VER-318)
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: Design rule attributes from the driving cell will be
+Warning: The -timing_high_effort_script option is ignored.  (OPT-1342)
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Warning: Design 'core' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)

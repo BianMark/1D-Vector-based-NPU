@@ -1,0 +1,50 @@
+ *** Starting Verify Geometry (MEM: 2975.8) ***
+
+  VERIFY GEOMETRY ...... Starting Verification
+  VERIFY GEOMETRY ...... Initializing
+  VERIFY GEOMETRY ...... Deleting Existing Violations
+  VERIFY GEOMETRY ...... Creating Sub-Areas
+                  ...... bin size: 2880
+Multi-CPU acceleration using 8 CPU(s).
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+  VERIFY GEOMETRY ...... SubArea : 2 of 25  Thread : 1
+  VERIFY GEOMETRY ...... SubArea : 3 of 25  Thread : 2
+  VERIFY GEOMETRY ...... SubArea : 4 of 25  Thread : 3
+  VERIFY GEOMETRY ...... SubArea : 1 of 25  Thread : 0
+  VERIFY GEOMETRY ...... SubArea : 5 of 25  Thread : 4
+  VERIFY GEOMETRY ...... SubArea : 6 of 25  Thread : 5
+  VERIFY GEOMETRY ...... SubArea : 8 of 25  Thread : 7
+  VERIFY GEOMETRY ...... SubArea : 7 of 25  Thread : 6
+  VERIFY GEOMETRY ...... SubArea : 12 of 25  Thread : 3
+  VERIFY GEOMETRY ...... SubArea : 13 of 25  Thread : 4
+  VERIFY GEOMETRY ...... SubArea : 9 of 25  Thread : 0
+  VERIFY GEOMETRY ...... SubArea : 17 of 25  Thread : 0
+  VERIFY GEOMETRY ...... SubArea : 14 of 25  Thread : 5
+  VERIFY GEOMETRY ...... SubArea : 25 of 25  Thread : 0
+  VERIFY GEOMETRY ...... SubArea : 20 of 25  Thread : 3
+  VERIFY GEOMETRY ...... SubArea : 11 of 25  Thread : 2
+  VERIFY GEOMETRY ...... SubArea : 16 of 25  Thread : 7
+  VERIFY GEOMETRY ...... SubArea : 19 of 25  Thread : 2
+  VERIFY GEOMETRY ...... SubArea : 10 of 25  Thread : 1
+  VERIFY GEOMETRY ...... SubArea : 24 of 25  Thread : 7
+  VERIFY GEOMETRY ...... SubArea : 18 of 25  Thread : 1
+  VERIFY GEOMETRY ...... SubArea : 22 of 25  Thread : 5
+  VERIFY GEOMETRY ...... SubArea : 21 of 25  Thread : 4
+  VERIFY GEOMETRY ...... SubArea : 15 of 25  Thread : 6
+  VERIFY GEOMETRY ...... SubArea : 23 of 25  Thread : 6
+VG: elapsed time: 9.00
+Begin Summary ...
+  Cells       : 0
+  SameNet     : 0
+  Wiring      : 0
+  Antenna     : 0
+  Short       : 39
+  Overlap     : 0
+End Summary
+
+  Verification Complete : 39 Viols.  0 Wrngs.
+
+**********End: VERIFY GEOMETRY**********
+ *** verify geometry (CPU: 0:00:30.4  MEM: 659.6M)
+

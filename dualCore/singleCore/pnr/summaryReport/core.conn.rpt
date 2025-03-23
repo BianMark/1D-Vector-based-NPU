@@ -1,0 +1,33 @@
+VERIFY_CONNECTIVITY use new engine.
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Sat Mar 22 19:24:19 2025
+
+Design Name: core
+Database Units: 2000
+Design Boundary: (0.0000, 0.0000) (900.0000, 900.0000)
+Error Limit = 1000; Warning Limit = 50
+Check all nets
+Multi-CPU acceleration using 8 CPU(s).
+**** 19:24:19 **** Processed 5000 nets (Total 7275) in Job 5
+**** 19:24:19 **** Processed 5000 nets (Total 7275) in Job 6
+**** 19:24:19 **** Processed 5000 nets (Total 7275) in Job 4
+**** 19:24:20 **** Processed 5000 nets (Total 7275) in Job 8
+**** 19:24:20 **** Processed 5000 nets (Total 7275) in Job 3
+**** 19:24:20 **** Processed 5000 nets (Total 7275) in Job 7
+**** 19:24:20 **** Processed 5000 nets (Total 7275) in Job 9
+**** 19:24:21 **** Processed 5000 nets (Total 7269) in Job 10
+
+Begin Summary 
+    98 Problem(s) (IMPVFC-200): Special Wires: Pieces of the net are not connected together.
+    395 Problem(s) (IMPVFC-94): The net has dangling wire(s).
+    493 total info(s) created.
+End Summary
+
+End Time: Sat Mar 22 19:24:21 2025
+Time Elapsed: 0:00:02.0
+
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 493 Viols.  0 Wrngs.
+  (CPU Time: 0:00:01.0  MEM: 6.219M)
+

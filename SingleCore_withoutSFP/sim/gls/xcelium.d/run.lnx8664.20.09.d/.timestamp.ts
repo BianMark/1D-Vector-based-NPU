@@ -1,4 +1,4 @@
-1742428745 /home/linux/ieng6/ee260bwi25/zhbian/1D-Vector-based-NPU/SingleCore_withoutSFP/sim/gls/netlist/core_tb.v
+1742496037 /home/linux/ieng6/ee260bwi25/zhbian/1D-Vector-based-NPU/SingleCore_withoutSFP/sim/gls/netlist/core_tb.v
 1737007846 /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v
 1742348207 /home/linux/ieng6/ee260bwi25/zhbian/1D-Vector-based-NPU/SingleCore_withoutSFP/sim/netlist/sram_w16_out.v
 1742238619 /home/linux/ieng6/ee260bwi25/zhbian/1D-Vector-based-NPU/SingleCore_withoutSFP/sim/netlist/sram_w16.v

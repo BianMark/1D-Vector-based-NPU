@@ -1,0 +1,687 @@
+Finding the highest version number among the merge files
+Merge file: ./subckt/sram_w16_in.gds2 has version number: 3
+Merge file: ./subckt/sram_w16_out.gds2 has version number: 3
+
+Parse map file...
+**WARN: (IMPOGDS-399):	 Only 2 layer(s) (CO M1) of a VIA object is(are) specified in map file 'streamOut.map'. A VIA object needs 3 layers (PO CO M1) being specified at the same time in the map file. Add VIA contruct(s) to the map file for the following layer(s): PO or remove VIA construct(s) from the map file for the following layer(s): CO M1.
+Type 'man IMPOGDS-399' for more detail.
+**WARN: (IMPOGDS-399):	 Only 2 layer(s) (CO M1) of a VIAFILL object is(are) specified in map file 'streamOut.map'. A VIAFILL object needs 3 layers (PO CO M1) being specified at the same time in the map file. Add VIAFILL contruct(s) to the map file for the following layer(s): PO or remove VIAFILL construct(s) from the map file for the following layer(s): CO M1.
+Type 'man IMPOGDS-399' for more detail.
+**WARN: (IMPOGDS-399):	 Only 2 layer(s) (CO M1) of a VIAFILLOPC object is(are) specified in map file 'streamOut.map'. A VIAFILLOPC object needs 3 layers (PO CO M1) being specified at the same time in the map file. Add VIAFILLOPC contruct(s) to the map file for the following layer(s): PO or remove VIAFILLOPC construct(s) from the map file for the following layer(s): CO M1.
+Type 'man IMPOGDS-399' for more detail.
+Writing GDSII file ...
+	****** db unit per micron = 2000 ******
+	****** output gds2 file unit per micron = 2000 ******
+	****** unit scaling factor = 1 ******
+Output for instance
+Output for bump
+Output for physical terminals
+Output for logical terminals
+Output for regular nets
+Output for special nets and metal fills
+Output for via structure generation
+Statistics for GDS generated (version 3)
+----------------------------------------
+Stream Out Layer Mapping Information:
+GDS Layer Number          GDS Layer Name
+----------------------------------------
+    170                             COMP
+    171                          DIEAREA
+    1                                 CO
+    2                                 CO
+    5                                 CO
+    3                                 CO
+    4                                 CO
+    6                                 CO
+    7                                 CO
+    8                                 M1
+    9                                 M1
+    10                                M1
+    11                                M1
+    14                                M1
+    12                                M1
+    13                                M1
+    15                                M1
+    16                                M1
+    17                                M1
+    22                              VIA1
+    23                              VIA1
+    26                              VIA1
+    24                              VIA1
+    25                              VIA1
+    27                              VIA1
+    28                              VIA1
+    29                                M2
+    30                                M2
+    31                                M2
+    32                                M2
+    35                                M2
+    33                                M2
+    34                                M2
+    36                                M2
+    37                                M2
+    38                                M2
+    43                              VIA2
+    44                              VIA2
+    47                              VIA2
+    45                              VIA2
+    46                              VIA2
+    48                              VIA2
+    49                              VIA2
+    50                                M3
+    51                                M3
+    52                                M3
+    53                                M3
+    56                                M3
+    54                                M3
+    55                                M3
+    57                                M3
+    58                                M3
+    59                                M3
+    64                              VIA3
+    65                              VIA3
+    68                              VIA3
+    66                              VIA3
+    67                              VIA3
+    69                              VIA3
+    70                              VIA3
+    71                                M4
+    72                                M4
+    73                                M4
+    74                                M4
+    77                                M4
+    75                                M4
+    76                                M4
+    78                                M4
+    79                                M4
+    80                                M4
+    85                              VIA4
+    86                              VIA4
+    89                              VIA4
+    87                              VIA4
+    88                              VIA4
+    90                              VIA4
+    91                              VIA4
+    92                                M5
+    93                                M5
+    94                                M5
+    95                                M5
+    98                                M5
+    96                                M5
+    97                                M5
+    99                                M5
+    100                               M5
+    101                               M5
+    106                             VIA5
+    107                             VIA5
+    110                             VIA5
+    108                             VIA5
+    109                             VIA5
+    111                             VIA5
+    112                             VIA5
+    113                               M6
+    114                               M6
+    115                               M6
+    116                               M6
+    119                               M6
+    117                               M6
+    118                               M6
+    120                               M6
+    121                               M6
+    122                               M6
+    127                             VIA6
+    128                             VIA6
+    131                             VIA6
+    129                             VIA6
+    130                             VIA6
+    132                             VIA6
+    133                             VIA6
+    134                               M7
+    135                               M7
+    136                               M7
+    137                               M7
+    140                               M7
+    138                               M7
+    139                               M7
+    141                               M7
+    142                               M7
+    143                               M7
+    148                             VIA7
+    149                             VIA7
+    152                             VIA7
+    150                             VIA7
+    151                             VIA7
+    153                             VIA7
+    154                             VIA7
+    155                               M8
+    156                               M8
+    157                               M8
+    158                               M8
+    161                               M8
+    159                               M8
+    160                               M8
+    162                               M8
+    163                               M8
+    164                               M8
+    18                                M1
+    19                                M1
+    20                                M1
+    21                                M1
+    39                                M2
+    40                                M2
+    41                                M2
+    42                                M2
+    60                                M3
+    61                                M3
+    62                                M3
+    63                                M3
+    81                                M4
+    82                                M4
+    83                                M4
+    84                                M4
+    102                               M5
+    103                               M5
+    104                               M5
+    105                               M5
+    123                               M6
+    124                               M6
+    125                               M6
+    126                               M6
+    144                               M7
+    145                               M7
+    146                               M7
+    147                               M7
+    165                               M8
+    166                               M8
+    167                               M8
+    168                               M8
+
+
+Stream Out Information Processed for GDS version 3:
+Units: 2000 DBU
+
+Object                             Count
+----------------------------------------
+Instances                          96336
+
+Ports/Pins                           293
+    metal layer M3                   102
+    metal layer M4                   185
+    metal layer M5                     6
+
+Nets                              635502
+    metal layer M1                  6573
+    metal layer M2                322983
+    metal layer M3                202781
+    metal layer M4                 81188
+    metal layer M5                 20426
+    metal layer M6                  1551
+
+    Via Instances                 402666
+
+Special Nets                        1623
+    metal layer M1                  1563
+    metal layer M2                    15
+    metal layer M3                     1
+    metal layer M5                    39
+    metal layer M6                     5
+
+    Via Instances                   1778
+
+Metal Fills                            0
+
+    Via Instances                      0
+
+Metal FillOPCs                         0
+
+    Via Instances                      0
+
+Text                               58324
+    metal layer M1                  2268
+    metal layer M2                 44347
+    metal layer M3                 10558
+    metal layer M4                   953
+    metal layer M5                   192
+    metal layer M6                     6
+
+
+Blockages                              0
+
+
+Custom Text                            0
+
+
+Custom Box                             0
+
+Trim Metal                             0
+
+Merging with GDS libraries
+Scanning GDS file ./subckt/sram_w16_in.gds2 to register cell name ......
+Scanning GDS file ./subckt/sram_w16_out.gds2 to register cell name ......
+Merging GDS file ./subckt/sram_w16_in.gds2 ......
+	****** Merge file: ./subckt/sram_w16_in.gds2 has version number: 3.
+	****** Merge file: ./subckt/sram_w16_in.gds2 has units: 2000 per micron.
+	****** unit scaling factor = 1 ******
+    There are 21 structures ignored in file ./subckt/sram_w16_in.gds2
+Merging GDS file ./subckt/sram_w16_out.gds2 ......
+	****** Merge file: ./subckt/sram_w16_out.gds2 has version number: 3.
+	****** Merge file: ./subckt/sram_w16_out.gds2 has units: 2000 per micron.
+	****** unit scaling factor = 1 ******
+    There are 21 structures ignored in file ./subckt/sram_w16_out.gds2
+**WARN: (IMPOGDS-217):	Master cell: AO22D2 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: INR2D2 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: INR4D2 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: XNR2D2 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: DCAP32 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: XOR2D2 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: OA211D1 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: IND2D1 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: IND4D1 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: CKXOR2D0 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: CKXOR2D1 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: AN4XD1 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: CKXOR2D2 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: CKXOR2D4 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: NR2XD2 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: AOI21D1 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: FILL4 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: AOI22D1 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: IAO21D2 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (IMPOGDS-217):	Master cell: CKND2D2 not found in merged file(s) and will therefore not be included in the resulting streamOut file. Verify the file names specified with the -merge option are correct and that they contain a definition of this cell.
+**WARN: (EMS-27):	Message (IMPOGDS-217) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPOGDS-218):	Number of master cells not found after merging: 280
+
+######Streamout is finished!
+Writing DEF file './targetFile/core.def', current time is Sat Mar 22 19:24:31 2025 ...
+unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+DEF file './targetFile/core.def' is written, current time is Sat Mar 22 19:24:32 2025 ...
+Writing Netlist "./targetFile/core.pnr.v" ...
+**WARN: (IMPTCM-70):	Option "-setup" for command setAnalysisMode is obsolete and has been replaced by "-checkType setup". The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, update your script to use "-checkType setup".
+**WARN: (IMPCTE-104):	The constraint mode of this inactive view 'TC_VIEW' has been modified and may need to be reanalyzed to ensure proper timing results. To reanalyze timing for this view make the view active using 'set_analysis_view' and run timing analysis.
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+Reading Capacitance Table File /home/linux/ieng6/ee260bwi25/public/PDKdata/captbl/cln65g+_1p08m+alrdl_top2_cworst.captable ...
+**WARN: (IMPEXT-2760):	Layer M9 specified in the cap table is ignored because it is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (IMPEXT-2771):	Via VIA_8 specified in the cap table is ignored because its top layer, M9, is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (IMPEXT-2801):	Resistance values are not provided in the Cap Table. Sheet resistance defined in the LEF file will be used.
+**WARN: (IMPEXT-2710):	Basic Cap table for layer M9 is ignored because the layer is not specified in the technology LEF file.
+Importing multi-corner RC tables ... 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: WC_VIEW
+    RC-Corner Name        : Cmax
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : '/home/linux/ieng6/ee260bwi25/public/PDKdata/captbl/cln65g+_1p08m+alrdl_top2_cworst.captable'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+set_analysis_view/update_rc_corner called to change MMMC setup. New set of RC Corners are a subset of previous MMMC setup and the RC setup information for the new set has remained same. Therefore, parasitic data in the tool brought as per previous MMMC setup is being maintained.
+*Info: initialize multi-corner CTS.
+Reading timing constraints file '/tmp/innovus_temp_6701_ieng6-ece-02.ucsd.edu_zhbian_MVyadl/.mmmcQ7mW0R/modes/CON/CON.sdc' ...
+Current (total cpu=3:05:26, real=1:00:53, peak res=1987.5M, current mem=2697.7M)
+core
+Number of path exceptions in the constraint file = 1
+Number of paths exceptions after getting compressed = 1
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1500.7M, current mem=2707.4M)
+Current (total cpu=3:05:26, real=1:00:53, peak res=1987.5M, current mem=2707.4M)
+Total number of combinational cells: 492
+Total number of sequential cells: 303
+Total number of tristate cells: 11
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFFD1 BUFFD0 BUFFD2 BUFFD3 BUFFD4 BUFFD6 BUFFD8 BUFFD12 BUFFD16 CKBD1 CKBD0 CKBD2 CKBD3 CKBD4 CKBD6 CKBD8 CKBD12 CKBD16
+Total number of usable buffers: 18
+List of unusable buffers: BUFFD20 BUFFD24 CKBD20 CKBD24 GBUFFD1 GBUFFD3 GBUFFD2 GBUFFD4 GBUFFD8
+Total number of unusable buffers: 9
+List of usable inverters: CKND1 CKND0 CKND2 CKND3 CKND4 CKND6 CKND8 CKND12 CKND16 INVD1 INVD0 INVD2 INVD3 INVD4 INVD6 INVD8 INVD12 INVD16
+Total number of usable inverters: 18
+List of unusable inverters: CKND20 CKND24 GINVD2 GINVD1 GINVD4 GINVD3 GINVD8 INVD20 INVD24
+Total number of unusable inverters: 9
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells: DEL0 DEL005 DEL01 DEL015 DEL02 DEL1 DEL2 DEL3 DEL4
+Total number of identified unusable delay cells: 9
+All delay cells are dont_use. Buffers will be used to fix hold violations.
+Starting SI iteration 1 using Infinite Timing Windows
+Begin IPO call back ...
+End IPO call back ...
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: core
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB
+# Signoff Settings: SI On 
+#################################################################################
+Cannot find current Dcalc in active list!
+AAE_INFO-618: Total number of nets in the design is 58196,  100.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3401.81 CPU=0:00:17.3 REAL=0:00:04.0)
+Save waveform /tmp/innovus_temp_6701_ieng6-ece-02.ucsd.edu_zhbian_MVyadl/.AAE_jVB24p/.AAE_6701/waveform.data...
+*** CDM Built up (cpu=0:00:21.1  real=0:00:07.0  mem= 3401.8M) ***
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Starting SI iteration 2
+AAE_INFO-618: Total number of nets in the design is 58196,  3.1 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3360.27 CPU=0:00:03.0 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:03.1  real=0:00:01.0  mem= 3360.3M) ***
+All-RC-Corners-Per-Net-In-Memory is turned ON...
+TAMODEL Cpu User Time =   54.3 sec
+TAMODEL Memory Usage  =   68.8 MB
+**WARN: (SDF-808):	The software is currently operating in a high performance mode which optimizes the handling of multiple timing arcs between input and output pin pairs. With the current settings, the SDF file generated will contain the same delay information for all of these arcs. To have the SDF recalculated with explicit pin pair data, you should use the option '-recompute_parallel_arcs'. This setting is recommended for generating SDF for functional  simulation applications.
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: core
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB
+# Signoff Settings: SI On 
+#################################################################################
+AAE_INFO-618: Total number of nets in the design is 58196,  100.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3461.04 CPU=0:00:17.6 REAL=0:00:04.0)
+Save waveform /tmp/innovus_temp_6701_ieng6-ece-02.ucsd.edu_zhbian_MVyadl/.AAE_jVB24p/.AAE_6701/waveform.data...
+*** CDM Built up (cpu=0:00:20.4  real=0:00:05.0  mem= 3461.0M) ***
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Starting SI iteration 2
+AAE_INFO-618: Total number of nets in the design is 58196,  3.1 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3427.04 CPU=0:00:02.9 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:03.0  real=0:00:01.0  mem= 3427.0M) ***
+**WARN: (IMPTCM-70):	Option "-hold" for command setAnalysisMode is obsolete and has been replaced by "-checkType hold". The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, update your script to use "-checkType hold".
+**WARN: (IMPCTE-104):	The constraint mode of this inactive view 'BC_VIEW' has been modified and may need to be reanalyzed to ensure proper timing results. To reanalyze timing for this view make the view active using 'set_analysis_view' and run timing analysis.
+**WARN: (IMPCTE-104):	The constraint mode of this inactive view 'TC_VIEW' has been modified and may need to be reanalyzed to ensure proper timing results. To reanalyze timing for this view make the view active using 'set_analysis_view' and run timing analysis.
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+Reading Capacitance Table File /home/linux/ieng6/ee260bwi25/public/PDKdata/captbl/cln65g+_1p08m+alrdl_top2_cbest.captable ...
+**WARN: (IMPEXT-2760):	Layer M9 specified in the cap table is ignored because it is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (IMPEXT-2771):	Via VIA_8 specified in the cap table is ignored because its top layer, M9, is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (IMPEXT-2801):	Resistance values are not provided in the Cap Table. Sheet resistance defined in the LEF file will be used.
+**WARN: (IMPEXT-2710):	Basic Cap table for layer M9 is ignored because the layer is not specified in the technology LEF file.
+Importing multi-corner RC tables ... 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: BC_VIEW
+    RC-Corner Name        : Cmin
+    RC-Corner Index       : 0
+    RC-Corner Temperature : -40 Celsius
+    RC-Corner Cap Table   : '/home/linux/ieng6/ee260bwi25/public/PDKdata/captbl/cln65g+_1p08m+alrdl_top2_cbest.captable'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+**WARN: (IMPEXT-3503):	The corner setup has changed in the MMMC flow. New RC corners 'Cmin' have been added, therefore, no parasitic data exists for them. As a result, the parasitic data in the tool from the previous setup is deleted. Extract or restore the parasitic data for all the current corners by calling 'extractRC/spefIn'.
+*Info: initialize multi-corner CTS.
+Reading timing constraints file '/tmp/innovus_temp_6701_ieng6-ece-02.ucsd.edu_zhbian_MVyadl/.mmmcuZF1ht/modes/CON/CON.sdc' ...
+Current (total cpu=3:07:21, real=1:02:08, peak res=1987.5M, current mem=2941.1M)
+core
+Number of path exceptions in the constraint file = 1
+Number of paths exceptions after getting compressed = 1
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1528.4M, current mem=2950.8M)
+Current (total cpu=3:07:21, real=1:02:08, peak res=1987.5M, current mem=2950.8M)
+Total number of combinational cells: 492
+Total number of sequential cells: 303
+Total number of tristate cells: 11
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFFD1 BUFFD0 BUFFD2 BUFFD3 BUFFD4 BUFFD6 BUFFD8 BUFFD12 BUFFD16 CKBD1 CKBD0 CKBD2 CKBD3 CKBD4 CKBD6 CKBD8 CKBD12 CKBD16
+Total number of usable buffers: 18
+List of unusable buffers: BUFFD20 BUFFD24 CKBD20 CKBD24 GBUFFD1 GBUFFD3 GBUFFD2 GBUFFD4 GBUFFD8
+Total number of unusable buffers: 9
+List of usable inverters: CKND1 CKND0 CKND2 CKND3 CKND4 CKND6 CKND8 CKND12 CKND16 INVD1 INVD0 INVD2 INVD3 INVD4 INVD6 INVD8 INVD12 INVD16
+Total number of usable inverters: 18
+List of unusable inverters: CKND20 CKND24 GINVD2 GINVD1 GINVD4 GINVD3 GINVD8 INVD20 INVD24
+Total number of unusable inverters: 9
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells: DEL0 DEL005 DEL01 DEL015 DEL02 DEL1 DEL2 DEL3 DEL4
+Total number of identified unusable delay cells: 9
+All delay cells are dont_use. Buffers will be used to fix hold violations.
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: core
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI On 
+#################################################################################
+**WARN: (IMPEXT-3518):	The lower process node is set (using command 'setDesignMode') but the technology file for TQRC extraction not specified. Therefore, going for postRoute (effortLevel low) extraction instead of recommended extractor 'TQRC' for lower nodes. Use command 'set_analysis_view/update_rc_corner' to specify the technology file for TQRC extraction to take place.
+Extraction called for design 'core' of instances=96336 and nets=58196 using extraction engine 'postRoute' at effort level 'low' .
+PostRoute (effortLevel low) RC Extraction called for design core.
+RC Extraction called in multi-corner(1) mode.
+**WARN: (IMPEXT-3442):	The version of the capacitance table file being used is obsolete and is no longer recommended. For improved accuracy, generate the capacitance table file using the generateCapTbl command.
+Process corner(s) are loaded.
+ Corner: Cmin
+extractDetailRC Option : -outfile /tmp/innovus_temp_6701_ieng6-ece-02.ucsd.edu_zhbian_MVyadl/core_6701_lQYaKV.rcdb.d -maxResLength 200  -extended
+RC Mode: PostRoute -effortLevel low [Extended CapTable, LEF Resistances]
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Coupling Cap. Scaling Factor : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Checking LVS Completed (CPU Time= 0:00:00.3  MEM= 2977.4M)
+Extracted 10.0004% (CPU Time= 0:00:01.9  MEM= 3055.4M)
+Extracted 20.0004% (CPU Time= 0:00:02.2  MEM= 3055.4M)
+Extracted 30.0004% (CPU Time= 0:00:02.8  MEM= 3055.4M)
+Extracted 40.0004% (CPU Time= 0:00:03.7  MEM= 3059.4M)
+Extracted 50.0004% (CPU Time= 0:00:05.2  MEM= 3059.4M)
+Extracted 60.0004% (CPU Time= 0:00:05.7  MEM= 3059.4M)
+Extracted 70.0004% (CPU Time= 0:00:06.0  MEM= 3059.4M)
+Extracted 80.0004% (CPU Time= 0:00:06.5  MEM= 3059.4M)
+Extracted 90.0004% (CPU Time= 0:00:07.2  MEM= 3059.4M)
+Extracted 100% (CPU Time= 0:00:10.0  MEM= 3059.4M)
+Number of Extracted Resistors     : 1040116
+Number of Extracted Ground Cap.   : 1026037
+Number of Extracted Coupling Cap. : 1785440
+Filtering XCap in 'relativeAndCoupling' mode using values coupling_c_threshold=0.1fF, relative_c_threshold=1, and total_c_threshold=0fF.
+ Corner: Cmin
+Checking LVS Completed (CPU Time= 0:00:00.3  MEM= 3047.4M)
+PostRoute (effortLevel low) RC Extraction DONE (CPU Time: 0:00:12.9  Real Time: 0:00:13.0  MEM: 3047.406M)
+*** Calculating scaling factor for BC_LIB libraries using the default operating condition of each library.
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Cannot find current Dcalc in active list!
+AAE_INFO-618: Total number of nets in the design is 58196,  100.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3648.72 CPU=0:00:16.0 REAL=0:00:03.0)
+Save waveform /tmp/innovus_temp_6701_ieng6-ece-02.ucsd.edu_zhbian_MVyadl/.AAE_Xo7k01/.AAE_6701/waveform.data...
+*** CDM Built up (cpu=0:00:33.2  real=0:00:19.0  mem= 3648.7M) ***
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Starting SI iteration 2
+AAE_INFO-618: Total number of nets in the design is 58196,  2.6 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3635.8 CPU=0:00:02.3 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:02.4  real=0:00:00.0  mem= 3635.8M) ***
+All-RC-Corners-Per-Net-In-Memory is turned ON...
+TAMODEL Cpu User Time =   54.1 sec
+TAMODEL Memory Usage  =   59.2 MB
+**WARN: (SDF-808):	The software is currently operating in a high performance mode which optimizes the handling of multiple timing arcs between input and output pin pairs. With the current settings, the SDF file generated will contain the same delay information for all of these arcs. To have the SDF recalculated with explicit pin pair data, you should use the option '-recompute_parallel_arcs'. This setting is recommended for generating SDF for functional  simulation applications.
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: core
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB
+# Signoff Settings: SI On 
+#################################################################################
+AAE_INFO-618: Total number of nets in the design is 58196,  100.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3725.04 CPU=0:00:15.7 REAL=0:00:03.0)
+Save waveform /tmp/innovus_temp_6701_ieng6-ece-02.ucsd.edu_zhbian_MVyadl/.AAE_Xo7k01/.AAE_6701/waveform.data...
+*** CDM Built up (cpu=0:00:18.5  real=0:00:05.0  mem= 3725.0M) ***
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Starting SI iteration 2
+AAE_INFO-618: Total number of nets in the design is 58196,  2.6 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3693.03 CPU=0:00:02.3 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:02.4  real=0:00:01.0  mem= 3693.0M) ***
+**WARN: (IMPTCM-70):	Option "-setup" for command setAnalysisMode is obsolete and has been replaced by "-checkType setup". The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, update your script to use "-checkType setup".
+**WARN: (IMPCTE-104):	The constraint mode of this inactive view 'WC_VIEW' has been modified and may need to be reanalyzed to ensure proper timing results. To reanalyze timing for this view make the view active using 'set_analysis_view' and run timing analysis.
+**WARN: (IMPCTE-104):	The constraint mode of this inactive view 'TC_VIEW' has been modified and may need to be reanalyzed to ensure proper timing results. To reanalyze timing for this view make the view active using 'set_analysis_view' and run timing analysis.
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+Reading Capacitance Table File /home/linux/ieng6/ee260bwi25/public/PDKdata/captbl/cln65g+_1p08m+alrdl_top2_cworst.captable ...
+**WARN: (IMPEXT-2760):	Layer M9 specified in the cap table is ignored because it is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (IMPEXT-2771):	Via VIA_8 specified in the cap table is ignored because its top layer, M9, is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+**WARN: (IMPEXT-2801):	Resistance values are not provided in the Cap Table. Sheet resistance defined in the LEF file will be used.
+**WARN: (IMPEXT-2710):	Basic Cap table for layer M9 is ignored because the layer is not specified in the technology LEF file.
+Importing multi-corner RC tables ... 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: TC_VIEW
+    RC-Corner Name        : Cmax
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : '/home/linux/ieng6/ee260bwi25/public/PDKdata/captbl/cln65g+_1p08m+alrdl_top2_cworst.captable'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+**WARN: (IMPEXT-3503):	The corner setup has changed in the MMMC flow. New RC corners 'Cmax' have been added, therefore, no parasitic data exists for them. As a result, the parasitic data in the tool from the previous setup is deleted. Extract or restore the parasitic data for all the current corners by calling 'extractRC/spefIn'.
+*Info: initialize multi-corner CTS.
+Starting library reading in 'Multi-threaded flow' (with '8' threads)
+
+Threads Configured:8
+Reading TC_LIB timing library /home/linux/ieng6/ee260bwi25/public/PDKdata/lib/tcbn65gplustc.lib.
+Read 811 cells in  tcbn65gplustc.
+Reading TC_LIB timing library /home/linux/ieng6/ee260bwi25/zhbian/1D-Vector-based-NPU/dualCore/singleCore/pnr/subckt/sram_w16_in_TC.lib.
+Read 1 cells in  sram_w16_in.
+Reading TC_LIB timing library /home/linux/ieng6/ee260bwi25/zhbian/1D-Vector-based-NPU/dualCore/singleCore/pnr/subckt/sram_w16_out_TC.lib.
+Read 1 cells in  sram_w16_out.
+Library reading multithread flow ended.
+Reading timing constraints file '/tmp/innovus_temp_6701_ieng6-ece-02.ucsd.edu_zhbian_MVyadl/.mmmc4f726Y/modes/CON/CON.sdc' ...
+Current (total cpu=3:09:27, real=1:03:34, peak res=1987.5M, current mem=3231.1M)
+core
+Number of path exceptions in the constraint file = 1
+Number of paths exceptions after getting compressed = 1
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1573.6M, current mem=3240.9M)
+Current (total cpu=3:09:27, real=1:03:34, peak res=1987.5M, current mem=3240.9M)
+Total number of combinational cells: 492
+Total number of sequential cells: 303
+Total number of tristate cells: 11
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFFD1 BUFFD0 BUFFD2 BUFFD3 BUFFD4 BUFFD6 BUFFD8 BUFFD12 BUFFD16 CKBD1 CKBD0 CKBD2 CKBD3 CKBD4 CKBD6 CKBD8 CKBD12 CKBD16
+Total number of usable buffers: 18
+List of unusable buffers: BUFFD20 BUFFD24 CKBD20 CKBD24 GBUFFD1 GBUFFD3 GBUFFD2 GBUFFD4 GBUFFD8
+Total number of unusable buffers: 9
+List of usable inverters: CKND1 CKND0 CKND2 CKND3 CKND4 CKND6 CKND8 CKND12 CKND16 INVD1 INVD0 INVD2 INVD3 INVD4 INVD6 INVD8 INVD12 INVD16
+Total number of usable inverters: 18
+List of unusable inverters: CKND20 CKND24 GINVD2 GINVD1 GINVD4 GINVD3 GINVD8 INVD20 INVD24
+Total number of unusable inverters: 9
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells: DEL0 DEL005 DEL01 DEL015 DEL02 DEL1 DEL2 DEL3 DEL4
+Total number of identified unusable delay cells: 9
+All delay cells are dont_use. Buffers will be used to fix hold violations.
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: core
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI On 
+#################################################################################
+**WARN: (IMPEXT-3518):	The lower process node is set (using command 'setDesignMode') but the technology file for TQRC extraction not specified. Therefore, going for postRoute (effortLevel low) extraction instead of recommended extractor 'TQRC' for lower nodes. Use command 'set_analysis_view/update_rc_corner' to specify the technology file for TQRC extraction to take place.
+Extraction called for design 'core' of instances=96336 and nets=58196 using extraction engine 'postRoute' at effort level 'low' .
+PostRoute (effortLevel low) RC Extraction called for design core.
+RC Extraction called in multi-corner(1) mode.
+**WARN: (IMPEXT-3442):	The version of the capacitance table file being used is obsolete and is no longer recommended. For improved accuracy, generate the capacitance table file using the generateCapTbl command.
+Process corner(s) are loaded.
+ Corner: Cmax
+extractDetailRC Option : -outfile /tmp/innovus_temp_6701_ieng6-ece-02.ucsd.edu_zhbian_MVyadl/core_6701_lQYaKV.rcdb.d -maxResLength 200  -extended
+RC Mode: PostRoute -effortLevel low [Extended CapTable, LEF Resistances]
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Coupling Cap. Scaling Factor : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Checking LVS Completed (CPU Time= 0:00:00.3  MEM= 3269.5M)
+Extracted 10.0004% (CPU Time= 0:00:01.9  MEM= 3323.4M)
+Extracted 20.0004% (CPU Time= 0:00:02.3  MEM= 3323.4M)
+Extracted 30.0004% (CPU Time= 0:00:02.9  MEM= 3323.4M)
+Extracted 40.0004% (CPU Time= 0:00:03.7  MEM= 3327.4M)
+Extracted 50.0004% (CPU Time= 0:00:05.3  MEM= 3327.4M)
+Extracted 60.0004% (CPU Time= 0:00:05.7  MEM= 3327.4M)
+Extracted 70.0004% (CPU Time= 0:00:06.1  MEM= 3327.4M)
+Extracted 80.0004% (CPU Time= 0:00:06.6  MEM= 3327.4M)
+Extracted 90.0004% (CPU Time= 0:00:07.3  MEM= 3327.4M)
+Extracted 100% (CPU Time= 0:00:10.0  MEM= 3327.4M)
+Number of Extracted Resistors     : 1040116
+Number of Extracted Ground Cap.   : 1026037
+Number of Extracted Coupling Cap. : 1785624
+Filtering XCap in 'relativeAndCoupling' mode using values coupling_c_threshold=0.1fF, relative_c_threshold=1, and total_c_threshold=0fF.
+ Corner: Cmax
+Checking LVS Completed (CPU Time= 0:00:00.3  MEM= 3315.4M)
+PostRoute (effortLevel low) RC Extraction DONE (CPU Time: 0:00:12.9  Real Time: 0:00:13.0  MEM: 3315.414M)
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Cannot find current Dcalc in active list!
+AAE_INFO-618: Total number of nets in the design is 58196,  100.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3941.1 CPU=0:00:18.4 REAL=0:00:04.0)
+Save waveform /tmp/innovus_temp_6701_ieng6-ece-02.ucsd.edu_zhbian_MVyadl/.AAE_s9ZmU2/.AAE_6701/waveform.data...
+*** CDM Built up (cpu=0:00:35.8  real=0:00:20.0  mem= 3941.1M) ***
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Starting SI iteration 2
+AAE_INFO-618: Total number of nets in the design is 58196,  2.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3928.17 CPU=0:00:01.9 REAL=0:00:01.0)
+*** CDM Built up (cpu=0:00:02.1  real=0:00:01.0  mem= 3928.2M) ***
+All-RC-Corners-Per-Net-In-Memory is turned ON...
+TAMODEL Cpu User Time =   54.6 sec
+TAMODEL Memory Usage  =   40.2 MB
+**WARN: (SDF-808):	The software is currently operating in a high performance mode which optimizes the handling of multiple timing arcs between input and output pin pairs. With the current settings, the SDF file generated will contain the same delay information for all of these arcs. To have the SDF recalculated with explicit pin pair data, you should use the option '-recompute_parallel_arcs'. This setting is recommended for generating SDF for functional  simulation applications.
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: core
+# Design Mode: 65nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB
+# Signoff Settings: SI On 
+#################################################################################
+AAE_INFO-618: Total number of nets in the design is 58196,  100.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=4000.33 CPU=0:00:17.4 REAL=0:00:04.0)
+Save waveform /tmp/innovus_temp_6701_ieng6-ece-02.ucsd.edu_zhbian_MVyadl/.AAE_s9ZmU2/.AAE_6701/waveform.data...
+*** CDM Built up (cpu=0:00:20.3  real=0:00:05.0  mem= 4000.3M) ***
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Starting SI iteration 2
+AAE_INFO-618: Total number of nets in the design is 58196,  2.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=3968.33 CPU=0:00:01.9 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:02.1  real=0:00:00.0  mem= 3968.3M) ***
