@@ -7,7 +7,7 @@
 - The design aims to speed up Q * K calculation in **Transformer**
 - For simplicity, we use **Normalization** in place of SoftMax
 - The results are unsigned number
-- The TechLibrary is **TSMC 65mm**
+- The TechLibrary is **TSMC 65nm**
 
 Tools:
 - Synthesis: **Design Compiler**
