@@ -12,7 +12,6 @@
 *.nfs*
 *template*
 *.template*
-*gate*
 *simvision*
 *xcelium.d*
 *.rs*
