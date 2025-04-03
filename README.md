@@ -2,16 +2,14 @@
 
 ## Overview
 
-1D Vector based NPU, final project of ECE 260B VLSI Integrated Circuits & Systems Design
+1D Vector based NPU, final project of ECE 260B VLSI Integrated Circuits & Systems Design at UCSD
 
 - The design aims to speed up Q * K calculation in **Transformer**
-- For simplicity, we use **normalization** instead of SoftMax
+- For simplicity, we use **Normalization** in place of SoftMax
 - The results are unsigned number
-
 - The TechLibrary is **TSMC 65mm**
 
 Tools:
-
 - Synthesis: **Design Compiler**
 - PnR: **Innovus**
 - Gate-Level Simulation: **Xcelium**
